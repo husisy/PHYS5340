@@ -25,3 +25,10 @@ some abbriation
 
 1. "i.e.": (id est) means “that is” or “in other words”. (It is used to paraphrase a statement that was just made, not to mean“for example”, and is always followed by a comma.)
 2. s.t.: such that, so that
+
+```bash
+cd jupyterbook
+jupyter-book build . #--all
+pip install ghp-import
+ghp-import -n -p -f _build/html
+```

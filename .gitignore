@@ -1,3 +1,4 @@
+# latex
 *.aux
 *.lof
 *.log
@@ -23,3 +24,6 @@
 *.run.xml
 *.fdb_latexmk
 *.synctex.gz
+
+# jupyterbook
+jupyterbook/_build

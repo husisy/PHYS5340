@@ -1,0 +1,230 @@
+# lec01
+
+*TODO* before the lectures note, there are some content are from slides
+
+topics
+
+1. quantum harmonic oscillator
+2. creation and annihilation operators
+3. Fock space
+4. real space wave functions
+5. coherent state
+6. propagator
+
+goals
+
+1. QM warm-up
+2. do some Gaussian integrals
+3. change some basis
+
+## QHO
+
+As a warm-up, consider the QHO in one-dimension.
+
+$$
+\begin{gather*}
+    \hat{H}=\frac{\hat{p}^2}{2m}+\frac{1}{2}m\omega ^2\hat{x}^2 \\
+    \left[ \hat{x},\hat{p} \right] =i\hbar \\
+\end{gather*}
+$$
+
+in position basis, $\hat{p}=-i\hbar \partial _x$. check
+
+$$
+\begin{align*}
+    \left[ \hat{x},\hat{p} \right] f\left( x \right) &=-i\hbar x\partial _xf+i\hbar \partial _x\left( xf \right) \\
+    &=-i\hbar x\partial _xf+i\hbar f+i\hbar x\partial _xf\\
+    &=i\hbar f
+\end{align*}
+$$
+
+In position basis, the eigenvalues satisfy
+
+$$ -\frac{\hbar ^2}{2m}\partial _{x}^{2}\phi \left( x \right) +\frac{1}{2}m\omega ^2x^2\phi \left( x \right) =E\phi \left( x \right) $$
+
+We can, however, solve it algebraically (without going to the position basis). First, let's adopt some dimensionless coordinates. We know $[\hat{H}]=[\hbar\omega]$; write
+
+$$ \hat{H}=\frac{\hbar \omega}{2}\left( \frac{m\omega}{\hbar}\hat{x}^2+\frac{1}{m\hbar \omega}\hat{p}^2 \right) $$
+
+Define
+
+$$ \hat{X}=\sqrt{\frac{m\omega}{\hbar}}\hat{x},\quad \hat{P}=\frac{1}{\sqrt{m\hbar \omega}}\hat{p} $$
+
+Then
+
+$$ \left[ \hat{X},\hat{P} \right] =\sqrt{\frac{m\omega}{\hbar}}\frac{1}{\sqrt{m\hbar \omega}}\left[ \hat{x},\hat{p} \right] =i $$
+
+Let's now define
+
+$$ \hat{a}^{\dagger}=\frac{1}{\sqrt{2}}\left( \hat{X}-i\hat{P} \right) ,\quad \hat{a}=\frac{1}{\sqrt{2}}\left( \hat{X}+i\hat{P} \right) $$
+
+which gives
+
+$$
+\begin{gather*}
+    \hat{a}^{\dagger}\hat{a}=\frac{1}{2}\left( \hat{X}-i\hat{P} \right) \left( \hat{X}+i\hat{P} \right) =\frac{1}{2}\left( \hat{X}^2+\hat{P}^2+i\left[ \hat{X},\hat{P} \right] \right) \\
+    \hat{H}=\frac{\hbar \omega}{2}\left( \hat{X}^2+\hat{P}^2 \right) =\hbar \omega \left( \hat{a}^{\dagger}\hat{a}+\frac{1}{2} \right)
+\end{gather*}
+$$
+
+This gives a convenient way to construct the spectrum. First, check
+
+$$ \left[ \hat{a},\hat{a}^{\dagger} \right] =\frac{1}{2}\left[ \hat{X}+i\hat{P},\hat{X}-i\hat{P} \right] =\frac{1}{2}i\left[ \hat{P},\hat{X} \right] -\frac{1}{2}i\left[ \hat{X},\hat{P} \right] =1 $$
+
+So, if $\hat{H}|E\rangle =E|E\rangle$, we have
+
+$$
+\begin{align*}
+    \hat{H}\left( \hat{a}^{\dagger}|E\rangle \right) &=\hbar \omega \left( \hat{a}^{\dagger}\hat{a}+\frac{1}{2} \right) \hat{a}^{\dagger}|E\rangle \\
+    &=\hbar \omega \left( \hat{a}^{\dagger}\hat{a}\hat{a}^{\dagger}+\frac{1}{2}\hat{a}^{\dagger} \right) |E\rangle \\
+    &=\hbar \omega \left( \hat{a}^{\dagger 2}\hat{a}+\hat{a}^{\dagger}+\frac{1}{2}\hat{a}^{\dagger} \right) |E\rangle \\
+    &=\hat{a}^{\dagger}\left( \hat{H}+\hbar \omega \right) |E\rangle \\
+    &=\hat{a}^{\dagger}\left( E+\hbar \omega \right) |E\rangle \\
+    &=\left( E+\hbar \omega \right) \left( \hat{a}^{\dagger}|E\rangle \right)
+\end{align*}
+$$
+
+which means $\hat{a}^{\dagger}|E\rangle$ is another eigenstate with energy $E+\hbar\omega$. This relates the different eigenstates. We just need to find the ground state. Since
+
+$$ \langle \phi |\hat{a}^{\dagger}\hat{a}|\phi \rangle =\left\| \hat{a}|\phi \rangle \right\| ^2\ge 0,\quad \forall |\phi \rangle $$
+
+If $\hat{a}$ has a null vector, then it will be the ground state. Let's just posit such a state exist, i.e.,
+
+$$ \exists |0\rangle \quad \mathrm{s}.\mathrm{t}.\quad \hat{a}|0\rangle =0$$
+
+Then the eigen spectrum is given by
+
+$$ \left\{ |n\rangle ;E_n=\hbar \omega \left( n+\frac{1}{2} \right) \right\} $$
+
+We can also find the matrix elements of $\hat{a},\hat{a}$ in this eigen basis. Recall
+
+$$ |n+1\rangle =\mathcal{N} \hat{a}^{\dagger}|n\rangle $$
+
+where $\mathcal{N}\in\mathbb{R}^+$ is the normalization factor. Also, from the preceding discussion we have
+
+$$ \hat{a}^{\dagger}\hat{a}|n\rangle =n|n\rangle $$
+
+The normalization is then
+
+$$
+\begin{align*}
+    1=\langle n+1|n+1\rangle &=\mathcal{N} ^2\langle n|\hat{a}\hat{a}^{\dagger}|n\rangle \\
+    &=\mathcal{N} ^2\langle n|\left( \hat{a}^{\dagger}\hat{a}+1 \right) |n\rangle \\
+    &=\left( n+1 \right) \mathcal{N} ^2
+\end{align*}
+$$
+
+$$ \hat{a}^{\dagger}|n\rangle =\sqrt{n+1}|n+1\rangle $$
+
+similar argument gives $\hat{a}|n\rangle =\sqrt{n}|n-1\rangle$. In a matrix picture.
+
+$$ \hat{a}^\dagger=\left[ \begin{matrix}{l}
+  0&    &    &    &    \\
+  1&    0&    &    &    \\
+  &    \sqrt{2}&    0&    &    \\
+  &    &    \sqrt{3}&    0&    \\
+  &    &    &    \ddots&    \ddots\\
+\end{matrix} \right] ,\quad \hat{a}=\left[ \begin{matrix}{l}
+  0&    1&    &    &    \\
+  &    0&    \sqrt{2}&    &    \\
+  &    &    0&    \sqrt{3}&    \\
+  &    &    &    0&    \ddots\\
+  &    &    &    &    \ddots\\
+\end{matrix} \right] $$
+
+This is a "number" basis. We call it the Fock space. It's separable (but infinite dimensional). We are only left with showing $\hat{a}|0\rangle =0$ *{TODO-UNKNOWN-WORD}* solution. To do so, let's go back to the position basis. Recall
+
+$$ \hat{a}=\frac{1}{\sqrt{2}}\left( \hat{X}+i\hat{P} \right) =\frac{1}{\sqrt{2}}\left( X+i\left( -i\frac{\partial}{\partial X} \right) \right) =\frac{1}{\sqrt{2}}\left( X+\frac{\partial}{\partial X} \right) $$
+
+$$ \hat{a}|\phi _0\rangle =0 $$
+
+$$ \left( X+\frac{\partial}{\partial X} \right) \phi _0\left( X \right) =0 $$
+
+$$ \int{\frac{d\phi _0\left( X \right)}{\phi _0\left( X \right)}}=-\int{XdX}$$
+
+$$ \phi _0\left( X \right) =\mathcal{N} e^{-X^2/2}$$
+
+Which is a Gaussian. Recall $X=\sqrt{\frac{m\omega}{\hbar}}x$,
+
+$$ \phi _0\left( x \right) =\mathcal{N} e^{-m\omega x^2/\left( 2\hbar \right)} $$
+
+To get the normalization,
+
+$$
+\begin{align*}
+    1&=\int_{-\infty}^{\infty}{\left| \phi _0\left( x \right) \right|}dx=\mathcal{N} ^2\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}dx}\\
+    &=\mathcal{N} ^2\sqrt{\frac{\hbar}{2m\omega}}\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}\exp \left( -\left( \sqrt{\frac{\hbar}{2m\omega}}x \right) ^2/2 \right) d\left( \sqrt{\frac{\hbar}{2m\omega}}x \right)}\\
+    &=\mathcal{N} ^2\sqrt{\frac{\hbar}{2m\omega}}\sqrt{2\pi}
+\end{align*}
+$$
+
+$$ \mathcal{N} =\left( \frac{m\omega}{\pi \hbar} \right) ^{1/4} $$
+
+$$ \phi _0\left( x \right) =\left( \frac{m\omega}{\pi \hbar} \right) ^{1/4}e^{-m\omega x^2/\left( 2\hbar \right)} $$
+
+Side note: Gaussian integration
+
+$$ \int_{-\infty}^{\infty}{e^{-ax^2/2}dx}=\sqrt{\frac{2\pi}{a}},\quad a>0 $$
+
+A standard discussion will next introduce the real-space wave function of the excited states through the Hermite polynomial. Let's try to avoid that!
+
+## coherent state
+
+We have seen that the creation and annihilation operatos provides a simple way to analyze the QHO. Let's now take these as the "coordinates" for our problem. Recall position basis $\hat{x}|x\rangle =x|x\rangle$. Similarly, we consider the eigenstates of the form
+
+$$ \hat{a}|\alpha \rangle =\alpha |\alpha \rangle ;\quad \alpha \in \mathbb{C} $$
+
+E.g., The ground state $\hat{a}|0\rangle =0|0\rangle =0$. To solve for the eigenstate, write
+
+$$ |\alpha \rangle =\sum_{n=0}{C_n\left( \alpha \right) |n\rangle}$$
+
+Then,
+
+$$
+\begin{align*}
+    \hat{a}|\alpha \rangle &=\sum_{n=0}{C_n\left( \alpha \right) \hat{a}|n\rangle}\\
+    &=\sum_{n=0}{C_n\left( \alpha \right) \sqrt{n}|n-1\rangle}\\
+    &=\sum_{n=0}{C_{n+1}\left( \alpha \right) \sqrt{n+1}|n\rangle}\\
+\end{align*}
+$$
+
+versus
+
+$$ \alpha |\alpha \rangle =\sum_{n=0}{C_n\left( \alpha \right) \alpha |n\rangle}$$
+
+we conclude
+
+$$ C_{n+1}\left( \alpha \right) =\frac{\alpha C_n\left( \alpha \right)}{\sqrt{n+1}}=\frac{\alpha ^2C_{n-1}\left( \alpha \right)}{\sqrt{\left( n+1 \right) n}}=\cdots =\frac{\alpha ^{n+1}C_0\left( \alpha \right)}{\sqrt{\left( n+1 \right) !}} $$
+
+Note: $|\alpha\rangle$ is a superposition of $\{|n\rangle\}$. It's not an energy eigenstate (unless $\alpha=0$).
+
+We have
+
+$$ |\alpha \rangle =C_0\left( \alpha \right) \sum_{n=0}{\frac{\alpha ^n}{\sqrt{n!}}|n\rangle}$$
+
+Normalization:
+
+$$
+\begin{align*}
+    1&=\langle \alpha |\alpha \rangle =\left| C_0\left( \alpha \right) \right|^2\sum_{m,n=0}{\frac{\left( \alpha ^* \right) ^m\alpha ^n}{\sqrt{m!}\sqrt{n!}}\langle m|n\rangle}\\
+    &=\left| C_0\left( \alpha \right) \right|^2\sum_{m=0}{\frac{\left| \alpha \right|^{2m}}{m!}}\\
+    &=\left| C_0\left( \alpha \right) \right|^2e^{\left| \alpha \right|^2}
+\end{align*}
+$$
+
+$$ C_0\left( \alpha \right) =e^{-\left| \alpha \right|^2/2}$$
+
+$$ |\alpha \rangle =e^{-\left| \alpha \right|^2/2}\sum_{n=0}{\frac{\alpha ^n}{\sqrt{n!}}|n\rangle}$$
+
+This looks almost like the exponential! Recall
+
+$$ |n\rangle =\frac{\hat{a}^{\dagger}}{\sqrt{n}}|n-1\rangle =\frac{\hat{a}^{\dagger 2}}{\sqrt{n\left( n-1 \right)}}|n-2\rangle =\cdots =\frac{\hat{a}^{\dagger n}}{\sqrt{n!}}|0\rangle $$
+
+So,
+
+$$
+\begin{align*}
+    |\alpha \rangle &=e^{-\left| \alpha \right|^2/2}\sum_{n=0}{\frac{\alpha ^n\hat{a}^{\dagger n}}{\sqrt{n!}\sqrt{n!}}|0\rangle}\\
+    &=e^{-\left| \alpha \right|^2/2}e^{\alpha \hat{a}^{\dagger}}|0\rangle
+\end{align*}
+$$
