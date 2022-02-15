@@ -4,6 +4,7 @@ There are many LaTeX-based books on this topic (quantum many-body physics), but 
 
 1. better suitable for mooc course: easily to combined with other mooc materials (quiz, code, animation, etc.)
 2. could still build a pdf file, although not as good as LaTeX-based
+3. an example course on topological insulator [topocondmat.org](https://topocondmat.org/)
 
 An open source book is useful for this research community
 
