@@ -136,7 +136,7 @@ Resolution of identity
 
 $$
 \begin{align*}
-    \int{d^2\alpha \langle n|\alpha \rangle \langle \alpha |n\rangle}&=\int{d^2\alpha \frac{\left( \alpha ^* \right) ^n\alpha ^m}{\sqrt{n!m!}}e^{-\left| \alpha \right|^2}}\\
+    \int{d^2\alpha \langle n|\alpha \rangle \langle \alpha |m\rangle}&=\int{d^2\alpha \frac{\left( \alpha ^* \right) ^n\alpha ^m}{\sqrt{n!m!}}e^{-\left| \alpha \right|^2}}\\
     &=\delta _{nm}\int{d^2\alpha \frac{\left| \alpha \right|^{2n}}{n!}e^{-\left| \alpha \right|^2}}\\
     &=\pi \delta _{nm}\int{d^2r\frac{r^{2n}}{n!}e^{-r^2}}\\
     &=\pi \delta _{nm}

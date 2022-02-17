@@ -25,6 +25,7 @@ some abbriation
 
 1. "i.e.": (id est) means “that is” or “in other words”. (It is used to paraphrase a statement that was just made, not to mean“for example”, and is always followed by a comma.)
 2. s.t.: such that, so that
+3. P.S. stands for postscript. It comes from the Latin postscriptum, which literally means “written after.”
 
 ```bash
 cd jupyterbook
