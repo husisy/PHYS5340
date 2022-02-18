@@ -1,0 +1,367 @@
+# lec02
+
+202200209
+
+topics:
+
+1. QHO: displacement operator and propagator
+2. Phonons: from QHO to second quantization
+
+goals
+
+1. continue with our QM warm-up
+2. introduce the propagator, Green function
+3. free phonons as our first ``many-body'' bosonic problem
+
+## QHO
+
+Recall the QHO Hamiltonian
+
+$$
+\begin{gather*}
+    \hat{H}=\frac{\hat{p}^2}{2m}+\frac{1}{2}m\omega ^2\hat{x}^2=\hbar \omega \left( \hat{a}^{\dagger}\hat{a}+\frac{1}{2} \right) \\
+    \hat{a}=\frac{1}{\sqrt{2}}\left( \hat{X}+i\hat{P} \right) \\
+    \hat{X}=\sqrt{\frac{m\omega}{\hbar}}\hat{x}\\
+    \hat{P}=\frac{1}{\sqrt{m\hbar \omega}}\hat{p}
+\end{gather*}
+$$
+
+Coherent states are labeled by $\alpha\in\mathcal{C}$
+
+$$ \hat{a}|\alpha \rangle =\alpha |\alpha \rangle $$
+
+Displacement operator: unitary to rotate between coherent states, let
+
+$$ \hat{D}\left( \alpha \right) =e^{ \alpha \hat{a}^{\dagger}-\alpha ^*\hat{a} } $$
+
+where $\alpha \hat{a}^{\dagger}-\alpha ^*\hat{a}$ is anti-Hermitian.
+
+Baker-Campbell-Hausdorff formula: for $[\hat{A},\hat{B}]$ central ($[\hat{A},\hat{B}]$ commutes with both $\hat{A}\&\hat{B}$)
+
+$$ e^{\hat{A}}e^{\hat{B}}=e^{\hat{A}+\hat{B}+\frac{1}{2}\left[ \hat{A},\hat{B} \right]}$$
+
+By BCH, and noting $\left[ \alpha \hat{a}^{\dagger},-\alpha ^*\hat{a} \right] =\left| \alpha \right|^2$ is central,
+
+$$
+\begin{gather*}
+    e^{\alpha \hat{a}^{\dagger}}e^{-\alpha ^*\hat{a}}=e^{\alpha \hat{a}^{\dagger}-\alpha ^*\hat{a}}e^{\left[ \alpha \hat{a}^{\dagger},-\alpha ^*\hat{a} \right] /2}\\
+    \hat{D}\left( \alpha \right) =e^{\alpha \hat{a}^{\dagger}-\alpha ^*\hat{a}}=e^{-\left| \alpha \right|^2/2}e^{\alpha \hat{a}^{\dagger}}e^{-\alpha ^*\hat{a}}
+\end{gather*}
+$$
+
+Check
+
+$$ \hat{D}\left( \alpha \right) |0\rangle =e^{-\left| \alpha \right|^2/2}e^{\alpha \hat{a}^{\dagger}}e^{-\alpha ^*\hat{a}}|0\rangle =e^{-\left| \alpha \right|^2/2}e^{\alpha \hat{a}^{\dagger}}|0\rangle =|\alpha \rangle $$
+
+"Displacement"? compute (also using BCH formula)
+
+$$
+\begin{align*}
+    \hat{D}^{\dagger}\left( \alpha \right) \hat{a}\hat{D}\left( \alpha \right) &=e^{-\alpha \hat{a}^{\dagger}+\alpha ^*\hat{a}}\hat{a}e^{\alpha \hat{a}^{\dagger}-\alpha ^*\hat{a}}\\
+    &=\hat{a}+\left[ -\alpha \hat{a}^{\dagger}+\alpha ^*\hat{a},\hat{a} \right] \\
+    &=\hat{a}+\alpha
+\end{align*}
+$$
+
+$$ \hat{D}^{\dagger}\left( \alpha \right) \hat{a}^{\dagger}\hat{D}\left( \alpha \right) =\hat{a}^{\dagger}+\alpha ^*$$
+
+E.g., 1. Average energy
+
+$$
+\begin{align*}
+    \langle \alpha |\hat{H}|\alpha \rangle &=\langle 0|\hat{D}^{\dagger}\left( \alpha \right) \hbar \omega \left( \hat{a}^{\dagger}\hat{a}+\frac{1}{2} \right) \hat{D}\left( \alpha \right) |0\rangle \\
+    &=\langle 0|\hbar \omega \left( \left( \hat{a}^{\dagger}+\alpha ^* \right) \left( \hat{a}+\alpha \right) +\frac{1}{2} \right) |0\rangle \\
+    &=\frac{\hbar \omega}{2}+\hbar \omega \langle 0|\left( \hat{a}^{\dagger}\hat{a}+\hat{a}^{\dagger}\alpha +\alpha ^*\hat{a}+\left| \alpha \right|^2 \right) |0\rangle \\
+    &=\hbar \omega \left( \left| \alpha \right|^2+\frac{1}{2} \right)
+\end{align*}
+$$
+
+Not an eigenstate, and has a continuously adjustable average energy.
+
+E.g., 2. Expectation values for $\langle \hat{x}\rangle$ and $\langle \hat{p}\rangle$
+
+$$ \alpha =\langle \alpha |\left( \hat{X}+i\hat{P} \right) |\alpha \rangle =\frac{1}{\sqrt{2}}\langle \alpha |\hat{X}|\alpha \rangle +\frac{i}{\sqrt{2}}\langle \alpha |\hat{P}|\alpha \rangle $$
+
+It's natural for us to parametrize the complex variable
+
+$$ \alpha =\frac{1}{\sqrt{2}}\left( X_{\alpha}+iP_{\alpha} \right) ,X_{\alpha},P_{\alpha}\in \mathbb{R} $$
+
+and simply the expectation values
+
+$$
+\begin{gather*}
+    X_{\alpha}=\langle \alpha |\hat{X}|\alpha \rangle =\sqrt{\frac{m\omega}{\hbar}}\langle \alpha |\hat{x}|\alpha \rangle \\
+    P_{\alpha}=\langle \alpha |\hat{P}|\alpha \rangle =\frac{1}{\sqrt{m\hbar \omega}}\langle \alpha |\hat{P}|\alpha \rangle
+\end{gather*}
+$$
+
+In particular, the ground state for the shifted Hamiltonian
+
+$$ \hat{H}'=\frac{\hat{p}^2}{2m}+\frac{1}{2}m\omega ^2\left( \hat{x}-x_0 \right) ^2$$
+
+will be the coherent state $\hat{D}(\sqrt{\frac{m\omega}{\hbar}}x_0)|0\rangle$.
+
+E.g., 3. Composition of displacement operator
+
+We can think of $\hat{D}(\alpha)$ as a "displacement" in the phase space. It is natural to look how such transformation compose.
+
+$$
+\begin{align*}
+    \hat{D}\left( \alpha \right) \hat{D}\left( \beta \right) &=e^{\alpha \hat{a}^{\dagger}-\alpha ^*\hat{a}}e^{\beta \hat{a}^{\dagger}-\beta ^*\hat{a}}\\
+    &=e^{\left( \alpha +\beta \right) \hat{a}^{\dagger}-\left( \alpha ^*+\beta ^* \right) \hat{a}}e^{\left[ \alpha \hat{a}^{\dagger}-\alpha ^*\hat{a},\beta \hat{a}^{\dagger}-\beta ^*\hat{a} \right] /2}\\
+    &=\hat{D}\left( \alpha +\beta \right) e^{\frac{1}{2}\left( -\alpha ^*\beta \left[ \hat{a},\hat{a}^{\dagger} \right] -\alpha \beta ^*\left[ \hat{a}^{\dagger},\hat{a} \right] \right)}\\
+    &=\hat{D}\left( \alpha +\beta \right) e^{\left( \alpha \beta ^*-\alpha ^*\beta \right) /2}\\
+    &=\hat{D}\left( \alpha +\beta \right) e^{i\mathrm{Im}\left( \alpha \beta ^* \right)}
+\end{align*}
+$$
+
+Note:
+
+$$ \hat{D}\left( \alpha \right) \hat{D}\left( -\alpha \right) =\hat{D}\left( 0 \right) =I\quad \Rightarrow \quad \hat{D}^{\dagger}\left( \alpha \right) =\hat{D}\left( -\alpha \right) $$
+
+Overlap betwween coherent states: we now see that coherent states are **not** orthogonal:
+
+$$
+\begin{align*}
+    \langle \alpha |\beta \rangle &=\langle 0|\hat{D}^{\dagger}\left( \alpha \right) \hat{D}\left( \beta \right) |0\rangle \\
+    &=\langle 0|\hat{D}\left( -\alpha +\beta \right) |0\rangle e^{-i\mathrm{Im}\left( \alpha \beta ^* \right)}\\
+    &=e^{-\left| \alpha -\beta \right|^2/2}e^{-i\mathrm{Im}\left( \alpha \beta ^* \right)}\\
+    &=e^{-\left( \left| \alpha \right|^2+\left| \beta \right|^2 \right) /2}e^{\alpha ^*\beta}
+\end{align*}
+$$
+
+we usually say they form an over-complete basis.
+
+Resolution of identity
+
+$$
+\begin{align*}
+    \int{d^2\alpha \langle n|\alpha \rangle \langle \alpha |m\rangle}&=\int{d^2\alpha \frac{\left( \alpha ^* \right) ^n\alpha ^m}{\sqrt{n!m!}}e^{-\left| \alpha \right|^2}}\\
+    &=\delta _{nm}\int{d^2\alpha \frac{\left| \alpha \right|^{2n}}{n!}e^{-\left| \alpha \right|^2}}\\
+    &=\pi \delta _{nm}\int{d^2r\frac{r^{2n}}{n!}e^{-r^2}}\\
+    &=\pi \delta _{nm}
+\end{align*}
+$$
+
+$$ I=\frac{1}{\pi}\int{d^2\alpha |\alpha \rangle \langle \alpha |} $$
+
+Now, the coherent states are not (generally) energy eigenstates, so they evolve under time:
+
+$$
+\begin{align*}
+    e^{-i\hat{H}t/\hbar}|\alpha \rangle &=\sum_{n=0}{|n\rangle \langle n|\alpha \rangle e^{-i\omega t\left( n+\frac{1}{2} \right)}}\\
+    &=\sum_{n=0}{|n\rangle \frac{\alpha ^n}{\sqrt{n!}}e^{-i\omega t\left( n+\frac{1}{2} \right)}}\\
+    &=e^{-i\omega t/2}\sum_{n=0}{|n\rangle \frac{\left( \alpha e^{-i\omega t} \right) ^n}{\sqrt{n!}}}\\
+    &=|\alpha e^{-i\omega t}\rangle e^{-i\omega t/2}
+\end{align*}
+$$
+
+And we can define the propagator
+
+$$
+\begin{align*}
+    K\left( \beta ,\alpha ;t \right) &=\langle \beta |e^{-i\hat{H}t/\hbar}|\alpha \rangle \\
+    &=e^{-i\omega t/2}\langle \beta |\alpha e^{-i\omega t}\rangle\\
+    &=e^{-i\omega t/2}e^{-\left( \left| \alpha \right|^2+\left| \beta \right|^2 \right) /2}\exp \left( \alpha e^{-i\omega t}\beta ^* \right)
+\end{align*}
+$$
+
+## Propagator and Green's function
+
+Why worry about the propagator?
+
+Level 1: It allows us to solve for the general dynamics. Suppose we have an initial state $|\phi\rangle$. Its time evolution in Schrodinger's picture is
+
+$$ |\phi \left( t \right) \rangle =e^{-i\hat{H}t/\hbar}|\phi \rangle $$
+
+If we specify our initial state in some basis, and suppose we have pre-computed the propagator in that basis, then we can readily compute the time evolved state through a **matrix multiplication**.
+
+energy basis
+
+$$
+\begin{gather*}
+    |\phi \rangle =\sum_{n=0}{|n\rangle \langle n|\phi \rangle}=\sum_{n=0}{|n\rangle \phi _n}\\
+    e^{-i\hat{H}t/\hbar}=\sum_{n=0}{|n\rangle \langle n|e^{-in\omega t}e^{-i\omega t/2}}\\
+    |\phi \left( t \right) \rangle =\sum_{n=0}{|n\rangle \phi _ne^{-in\omega t}e^{-i\omega t/2}}
+\end{gather*}
+$$
+
+Coherent states
+
+$$ |\phi \rangle =\int{\frac{d^2\alpha}{\pi}|\alpha \rangle \langle \alpha |\phi \rangle}=\int{\frac{d^2\alpha}{\pi}|\alpha \rangle \phi \left( \alpha \right)}$$
+
+$$
+\begin{align*}
+    |\phi \left( t \right) \rangle &=\int{\frac{d^2\alpha d^2\beta}{\pi ^2}|\beta \rangle \langle \beta |e^{-i\hat{H}t/\hbar}|\alpha \rangle \phi \left( \alpha \right)}\\
+    &=\int{\frac{d^2\beta}{\pi}|\beta \rangle \int{\frac{d^2\alpha}{\pi}K\left( \beta ,\alpha ;t \right) \phi \left( \alpha \right)}}\\
+    &=\int{\frac{d^2\beta}{\pi}|\beta \rangle \phi \left( \beta ;t \right)}
+\end{align*}
+$$
+
+position basis
+
+$$
+\begin{gather*}
+    K\left( x',x;t \right) =\langle x'|e^{-i\hat{H}t/\hbar}|x\rangle \\
+    |\phi \rangle =\int{dx|x\rangle \langle x|\phi \rangle}=\int{dx|x\rangle \phi \left( x \right)}\\
+    \phi \left( x',t \right) =\langle x'|t\rangle =\int{dxK\left( x',x;t \right) \phi \left( x \right)}
+\end{gather*}
+$$
+
+Level 2: It allows us to probe what are the excitations above the ground state, which are really what we are interested in (a system permanently stuck in the ground state has no dynamics and hense no physics). Start with the ground state $|\Omega\rangle$, we can consider doing two things.
+
+1. perturbing the system by an operator (e.g., your finger)
+2. time evolution for some time
+
+We can do it in two orders: $e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle$ versus $\hat{f}e^{-i\hat{H}t/\hbar}|\Omega \rangle$. How colse are these two states? We can measure their overlap
+
+$$ \langle \Omega |e^{i\hat{H}t/\hbar}\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle =e^{i\omega _{\Omega}t}\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle $$
+
+where $\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle$ iss a "propagator" in some basis.
+
+Notes
+
+1. Some of you may already recognize we are really talking about an auto-correlation ffunction in the Heisenberg picture, which is simply a "Green's function"
+2. How to extract the energies of the excitation? Fourier transform! We will be using that extensively later
+
+Level 3: It allows us to treat perturbations to our system. The time-evolution operator solves the equation
+
+$$
+\begin{gather*}
+    \left( i\hbar \partial _t-\hat{H} \right) e^{-i\hat{H}t/\hbar}=0\\
+    K\left( x;t \right) =\langle x|e^{-i\hat{H}t/\hbar}|0\rangle \\
+    \left( i\hbar \partial _t-\hat{H}\left( x,\partial _x,\partial _{x}^{2} \right) \right) K\left( x;t \right) =0
+\end{gather*}
+$$
+
+Now let's define
+
+$$
+\begin{gather*}
+    \Theta \left( t \right) =\begin{cases}
+        1,\quad t>0\\
+        0,\quad t\le 0\\
+    \end{cases}\\
+    G\left( x;t \right) =\frac{1}{i\hbar}\Theta \left( t \right) K\left( x;t \right)
+\end{gather*}
+$$
+
+where $\Theta(t)$ is known as the Heaviside step function.
+
+$$ \frac{d}{dx}\Theta \left( x \right) =\delta \left( x \right) $$
+
+Note: consider the integral with $a<b$
+
+$$ \int_a^b{dx\Theta \left( x-x_0 \right) f\left( x \right)}=\begin{cases}
+  F\left( b \right) -F\left( a \right) ,\quad x_0<a<b\\
+  F\left( b \right) -F\left( x_0 \right) ,\quad a\le x_0\le b\\
+  0,\quad a<b<x_0\\
+\end{cases}$$
+
+$$
+\begin{align*}
+    &\frac{d}{dx_0}\int_a^b{dx\Theta \left( x-x_0 \right) f\left( x \right)}\\
+    =&\begin{cases}
+        0,\quad x_0\notin \left[ a,b \right]\\
+        -f\left( x_0 \right) ,\quad x_0\in \left[ a,b \right]\\
+    \end{cases}\\
+    =&-\int_a^b{dx\delta \left( x-x_0 \right) f\left( x \right)}
+\end{align*}
+$$
+
+These manipulation make sense when the "function" are used to weight an integral. One useually thinks of them as "distribution" method.
+
+Now let's compute
+
+$$
+\begin{align*}
+    &\left( i\hbar \partial _t-\hat{H}\left( x,\partial _x,\partial _{x}^{2} \right) \right) G\left( x,t \right) \\
+    =&\frac{1}{i\hbar}\left( i\hbar \partial _t-\hat{H}\left( x,\partial _x,\partial _{x}^{2} \right) \right) \left( \Theta \left( t \right) K\left( x;t \right) \right) \\
+    =&\left( \partial _t\Theta \left( t \right) \right) K\left( x,t \right) +\frac{1}{i\hbar}\Theta \left( t \right) \left( i\hbar \partial _t-\hat{H}\left( x,\partial _x,\partial _{x}^{2} \right) \right) K\left( x;t \right) \\
+    =&\delta \left( t \right) K\left( x;t \right) \\
+    =&\delta \left( t \right) K\left( x;0 \right) \\
+    =&\delta \left( t \right) \delta \left( x \right)
+\end{align*}
+$$
+
+I.e., $G$ solves the differential equation
+
+$$ \left( i\hbar \partial _t-\hat{H}\left( x,\partial _x,\partial _{x}^{2} \right) \right) G\left( x,t \right) =\delta \left( t \right) \delta \left( x \right) $$
+
+It provides the basis for solving the more general inhomogeneous equation. If we have both space and time translation invariance (not true for QHO)
+
+$$
+\begin{gather*}
+    \left( i\hbar \partial _t-\hat{H}\left( x,\partial _x,\partial _{x}^{2} \right) \right) G'\left( x,t \right) =f\left( x,t \right) \\
+    G'\left( x,t \right) =\int{dx'dt'G\left( x-x',t-t' \right) f\left( x',t' \right)}
+\end{gather*}
+$$
+
+Notes:
+
+1. This is **THE** mathematical meaning of a "Green function"
+2. In physics, the meaning and usage of "Green functions" and "propagator" are kind of messed up
+3. As discussed in "level 2", when we say "Green function" in our context we really refer to some correlation function
+
+When does such an inhomogeneous equation show up? Imagine a perturbation to the system:
+
+$$
+\begin{gather*}
+    \hat{H}=\hat{H}_0+\hat{V}\\
+    \left( i\hbar \partial _t-\hat{H} \right) |\Psi \rangle =0\\
+    \left( i\hbar \partial _t-\hat{H}_0 \right) |\Psi \rangle =\hat{V}|\Psi \rangle
+\end{gather*}
+$$
+
+An "inhomogeneous" equation "solved" by the bare Green's function!
+
+Of course, the true story is (much) more complicated than that. Anyway this suggests the bare Green functions from the starting point for solving the perturbed system. This is the general theme of pertubative quantum many-body theory.
+
+## Free phonons
+
+So, we have started our "many-body" course with exactly one particle in a harmonic trap. Let's now see how we can build from there and go to a "many-body" setup. We set $\hbar=1$ from now on.
+
+Note: this will be a review for those of you who have taken solid state / quantum statatics mechanics.
+
+Consider a collection of atoms, with their real-space coordinates denoted by $\vec{R}_i;i=1,\cdots,V;V\propto \text{volume}$. The atoms will have some mutual repulsion / attraction, and we suppose they have a collective elastic energy $\mathcal{V}$. The physical origin of all these energy can be complicated, e.g., maybe it contains electronic contribution (since the electronic ground state energy would depend on the atom locations). We don't worry about the "microscopic" details here. Instead, let's just suppose a stable minimum energy configuration exists, and we study the deviation from the equilibrium.
+
+$$
+\begin{gather*}
+    \vec{R}_i=\vec{R}_{i}^{\circ}+\vec{u}_i\\
+    \mathcal{V} \left( \left\{ \vec{R}_i \right\} \right) \approx \mathcal{V} \left( \left\{ \vec{R}_{i}^{\circ} \right\} \right) +\frac{1}{2}\sum_{i,j,\alpha ,\beta}{\frac{\partial ^2\mathcal{V}}{\partial R_{i}^{\alpha}\partial R_{j}^{\beta}}u_{i}^{\alpha}u_{j}^{\beta}}+O\left( u^3 \right)
+\end{gather*}
+$$
+
+The index $alpha,\beta$ go through $1,\cdots,d$.
+
+Note: terms linear in $u$ vanish at equilibrium.
+
+Now, we can go quantum mechanical. The Hamiltonian is
+
+$$ \hat{H}=\sum_{i,\alpha}{\frac{\hat{p}_{i}^{\alpha 2}}{2m_i}}+\frac{1}{2}\sum_{i,j,\alpha ,\beta}{\hat{u}_{i}^{\alpha}\left( \frac{\partial ^2\mathcal{V}}{\partial R_{i}^{\alpha}\partial R_{j}^{\beta}} \right) \hat{u}_{j}^{\beta}}$$
+
+Here $\hat{p}_i^\alpha$ and $\hat{u}_i^\alpha$ are conjugate variables $\left[ \hat{u}_{i}^{\alpha},\hat{p}_{j}^{\beta} \right] =i\delta_{\alpha \beta}\delta_{ij}$. The masses $m_i$ could be different for different $i$. Let's first rescale
+
+$$ \hat{\pi}_{i}^{\alpha}=\frac{\hat{p}_{i}^{\alpha}}{\sqrt{m_i}};\quad \hat{\phi}_{i}^{\alpha}=\hat{u}_{i}^{\alpha}\sqrt{m_i} $$
+
+which preserves the cannonical commutation relation
+
+$$ \left[ \hat{\phi}_{i}^{\alpha},\hat{\pi}_{j}^{\beta} \right] =i\delta _{\alpha \beta}\delta _{ij}$$
+
+Define
+
+$$ D_{ij}^{\alpha \beta}=\frac{1}{\sqrt{m_im_j}}\frac{\partial ^2\mathcal{V}}{\partial R_{i}^{\alpha}\partial R_{j}^{\beta}}$$
+
+which is called the "dynamical matrix"
+
+$$ \hat{H}=\frac{1}{2}\sum_{i,\alpha}{\hat{\pi}_{i}^{\alpha 2}}+\frac{1}{2}\sum_{i,j,\alpha ,\beta}{\hat{\phi}_{i}^{\alpha}D_{ij}^{\alpha \beta}\hat{\phi}_{j}^{\beta}}$$
+
+such a Hamiltonian can be solved by diagonalizing the dynamical matrix, which is real symmetric (and hense unitary). I.e., there exists an orthogonal matrix $O$
+
+$$ ODO^T=\mathrm{diag}\left\{ \left( \omega _{1}^{1} \right) ^2,\left( \omega _{1}^{2} \right) ^2,\left( \omega _{2}^{3} \right) ^2,\left( \omega _{2}^{1} \right) ^2,\left( \omega _{2}^{2} \right) ^2,\left( \omega _{2}^{3} \right) ^2,\cdots ,\left( \omega _{V}^{3} \right) ^2 \right\} $$
+
+here, we have used the stability assumption to write the eigenvalues as $\omega_i^2\geq 0$. This is a "one-particle" diagonalization: we have so far only considered the dynamical matrix of size $d\cdot V$. But as is typical for such non-interacting problem, it's basically the same as solving the "many-body" problem. To see why, let's first transform the operators by the matrix
+
+$$ \hat{\Pi}_{i}^{\alpha}=O_{ij}^{\alpha \beta}\hat{\pi}_{j}^{\beta},\quad \hat{\Phi}_{i}^{\alpha}=O_{ij}^{\alpha \beta}\hat{\phi}_{j}^{\beta}$$
+
+where repeated indices are summed.

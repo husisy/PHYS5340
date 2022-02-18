@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec01 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="lec02" href="lec02.html" />
+    <link rel="prev" title="Welcome to PHYS5340" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec01.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flec01.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#qho">
+   QHO
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#coherent-state">
+   coherent state
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec01</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#qho">
+   QHO
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#coherent-state">
+   coherent state
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec01">
+<h1>lec01<a class="headerlink" href="#lec01" title="Permalink to this headline">¶</a></h1>
+<p><em>TODO</em> before the lectures note, there are some content are from slides</p>
+<p>topics</p>
+<ol class="simple">
+<li><p>quantum harmonic oscillator</p></li>
+<li><p>creation and annihilation operators</p></li>
+<li><p>Fock space</p></li>
+<li><p>real space wave functions</p></li>
+<li><p>coherent state</p></li>
+<li><p>propagator</p></li>
+</ol>
+<p>goals</p>
+<ol class="simple">
+<li><p>QM warm-up</p></li>
+<li><p>do some Gaussian integrals</p></li>
+<li><p>change some basis</p></li>
+</ol>
+<div class="section" id="qho">
+<h2>QHO<a class="headerlink" href="#qho" title="Permalink to this headline">¶</a></h2>
+<p>As a warm-up, consider the QHO in one-dimension.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gather*}
+    \hat{H}=\frac{\hat{p}^2}{2m}+\frac{1}{2}m\omega ^2\hat{x}^2 \\
+    \left[ \hat{x},\hat{p} \right] =i\hbar \\
+\end{gather*}
+\end{split}\]</div>
+<p>in position basis, <span class="math notranslate nohighlight">\(\hat{p}=-i\hbar \partial _x\)</span>. check</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \left[ \hat{x},\hat{p} \right] f\left( x \right) &amp;=-i\hbar x\partial _xf+i\hbar \partial _x\left( xf \right) \\
+    &amp;=-i\hbar x\partial _xf+i\hbar f+i\hbar x\partial _xf\\
+    &amp;=i\hbar f
+\end{align*}
+\end{split}\]</div>
+<p>In position basis, the eigenvalues satisfy</p>
+<div class="math notranslate nohighlight">
+\[ -\frac{\hbar ^2}{2m}\partial _{x}^{2}\phi \left( x \right) +\frac{1}{2}m\omega ^2x^2\phi \left( x \right) =E\phi \left( x \right) \]</div>
+<p>We can, however, solve it algebraically (without going to the position basis). First, let’s adopt some dimensionless coordinates. We know <span class="math notranslate nohighlight">\([\hat{H}]=[\hbar\omega]\)</span>; write</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\frac{\hbar \omega}{2}\left( \frac{m\omega}{\hbar}\hat{x}^2+\frac{1}{m\hbar \omega}\hat{p}^2 \right) \]</div>
+<p>Define</p>
+<div class="math notranslate nohighlight">
+\[ \hat{X}=\sqrt{\frac{m\omega}{\hbar}}\hat{x},\quad \hat{P}=\frac{1}{\sqrt{m\hbar \omega}}\hat{p} \]</div>
+<p>Then</p>
+<div class="math notranslate nohighlight">
+\[ \left[ \hat{X},\hat{P} \right] =\sqrt{\frac{m\omega}{\hbar}}\frac{1}{\sqrt{m\hbar \omega}}\left[ \hat{x},\hat{p} \right] =i \]</div>
+<p>Let’s now define</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}^{\dagger}=\frac{1}{\sqrt{2}}\left( \hat{X}-i\hat{P} \right) ,\quad \hat{a}=\frac{1}{\sqrt{2}}\left( \hat{X}+i\hat{P} \right) \]</div>
+<p>which gives</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gather*}
+    \hat{a}^{\dagger}\hat{a}=\frac{1}{2}\left( \hat{X}-i\hat{P} \right) \left( \hat{X}+i\hat{P} \right) =\frac{1}{2}\left( \hat{X}^2+\hat{P}^2+i\left[ \hat{X},\hat{P} \right] \right) \\
+    \hat{H}=\frac{\hbar \omega}{2}\left( \hat{X}^2+\hat{P}^2 \right) =\hbar \omega \left( \hat{a}^{\dagger}\hat{a}+\frac{1}{2} \right)
+\end{gather*}
+\end{split}\]</div>
+<p>This gives a convenient way to construct the spectrum. First, check</p>
+<div class="math notranslate nohighlight">
+\[ \left[ \hat{a},\hat{a}^{\dagger} \right] =\frac{1}{2}\left[ \hat{X}+i\hat{P},\hat{X}-i\hat{P} \right] =\frac{1}{2}i\left[ \hat{P},\hat{X} \right] -\frac{1}{2}i\left[ \hat{X},\hat{P} \right] =1 \]</div>
+<p>So, if <span class="math notranslate nohighlight">\(\hat{H}|E\rangle =E|E\rangle\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{H}\left( \hat{a}^{\dagger}|E\rangle \right) &amp;=\hbar \omega \left( \hat{a}^{\dagger}\hat{a}+\frac{1}{2} \right) \hat{a}^{\dagger}|E\rangle \\
+    &amp;=\hbar \omega \left( \hat{a}^{\dagger}\hat{a}\hat{a}^{\dagger}+\frac{1}{2}\hat{a}^{\dagger} \right) |E\rangle \\
+    &amp;=\hbar \omega \left( \hat{a}^{\dagger 2}\hat{a}+\hat{a}^{\dagger}+\frac{1}{2}\hat{a}^{\dagger} \right) |E\rangle \\
+    &amp;=\hat{a}^{\dagger}\left( \hat{H}+\hbar \omega \right) |E\rangle \\
+    &amp;=\hat{a}^{\dagger}\left( E+\hbar \omega \right) |E\rangle \\
+    &amp;=\left( E+\hbar \omega \right) \left( \hat{a}^{\dagger}|E\rangle \right)
+\end{align*}
+\end{split}\]</div>
+<p>which means <span class="math notranslate nohighlight">\(\hat{a}^{\dagger}|E\rangle\)</span> is another eigenstate with energy <span class="math notranslate nohighlight">\(E+\hbar\omega\)</span>. This relates the different eigenstates. We just need to find the ground state. Since</p>
+<div class="math notranslate nohighlight">
+\[ \langle \phi |\hat{a}^{\dagger}\hat{a}|\phi \rangle =\left\| \hat{a}|\phi \rangle \right\| ^2\ge 0,\quad \forall |\phi \rangle \]</div>
+<p>If <span class="math notranslate nohighlight">\(\hat{a}\)</span> has a null vector, then it will be the ground state. Let’s just posit such a state exist, i.e.,</p>
+<div class="math notranslate nohighlight">
+\[ \exists |0\rangle \quad \mathrm{s}.\mathrm{t}.\quad \hat{a}|0\rangle =0\]</div>
+<p>Then the eigen spectrum is given by</p>
+<div class="math notranslate nohighlight">
+\[ \left\{ |n\rangle ;E_n=\hbar \omega \left( n+\frac{1}{2} \right) \right\} \]</div>
+<p>We can also find the matrix elements of <span class="math notranslate nohighlight">\(\hat{a},\hat{a}\)</span> in this eigen basis. Recall</p>
+<div class="math notranslate nohighlight">
+\[ |n+1\rangle =\mathcal{N} \hat{a}^{\dagger}|n\rangle \]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathcal{N}\in\mathbb{R}^+\)</span> is the normalization factor. Also, from the preceding discussion we have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}^{\dagger}\hat{a}|n\rangle =n|n\rangle \]</div>
+<p>The normalization is then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    1=\langle n+1|n+1\rangle &amp;=\mathcal{N} ^2\langle n|\hat{a}\hat{a}^{\dagger}|n\rangle \\
+    &amp;=\mathcal{N} ^2\langle n|\left( \hat{a}^{\dagger}\hat{a}+1 \right) |n\rangle \\
+    &amp;=\left( n+1 \right) \mathcal{N} ^2
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{a}^{\dagger}|n\rangle =\sqrt{n+1}|n+1\rangle \]</div>
+<p>similar argument gives <span class="math notranslate nohighlight">\(\hat{a}|n\rangle =\sqrt{n}|n-1\rangle\)</span>. In a matrix picture.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \hat{a}^\dagger=\left[ \begin{matrix}{l}
+  0&amp;    &amp;    &amp;    &amp;    \\
+  1&amp;    0&amp;    &amp;    &amp;    \\
+  &amp;    \sqrt{2}&amp;    0&amp;    &amp;    \\
+  &amp;    &amp;    \sqrt{3}&amp;    0&amp;    \\
+  &amp;    &amp;    &amp;    \ddots&amp;    \ddots\\
+\end{matrix} \right] ,\quad \hat{a}=\left[ \begin{matrix}{l}
+  0&amp;    1&amp;    &amp;    &amp;    \\
+  &amp;    0&amp;    \sqrt{2}&amp;    &amp;    \\
+  &amp;    &amp;    0&amp;    \sqrt{3}&amp;    \\
+  &amp;    &amp;    &amp;    0&amp;    \ddots\\
+  &amp;    &amp;    &amp;    &amp;    \ddots\\
+\end{matrix} \right] \end{split}\]</div>
+<p>This is a “number” basis. We call it the Fock space. It’s separable (but infinite dimensional). We are only left with showing <span class="math notranslate nohighlight">\(\hat{a}|0\rangle =0\)</span> <em>{TODO-UNKNOWN-WORD}</em> solution. To do so, let’s go back to the position basis. Recall</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}=\frac{1}{\sqrt{2}}\left( \hat{X}+i\hat{P} \right) =\frac{1}{\sqrt{2}}\left( X+i\left( -i\frac{\partial}{\partial X} \right) \right) =\frac{1}{\sqrt{2}}\left( X+\frac{\partial}{\partial X} \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{a}|\phi _0\rangle =0 \]</div>
+<div class="math notranslate nohighlight">
+\[ \left( X+\frac{\partial}{\partial X} \right) \phi _0\left( X \right) =0 \]</div>
+<div class="math notranslate nohighlight">
+\[ \int{\frac{d\phi _0\left( X \right)}{\phi _0\left( X \right)}}=-\int{XdX}\]</div>
+<div class="math notranslate nohighlight">
+\[ \phi _0\left( X \right) =\mathcal{N} e^{-X^2/2}\]</div>
+<p>Which is a Gaussian. Recall <span class="math notranslate nohighlight">\(X=\sqrt{\frac{m\omega}{\hbar}}x\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[ \phi _0\left( x \right) =\mathcal{N} e^{-m\omega x^2/\left( 2\hbar \right)} \]</div>
+<p>To get the normalization,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    1&amp;=\int_{-\infty}^{\infty}{\left| \phi _0\left( x \right) \right|}dx=\mathcal{N} ^2\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}dx}\\
+    &amp;=\mathcal{N} ^2\sqrt{\frac{\hbar}{2m\omega}}\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}\exp \left( -\left( \sqrt{\frac{\hbar}{2m\omega}}x \right) ^2/2 \right) d\left( \sqrt{\frac{\hbar}{2m\omega}}x \right)}\\
+    &amp;=\mathcal{N} ^2\sqrt{\frac{\hbar}{2m\omega}}\sqrt{2\pi}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \mathcal{N} =\left( \frac{m\omega}{\pi \hbar} \right) ^{1/4} \]</div>
+<div class="math notranslate nohighlight">
+\[ \phi _0\left( x \right) =\left( \frac{m\omega}{\pi \hbar} \right) ^{1/4}e^{-m\omega x^2/\left( 2\hbar \right)} \]</div>
+<p>Side note: Gaussian integration</p>
+<div class="math notranslate nohighlight">
+\[ \int_{-\infty}^{\infty}{e^{-ax^2/2}dx}=\sqrt{\frac{2\pi}{a}},\quad a&gt;0 \]</div>
+<p>A standard discussion will next introduce the real-space wave function of the excited states through the Hermite polynomial. Let’s try to avoid that!</p>
+</div>
+<div class="section" id="coherent-state">
+<h2>coherent state<a class="headerlink" href="#coherent-state" title="Permalink to this headline">¶</a></h2>
+<p>We have seen that the creation and annihilation operatos provides a simple way to analyze the QHO. Let’s now take these as the “coordinates” for our problem. Recall position basis <span class="math notranslate nohighlight">\(\hat{x}|x\rangle =x|x\rangle\)</span>. Similarly, we consider the eigenstates of the form</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}|\alpha \rangle =\alpha |\alpha \rangle ;\quad \alpha \in \mathbb{C} \]</div>
+<p>E.g., The ground state <span class="math notranslate nohighlight">\(\hat{a}|0\rangle =0|0\rangle =0\)</span>. To solve for the eigenstate, write</p>
+<div class="math notranslate nohighlight">
+\[ |\alpha \rangle =\sum_{n=0}{C_n\left( \alpha \right) |n\rangle}\]</div>
+<p>Then,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{a}|\alpha \rangle &amp;=\sum_{n=0}{C_n\left( \alpha \right) \hat{a}|n\rangle}\\
+    &amp;=\sum_{n=0}{C_n\left( \alpha \right) \sqrt{n}|n-1\rangle}\\
+    &amp;=\sum_{n=0}{C_{n+1}\left( \alpha \right) \sqrt{n+1}|n\rangle}\\
+\end{align*}
+\end{split}\]</div>
+<p>versus</p>
+<div class="math notranslate nohighlight">
+\[ \alpha |\alpha \rangle =\sum_{n=0}{C_n\left( \alpha \right) \alpha |n\rangle}\]</div>
+<p>we conclude</p>
+<div class="math notranslate nohighlight">
+\[ C_{n+1}\left( \alpha \right) =\frac{\alpha C_n\left( \alpha \right)}{\sqrt{n+1}}=\frac{\alpha ^2C_{n-1}\left( \alpha \right)}{\sqrt{\left( n+1 \right) n}}=\cdots =\frac{\alpha ^{n+1}C_0\left( \alpha \right)}{\sqrt{\left( n+1 \right) !}} \]</div>
+<p>Note: <span class="math notranslate nohighlight">\(|\alpha\rangle\)</span> is a superposition of <span class="math notranslate nohighlight">\(\{|n\rangle\}\)</span>. It’s not an energy eigenstate (unless <span class="math notranslate nohighlight">\(\alpha=0\)</span>).</p>
+<p>We have</p>
+<div class="math notranslate nohighlight">
+\[ |\alpha \rangle =C_0\left( \alpha \right) \sum_{n=0}{\frac{\alpha ^n}{\sqrt{n!}}|n\rangle}\]</div>
+<p>Normalization:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    1&amp;=\langle \alpha |\alpha \rangle =\left| C_0\left( \alpha \right) \right|^2\sum_{m,n=0}{\frac{\left( \alpha ^* \right) ^m\alpha ^n}{\sqrt{m!}\sqrt{n!}}\langle m|n\rangle}\\
+    &amp;=\left| C_0\left( \alpha \right) \right|^2\sum_{m=0}{\frac{\left| \alpha \right|^{2m}}{m!}}\\
+    &amp;=\left| C_0\left( \alpha \right) \right|^2e^{\left| \alpha \right|^2}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ C_0\left( \alpha \right) =e^{-\left| \alpha \right|^2/2}\]</div>
+<div class="math notranslate nohighlight">
+\[ |\alpha \rangle =e^{-\left| \alpha \right|^2/2}\sum_{n=0}{\frac{\alpha ^n}{\sqrt{n!}}|n\rangle}\]</div>
+<p>This looks almost like the exponential! Recall</p>
+<div class="math notranslate nohighlight">
+\[ |n\rangle =\frac{\hat{a}^{\dagger}}{\sqrt{n}}|n-1\rangle =\frac{\hat{a}^{\dagger 2}}{\sqrt{n\left( n-1 \right)}}|n-2\rangle =\cdots =\frac{\hat{a}^{\dagger n}}{\sqrt{n!}}|0\rangle \]</div>
+<p>So,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    |\alpha \rangle &amp;=e^{-\left| \alpha \right|^2/2}\sum_{n=0}{\frac{\alpha ^n\hat{a}^{\dagger n}}{\sqrt{n!}\sqrt{n!}}|0\rangle}\\
+    &amp;=e^{-\left| \alpha \right|^2/2}e^{\alpha \hat{a}^{\dagger}}|0\rangle
+\end{align*}
+\end{split}\]</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Welcome to PHYS5340</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="lec02.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">lec02</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By auther<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

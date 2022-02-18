@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec04 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="test jupyterbook feature" href="test.html" />
+    <link rel="prev" title="lec03" href="lec03.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test jupyterbook feature
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec04.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flec04.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#particle-statistics">
+   particle statistics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#localized-electrons">
+   Localized electrons
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#one-particle-green-s-function-and-spectral-lehmann-representation">
+   One-particle Green’s function and spectral Lehmann representation
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec04</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#particle-statistics">
+   particle statistics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#localized-electrons">
+   Localized electrons
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#one-particle-green-s-function-and-spectral-lehmann-representation">
+   One-particle Green’s function and spectral Lehmann representation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec04">
+<h1>lec04<a class="headerlink" href="#lec04" title="Permalink to this headline">¶</a></h1>
+<p>202200216</p>
+<p>topics</p>
+<ol class="simple">
+<li><p>particle statistics</p></li>
+<li><p>localized electrons</p></li>
+<li><p>Heisenberg picture</p></li>
+<li><p>Green’s and spectral functions: a primer</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>relate particle statistics to (anti-)commutation of second quantized operators</p></li>
+<li><p>sharpening connection of Green’s functions vs excitations</p></li>
+</ol>
+<p>Reminder: PS1 due coming Fri <span class="math notranslate nohighlight">\(1:30\text{pm}-\varepsilon\)</span></p>
+<div class="section" id="particle-statistics">
+<h2>particle statistics<a class="headerlink" href="#particle-statistics" title="Permalink to this headline">¶</a></h2>
+<p>We have mentioned on and off that phonon problem iis a bosonic one. Recall from QM that boson vs fermion is a question about particle exchange statistics. In the so-called “first quantized” wave function, a two-particle wave function dependss on two coordinate variables</p>
+<div class="math notranslate nohighlight">
+\[ \Psi \left( x_1,x_2 \right) =\langle x_1,x_2|\Psi \rangle \]</div>
+<p>“Particle statistics” refers to what happen if we decide to relabel the two indistinguishable particles</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \Psi \left( x_1,x_2 \right) =\begin{cases}
+    \Psi \left( x_2,x_1 \right) ;\quad \mathrm{boson}\\
+    -\Psi \left( x_2,x_1 \right) ;\quad \mathrm{fermion}\\
+\end{cases}\end{split}\]</div>
+<p>Generalization to an <span class="math notranslate nohighlight">\(N\)</span>-particle state is similar, noticing any permutation is a product of pair-wise exchanges. For our purpose, we just assert without any justification that one can relate the state with one boson at <span class="math notranslate nohighlight">\(x_1\)</span> and one at <span class="math notranslate nohighlight">\(x_2\)</span> can be identified with</p>
+<div class="math notranslate nohighlight">
+\[ |x_1,x_2\rangle =\hat{b}_{x_1}^{\dagger}\hat{b}_{x_2}^{\dagger}|0\rangle \]</div>
+<p>where <span class="math notranslate nohighlight">\(\hat{b}^\dagger\)</span> is the creation operator we have written down countless time already from QHO. In essence, we associate to each point <span class="math notranslate nohighlight">\(x\)</span> in space a QHO. The vacuum <span class="math notranslate nohighlight">\(|0\rangle\)</span> is then the joint vacuum of all these QHO’s.</p>
+<p>Notes:</p>
+<ol class="simple">
+<li><p>but (if) space is continuous, then we have uncountably many QHO’s even in a finite volume of space! That sounds sick. That is sick. But that’s okay.</p></li>
+<li><p>We have implicitly promoted the single-particle wave function <span class="math notranslate nohighlight">\(\delta(x)\)</span> to an operator <span class="math notranslate nohighlight">\(\hat{b}_x^\dagger\)</span>. That’s why this is called “second quantization”.</p></li>
+<li><p>implicitly, we have defined an object which maps space to quantum operators: <span class="math notranslate nohighlight">\(\vec{r}\to \hat{b}_x^\dagger\)</span>. Such maps are called “fields”. (E.g., think about electric field <span class="math notranslate nohighlight">\(\vec{r}\to \vec{E_{\vec{r}}}\)</span>. Our fields here are quantum mechanical in that they do not have simple point-wise multiplication but instead cannonical commutation). Whence the name “QFT”</p></li>
+</ol>
+<p>Now, back to particle statistics. We have, for bosons,</p>
+<div class="math notranslate nohighlight">
+\[ \Psi _B\left( x_1,x_2 \right) =\langle 0|\hat{b}_{x_1}^{\dagger}\hat{b}_{x_2}^{\dagger}|0\rangle =\langle 0|\hat{b}_{x_2}^{\dagger}\hat{b}_{x_1}^{\dagger}|0\rangle =\Psi _B\left( x_2,x_1 \right) \]</div>
+<p>So the exchange sign of <span class="math notranslate nohighlight">\(+1\)</span> is really the commutation of among the creation(annihilation) operators. It is then natural to guess what should happen for fermions:</p>
+<div class="math notranslate nohighlight">
+\[ \Psi _F\left( x_1,x_2 \right) =\langle 0|\hat{c}_{x_1}^{\dagger}\hat{c}_{x_2}^{\dagger}|0\rangle =-\langle 0|\hat{c}_{x_2}^{\dagger}\hat{c}_{x_1}^{\dagger}|0\rangle =\Psi _F\left( x_2,x_1 \right)  \]</div>
+<p>This implies the fermionic creation and annihilation operators should satisfy cannonical anti-commutation relations. Let <span class="math notranslate nohighlight">\(\{\hat{A},\hat{B}\}=\hat{A}\hat{B}+\hat{B}\hat{A}\)</span>. For fermions</p>
+<div class="math notranslate nohighlight">
+\[ \left\{ \hat{c}_x,\hat{c}_y \right\} =\left\{ \hat{c}_{x}^{\dagger},\hat{c}_{y}^{\dagger} \right\} =0 \]</div>
+<div class="math notranslate nohighlight">
+\[ \left\{ \hat{c}_{x}^{\dagger},\hat{c}_y \right\} =\delta \left( x-y \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \left\{ \hat{c}_x,\hat{c}_x \right\} =\left\{ \hat{c}_{x}^{\dagger},\hat{c}_{x}^{\dagger} \right\} =0\quad \Rightarrow \quad \hat{c}_{x}^{2}=\hat{c}_{x}^{\dagger 2}=0\]</div>
+<p>Note: we take these as the practical definition for the “second-quantized” operators. One can also do it in the traditional way of making very explicit connections to the Hilbert space of symmetrized / anti-symmetrized wave functions. Schematically,</p>
+<p><img alt="lec04-fig00" src="_images/lec04-fig00.png" /></p>
+<p>The “first quantized” description focus on each particle sector individually. The “second quantized” description focus on how to relate the different sectors. In particular, we have a natural relation between the ground state and a state in the <span class="math notranslate nohighlight">\(n\)</span>-particle sector. Consider putting <span class="math notranslate nohighlight">\(n\)</span> particles (bosons or fermions) into <span class="math notranslate nohighlight">\(n\)</span> “orbitals” <span class="math notranslate nohighlight">\(\phi_1,\phi_2,\cdots,\phi_n\)</span></p>
+<div class="math notranslate nohighlight">
+\[ \Phi _{x_1,x_2,\cdots ,x_n}^{\phi _1,\phi _2,\cdots ,\phi _n}\xrightarrow{\mathrm{sym}}\hat{b}_{\phi _1}^{\dagger}\hat{b}_{\phi _2}^{\dagger}\cdots \hat{b}_{\phi _n}^{\dagger}|0\rangle \quad \mathrm{bosons}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Phi _{x_1,x_2,\cdots ,x_n}^{\phi _1,\phi _2,\cdots ,\phi _n}\xrightarrow{\mathrm{anti}-\mathrm{sym}}\hat{c}_{\phi _1}^{\dagger}\hat{c}_{\phi _2}^{\dagger}\cdots \hat{c}_{\phi _n}^{\dagger}|0\rangle \quad \mathrm{fermions}\]</div>
+<p>where we assume the “orbitals” are distinct and orthogonal. (i.e., we are considering a cannonical transformation on the defining modes of the system).</p>
+<p>The above is rather schematic. In practice there are some factors of <span class="math notranslate nohighlight">\(\sqrt{n!}\)</span> etc. if one wants to relate first and second quantization. We won’t cover that here (usually covered in advanced QM), see e.g. Coleman Chapter-3 for more details.</p>
+<p>Final note: so is QHO bosonic?</p>
+<p><strong>It depends</strong>. IF you have exactly one particle, there is no exchange and hense no statistics. If you have multple particles, then the statistics is an “intrinsic” aspect of the problem in the sense that it defines the many-body Hilbert space, whereas being a QHO is “kinematic” in the sense that it’s just characterizing the Hamiltonian acting on the Hilbert space. E.g.,</p>
+<ol class="simple">
+<li><p>Phonons: the momenta and displacements of different atoms commute, so we have a bosonic problem to start with. In the “harmonic approximation” we have a collection of coupled QHO</p></li>
+<li><p>Electronic quantum Hall: we have fermions to start with, but the B-field enters the single particle problem as a spatially varying gauge field. That also leads to the QHO Hamiltonian for the single particle problem. But now the raising / lowering operators act between different <strong>fermionic</strong> modes that could be empty or filled</p></li>
+</ol>
+<p>P.S. We can certainly have bosonic operators in a fermionic Hilbert space: combining an even number of fermionic operators leads to bosonic ones. For those of you have prefer a math-oriented language, the operator algebra is <span class="math notranslate nohighlight">\(Z_2\)</span>-graded and we have even=bosonic and odd=fermionic.</p>
+<p>P.P.S. We can even have effectively fermionic operators in a bosonic Hilbert space. That’s the wonder of topological order…</p>
+</div>
+<div class="section" id="localized-electrons">
+<h2>Localized electrons<a class="headerlink" href="#localized-electrons" title="Permalink to this headline">¶</a></h2>
+<p>Let us now consider our very first electronic problem. Consider as a warm-up an electronic Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{H}=&amp;\varepsilon \left( \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}+\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow} \right) \quad \mathrm{many body}\\
+    &amp;=\left( \hat{c}_{\uparrow}^{\dagger},\hat{c}_{\downarrow}^{\dagger} \right) \left( \begin{matrix}
+        0&amp;  \varepsilon\\
+        \varepsilon&amp;  0\\
+    \end{matrix} \right) \left( \hat{c}_{\uparrow},\hat{c}_{\downarrow} \right) \quad \mathrm{single particle}\\
+\end{align*}
+\end{split}\]</div>
+<p>Let’s consider writing out the matrix elements in the Fock space</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}|0\rangle =\varepsilon \left( \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}+\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow} \right) |0\rangle =0\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{H}\hat{c}_{\uparrow}^{\dagger}|0\rangle &amp;=\varepsilon \left( \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}+\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow} \right) \hat{c}_{\uparrow}^{\dagger}|0\rangle \\
+    &amp;=\varepsilon \left( \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}\hat{c}_{\uparrow}^{\dagger}+\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow}\hat{c}_{\uparrow}^{\dagger} \right) |0\rangle \\
+    &amp;=\varepsilon \left( -\hat{c}_{\uparrow}^{\dagger}\hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}+\hat{c}_{\downarrow}^{\dagger}\left( 1-\hat{c}_{\uparrow}^{\dagger}\hat{c}_{\uparrow} \right) \right) |0\rangle \\
+    &amp;=\varepsilon \left( 0+\hat{c}_{\downarrow}^{\dagger}-\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow}^{\dagger}\hat{c}_{\uparrow} \right) |0\rangle \\
+    &amp;=\varepsilon \left( 0+\hat{c}_{\downarrow}^{\dagger}-0 \right) |0\rangle \\
+    &amp;=\varepsilon \hat{c}_{\downarrow}^{\dagger}|0\rangle
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{H}\hat{c}_{\downarrow}^{\dagger}|0\rangle =\varepsilon \left( \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}+\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow} \right) \hat{c}_{\downarrow}^{\dagger}|0\rangle =\varepsilon \hat{c}_{\uparrow}^{\dagger}|0\rangle \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{H}\hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}^{\dagger}|0\rangle =\varepsilon \left( \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}+\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow} \right) \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}^{\dagger}|0\rangle =0 \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} \hat{H}=\left( \begin{matrix}
+  0&amp;    0&amp;    0&amp;    0\\
+  0&amp;    0&amp;    \varepsilon&amp;    0\\
+  0&amp;    \varepsilon&amp;    0&amp;    0\\
+  0&amp;    0&amp;    0&amp;    0\\
+\end{matrix} \right) \end{split}\]</div>
+<p>in the basis <span class="math notranslate nohighlight">\(\left\{ |0\rangle ,\hat{c}_{\uparrow}^{\dagger}|0\rangle ,\hat{c}_{\downarrow}^{\dagger}|0\rangle ,\hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}^{\dagger}|0\rangle \right\}\)</span> (<span class="math notranslate nohighlight">\(\left\{ \hat{c}_{\uparrow}^{\dagger}|0\rangle ,\hat{c}_{\downarrow}^{\dagger}|0\rangle \right\}\)</span> is single-particle basis). We know the single-particle eigenstates are</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \varepsilon \left( \begin{matrix}
+  0&amp;    1\\
+  1&amp;    0\\
+\end{matrix} \right) \left( \begin{array}{c}
+  1\\
+  \pm 1\\
+\end{array} \right) =\pm \varepsilon \left( \begin{array}{c}
+  1\\
+  \pm 1\\
+\end{array} \right)\end{split}\]</div>
+<p>It is natural to “rotate” in the eigenbasis</p>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_{+}^{\dagger}=\frac{1}{\sqrt{2}}\left( \hat{c}_{\uparrow}^{\dagger}+\hat{c}_{\downarrow}^{\dagger} \right) ,\quad \hat{c}_{-}^{\dagger}=\frac{1}{\sqrt{2}}\left( \hat{c}_{\uparrow}^{\dagger}-\hat{c}_{\downarrow}^{\dagger} \right) \]</div>
+<p>we may check</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{cases}
+  \left\{ \hat{c}_{\pm}^{\dagger},\hat{c}_{\pm} \right\} =\frac{1}{2}\left\{ \hat{c}_{\uparrow}^{\dagger}\pm \hat{c}_{\downarrow}^{\dagger},\hat{c}_{\uparrow}\pm \hat{c}_{\downarrow} \right\} =\frac{1}{2}\left( 1\pm 0\pm 0+1 \right) =1\\
+  \left\{ \hat{c}_{+}^{\dagger},\hat{c}_- \right\} =\frac{1}{2}\left\{ \hat{c}_{\uparrow}^{\dagger}+\hat{c}_{\downarrow}^{\dagger},\hat{c}_{\uparrow}-\hat{c}_{\downarrow} \right\} =\frac{1}{2}\left( 1+0-0-1 \right) =0\\
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} \Rightarrow \begin{cases}
+  \left\{ \hat{c}_{\alpha}^{\dagger},\hat{c}_{\beta} \right\} =\delta _{\alpha \beta}\\
+  \left\{ \hat{c}_{\alpha}^{\dagger},\hat{c}_{\beta}^{\dagger} \right\} =\left\{ \hat{c}_{\alpha},\hat{c}_{\beta} \right\} =0\\
+\end{cases}\end{split}\]</div>
+<p>Using which we have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\varepsilon \hat{c}_{+}^{\dagger}\hat{c}_+-\varepsilon \hat{c}_{-}^{\dagger}\hat{c}_-\]</div>
+<p>We can schematically draw the spectrum as (<span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>)</p>
+<p><img alt="lec04-fig01" src="_images/lec04-fig01.png" /></p>
+<p>Side note: The calculation above can be readily generalized. Consider some Hamiltonian defined over <span class="math notranslate nohighlight">\(N\)</span> fermionic modes:</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\sum_{\alpha ,\beta =1}^N{\hat{c}_{\alpha}^{\dagger}h_{\alpha \beta}\hat{c}_{\beta}}\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(h\)</span> is a Hermitian matrix and can be diagonalized by a unitary</p>
+<div class="math notranslate nohighlight">
+\[ h_{\alpha \beta}=\sum_i{U_{\alpha i}\varepsilon _i\left( U^{\dagger} \right) _{i\beta}}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{H}&amp;=\sum_i{\left( \sum_{\alpha}{\hat{c}_{\alpha}^{\dagger}}U_{\alpha i} \right) \varepsilon _i\left( \sum_{\beta}{\left( U^{\dagger} \right) _{i\beta}\hat{c}_{\beta}} \right)}\\
+    &amp;=\sum_i{\varepsilon _i\hat{c}_{i}^{\dagger}\hat{c}_i}\quad \mathrm{cannonical transformation}
+\end{align*}
+\end{split}\]</div>
+<p>(c.f. the phonon discusion)</p>
+<p>Back to the two mode problem: this is again an exactly solved problem, which is in a way similar to the QHO / free phonon. We know all the eigenstates and eigen-energies. Yet, it is natural to ask how we can probe the “physics” of the system. Suppose we start with the ground state (<span class="math notranslate nohighlight">\(t&gt;0\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[ |\Omega \rangle =\hat{c}_{-}^{\dagger}|0\rangle =\frac{1}{\sqrt{2}}\left( \hat{c}_{\uparrow}^{\dagger}-\hat{c}_{\downarrow}^{\dagger} \right) |0\rangle \]</div>
+<p>Recall our discussion on propagator / correlation functions / Green’s functions. Let us compare</p>
+<ol class="simple">
+<li><p>create an up electron: <span class="math notranslate nohighlight">\(\hat{c}_\uparrow^\dagger\)</span></p></li>
+<li><p>evolution for time <span class="math notranslate nohighlight">\(t\)</span>: <span class="math notranslate nohighlight">\(e^{-i\hat{H}t}\)</span></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[ e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \quad \mathrm{vs}\quad \hat{c}_{\uparrow}^{\dagger}e^{-i\hat{H}t}|\Omega \rangle \]</div>
+<div class="math notranslate nohighlight">
+\[ \quad G_{\uparrow \uparrow}\left( t \right) =-i\langle \Omega |e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \]</div>
+<p>where <span class="math notranslate nohighlight">\(e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}\)</span> iss the conjugate action of time evolution on an operator. We clained</p>
+<ol class="simple">
+<li><p>Such functions contains important dynamical info about the system</p></li>
+<li><p>It is natural to interpret it as a specific kind of correlation function</p></li>
+</ol>
+<p>Let us now introduce these ideas more systematically</p>
+<p>Heisenberg picture</p>
+<p>So far, we have introduced time evolution of a quantum system through the evolution operator <span class="math notranslate nohighlight">\(\hat{U}=e^{-i\hat{H}t}\)</span>, which satisfies</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{U}=\hat{H}\hat{U}\]</div>
+<p>Implicitly, we know that if a state satisfies the Schrodinger equation</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t|\Psi \left( t \right) \rangle =\hat{H}|\Psi \left( t \right) \rangle \]</div>
+<p>then its time evolution can be expressed simply as</p>
+<div class="math notranslate nohighlight">
+\[ |\Psi \left( t \right) \rangle =\hat{U}|\Psi \left( 0 \right) \rangle =e^{-i\hat{H}t}|\Psi \left( 0 \right) \rangle \]</div>
+<div class="math notranslate nohighlight">
+\[ i\partial _t|\Psi \left( t \right) \rangle =i\partial _t\left( \hat{U}|\Psi \left( 0 \right) \rangle \right) =\left( i\partial _t\hat{U} \right) |\Psi \left( 0 \right) \rangle =\hat{H}\left( \hat{U}|\Psi \left( 0 \right) \rangle \right) =\hat{H}|\Psi \left( t \right) \rangle \]</div>
+<p>Now imagine computing some observables as the state evolves</p>
+<div class="math notranslate nohighlight">
+\[ A\left( t \right) =\langle \Psi \left( t \right) |\hat{A}|\Psi \left( t \right) \rangle =\langle \Psi \left( 0 \right) |\hat{U}^{\dagger}\hat{A}\hat{U}|\Psi \left( 0 \right) \rangle \]</div>
+<p>It’s simply a mater of interpretation to say that the operator is evolving <span class="math notranslate nohighlight">\(\hat{A}\rightarrow \hat{U}^{\dagger}\hat{A}\hat{U}\)</span>, and we compute its expectation value with resepct to a fixed state <span class="math notranslate nohighlight">\(|\Psi\rangle(0)\)</span>. This perspective is called the “Heisenberg picture”.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \mathrm{Schrodinger}\begin{cases}
+  |\Psi \left( 0 \right) \rangle _S\rightarrow |\Psi \left( t \right) \rangle _S=\hat{U}|\Psi \left( 0 \right) \rangle _S\\
+  \hat{A}_S\rightarrow \hat{A}_S\\
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} \mathrm{Heisenberg}\begin{cases}
+  |\Psi \rangle _H\rightarrow |\Psi \rangle _H\\
+  \hat{A}_H\left( 0 \right) \rightarrow \hat{A}_H\left( t \right) =\hat{U}^{\dagger}\hat{A}_H\left( 0 \right) \hat{U}\\
+\end{cases}\end{split}\]</div>
+<p>Here we assume the operator is time-independent in the Schrodinger picture. We can also check explicitly what is the equation governing the time evolution of Heisenberg-picture operators:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    i\partial _t\hat{A}_H\left( t \right) &amp;=i\partial _t\left( \hat{U}^{\dagger}\hat{A}_H\left( 0 \right) \hat{U} \right) \\
+    &amp;=-\hat{H}\hat{A}_H\left( t \right) +\hat{A}_H\left( t \right) \hat{H}\\
+    &amp;=\left[ \hat{A}_H\left( t \right) ,\hat{H} \right]
+\end{align*}
+\end{split}\]</div>
+<p>In fact, nothing in the check above demands that we use the actual Hamiltonian! One can imagine picking a “convenient” part of the actual Hamiltonian in defining the dynamics of the operators. Correspondingly, however, the state vectors are <strong>NOT</strong> static since we are not using the actual Hamiltonian. In this hybrid picture, both the operators and the state evolve. This is called the “interaction picture”; more later.</p>
+<p>Note: for those of you who know quantum optics, think about rotating wave approximation.</p>
+<p>\section{One-particle Green’s function: a first example}</p>
+<p>In the following, we keep the subscript <span class="math notranslate nohighlight">\(S\)</span> vs <span class="math notranslate nohighlight">\(H\)</span> implicit. Whenever we write a time dependence for a noperator, it is understood that we are in the Heisenberg picture.</p>
+<p>Back to our example. Recall we were compairing</p>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_{\uparrow}^{\dagger}e^{-i\hat{H}t}|\Omega \rangle \quad \mathrm{vs}\quad e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\varepsilon \left( \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}+\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow} \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ |\Omega \rangle =\frac{1}{\sqrt{2}}\left( \hat{c}_{\uparrow}^{\dagger}-\hat{c}_{\downarrow}^{\dagger} \right) |0\rangle \]</div>
+<p>In Heisenberg picture, we have defined</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{\uparrow \uparrow}\left( t \right) &amp;=-i\langle \Omega |e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \\
+    &amp;=-i\langle \Omega |\hat{c}_{\uparrow}\left( t \right) \hat{c}_{\uparrow}^{\dagger}\left( 0 \right) |\Omega \rangle
+\end{align*}
+\end{split}\]</div>
+<p>which can be interpreted as a (quantum) auto-correlation function: we create an electron at time <span class="math notranslate nohighlight">\(t=0\)</span>, and then annihilate it at time <span class="math notranslate nohighlight">\(t\)</span>. We are measureing correlation across time. Yet, this is <strong>NOT</strong> by itself a physical observable! We cannot understand it as the expectation vlue of some Hermitian operator. Nevertheless, “unphysical” expressions of such form provides the basis for computing actual observables. As one first check, let us investigate how <span class="math notranslate nohighlight">\(G(t)\)</span> reflects the energy scale of the problem. Noticing</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\varepsilon \hat{c}_{+}^{\dagger}\hat{c}_+-\varepsilon \hat{c}_{-}^{\dagger}\hat{c}_-\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_{\pm}^{\dagger}=\frac{1}{\sqrt{2}}\left( \hat{c}_{\uparrow}^{\dagger}\pm \hat{c}_{\downarrow}^{\dagger} \right) \]</div>
+<p>we first note that time evolution for <span class="math notranslate nohighlight">\(\hat{c}_{\pm}^\dagger\)</span> is simple. In the Heisenberg picture,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    i\partial _t\left( {\color{blue} \hat{c}_{\pm}^{\dagger}\left( t \right) } \right) &amp;=\left[ {\color{blue} \hat{c}_{\pm}^{\dagger}\left( t \right) },\hat{H} \right] \\
+    &amp;=\hat{U}^{\dagger}\left[ {\color{red} \hat{c}_{\pm}^{\dagger}},\pm \varepsilon {\color{red} \hat{c}_{\pm}^{\dagger}\hat{c}_{\pm}} \right] \hat{U}\\
+    &amp;=\hat{U}^{\dagger}\left( \pm \varepsilon {\color{red} \hat{c}_{\pm}^{\dagger}} \right) \left[ {\color{red} \hat{c}_{\pm}^{\dagger}},{\color{red} \hat{c}_{\pm}} \right] \hat{U}\\
+    &amp;=\hat{U}^{\dagger}\left( \pm \varepsilon {\color{red} \hat{c}_{\pm}^{\dagger}} \right) \left( 2{\color{red} \hat{c}_{\pm}^{\dagger}\hat{c}_{\pm}}-1 \right) \hat{U}\\
+    &amp;=\mp \varepsilon {\color{blue} \hat{c}_{\pm}^{\dagger}\left( t \right) }
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ {\color{blue} \hat{c}_{\pm}^{\dagger}\left( t \right) }={\color{blue} \hat{c}_{\pm}^{\dagger}\left( 0 \right) }e^{\pm i\varepsilon t}\]</div>
+<p>With the blue symbols denoting Heisenberg picture and the red symbols Schrodinger picture. Noticing <span class="math notranslate nohighlight">\(\hat{c}_{\uparrow}^{\dagger}\left( t \right) =\frac{1}{\sqrt{2}}\left( \hat{c}_{+}^{\dagger}\left( t \right) +\hat{c}_{-}^{\dagger}\left( t \right) \right)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{\uparrow \uparrow}\left( t \right) &amp;=-i\langle \Omega |\hat{c}_{\uparrow}\left( t \right) \hat{c}_{\uparrow}^{\dagger}\left( 0 \right) |\Omega \rangle \\
+    &amp;=-\frac{i}{2}\langle \Omega |\left( \hat{c}_+\left( t \right) +\hat{c}_-\left( t \right) \right) \left( \hat{c}_{+}^{\dagger}\left( 0 \right) +\hat{c}_{-}^{\dagger}\left( 0 \right) \right) |\Omega \rangle \\
+    &amp;=-\frac{i}{2}\langle 0|\hat{c}_-\left( \hat{c}_+e^{-i\varepsilon t}+\hat{c}_-e^{i\varepsilon t} \right) \left( \hat{c}_{+}^{\dagger}+\hat{c}_{-}^{\dagger} \right) \hat{c}_{-}^{\dagger}|0\rangle \\
+    &amp;=-\frac{i}{2}\langle 0|\hat{c}_-\hat{c}_+e^{-i\varepsilon t}\hat{c}_{+}^{\dagger}\hat{c}_{-}^{\dagger}|0\rangle \\
+    &amp;=-\frac{i}{2}e^{-i\varepsilon t}\langle 0|\left( 1-\hat{c}_{+}^{\dagger}\hat{c}_+ \right) \left( 1-\hat{c}_{-}^{\dagger}\hat{c}_- \right) |0\rangle \\
+    &amp;=-\frac{i}{2}e^{-i\varepsilon t}
+\end{align*}
+\end{split}\]</div>
+<p>How to interpret this?</p>
+<p><img alt="lec04-fig02" src="_images/lec04-fig02.png" /></p>
+</div>
+<div class="section" id="one-particle-green-s-function-and-spectral-lehmann-representation">
+<h2>One-particle Green’s function and spectral Lehmann representation<a class="headerlink" href="#one-particle-green-s-function-and-spectral-lehmann-representation" title="Permalink to this headline">¶</a></h2>
+<p>Our “single-site” example is designed to be simple (simple enough to solve everything exactly). Interestingly, the physical picture derived from above is actually very general, as we will see now.</p>
+<p>Suppose we have an electronic problem with some many-body Hamiltonian <span class="math notranslate nohighlight">\(\hat{H}\)</span> and the ground state <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span>. We consider the one-particle Green’s function as defined above:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{\alpha \alpha}\left( t \right) &amp;=-i\langle \Omega |\hat{c}_{\alpha}\left( t \right) \hat{c}_{\alpha}^{\dagger}\left( 0 \right) |\Omega \rangle _H\\
+    &amp;=-i\langle \Omega |e^{i\hat{H}t}\hat{c}_{\alpha}e^{-i\hat{H}t}\hat{c}_{\alpha}^{\dagger}|\Omega \rangle _S
+\end{align*}
+\end{split}\]</div>
+<p>where we use one subscript to denote if the expression is understood in the Heisenberg or Schrodinger picture.</p>
+<p>To probe the dynamics, it is natural to go to the eigenbasis of the Hamiltonian. We insert a complete set of basis</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{\alpha \alpha}\left( t \right) &amp;=-i\sum_n{e^{iE_{\Omega}t}\langle \Omega |\hat{c}_{\alpha}|n\rangle _Se^{-iE_nt}\langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle _S}\\
+    &amp;=-i\sum_n{\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle _S \right|^2e^{-i\left( E_n-E_{\Omega} \right) t}}
+\end{align*}
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle_S\)</span> is the matrix element and <span class="math notranslate nohighlight">\(e^{-i\left( E_n-E_{\Omega} \right) t}\)</span> is the energy difference. This is practically identical to what we had, but we now know neither the matrix element nor the excitation energy (i.e., energy difference from the ground state)!</p>
+<p>Importantly, the many-body spectrum is dense! Remember the number of quantum states scales exponentially with the system size <span class="math notranslate nohighlight">\(\text{dim}(\mathcal{H})\sim 2^V\)</span>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec03.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec03</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="test.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">test jupyterbook feature</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By auther<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
