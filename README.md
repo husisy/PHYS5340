@@ -15,21 +15,12 @@ TODO
 
 1. [ ] the derivation step on the course
 
-```bash
-conda create -y -n jupyterbook
-conda install -y -n jupyterbook -c pytorch pytorch torchvision torchaudio cpuonly
-conda install -y -n jupyterbook -c conda-forge cython ipython pytest matplotlib h5py pandas pylint jupyterlab pillow protobuf scipy requests tqdm lxml opt_einsum jupyter-book
-```
-
-some abbriation
+some abbreviation
 
 1. "i.e.": (id est) means “that is” or “in other words”. (It is used to paraphrase a statement that was just made, not to mean“for example”, and is always followed by a comma.)
 2. s.t.: such that, so that
-3. P.S. stands for postscript. It comes from the Latin postscriptum, which literally means “written after.”
+3. P.S. stands for postscript. It comes from the Latin post-scriptum, which literally means “written after.”
 
-```bash
-cd jupyterbook
-jupyter-book build . #--all
-pip install ghp-import
-ghp-import -n -p -f _build/html
-```
+## how to contribute
+
+see ![how-to-contribute](jupyterbook/contribute.md)
