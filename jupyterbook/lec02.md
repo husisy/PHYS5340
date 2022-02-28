@@ -119,7 +119,7 @@ Note:
 
 $$ \hat{D}\left( \alpha \right) \hat{D}\left( -\alpha \right) =\hat{D}\left( 0 \right) =I\quad \Rightarrow \quad \hat{D}^{\dagger}\left( \alpha \right) =\hat{D}\left( -\alpha \right) $$
 
-Overlap betwween coherent states: we now see that coherent states are **not** orthogonal:
+Overlap between coherent states: we now see that coherent states are **not** orthogonal:
 
 $$
 \begin{align*}
@@ -208,7 +208,7 @@ $$
 \end{gather*}
 $$
 
-Level 2: It allows us to probe what are the excitations above the ground state, which are really what we are interested in (a system permanently stuck in the ground state has no dynamics and hense no physics). Start with the ground state $|\Omega\rangle$, we can consider doing two things.
+Level 2: It allows us to probe what are the excitations above the ground state, which are really what we are interested in (a system permanently stuck in the ground state has no dynamics and hence no physics). Start with the ground state $|\Omega\rangle$, we can consider doing two things.
 
 1. perturbing the system by an operator (e.g., your finger)
 2. time evolution for some time
@@ -221,7 +221,7 @@ where $\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rang
 
 Notes
 
-1. Some of you may already recognize we are really talking about an auto-correlation ffunction in the Heisenberg picture, which is simply a "Green's function"
+1. Some of you may already recognize we are really talking about an auto-correlation function in the Heisenberg picture, which is simply a "Green's function"
 2. How to extract the energies of the excitation? Fourier transform! We will be using that extensively later
 
 Level 3: It allows us to treat perturbations to our system. The time-evolution operator solves the equation
@@ -269,7 +269,7 @@ $$
 \end{align*}
 $$
 
-These manipulation make sense when the "function" are used to weight an integral. One useually thinks of them as "distribution" method.
+These manipulation make sense when the "function" are used to weight an integral. One usually thinks of them as "distribution" method.
 
 Now let's compute
 
@@ -315,13 +315,13 @@ $$
 
 An "inhomogeneous" equation "solved" by the bare Green's function!
 
-Of course, the true story is (much) more complicated than that. Anyway this suggests the bare Green functions from the starting point for solving the perturbed system. This is the general theme of pertubative quantum many-body theory.
+Of course, the true story is (much) more complicated than that. Anyway this suggests the bare Green functions from the starting point for solving the perturbed system. This is the general theme of perturbative quantum many-body theory.
 
 ## Free phonons
 
 So, we have started our "many-body" course with exactly one particle in a harmonic trap. Let's now see how we can build from there and go to a "many-body" setup. We set $\hbar=1$ from now on.
 
-Note: this will be a review for those of you who have taken solid state / quantum statatics mechanics.
+Note: this will be a review for those of you who have taken solid state / quantum statistics mechanics.
 
 Consider a collection of atoms, with their real-space coordinates denoted by $\vec{R}_i;i=1,\cdots,V;V\propto \text{volume}$. The atoms will have some mutual repulsion / attraction, and we suppose they have a collective elastic energy $\mathcal{V}$. The physical origin of all these energy can be complicated, e.g., maybe it contains electronic contribution (since the electronic ground state energy would depend on the atom locations). We don't worry about the "microscopic" details here. Instead, let's just suppose a stable minimum energy configuration exists, and we study the deviation from the equilibrium.
 
@@ -356,7 +356,7 @@ which is called the "dynamical matrix"
 
 $$ \hat{H}=\frac{1}{2}\sum_{i,\alpha}{\hat{\pi}_{i}^{\alpha 2}}+\frac{1}{2}\sum_{i,j,\alpha ,\beta}{\hat{\phi}_{i}^{\alpha}D_{ij}^{\alpha \beta}\hat{\phi}_{j}^{\beta}}$$
 
-such a Hamiltonian can be solved by diagonalizing the dynamical matrix, which is real symmetric (and hense unitary). I.e., there exists an orthogonal matrix $O$
+such a Hamiltonian can be solved by diagonalizing the dynamical matrix, which is real symmetric (and hence unitary). I.e., there exists an orthogonal matrix $O$
 
 $$ ODO^T=\mathrm{diag}\left\{ \left( \omega _{1}^{1} \right) ^2,\left( \omega _{1}^{2} \right) ^2,\left( \omega _{2}^{3} \right) ^2,\left( \omega _{2}^{1} \right) ^2,\left( \omega _{2}^{2} \right) ^2,\left( \omega _{2}^{3} \right) ^2,\cdots ,\left( \omega _{V}^{3} \right) ^2 \right\} $$
 
