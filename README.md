@@ -24,3 +24,10 @@ some abbreviation
 ## how to contribute
 
 see ![how-to-contribute](jupyterbook/contribute.md)
+
+TODO add license claim
+
+TODO
+
+1. [ ] add copyright claim
+2. [ ] replace some not perfect figures using code plotting
