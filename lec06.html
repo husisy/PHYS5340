@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec06 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec05" href="lec05.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec06.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flec06.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exact-solution">
+   Exact solution
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electron-impurity-greens-function">
+   Electron (impurity) Greens’ function
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec06</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exact-solution">
+   Exact solution
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electron-impurity-greens-function">
+   Electron (impurity) Greens’ function
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec06">
+<h1>lec06<a class="headerlink" href="#lec06" title="Permalink to this headline">¶</a></h1>
+<p>20220223</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>impurity-phonon coupling</p></li>
+<li><p>zero-temperature solution</p></li>
+<li><p>impurity spectral function</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Applying the techniques to a less trivial and physically relevant problem</p></li>
+<li><p>Appreciating how we could probe phonons with electrons</p></li>
+</ol>
+<p>Last time, we began introducing an impurity-phonon problem:</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\underset{\hat{H}_e}{\underbrace{\sum_{i=1}^N{\varepsilon _i\hat{c}_{i}^{\dagger}\hat{c}_i}}}+\underset{\hat{H}_{ph}}{\underbrace{\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}}}+\underset{\hat{H}_{e-ph}}{\underbrace{\sum_{i,q}{\hat{c}_{i}^{\dagger}\hat{c}_iM_{iq}\left( \hat{a}_q+\hat{a}_{q}^{\dagger} \right)}}}\]</div>
+<p>It describes a system of an electronic impurity, whose state (occupancy of the orbitals indexed by <span class="math notranslate nohighlight">\(i\)</span>) affects the phonon through the last electron-phonon interaction term <span class="math notranslate nohighlight">\(\hat{H}_{e-ph}\)</span>. We will first sketch why <span class="math notranslate nohighlight">\(\hat{H}_{e-ph}\)</span> takes the stated form.</p>
+<p>Recall that our phonon Hamiltonian resulted from an expansion of the elastic potential energy about the equilibrium</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_{ph}=\sum_{r\alpha}{\frac{\hat{p}_{r}^{\alpha 2}}{2m}}+\frac{1}{2}\sum_{r,r'}{\left. \frac{\partial ^2\mathcal{V}}{\partial R_r\partial R_{r'}} \right|_0\left( \hat{R}_r-R_{r,0} \right) \left( \hat{R}_{r'}-R_{r',0} \right)}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{u}_r=\hat{R}_r-R_{r,0}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\hat{R}_r\)</span> is the actual position, <span class="math notranslate nohighlight">\(R_{r,0}\)</span> is the equilibrium position and <span class="math notranslate nohighlight">\(\hat{u}_r\)</span> is the deviation from the equilibrium. As discussed, the equilibrium positions are now dependent on the electronic state</p>
+<div class="math notranslate nohighlight">
+\[ R_{r,0}\rightarrow R_{r,0}+\delta R_{r,0}^{i}\]</div>
+<p>where we expect <span class="math notranslate nohighlight">\(\delta R_{r,0}\approx 0\)</span> for <span class="math notranslate nohighlight">\(r\)</span> far from the impurity. To leading order, this leads to an <span class="math notranslate nohighlight">\(i\)</span>-dependent change of the phonon Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \delta \hat{H}_{ph}^{i}&amp;\sim -\sum_{r,r'}{\left. \frac{\partial ^2\mathcal{V}}{\partial R_r\partial R_{r'}} \right|_0\hat{u}_r\left( \delta R_{r'}^{i} \right)}+\delta E^i\\
+    &amp;=\sum_r{\left( M^i \right) _r\hat{u}_r}+\delta E^i
+\end{align*}
+\end{split}\]</div>
+<p>where the first term is linear in <span class="math notranslate nohighlight">\(\hat{u}_r\)</span> and <span class="math notranslate nohighlight">\(\delta E^i\)</span> absorbs the electronic energies <span class="math notranslate nohighlight">\(\varepsilon_i\)</span> (<em>TODO strange expression</em>). We should now recast the operators into the phonon creation and annihilation <span class="math notranslate nohighlight">\(\hat{a}_q^\dagger\)</span> and <span class="math notranslate nohighlight">\(\hat{a}_q\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{cases}
+  \hat{a}_q=\frac{1}{\sqrt{2}}\left( \sqrt{m\omega _q}\hat{u}_q+\frac{i}{\sqrt{m\omega _q}}\hat{p}_q \right)\\
+  (\hat{a}_{-q})^{\dagger}=\frac{1}{\sqrt{2}}\left( \sqrt{m\omega _q}\hat{u}_q-\frac{i}{\sqrt{m\omega _q}}\hat{p}_q \right)\\
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \hat{u}_q=\frac{\hat{a}_q+\hat{a}_{q}^{\dagger}}{\sqrt{2m\omega _q}} \]</div>
+<p>where we used</p>
+<div class="math notranslate nohighlight">
+\[ \hat{u}_{-q}^{\dagger}=\hat{u}_q\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{p}_{-q}^{\dagger}=\hat{p}_q\]</div>
+<p>as one can see from the Fourier transform</p>
+<div class="math notranslate nohighlight">
+\[ \hat{u}_q=\frac{1}{\sqrt{V}}\sum_r{e^{iq\cdot r}\hat{u}_r}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{u}_r=\frac{1}{\sqrt{V}}\sum_q{e^{-iq\cdot r}\hat{u}_q}\]</div>
+<p>This gives the electron-dependent correction</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \delta \hat{H}_{ph}^{i}&amp;=\sum_r{M_{r}^{i}\hat{u}_r}\\
+    &amp;=\sum_r{M_{r}^{i}\frac{1}{\sqrt{V}}\sum_q{e^{-iq\cdot r}\frac{\hat{a}_q+\hat{a}_{-q}^{\dagger}}{\sqrt{2m\omega _q}}}}\\
+    &amp;=\sum_q{\underbrace{\frac{1}{\sqrt{2m\omega _q}}\left( \frac{1}{\sqrt{V}}\sum_r{M_{r}^{i}e^{-iq\cdot r}} \right) }\left( \hat{a}_q+\hat{a}_{-q}^{\dagger} \right)}\\
+    &amp;=\sum_q{M_{q}^{i}\left( \hat{a}_q+\hat{a}_{-q}^{\dagger} \right)}\\
+    &amp;=\sum_q{\left( M_{q}^{i}\hat{a}_q+M_{-q}^{i}\hat{a}_{q}^{\dagger} \right)}
+\end{align*}
+\end{split}\]</div>
+<p>let us further assert that <span class="math notranslate nohighlight">\(M_{r}^{i}=M_{-r}^{i}\)</span> such that <span class="math notranslate nohighlight">\(M_{q}^{i}=M_{-q}^{i}\)</span></p>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \delta \hat{H}_{ph}^{i}=\sum_q{M_{q}^{i}\left( \hat{a}_q+\hat{a}_{q}^{\dagger} \right)}\]</div>
+<p>Altogether, we have the impurity-phonon Hamiltonian (c.f. Mahan Chapter-4)</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\underset{\hat{H}_e}{\underbrace{\sum_{i=1}^N{\varepsilon _i\hat{c}_{i}^{\dagger}\hat{c}_i}}}+\underset{\hat{H}_{ph}}{\underbrace{\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}}}+\underset{\hat{H}_{e-ph}}{\underbrace{\sum_{i,q}{\hat{c}_{i}^{\dagger}\hat{c}_iM_{iq}\left( \hat{a}_q+\hat{a}_{q}^{\dagger} \right)}}}\]</div>
+<p>Note: is this a good approximation? Not necessarily. One should recognize what we have done above is quite schematic, and there are many possible reasons to object to our treatment, e.g.,</p>
+<ol class="simple">
+<li><p>The shift in equilibrium position is probably not as simple as what we have assumed. E.g., the shift may not be simply the sum of the individual orbital contribution</p></li>
+<li><p>There is no particular reason why terms like <span class="math notranslate nohighlight">\(\hat{c}_{i}^{\dagger}\hat{c}_j\left( \hat{a}_q+\hat{a}_{q}^{\dagger} \right) +h.c.\)</span> are absent</p></li>
+</ol>
+<p>There are valid concerns. It’s important to realize that, here, we are simply trying to motivate a toy model which is not crazy (doesn’t mean it is directly applicable to any real problem). In particle, we will not dwell into details like the form of the coefficients <span class="math notranslate nohighlight">\(M_q^i\)</span> etc. Those are important for really modelling an actual system. But our goal is simply to show how such problems could be approached, and from this illustrates relevant aspects of the one-particle Greens’ function and spectral function.</p>
+<div class="section" id="exact-solution">
+<h2>Exact solution<a class="headerlink" href="#exact-solution" title="Permalink to this headline">¶</a></h2>
+<p>We have discussed how the problems of free phonons and localized electrons are both exactly soluble. In our current problem, we have introduced a coupling between the two. Generally speaking, we cannot find exact solutions for such coupled problem. But we will now see that our toy model is really designed to remain exactly soluble.</p>
+<p>To this end, let us introduce <span class="math notranslate nohighlight">\(\hat{n}_i=\hat{c}_{i}^{\dagger}\hat{c}_i\)</span> being the electron number for the <span class="math notranslate nohighlight">\(i\)</span>-th orbital. It satisfies</p>
+<div class="math notranslate nohighlight">
+\[ \hat{n}_{i}^{2}=\hat{c}_{i}^{\dagger}\hat{c}_i\hat{c}_{i}^{\dagger}\hat{c}_i=\hat{c}_{i}^{\dagger}\left( 1-\hat{c}_{i}^{\dagger}\hat{c}_i \right) \hat{c}_i=\hat{c}_{i}^{\dagger}\hat{c}_i=\hat{n}_i\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \mathrm{eig}\left( \hat{n}_i \right) =0\quad \mathrm{or}\quad 1\]</div>
+<p>Also, notice that <span class="math notranslate nohighlight">\(\left[ \hat{n}_i,\hat{n}_j \right] =0\)</span>. We can write the Hamiltonian as</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\sum_{i=1}^N{\varepsilon _i\hat{n}_i}+\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}+\sum_{i,q}{\hat{n}_iM_{iq}\left( \hat{a}_q+\hat{a}_{q}^{\dagger} \right)}\]</div>
+<p>We see readily that</p>
+<div class="math notranslate nohighlight">
+\[ \left[ \hat{H},\hat{n}_i \right] =0,\quad \forall i=1,\cdots ,N\]</div>
+<p>As such, the electron numbers are good quantum numbers, and we can decompose the full Hilbert space into the <span class="math notranslate nohighlight">\(2^N\)</span> sectors labeled by</p>
+<div class="math notranslate nohighlight">
+\[ \left( n_1,n_2,\cdots ,n_N \right) =\left( 0,0,\cdots ,0 \right) ,\left( 1,0,\cdots ,0 \right) ,\cdots ,\left( 1,1,\cdots ,1 \right) \]</div>
+<p>For simplicity, let us denote one such “configuration” by <span class="math notranslate nohighlight">\(\{n_i\}\)</span>. The Hamiltonian restricted to one such sector becomes</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \left. \hat{H} \right|_{\left\{ n_i \right\}}&amp;=\sum_{i=1}^N{\varepsilon _in_i}+\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}+\sum_q{\left( \sum_i{n_iM_{iq}} \right) \left( \hat{a}_q+\hat{a}_{q}^{\dagger} \right)}\\
+    &amp;=\sum_{i=1}^N{\varepsilon _in_i}+\sum_q{\omega _q\left( \hat{a}_{q}^{\dagger}+\frac{1}{\omega _q}\sum_i{n_iM_{iq}} \right) \left( \hat{a}_q+\frac{1}{\omega _q}\sum_i{n_iM_{iq}} \right)}\\
+    &amp;\qquad-\sum_q{\frac{1}{\omega _{q}}\left( \sum_i{n_iM_{iq}} \right) ^2}
+\end{align*}
+\end{split}\]</div>
+<p>where we have used the usual trick of “completing square”(<span class="math notranslate nohighlight">\((a+b)^2=a^2+b^2+2ab\)</span>)</p>
+<p>In this restricted Hilbert space, the Hamiltonian acts only on the phonons. In addition, it contains only up to quadratic terms for the phonons, and so it remains exactly solvable. To construct the eigenstates, let us recall the displacement operator.</p>
+<div class="math notranslate nohighlight">
+\[ \hat{D}_q\left( \alpha \right) =e^{\alpha \hat{a}_{q}^{\dagger}-\alpha ^*\hat{a}_q}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \hat{D}_q\left( \alpha \right) \hat{a}_q\hat{D}_{q}^{\dagger}\left( \alpha \right) =\hat{a}_q-\alpha \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \hat{D}_q\left( \alpha \right) \hat{a}_{q}^{\dagger}\hat{D}_{q}^{\dagger}\left( \alpha \right) =\hat{a}_{q}^{\dagger}-\alpha ^*\]</div>
+<p>Recall that <span class="math notranslate nohighlight">\(M_{iq}\)</span> is real (TODO why), this gives</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\left[ \prod_q{\hat{D}_q\left( \frac{1}{\omega _q}\sum_i{n_iM_{iq}} \right)} \right] \left( \left. \hat{H} \right|_{\left\{ n_i \right\}} \right) \left[ \prod_q{\hat{D}_{q}^{\dagger}\left( \frac{1}{\omega _q}\sum_i{n_iM_{iq}} \right)} \right] \\
+    =&amp;\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}+\sum_{i=1}^N{\varepsilon _in_i}-\sum_q{\frac{1}{\omega _{q}}\left( \sum_i{n_iM_{iq}} \right) ^2}
+\end{align*}
+\end{split}\]</div>
+<p>where the first term is equivalent to the original phonon Hamiltonian, and other terms are just a number. We may define the energy</p>
+<div class="math notranslate nohighlight">
+\[ \Delta \left( \left\{ n_i \right\} \right) =\sum_{i=1}^N{\varepsilon _in_i}-\sum_q{\frac{1}{\omega _q}\left( \sum_i{n_iM_{iq}} \right) ^2}\]</div>
+<p>where the first term is the non-interacting orbital energy and the second term is the effective density-density interaction mediated by the phonons!</p>
+<p>Note: this expression is slightly different from Mahan’s who (somehow) assumed there is exactly one electron on the impurity, and so wrote <span class="math notranslate nohighlight">\(n_in_j=n_i\delta_{ij}\)</span>.</p>
+<p>As such, we now know all the eigenstates and energy of our Hamiltonian. They can be labeled by two sets of integers</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\{n_i\}\)</span>: occupation of the <span class="math notranslate nohighlight">\(i=1,\cdots,N\)</span> electronic orbitals</p></li>
+<li><p><span class="math notranslate nohighlight">\(\{m_q\}\)</span>: number of quanta in each of <span class="math notranslate nohighlight">\(q=1,\cdots,V\)</span> phonon modes</p></li>
+</ol>
+<p>The energy is</p>
+<div class="math notranslate nohighlight">
+\[ |\left\{ n_i \right\} ,\left\{ m_q \right\} \rangle :\quad \Delta \left( \left\{ n_i \right\} \right) +\sum_q{\omega _qm_q}\]</div>
+<p>It may be instructive to sketch an energy level diagram corresponding to our solution. To illustrate the ideas, suppose we have three electronic orbitals in our problem, and they have “bare” orbital energy of <span class="math notranslate nohighlight">\(-\varepsilon_1=\varepsilon_2=\varepsilon_3=\varepsilon &gt;0\)</span></p>
+<p><img alt="lec06-fig00" src="_images/lec06-fig00.png" /></p>
+<p>Without electron-phonon coupling, we have the eigen-energies</p>
+<p><img alt="lec06-fig01" src="_images/lec06-fig01.png" /></p>
+<p>where for simplicity we considered an “Einstein phonon” model in which <span class="math notranslate nohighlight">\(\omega_q=\omega_E\)</span> is <span class="math notranslate nohighlight">\(q\)</span>-independent. Otherwise, the phonon excitation should become a continuum as each mode (labeled by <span class="math notranslate nohighlight">\(q\)</span>) can have a different excitation energy.</p>
+<p>Now, consider the effect of <span class="math notranslate nohighlight">\(\hat{H}_{e-ph}\)</span>, which we may treat as a perturbation to the level diagram above. A key simplifying assumption in our model (which enabled exact solutions) is that <span class="math notranslate nohighlight">\([\hat{H},\hat{n}_i]=0\)</span>. In other words, even with the <span class="math notranslate nohighlight">\(e-ph\)</span> coupling, we can think about each of the “sub-block” above individually.</p>
+<p><img alt="lec06-fig03" src="_images/lec06-fig03.png" /></p>
+<p>But this looks deceivingly simple! The phonon state <span class="math notranslate nohighlight">\(|\{m_q\} \rangle\)</span> actually depends on the electronic occupation in a concealed manner. To see this more explicitly, let us write the Hamiltonian as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{H}=&amp;\bigoplus_{\left\{ n_i \right\}}{\left. \hat{H} \right|_{\left\{ n_i \right\}}}\\
+    =&amp;\bigoplus_{\left\{ n_i \right\}}{\left( \sum_q{\hat{D}_{q}^{\dagger}\left( \frac{1}{\omega _q}\sum_i{n_iM_{iq}} \right) \omega _q\hat{a}_{q}^{\dagger}\hat{a}_q\hat{D}_q\left( \frac{1}{\omega _q}\sum_i{n_iM_{iq}} \right)}+\Delta \left( \left\{ n_i \right\} \right) \right)}
+\end{align*}
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\oplus\)</span> is the direct sum over the <span class="math notranslate nohighlight">\(2^N\)</span> independent sectors. It’s still the “same” phonon Hamiltonian, but in different basis!</p>
+<p>E.g., let <span class="math notranslate nohighlight">\(|\{m_q\}\rangle\)</span> be the “bare” phonon eigenstates with phonon occupancy</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}_{q}^{\dagger}\hat{a}_q\rightarrow m_q\]</div>
+<p>Then the eigenstates of the Hamiltonian can be written as</p>
+<div class="math notranslate nohighlight">
+\[ |\left\{ n_i \right\} ,\left\{ m_q \right\} \rangle =|\left\{ n_i \right\} \rangle \otimes \left[ \prod_q{\hat{D}_{q}^{\dagger}\left( \frac{1}{\omega _q}\sum_i{n_iM_{iq}} \right) |\left\{ m_q \right\} \rangle _0} \right] \]</div>
+<p>Does this “<span class="math notranslate nohighlight">\(i\)</span>-dependent basis rotation” of the phonon matter? After all, the phonon energies are independent on the electronic configuration! The short answer is yes. To see why, we look into the electron’s one-particle Green’s function.</p>
+</div>
+<div class="section" id="electron-impurity-greens-function">
+<h2>Electron (impurity) Greens’ function<a class="headerlink" href="#electron-impurity-greens-function" title="Permalink to this headline">¶</a></h2>
+<p>Let’s look at a real-time one-particle Greens’ function of the form</p>
+<div class="math notranslate nohighlight">
+\[ G_{ii}\left( t \right) =-i\langle \Omega |\hat{c}_{i}^{\dagger}\left( t \right) \hat{c}_i\left( 0 \right) |\Omega \rangle \]</div>
+<p>where <span class="math notranslate nohighlight">\(|\Omega \rangle\)</span> is the ground state. We will compute <span class="math notranslate nohighlight">\(G_{ii}(t)\)</span> in two ways</p>
+<ol class="simple">
+<li><p>Using the energy eigenstates we have derived. This is perhaps more transparent, but at the same time somewhat “brute force” and the solution approach looks a bit <em>ad hoc</em>, since we cannot expect to solve the many-body Hamiltonian in general</p></li>
+<li><p>Solving the Heisenberg picture time evolution of the operator. This is probably the more systematic approach, and we will see that it allows for greater flexibility on the ground state</p></li>
+</ol>
+<p>Let us start with the “brute force” approach. For concreteness, we suppose the level scheme is the one drawn before, and so the ground state is</p>
+<div class="math notranslate nohighlight">
+\[ |\Omega \rangle =|\left\{ 1,0,0 \right\} \rangle \otimes \prod_q{\hat{D}_{q}^{\dagger}\left( \frac{M_{1q}}{\omega _q} \right) |\left\{ 0_q \right\} \rangle _0}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{H}|\Omega \rangle =\Delta _{100}|\Omega \rangle \]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta _{100}=\varepsilon _1-\sum_q{\frac{M_{1q}^{2}}{\omega _q}}\]</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec05.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec05</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By auther<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

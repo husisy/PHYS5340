@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec07 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Impurity phonon" href="lec07_Impurity_phonon.html" />
+    <link rel="prev" title="lec06" href="lec06.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   lec07
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec07.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flec07.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec07</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec07">
+<h1>lec07<a class="headerlink" href="#lec07" title="Permalink to this headline">¶</a></h1>
+<p>20220225</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Impurity spectral function: Einstein model and numerical experiment</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>First example of a physically interesting spectral function</p></li>
+<li><p>Appreciating how to “extract” physical info from spectral function</p></li>
+</ol>
+<p>Consider the state with one electron removed:</p>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_1|\Omega \rangle =|\left\{ 0,0,0 \right\} \rangle \otimes \prod_q{\hat{D}_{q}^{\dagger}\left( \frac{M_{1q}}{\omega _q} \right) |\left\{ 0_q \right\} \rangle _0}\]</div>
+<p>This is <strong>not</strong> an eigenstate of <span class="math notranslate nohighlight">\(\hat{H}\)</span>! The eigenstates should have been</p>
+<div class="math notranslate nohighlight">
+\[ |\left\{ 0,0,0 \right\} \rangle \otimes |\left\{ m_q \right\} \rangle \]</div>
+<p>Non-eigenstates means states with dynamics. So now we consider</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{11}\left( t \right) &amp;=\left( -i \right) \langle \Omega |\hat{c}_{1}^{\dagger}\left( t \right) \hat{c}_1\left( 0 \right) |\Omega \rangle \\
+    &amp;=\left( -i \right) \langle \Omega |e^{i\hat{H}t}\hat{c}_{1}^{\dagger}e^{-i\hat{H}t}\hat{c}_1|\Omega \rangle \\
+    &amp;=\left( -i \right) e^{i\Delta _{100}t}\langle \Omega |\hat{c}_{1}^{\dagger}e^{-i\hat{H}t}\hat{c}_1|\Omega \rangle \\
+    &amp;=\left( -i \right) e^{i\Delta _{100}t}\left[ \langle 0_q|_0\prod_q{\hat{D}_q\left( \frac{M_{1q}}{\omega _q} \right)} \right] \otimes \langle \left\{ 100 \right\} |\hat{c}_{1}^{\dagger}e^{-i\hat{H}t}\hat{c}_1\\
+    &amp;\qquad|\left\{ 100 \right\} \rangle \otimes \prod_q{\hat{D}_{q}^{\dagger}\left( \frac{M_{1q}}{\omega _q} \right)}|\left\{ 0_q \right\} \rangle _0\\
+    &amp;=\left( -i \right) e^{i\Delta _{100}t}\left[ \langle 0_q|_0\prod_q{\hat{D}_q\left( \frac{M_{1q}}{\omega _q} \right)} \right] \exp \left\{ -i\left. \hat{H} \right|_{\left\{ 000 \right\}}t \right\}\prod_q{\hat{D}_{q}^{\dagger}\left( \frac{M_{1q}}{\omega _q} \right)}|\left\{ 0_q \right\} \rangle _0\\
+\end{align*}
+\end{split}\]</div>
+<p>But</p>
+<div class="math notranslate nohighlight">
+\[ \left. \hat{H} \right|_{\left\{ 000 \right\}}==\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}+\Delta _{000}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta _{000}=0\]</div>
+<p>We have</p>
+<div class="math notranslate nohighlight">
+\[ G_{11}\left( t \right) =\left( -i \right) e^{i\Delta _{100}t}\prod_q{\left( \langle -\frac{M_{1q}}{\omega _q}|e^{-i\omega _q\hat{a}_{q}^{\dagger}\hat{a}_qt}|\frac{M_{1q}}{\omega _q}\rangle _0 \right)}\]</div>
+<p>where the state in the bra and ket is the coherent state. This is just the “propagator” in the coherent-state basis!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{11}\left( t \right) &amp;=\left( -i \right) e^{i\Delta _{100}t}\prod_q{\left( \langle -\frac{M_{1q}}{\omega _q}|\frac{M_{1q}}{\omega _q}e^{-i\omega _qt}\rangle _0 \right)}\\
+    &amp;=\left( -i \right) e^{i\Delta _{100}t}\prod_q{\exp \left( \frac{M_{1q}^{2}}{\omega _{q}^{2}}e^{-i\omega _qt} \right) \exp \left( -\frac{M_{1q}^{2}}{\omega _{q}^{2}} \right)}
+\end{align*}
+\end{split}\]</div>
+<p>Let’s define <span class="math notranslate nohighlight">\(g_q=\left( \frac{M_{1q}}{\omega_q} \right) ^2\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[ G_{11}\left( t \right) =\left( -i \right) e^{i\Delta _{100}t}\exp \left( \sum_q{g_q\left( e^{-i\omega _qt}-1 \right)} \right) \]</div>
+<p>To make further progress, consider again the Einstein model with</p>
+<div class="math notranslate nohighlight">
+\[ \omega _q=\omega _E,\quad \forall q\]</div>
+<p>Let <span class="math notranslate nohighlight">\(g=\sum_q{g_q}\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[ G_{11}\left( t \right) =\left( -i \right) e^{i\Delta _{100}t}\exp \left( ge^{-i\omega _Et}-g \right) \]</div>
+<p>We can now consider the Fourier transform</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{11}\left( \omega \right) &amp;=\left( -i \right) e^{-g}\lim_{\eta \rightarrow 0^+} \int_0^{\infty}{dte^{i\Delta _{100}t}e^{i\omega t}e^{-\eta t}\exp \left( ge^{-i\omega _Et} \right)}\\
+    &amp;=\left( -i \right) e^{-g}\sum_{l=0}^{\infty}{\lim_{\eta \rightarrow 0^+} \int_0^{\infty}{dt\frac{g^l}{l!}e^{i\left( \omega +\Delta _{100}-l\omega _E+i\eta \right) t}}}\\
+    &amp;=e^{-g}\sum_{l=0}^{\infty}{\lim_{\eta \rightarrow 0^+} \frac{g^l}{l!}\frac{1}{\omega +\Delta _{100}-l\omega _E+i\eta}}\\
+\end{align*}
+\end{split}\]</div>
+<p>and same as before we find the spectral function</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    A_{11}\left( \omega \right) &amp;=\frac{-1}{\pi}\mathrm{Im}G_{11}\left( \omega \right) \\
+    &amp;=\sum_{l=0}^{\infty}{e^{-g}\frac{g^l}{l!}\delta \left( \omega -\left( -\Delta _{100}+l\omega _E \right) \right)}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta _{100}=\varepsilon _1-\sum_q{\frac{M_{1q}^{2}}{\omega _q}}=\varepsilon _1-\omega _Eg&lt;0\]</div>
+<p>The spectral function is the sum of delta functions. For which <span class="math notranslate nohighlight">\(l\)</span> do we get the highest weight?</p>
+<div class="math notranslate nohighlight">
+\[ \frac{g^{l+1}}{\left( l+1 \right) !}=\left( \frac{g}{l+1} \right) \left( \frac{g^l}{l!} \right) \]</div>
+<p>increasing for <span class="math notranslate nohighlight">\(l&lt;g-1\)</span>, decreasing for <span class="math notranslate nohighlight">\(l&gt;g-1\)</span></p>
+<p><img alt="lec07-fig00" src="_images/lec07-fig00.png" /></p>
+<p>Interpretation: when we try to remove an electron, we discover that in the ground state the “electron” is actually dressed by the phonons. With strong coupling (<span class="math notranslate nohighlight">\(g\gg 1\)</span>), the dominant spectral peak is far from the bare electronic orbital contribution of <span class="math notranslate nohighlight">\(|\Delta_{100}|\)</span>.</p>
+<p>Notes:</p>
+<ol class="simple">
+<li><p>The Einstein model is simple by design, and enables very explicit computation of the frequency-space Green’s function (and hence spectral function). Our real-time solution, however, holds for more general phonon dispersion. When we deviate from the Einstein model we should start seeing deviation from the “sum of delta function” form of the spectral function</p></li>
+<li><p>More interestingly, one should ask what happens for acoustic phonons which have <span class="math notranslate nohighlight">\(\omega_q\to 0\)</span> as <span class="math notranslate nohighlight">\(q\to 0\)</span>. Recall the strength of the <span class="math notranslate nohighlight">\(e-ph\)</span> coupling was parameterized by <span class="math notranslate nohighlight">\(g_q=\left(\frac{M_{iq}}{\omega_q}\right)^2\)</span>. If <span class="math notranslate nohighlight">\(M_{iq}\)</span> stays finite and <span class="math notranslate nohighlight">\(\omega_q\to 0\)</span>, we have diverging coupling and hence energies etc.!</p></li>
+</ol>
+<p>This is a rather general feature: low-energy modes are “dangerous” because they are easy to excite. In finding the ground state, one should, generally speaking, check how the “fluctuations” (lowest excitations) could destabilize the ground state. This amounts to a kind of self-consistency check. If the assumed ground state implies strong fluctuations which kills itself, the ground state does not actually “form”. This is the key physical picture behind the Merlin-Wagner theorem on the absence of spontaneous continuous symmetry breaking in low dimensions.</p>
+<p>Now, back to our impurity-phonon problem: physically, the acoustic phonons have vanishing frequency in the long-wavelength limit because they are Goldstone modes. The Goldstones exist because of symmetries, and are correspondingly constrained by symmetries. In our context, the catastrophe is avoided by having a “derivative coupling”, such that the <span class="math notranslate nohighlight">\(e-ph\)</span> coupling has a momentum dependence of <span class="math notranslate nohighlight">\(M_{iq}\propto q\)</span> as <span class="math notranslate nohighlight">\(q\to 0\)</span>. This gives a finite coupling strength as both <span class="math notranslate nohighlight">\(M_{iq}\)</span> and <span class="math notranslate nohighlight">\(\omega_q\)</span> vanish linearly in <span class="math notranslate nohighlight">\(q\)</span>.</p>
+<p>Note: play with the uploaded Python code if you want to explore what happens beyond the Einstein model.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec06.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec06</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="lec07_Impurity_phonon.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Impurity phonon</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By auther<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

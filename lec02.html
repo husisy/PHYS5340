@@ -114,6 +114,26 @@
    lec03
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -362,7 +382,7 @@
 <p>Note:</p>
 <div class="math notranslate nohighlight">
 \[ \hat{D}\left( \alpha \right) \hat{D}\left( -\alpha \right) =\hat{D}\left( 0 \right) =I\quad \Rightarrow \quad \hat{D}^{\dagger}\left( \alpha \right) =\hat{D}\left( -\alpha \right) \]</div>
-<p>Overlap betwween coherent states: we now see that coherent states are <strong>not</strong> orthogonal:</p>
+<p>Overlap between coherent states: we now see that coherent states are <strong>not</strong> orthogonal:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -441,7 +461,7 @@
     \phi \left( x',t \right) =\langle x'|t\rangle =\int{dxK\left( x',x;t \right) \phi \left( x \right)}
 \end{gather*}
 \end{split}\]</div>
-<p>Level 2: It allows us to probe what are the excitations above the ground state, which are really what we are interested in (a system permanently stuck in the ground state has no dynamics and hense no physics). Start with the ground state <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span>, we can consider doing two things.</p>
+<p>Level 2: It allows us to probe what are the excitations above the ground state, which are really what we are interested in (a system permanently stuck in the ground state has no dynamics and hence no physics). Start with the ground state <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span>, we can consider doing two things.</p>
 <ol class="simple">
 <li><p>perturbing the system by an operator (e.g., your finger)</p></li>
 <li><p>time evolution for some time</p></li>
@@ -452,7 +472,7 @@
 <p>where <span class="math notranslate nohighlight">\(\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle\)</span> iss a “propagator” in some basis.</p>
 <p>Notes</p>
 <ol class="simple">
-<li><p>Some of you may already recognize we are really talking about an auto-correlation ffunction in the Heisenberg picture, which is simply a “Green’s function”</p></li>
+<li><p>Some of you may already recognize we are really talking about an auto-correlation function in the Heisenberg picture, which is simply a “Green’s function”</p></li>
 <li><p>How to extract the energies of the excitation? Fourier transform! We will be using that extensively later</p></li>
 </ol>
 <p>Level 3: It allows us to treat perturbations to our system. The time-evolution operator solves the equation</p>
@@ -496,7 +516,7 @@
     =&amp;-\int_a^b{dx\delta \left( x-x_0 \right) f\left( x \right)}
 \end{align*}
 \end{split}\]</div>
-<p>These manipulation make sense when the “function” are used to weight an integral. One useually thinks of them as “distribution” method.</p>
+<p>These manipulation make sense when the “function” are used to weight an integral. One usually thinks of them as “distribution” method.</p>
 <p>Now let’s compute</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -536,12 +556,12 @@
 \end{gather*}
 \end{split}\]</div>
 <p>An “inhomogeneous” equation “solved” by the bare Green’s function!</p>
-<p>Of course, the true story is (much) more complicated than that. Anyway this suggests the bare Green functions from the starting point for solving the perturbed system. This is the general theme of pertubative quantum many-body theory.</p>
+<p>Of course, the true story is (much) more complicated than that. Anyway this suggests the bare Green functions from the starting point for solving the perturbed system. This is the general theme of perturbative quantum many-body theory.</p>
 </div>
 <div class="section" id="free-phonons">
 <h2>Free phonons<a class="headerlink" href="#free-phonons" title="Permalink to this headline">¶</a></h2>
 <p>So, we have started our “many-body” course with exactly one particle in a harmonic trap. Let’s now see how we can build from there and go to a “many-body” setup. We set <span class="math notranslate nohighlight">\(\hbar=1\)</span> from now on.</p>
-<p>Note: this will be a review for those of you who have taken solid state / quantum statatics mechanics.</p>
+<p>Note: this will be a review for those of you who have taken solid state / quantum statistics mechanics.</p>
 <p>Consider a collection of atoms, with their real-space coordinates denoted by <span class="math notranslate nohighlight">\(\vec{R}_i;i=1,\cdots,V;V\propto \text{volume}\)</span>. The atoms will have some mutual repulsion / attraction, and we suppose they have a collective elastic energy <span class="math notranslate nohighlight">\(\mathcal{V}\)</span>. The physical origin of all these energy can be complicated, e.g., maybe it contains electronic contribution (since the electronic ground state energy would depend on the atom locations). We don’t worry about the “microscopic” details here. Instead, let’s just suppose a stable minimum energy configuration exists, and we study the deviation from the equilibrium.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -567,7 +587,7 @@
 <p>which is called the “dynamical matrix”</p>
 <div class="math notranslate nohighlight">
 \[ \hat{H}=\frac{1}{2}\sum_{i,\alpha}{\hat{\pi}_{i}^{\alpha 2}}+\frac{1}{2}\sum_{i,j,\alpha ,\beta}{\hat{\phi}_{i}^{\alpha}D_{ij}^{\alpha \beta}\hat{\phi}_{j}^{\beta}}\]</div>
-<p>such a Hamiltonian can be solved by diagonalizing the dynamical matrix, which is real symmetric (and hense unitary). I.e., there exists an orthogonal matrix <span class="math notranslate nohighlight">\(O\)</span></p>
+<p>such a Hamiltonian can be solved by diagonalizing the dynamical matrix, which is real symmetric (and hence unitary). I.e., there exists an orthogonal matrix <span class="math notranslate nohighlight">\(O\)</span></p>
 <div class="math notranslate nohighlight">
 \[ ODO^T=\mathrm{diag}\left\{ \left( \omega _{1}^{1} \right) ^2,\left( \omega _{1}^{2} \right) ^2,\left( \omega _{2}^{3} \right) ^2,\left( \omega _{2}^{1} \right) ^2,\left( \omega _{2}^{2} \right) ^2,\left( \omega _{2}^{3} \right) ^2,\cdots ,\left( \omega _{V}^{3} \right) ^2 \right\} \]</div>
 <p>here, we have used the stability assumption to write the eigenvalues as <span class="math notranslate nohighlight">\(\omega_i^2\geq 0\)</span>. This is a “one-particle” diagonalization: we have so far only considered the dynamical matrix of size <span class="math notranslate nohighlight">\(d\cdot V\)</span>. But as is typical for such non-interacting problem, it’s basically the same as solving the “many-body” problem. To see why, let’s first transform the operators by the matrix</p>

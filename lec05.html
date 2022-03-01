@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec05 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="lec06" href="lec06.html" />
+    <link rel="prev" title="lec04" href="lec04.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec05.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flec05.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spectral-function">
+   Spectral function
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ground-state-deduction-a-thought-experiment">
+   Ground state deduction: a thought experiment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-peek-of-the-iceberg">
+   A peek of the iceberg
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#impurity-phonon-coupling">
+   Impurity phonon coupling
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec05</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spectral-function">
+   Spectral function
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ground-state-deduction-a-thought-experiment">
+   Ground state deduction: a thought experiment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-peek-of-the-iceberg">
+   A peek of the iceberg
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#impurity-phonon-coupling">
+   Impurity phonon coupling
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec05">
+<h1>lec05<a class="headerlink" href="#lec05" title="Permalink to this headline">¶</a></h1>
+<p>202200218</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Spectral function</p></li>
+<li><p>(Thought) experiment on spectroscopy</p></li>
+<li><p>The zoo of Green’s functions</p></li>
+<li><p>Impurity-phonon coupling</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>developing intuition about Green’s and spectral functions</p></li>
+<li><p>Appreciating how they relate to physical problems</p></li>
+<li><p>Applying the techniques to a less trivial and physically relevant problem</p></li>
+</ol>
+<div class="section" id="spectral-function">
+<h2>Spectral function<a class="headerlink" href="#spectral-function" title="Permalink to this headline">¶</a></h2>
+<p>Last time, we were considering a “one-particle” Green’s function in a general quantum many-body problem</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{\alpha \alpha}\left( t \right) &amp;=\left( -i \right) \langle \Omega |\hat{c}_{\alpha}\left( t \right) \hat{c}_{\alpha}^{\dagger}\left( 0 \right) |\Omega \rangle _H\\
+    &amp;=\left( -i \right) \sum_n{\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2e^{-i\left( E_n-E_{\Omega} \right) t}}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta E_n=\left( E_n-E_{\Omega} \right) \ge 0\]</div>
+<p>where <span class="math notranslate nohighlight">\(n\)</span> labels the complete (but unknown) eigenstates of the Hamiltonian. We will continue analyzing how much information we can gain from considering such expressions. We would want to understand the excitation energies. However, in general it is hopeless to try to resolve each of the frequencies. Instead, we should think of a distribution of frequencies, and prominent features will be “peaks” with some widths. This can be done systematically by Fourier transform with respect to time <span class="math notranslate nohighlight">\(t\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{\alpha \alpha}\left( \omega \right) &amp;\stackrel{?}{=} \int_{-\infty}^{\infty}{dtG_{\alpha \alpha}\left( t \right) e^{i\omega t}}\\
+    &amp;=-i\sum_n{\int_{-\infty}^{\infty}{\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2e^{i\left( \omega -\Delta E_n \right) t}}}
+\end{align*}
+\end{split}\]</div>
+<p>But there’s a serious issue: the integrand is oscillating as we attempt to Fourier transform with <span class="math notranslate nohighlight">\(t\to \pm\infty\)</span>. Clearly this is an artifact of our mathematical treatment: we don’t know if our universe existed or will exist all the way to <span class="math notranslate nohighlight">\(t=\pm\infty\)</span>!</p>
+<p>Here, let us do two things to circumvent the problem</p>
+<ol class="simple">
+<li><p>In our thought experiment, we always let the system evolve forward in time when we evaluate the auto-correlation. In other words, we restrict ourselves to <span class="math notranslate nohighlight">\(t\geq 0\)</span></p></li>
+<li><p>we won’t be able to access <span class="math notranslate nohighlight">\(t\to +\infty\)</span> anyway. Let’s “damp” the contribution by adding a convergence factor <span class="math notranslate nohighlight">\(e^{-\eta t}\)</span> to the integrand, taking <span class="math notranslate nohighlight">\(\eta\to 0^+\)</span></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G_{\alpha \alpha}\left( \omega \right) &amp;=\lim_{\eta \rightarrow 0^+} \left( -i \right) \int_0^{\infty}{dtG_{\alpha \alpha}\left( t \right) e^{i\omega t}e^{-\eta t}}\\
+    &amp;=\lim_{\eta \rightarrow 0^+} \left( -i \right) \sum_n{\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2\int_0^{\infty}{e^{i\left( \omega -\Delta E_n+i\eta \right) t}}}\\
+    &amp;=\lim_{\eta \rightarrow 0^+} \sum_n{\frac{\left( -i \right) \left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2}{i\left( \omega -\Delta E_n+i\eta \right)}\left( e^{-\eta \left( +\infty \right)}-1 \right)}\\
+    &amp;=\lim_{\eta \rightarrow 0^+} \sum_n{\frac{\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2}{\omega -\Delta E_n+i\eta}}
+\end{align*}
+\end{split}\]</div>
+<p>Notes:</p>
+<ol class="simple">
+<li><p>this explains the convention of attaching <span class="math notranslate nohighlight">\((-i)\)</span> to the definition of <span class="math notranslate nohighlight">\(G_{\alpha\alpha}(t)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(G_{\alpha\alpha}(\omega)\)</span> as a function over <span class="math notranslate nohighlight">\(\omega\)</span> has a (dense) series of poles at <span class="math notranslate nohighlight">\(\omega=\Delta E_n-i\eta\)</span></p></li>
+</ol>
+<p><img alt="lec05-fig00" src="_images/lec05-fig00.png" /></p>
+<p>But this is still not something we can measure directly! The matrix element <span class="math notranslate nohighlight">\(\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2\)</span> is physical: it corresponds to the transition probability of the ground state to some excited state when we add an electron to it. But energy information is hidden in the location of the poles which we displaced below the real line by a sleight of hand. We now claim that, in fact one can identify a “spectral function”, closely related to actual experiments, from the frequency-space Green’s function:</p>
+<div class="math notranslate nohighlight">
+\[ A_{\alpha \alpha}\left( \omega \right) =\frac{-1}{\pi}\mathrm{Im}\left[ G_{\alpha \alpha}\left( \omega \right) \right] =\sum_n{\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2\delta \left( \omega -\Delta E_n \right)}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2\)</span> is the matrix element and <span class="math notranslate nohighlight">\(\delta \left( \omega -\Delta E_n \right)\)</span> is the density of states. We will give a “lousy” derivation here first; will revisit later. Noticing</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{x+i\eta}=\frac{x}{x^2+\eta ^2}-i\frac{\eta}{x^2+\eta ^2}\]</div>
+<p>We will handle the real part later. The imaginary part looks like</p>
+<p><img alt="lec05-fig01" src="_images/lec05-fig01.png" /></p>
+<p>Normalization:</p>
+<div class="math notranslate nohighlight">
+\[ \int_{-\infty}^{\infty}{dx\frac{\eta}{x^2+\eta ^2}}=\pi \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \lim_{\eta \rightarrow 0^+} \mathrm{Im}\left[ \frac{1}{x+i\eta} \right] =-\pi \delta \left( 0 \right) \]</div>
+<p>This gives</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    A_{\alpha \alpha}\left( \omega \right) &amp;=\frac{-1}{\pi}\lim_{\eta \rightarrow 0^+} \mathrm{Im}\sum_n{\frac{\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2}{\omega -\Delta E_n+i\eta}}\\
+    &amp;=\sum_n{\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2\delta \left( \omega -\Delta E_n \right)}
+\end{align*}
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2\delta(\omega-\Delta E_n)\)</span> is the probability of finding the system in the <span class="math notranslate nohighlight">\(|n\rangle\)</span> eigenstate when we add an electron <span class="math notranslate nohighlight">\(\hat{c}_{\alpha}^{\dagger}\)</span> to the ground state <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span> with energy <span class="math notranslate nohighlight">\(\omega\)</span> matching <span class="math notranslate nohighlight">\(\Delta E_n\)</span>. How can we measure a quantity like that?</p>
+<p>STM: trying to add electrons to the sample (approx. in the ground state at low temperature)</p>
+<p><img alt="lec05-fig02" src="_images/lec05-fig02.png" /></p>
+<p>But STM doesn’t only try to add electrons! The tip also tries to “pull” electrons out of the sample, i.e., remove electron from the ground state, Similarly for ARPES</p>
+<p><img alt="lec05-fig03" src="_images/lec05-fig03.png" /></p>
+<p>Clearly, there are many more things one can do. We are only starting to see the tip of the iceberg.</p>
+</div>
+<div class="section" id="ground-state-deduction-a-thought-experiment">
+<h2>Ground state deduction: a thought experiment<a class="headerlink" href="#ground-state-deduction-a-thought-experiment" title="Permalink to this headline">¶</a></h2>
+<p>Now, let’s imagine plotting this spectral function. First, let us revert to our simple “single-orbital” example</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\varepsilon \left( \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}+\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow} \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ G_{\uparrow \uparrow}\left( t \right) =-i\frac{1}{2}e^{-i\varepsilon t}\]</div>
+<div class="math notranslate nohighlight">
+\[ A_{\uparrow \uparrow}\left( t \right) =\frac{1}{2}\delta \left( \omega -\varepsilon \right) \]</div>
+<p><img alt="lec05-fig04" src="_images/lec05-fig04.png" /></p>
+<p>If this was an experimental result, how would we interpret it? There is a sharp “resonance” when we try to add an up electron with energy <span class="math notranslate nohighlight">\(\varepsilon\)</span> to the ground state. The overlap is <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>. Suppose we can do similar experiments and measure <span class="math notranslate nohighlight">\(A_{\downarrow\downarrow}(\omega)\)</span>, as well as those associated with electron electron removal</p>
+<p><img alt="lec05-fig05" src="_images/lec05-fig05.png" /></p>
+<p>we will conclude:</p>
+<ol class="simple">
+<li><p>Adding <span class="math notranslate nohighlight">\(\hat{c}_{\uparrow}^{\dagger}\)</span>: sharp resonance with weight <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></li>
+<li><p>Adding <span class="math notranslate nohighlight">\(\hat{c}_{\downarrow}^{\dagger}\)</span>: sharp resonance with weight <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></li>
+<li><p>Removing <span class="math notranslate nohighlight">\(\hat{c}_{\uparrow}\)</span>: sharp resonance with weight <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></li>
+<li><p>Removing <span class="math notranslate nohighlight">\(\hat{c}_{\downarrow}\)</span>: sharp resonance with weight <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></li>
+</ol>
+<p>Further, IF we know the relevant Hilbert space is one orbital with spin-<span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> electrons, we can conclude</p>
+<ol class="simple">
+<li><p>(conclusion-a) We can both add and remove electron from the ground state, it must have <span class="math notranslate nohighlight">\(1\)</span> electron</p></li>
+<li><p>(conclusion-b) The one electron is in some half-half state between spins up and down (equal weights above)</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[ |\Omega \rangle =\frac{1}{\sqrt{2}}\left( \hat{c}_{\uparrow}^{\dagger}+e^{i\phi}\hat{c}_{\downarrow}^{\dagger} \right) |0\rangle \]</div>
+<p>i.e., we know the ground state up to an undetermined phase!</p>
+<p>Notes:</p>
+<ol class="simple">
+<li><p>We assumed above that we can choose to tunnel spin up versus down electrons independently. This is a kind of “resolution”, giving “spin-resolved” spectral function (e.g., spin-polarized STM tips). If we don’t have such spin resolution, we can only conclude (conclusion-a) but not (conclusion-b). More resolved means more knowledge</p></li>
+<li><p>For such a “small” system, one can imagine cooking up fancier measurements to “better resolve” the system. That’s in the spirit of quantum tomography. We don’t usually have the luxury of such measurement capability in many-body quantum systems so we won’t go further down there.</p></li>
+</ol>
+<p>Let us next imagine plotting the spectral function for a general interacting many-body Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ A_{\alpha \alpha}\left( \omega \right) =\sum_n{\left| \langle n|\hat{c}_{\alpha}^{\dagger}|\Omega \rangle \right|^2\delta \left( \omega -\Delta E_n \right)}\]</div>
+<p><img alt="lec05-fig06" src="_images/lec05-fig06.png" /></p>
+<p><img alt="lec05-fig07" src="_images/lec05-fig07.png" /></p>
+<p><img alt="lec05-fig08" src="_images/lec05-fig08.png" /></p>
+<p><img alt="lec05-fig09" src="_images/lec05-fig09.png" /></p>
+<p>Strange situations: featureless over the energy range. If such a spectrum is observed, it suggests either</p>
+<ol class="simple">
+<li><p>the excitations cannot be understood as quasi-particles</p></li>
+<li><p>quasi-particles exist, but they have poor overlap with the physical electrons</p></li>
+</ol>
+<p>Either will be very interesting! But beyond our scope…</p>
+</div>
+<div class="section" id="a-peek-of-the-iceberg">
+<h2>A peek of the iceberg<a class="headerlink" href="#a-peek-of-the-iceberg" title="Permalink to this headline">¶</a></h2>
+<p>In the above, we chose in an ad hoc manner to consider the real-time Green’s function</p>
+<div class="math notranslate nohighlight">
+\[ G_{\alpha \alpha}\left( t \right) =\left( -i \right) \langle \Omega |\hat{c}_{\alpha}\left( t \right) \hat{c}_{\alpha}^{\dagger}\left( 0 \right) |\Omega \rangle \]</div>
+<p>Since our ground state will have a some finite density of electrons to start with, it will be equally natural to consider, e.g.,</p>
+<div class="math notranslate nohighlight">
+\[ G_{\alpha \alpha}^{\prime}\left( t \right) =\left( -i \right) \langle \Omega |\hat{c}_{\alpha}^{\dagger}\left( t \right) \hat{c}_{\alpha}\left( 0 \right) |\Omega \rangle \]</div>
+<p>which contains information about electron removal from <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span>.</p>
+<p>In addition, we don’t necessarily have to commit to the “diagonal” form with matched indices. E.g., if <span class="math notranslate nohighlight">\(\alpha\)</span> denotes spatial indices, it would be natural to consider</p>
+<div class="math notranslate nohighlight">
+\[ G_{xy}\left( t,t' \right) =\left( -i \right) \langle \Omega |\hat{c}_x\left( t \right) \hat{c}_{y}^{\dagger}\left( t' \right) |\Omega \rangle \]</div>
+<p>Our commitment above on <span class="math notranslate nohighlight">\(t&gt;0\)</span> is also a bit ad hoc anyway. We should be free ask what happens if we compute “negative time” correlation function, at least as a theoretical gadget. Also, why not do something more than single electron addition (removal)? E.g.,</p>
+<div class="math notranslate nohighlight">
+\[ G_{\alpha \alpha \gamma \delta}^{\prime\prime}\left( t_1,t_2,t_3,t_4 \right) =\left( -i \right) \langle \Omega |\hat{c}_{\alpha}\left( t_1 \right) \hat{c}_{\beta}\left( t_2 \right) \hat{c}_{\gamma}^{\dagger}\left( t_3 \right) \hat{c}_{\delta}^{\dagger}\left( t_4 \right) |\Omega \rangle \]</div>
+<p>These discussions suggest that there is a huge zoo of possible “Green’s functionS” to consider, and we need a way to organize them, e.g., fix some ordering on the time of “insertions”, etc.</p>
+<p>Such generalized Green’s functions appear under different considerations, and we may want to give them different names, Nevertheless, they are all variations on the same tune, much like Schubert’s trout quintet! More later…</p>
+</div>
+<div class="section" id="impurity-phonon-coupling">
+<h2>Impurity phonon coupling<a class="headerlink" href="#impurity-phonon-coupling" title="Permalink to this headline">¶</a></h2>
+<p>So far, we have discussed</p>
+<ol class="simple">
+<li><p>QHO: coherent states, displacement operator,…</p></li>
+<li><p>Free phonons: collection of decoupled QHOs</p></li>
+<li><p>Localized electrons: a primer into “spectroscopy”</p></li>
+</ol>
+<p>Let us now integrate all these into one single problem: how could we use electrons to probe phonons?</p>
+<p><img alt="lec05-fig10" src="_images/lec05-fig10.png" /></p>
+<p>Similar to before, let us consider a single-site electronic problem:</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_e=\sum_{i=1}^N{\varepsilon _i\hat{c}_{i}^{\dagger}\hat{c}_i}\]</div>
+<p>let us interpret the index <span class="math notranslate nohighlight">\(i\)</span> as labeling some relevant orbitals <span class="math notranslate nohighlight">\(s,p,d,\cdots\)</span> and for concreteness we suppose there are <span class="math notranslate nohighlight">\(N\)</span> relevant orbitals in our problem. We also consider the free phonon Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_{ph}=\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}\]</div>
+<p>where we have dropped the zero-point energy for simplicity, and take a single branch with uniform masses.</p>
+<p>Let us suppose the electronic Hamiltonian describes the electronic states of an impurity located at the origin. The size and shape of the electron cloud surrounding our impurity depends in general on the orbital index <span class="math notranslate nohighlight">\(i\)</span>. This, in turn, affect the equilibrium position of the neighboring atoms, e.g., a “fatter” electron cloud will push the neighboring atoms further away. We claim this coupling can be modelled as</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_{e-ph}=\sum_{i,q}{\hat{c}_{i}^{\dagger}\hat{c}_iM_{iq}\left( \hat{a}_q+\hat{a}_{q}^{\dagger} \right)}\]</div>
+<p>We will see why in the next class.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec04.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec04</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="lec06.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">lec06</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By auther<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
