@@ -13,5 +13,6 @@ chapters:
 - file: lec07
   sections:
   - file: lec07_Impurity_phonon
+- file: lec08
 - file: contribute
 - file: test

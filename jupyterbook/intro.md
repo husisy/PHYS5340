@@ -10,5 +10,6 @@ Table of Contents
 6. [lec06](lec06.md)
 7. [lec07](lec07.md)
    * [impurity-phonon-jupyter-notebook](lec07_Impurity_phonon.ipynb)
-8. [contribute](contribute.md)
-9. [test](test.md)
+8. [lec08](lec08.md)
+9. [contribute](contribute.md)
+10. [test](test.md)
