@@ -84,7 +84,7 @@ We can think of $\hat{D}(\alpha)$ as a ``displacement'' in the phase space. It i
 Note:
 \[ \hat{D}\left( \alpha \right) \hat{D}\left( -\alpha \right) =\hat{D}\left( 0 \right) =I\quad \Rightarrow \quad \hat{D}^{\dagger}\left( \alpha \right) =\hat{D}\left( -\alpha \right) \]
 
-Overlap betwween coherent states: we now see that coherent states are \emph{not} orthogonal:
+Overlap between coherent states: we now see that coherent states are \emph{not} orthogonal:
 \begin{align*}
     \langle \alpha |\beta \rangle &=\langle 0|\hat{D}^{\dagger}\left( \alpha \right) \hat{D}\left( \beta \right) |0\rangle \\
     &=\langle 0|\hat{D}\left( -\alpha +\beta \right) |0\rangle e^{-i\mathrm{Im}\left( \alpha \beta ^* \right)}\\
@@ -146,7 +146,7 @@ position basis
     \phi \left( x',t \right) =\langle x'|t\rangle =\int{dxK\left( x',x;t \right) \phi \left( x \right)}
 \end{gather*}
 
-Level 2: It allows us to probe what are the excitations above the ground state, which are really what we are interested in (a system permanently stuck in the ground state has no dynamics and hense no physics). Start with the ground state $|\Omega\rangle$, we can consider doing two things.
+Level 2: It allows us to probe what are the excitations above the ground state, which are really what we are interested in (a system permanently stuck in the ground state has no dynamics and hence no physics). Start with the ground state $|\Omega\rangle$, we can consider doing two things.
 \begin{enumerate}
     \item perturbing the system by an operator (e.g., your finger)
     \item time evolution for some time
@@ -154,7 +154,7 @@ Level 2: It allows us to probe what are the excitations above the ground state, 
 
 We can do it in two orders: $e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle$ versus $\hat{f}e^{-i\hat{H}t/\hbar}|\Omega \rangle$. How colse are these two states? We can measure their overlap
 \[ \langle \Omega |e^{i\hat{H}t/\hbar}\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle =e^{i\omega _{\Omega}t}\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle \]
-where $\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle$ iss a ``propagator'' in some basis.
+where $\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle$ is a ``propagator'' in some basis.
 
 Notes
 \begin{enumerate}
@@ -192,7 +192,7 @@ Note: consider the integral with $a<b$
     \end{cases}\\
     =&-\int_a^b{dx\delta \left( x-x_0 \right) f\left( x \right)}
 \end{align*}
-These manipulation make sense when the ``function'' are used to weight an integral. One useually thinks of them as ``distribution'' method.
+These manipulation make sense when the ``function'' are used to weight an integral. One usually thinks of them as ``distribution'' method.
 
 Now let's compute
 \begin{align*}
@@ -225,13 +225,13 @@ When does such an inhomogeneous equation show up? Imagine a perturbation to the 
 \end{gather*}
 An ``inhomogeneous'' equation ``solved'' by the bare Green's function!
 
-Of course, the true story is (much) more complicated than that. Anyway this suggests the bare Green functions from the starting point for solving the perturbed system. This is the general theme of pertubative quantum many-body theory.
+Of course, the true story is (much) more complicated than that. Anyway this suggests the bare Green functions from the starting point for solving the perturbed system. This is the general theme of perturbative quantum many-body theory.
 
 \section{Free phonons}
 
 So, we have started our ``many-body'' course with exactly one particle in a harmonic trap. Let's now see how we can build from there and go to a ``many-body'' setup. We set $\hbar=1$ from now on.
 
-Note: this will be a review for those of you who have taken solid state / quantum statatics mechanics.
+Note: this will be a review for those of you who have taken solid state / quantum statistics mechanics.
 
 Consider a collection of atoms, with their real-space coordinates denoted by $\vec{R}_i;i=1,\cdots,V;V\propto \text{volume}$. The atoms will have some mutual repulsion / attraction, and we suppose they have a collective elastic energy $\mathcal{V}$. The physical origin of all these energy can be complicated, e.g., maybe it contains electronic contribution (since the electronic ground state energy would depend on the atom locations). We don't worry about the ``microscopic'' details here. Instead, let's just suppose a stable minimum energy configuration exists, and we study the deviation from the equilibrium.
 \begin{gather*}
@@ -245,13 +245,13 @@ Now, we can go quantum mechanical. The Hamiltonian is
 \[ \hat{H}=\sum_{i,\alpha}{\frac{\hat{p}_{i}^{\alpha 2}}{2m_i}}+\frac{1}{2}\sum_{i,j,\alpha ,\beta}{\hat{u}_{i}^{\alpha}\left( \frac{\partial ^2\mathcal{V}}{\partial R_{i}^{\alpha}\partial R_{j}^{\beta}} \right) \hat{u}_{j}^{\beta}}\]
 Here $\hat{p}_i^\alpha$ and $\hat{u}_i^\alpha$ are conjugate variables $\left[ \hat{u}_{i}^{\alpha},\hat{p}_{j}^{\beta} \right] =i\delta _{\alpha \beta}\delta _{ij}$. The masses $m_i$ could be different for different $i$. Let's first rescale
 \[ \hat{\pi}_{i}^{\alpha}=\frac{\hat{p}_{i}^{\alpha}}{\sqrt{m_i}};\quad \hat{\phi}_{i}^{\alpha}=\hat{u}_{i}^{\alpha}\sqrt{m_i} \]
-which preserves the cannonical commutation relation
+which preserves the canonical commutation relation
 \[ \left[ \hat{\phi}_{i}^{\alpha},\hat{\pi}_{j}^{\beta} \right] =i\delta _{\alpha \beta}\delta _{ij}\]
 Define
 \[ D_{ij}^{\alpha \beta}=\frac{1}{\sqrt{m_im_j}}\frac{\partial ^2\mathcal{V}}{\partial R_{i}^{\alpha}\partial R_{j}^{\beta}}\]
 which is called the ``dynamical matrix''
 \[ \hat{H}=\frac{1}{2}\sum_{i,\alpha}{\hat{\pi}_{i}^{\alpha 2}}+\frac{1}{2}\sum_{i,j,\alpha ,\beta}{\hat{\phi}_{i}^{\alpha}D_{ij}^{\alpha \beta}\hat{\phi}_{j}^{\beta}}\]
-such a Hamiltonian can be solved by diagonalizing the dynamical matrix, which is real symmetric (and hense unitary). I.e., there exists an orthogonal matrix $O$
+such a Hamiltonian can be solved by diagonalizing the dynamical matrix, which is real symmetric (and hence unitary). I.e., there exists an orthogonal matrix $O$
 \[ ODO^T=\mathrm{diag}\left\{ \left( \omega _{1}^{1} \right) ^2,\left( \omega _{1}^{2} \right) ^2,\left( \omega _{2}^{3} \right) ^2,\left( \omega _{2}^{1} \right) ^2,\left( \omega _{2}^{2} \right) ^2,\left( \omega _{2}^{3} \right) ^2,\cdots ,\left( \omega _{V}^{3} \right) ^2 \right\} \]
 here, we have used the stability assumption to write the eigenvalues as $\omega_i^2\geq 0$. This is a ``one-particle'' diagonalization: we have so far only considered the dynamical matrix of size $d\cdot V$. But as is typical for such non-interacting problem, it's basically the same as solving the ``many-body'' problem. To see why, let's first transform the operators by the matrix
 \[ \hat{\Pi}_{i}^{\alpha}=O_{ij}^{\alpha \beta}\hat{\pi}_{j}^{\beta},\quad \hat{\Phi}_{i}^{\alpha}=O_{ij}^{\alpha \beta}\hat{\phi}_{j}^{\beta}\]

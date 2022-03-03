@@ -20,7 +20,7 @@ Reminder: PS1 due coming Fri $1:30\text{pm}-\varepsilon$
 
 \section{particle statistics}
 
-We have mentioned on and off that phonon problem iis a bosonic one. Recall from QM that boson vs fermion is a question about particle exchange statistics. In the so-called ``first quantized'' wave function, a two-particle wave function dependss on two coordinate variables
+We have mentioned on and off that phonon problem is a bosonic one. Recall from QM that boson vs fermion is a question about particle exchange statistics. In the so-called ``first quantized'' wave function, a two-particle wave function depends on two coordinate variables
 \[ \Psi \left( x_1,x_2 \right) =\langle x_1,x_2|\Psi \rangle \]
 ``Particle statistics'' refers to what happen if we decide to relabel the two indistinguishable particles
 \[ \Psi \left( x_1,x_2 \right) =\begin{cases}
@@ -35,14 +35,14 @@ Notes:
 \begin{enumerate}
     \item but (if) space is continuous, then we have uncountably many QHO's even in a finite volume of space! That sounds sick. That is sick. But that's okay.
     \item We have implicitly promoted the single-particle wave function $\delta(x)$ to an operator $\hat{b}_x^\dagger$. That's why this is called ``second quantization''.
-    \item implicitly, we have defined an object which maps space to quantum operators: $\vec{r}\to \hat{b}_x^\dagger$. Such maps are called ``fields''. (E.g., think about electric field $\vec{r}\to \vec{E_{\vec{r}}}$. Our fields here are quantum mechanical in that they do not have simple point-wise multiplication but instead cannonical commutation). Whence the name ``QFT''
+    \item implicitly, we have defined an object which maps space to quantum operators: $\vec{r}\to \hat{b}_x^\dagger$. Such maps are called ``fields''. (E.g., think about electric field $\vec{r}\to \vec{E_{\vec{r}}}$. Our fields here are quantum mechanical in that they do not have simple point-wise multiplication but instead canonical commutation). Whence the name ``QFT''
 \end{enumerate}
 
 Now, back to particle statistics. We have, for bosons,
 \[ \Psi _B\left( x_1,x_2 \right) =\langle 0|\hat{b}_{x_1}^{\dagger}\hat{b}_{x_2}^{\dagger}|0\rangle =\langle 0|\hat{b}_{x_2}^{\dagger}\hat{b}_{x_1}^{\dagger}|0\rangle =\Psi _B\left( x_2,x_1 \right) \]
 So the exchange sign of $+1$ is really the commutation of among the creation(annihilation) operators. It is then natural to guess what should happen for fermions:
 \[ \Psi _F\left( x_1,x_2 \right) =\langle 0|\hat{c}_{x_1}^{\dagger}\hat{c}_{x_2}^{\dagger}|0\rangle =-\langle 0|\hat{c}_{x_2}^{\dagger}\hat{c}_{x_1}^{\dagger}|0\rangle =\Psi _F\left( x_2,x_1 \right)  \]
-This implies the fermionic creation and annihilation operators should satisfy cannonical anti-commutation relations. Let $\{\hat{A},\hat{B}\}=\hat{A}\hat{B}+\hat{B}\hat{A}$. For fermions
+This implies the fermionic creation and annihilation operators should satisfy canonical anti-commutation relations. Let $\{\hat{A},\hat{B}\}=\hat{A}\hat{B}+\hat{B}\hat{A}$. For fermions
 \[ \left\{ \hat{c}_x,\hat{c}_y \right\} =\left\{ \hat{c}_{x}^{\dagger},\hat{c}_{y}^{\dagger} \right\} =0 \]
 \[ \left\{ \hat{c}_{x}^{\dagger},\hat{c}_y \right\} =\delta \left( x-y \right) \]
 \[ \left\{ \hat{c}_x,\hat{c}_x \right\} =\left\{ \hat{c}_{x}^{\dagger},\hat{c}_{x}^{\dagger} \right\} =0\quad \Rightarrow \quad \hat{c}_{x}^{2}=\hat{c}_{x}^{\dagger 2}=0\]
@@ -56,13 +56,13 @@ Note: we take these as the practical definition for the ``second-quantized'' ope
 The ``first quantized'' description focus on each particle sector individually. The ``second quantized'' description focus on how to relate the different sectors. In particular, we have a natural relation between the ground state and a state in the $n$-particle sector. Consider putting $n$ particles (bosons or fermions) into $n$ ``orbitals'' $\phi_1,\phi_2,\cdots,\phi_n$
 \[ \Phi _{x_1,x_2,\cdots ,x_n}^{\phi _1,\phi _2,\cdots ,\phi _n}\xrightarrow{\mathrm{sym}}\hat{b}_{\phi _1}^{\dagger}\hat{b}_{\phi _2}^{\dagger}\cdots \hat{b}_{\phi _n}^{\dagger}|0\rangle \quad \mathrm{bosons}\]
 \[ \Phi _{x_1,x_2,\cdots ,x_n}^{\phi _1,\phi _2,\cdots ,\phi _n}\xrightarrow{\mathrm{anti}-\mathrm{sym}}\hat{c}_{\phi _1}^{\dagger}\hat{c}_{\phi _2}^{\dagger}\cdots \hat{c}_{\phi _n}^{\dagger}|0\rangle \quad \mathrm{fermions}\]
-where we assume the ``orbitals'' are distinct and orthogonal. (i.e., we are considering a cannonical transformation on the defining modes of the system).
+where we assume the ``orbitals'' are distinct and orthogonal. (i.e., we are considering a canonical transformation on the defining modes of the system).
 
 The above is rather schematic. In practice there are some factors of $\sqrt{n!}$ etc. if one wants to relate first and second quantization. We won't cover that here (usually covered in advanced QM), see e.g. Coleman Chapter-3 for more details.
 
 Final note: so is QHO bosonic?
 
-\emph{It depends}. IF you have exactly one particle, there is no exchange and hense no statistics. If you have multple particles, then the statistics is an ``intrinsic'' aspect of the problem in the sense that it defines the many-body Hilbert space, whereas being a QHO is ``kinematic'' in the sense that it's just characterizing the Hamiltonian acting on the Hilbert space. E.g.,
+\emph{It depends}. IF you have exactly one particle, there is no exchange and hence no statistics. If you have multiple particles, then the statistics is an ``intrinsic'' aspect of the problem in the sense that it defines the many-body Hilbert space, whereas being a QHO is ``kinematic'' in the sense that it's just characterizing the Hamiltonian acting on the Hilbert space. E.g.,
 \begin{enumerate}
     \item Phonons: the momenta and displacements of different atoms commute, so we have a bosonic problem to start with. In the ``harmonic approximation'' we have a collection of coupled QHO
     \item Electronic quantum Hall: we have fermions to start with, but the B-field enters the single particle problem as a spatially varying gauge field. That also leads to the QHO Hamiltonian for the single particle problem. But now the raising / lowering operators act between different \emph{fermionic} modes that could be empty or filled
@@ -139,9 +139,9 @@ Here, $h$ is a Hermitian matrix and can be diagonalized by a unitary
 \[ h_{\alpha \beta}=\sum_i{U_{\alpha i}\varepsilon _i\left( U^{\dagger} \right) _{i\beta}}\]
 \begin{align*}
     \hat{H}&=\sum_i{\left( \sum_{\alpha}{\hat{c}_{\alpha}^{\dagger}}U_{\alpha i} \right) \varepsilon _i\left( \sum_{\beta}{\left( U^{\dagger} \right) _{i\beta}\hat{c}_{\beta}} \right)}\\
-    &=\sum_i{\varepsilon _i\hat{c}_{i}^{\dagger}\hat{c}_i}\quad \mathrm{cannonical transformation}
+    &=\sum_i{\varepsilon _i\hat{c}_{i}^{\dagger}\hat{c}_i}\quad \mathrm{canonical transformation}
 \end{align*}
-(c.f. the phonon discusion)
+(c.f. the phonon discussion)
 
 Back to the two mode problem: this is again an exactly solved problem, which is in a way similar to the QHO / free phonon. We know all the eigenstates and eigen-energies. Yet, it is natural to ask how we can probe the ``physics'' of the system. Suppose we start with the ground state ($t>0$):
 \[ |\Omega \rangle =\hat{c}_{-}^{\dagger}|0\rangle =\frac{1}{\sqrt{2}}\left( \hat{c}_{\uparrow}^{\dagger}-\hat{c}_{\downarrow}^{\dagger} \right) |0\rangle \]
@@ -152,7 +152,7 @@ Recall our discussion on propagator / correlation functions / Green's functions.
 \end{enumerate}
 \[ e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \quad \mathrm{vs}\quad \hat{c}_{\uparrow}^{\dagger}e^{-i\hat{H}t}|\Omega \rangle \]
 \[ \quad G_{\uparrow \uparrow}\left( t \right) =-i\langle \Omega |e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \]
-where $e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}$ iss the conjugate action of time evolution on an operator. We clained
+where $e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}$ is the conjugate action of time evolution on an operator. We claimed
 \begin{enumerate}
     \item Such functions contains important dynamical info about the system
     \item It is natural to interpret it as a specific kind of correlation function
@@ -170,7 +170,7 @@ then its time evolution can be expressed simply as
 \[ i\partial _t|\Psi \left( t \right) \rangle =i\partial _t\left( \hat{U}|\Psi \left( 0 \right) \rangle \right) =\left( i\partial _t\hat{U} \right) |\Psi \left( 0 \right) \rangle =\hat{H}\left( \hat{U}|\Psi \left( 0 \right) \rangle \right) =\hat{H}|\Psi \left( t \right) \rangle \]
 Now imagine computing some observables as the state evolves
 \[ A\left( t \right) =\langle \Psi \left( t \right) |\hat{A}|\Psi \left( t \right) \rangle =\langle \Psi \left( 0 \right) |\hat{U}^{\dagger}\hat{A}\hat{U}|\Psi \left( 0 \right) \rangle \]
-It's simply a mater of interpretation to say that the operator is evolving $\hat{A}\rightarrow \hat{U}^{\dagger}\hat{A}\hat{U}$, and we compute its expectation value with resepct to a fixed state $|\Psi\rangle(0)$. This perspective is called the ``Heisenberg picture''.
+It's simply a mater of interpretation to say that the operator is evolving $\hat{A}\rightarrow \hat{U}^{\dagger}\hat{A}\hat{U}$, and we compute its expectation value with respect to a fixed state $|\Psi\rangle(0)$. This perspective is called the ``Heisenberg picture''.
 \[ \mathrm{Schrodinger}\begin{cases}
 	|\Psi \left( 0 \right) \rangle _S\rightarrow |\Psi \left( t \right) \rangle _S=\hat{U}|\Psi \left( 0 \right) \rangle _S\\
 	\hat{A}_S\rightarrow \hat{A}_S\\
@@ -191,9 +191,9 @@ Note: for those of you who know quantum optics, think about rotating wave approx
 
 \section{One-particle Green's function: a first example}
 
-In the following, we keep the subscript $S$ vs $H$ implicit. Whenever we write a time dependence for a noperator, it is understood that we are in the Heisenberg picture.
+In the following, we keep the subscript $S$ vs $H$ implicit. Whenever we write a time dependence for an operator, it is understood that we are in the Heisenberg picture.
 
-Back to our example. Recall we were compairing
+Back to our example. Recall we were comparing
 \[ \hat{c}_{\uparrow}^{\dagger}e^{-i\hat{H}t}|\Omega \rangle \quad \mathrm{vs}\quad e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \]
 where
 \[ \hat{H}=\varepsilon \left( \hat{c}_{\uparrow}^{\dagger}\hat{c}_{\downarrow}+\hat{c}_{\downarrow}^{\dagger}\hat{c}_{\uparrow} \right) \]
@@ -203,7 +203,7 @@ In Heisenberg picture, we have defined
     G_{\uparrow \uparrow}\left( t \right) &=-i\langle \Omega |e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \\
     &=-i\langle \Omega |\hat{c}_{\uparrow}\left( t \right) \hat{c}_{\uparrow}^{\dagger}\left( 0 \right) |\Omega \rangle
 \end{align*}
-which can be interpreted as a (quantum) auto-correlation function: we create an electron at time $t=0$, and then annihilate it at time $t$. We are measureing correlation across time. Yet, this is \emph{NOT} by itself a physical observable! We cannot understand it as the expectation vlue of some Hermitian operator. Nevertheless, ``unphysical'' expressions of such form provides the basis for computing actual observables. As one first check, let us investigate how $G(t)$ reflects the energy scale of the problem. Noticing
+which can be interpreted as a (quantum) auto-correlation function: we create an electron at time $t=0$, and then annihilate it at time $t$. We are measuring correlation across time. Yet, this is \emph{NOT} by itself a physical observable! We cannot understand it as the expectation value of some Hermitian operator. Nevertheless, ``unphysical'' expressions of such form provides the basis for computing actual observables. As one first check, let us investigate how $G(t)$ reflects the energy scale of the problem. Noticing
 \[ \hat{H}=\varepsilon \hat{c}_{+}^{\dagger}\hat{c}_+-\varepsilon \hat{c}_{-}^{\dagger}\hat{c}_-\]
 \[ \hat{c}_{\pm}^{\dagger}=\frac{1}{\sqrt{2}}\left( \hat{c}_{\uparrow}^{\dagger}\pm \hat{c}_{\downarrow}^{\dagger} \right) \]
 we first note that time evolution for $\hat{c}_{\pm}^\dagger$ is simple. In the Heisenberg picture,
