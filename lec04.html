@@ -53,7 +53,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="test jupyterbook feature" href="test.html" />
+    <link rel="next" title="lec05" href="lec05.html" />
     <link rel="prev" title="lec03" href="lec03.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -120,8 +120,40 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="test.html">
-   test jupyterbook feature
+   test
   </a>
  </li>
 </ul>
@@ -288,7 +320,7 @@
 <p>Reminder: PS1 due coming Fri <span class="math notranslate nohighlight">\(1:30\text{pm}-\varepsilon\)</span></p>
 <div class="section" id="particle-statistics">
 <h2>particle statistics<a class="headerlink" href="#particle-statistics" title="Permalink to this headline">¶</a></h2>
-<p>We have mentioned on and off that phonon problem iis a bosonic one. Recall from QM that boson vs fermion is a question about particle exchange statistics. In the so-called “first quantized” wave function, a two-particle wave function dependss on two coordinate variables</p>
+<p>We have mentioned on and off that phonon problem is a bosonic one. Recall from QM that boson vs fermion is a question about particle exchange statistics. In the so-called “first quantized” wave function, a two-particle wave function depends on two coordinate variables</p>
 <div class="math notranslate nohighlight">
 \[ \Psi \left( x_1,x_2 \right) =\langle x_1,x_2|\Psi \rangle \]</div>
 <p>“Particle statistics” refers to what happen if we decide to relabel the two indistinguishable particles</p>
@@ -305,7 +337,7 @@
 <ol class="simple">
 <li><p>but (if) space is continuous, then we have uncountably many QHO’s even in a finite volume of space! That sounds sick. That is sick. But that’s okay.</p></li>
 <li><p>We have implicitly promoted the single-particle wave function <span class="math notranslate nohighlight">\(\delta(x)\)</span> to an operator <span class="math notranslate nohighlight">\(\hat{b}_x^\dagger\)</span>. That’s why this is called “second quantization”.</p></li>
-<li><p>implicitly, we have defined an object which maps space to quantum operators: <span class="math notranslate nohighlight">\(\vec{r}\to \hat{b}_x^\dagger\)</span>. Such maps are called “fields”. (E.g., think about electric field <span class="math notranslate nohighlight">\(\vec{r}\to \vec{E_{\vec{r}}}\)</span>. Our fields here are quantum mechanical in that they do not have simple point-wise multiplication but instead cannonical commutation). Whence the name “QFT”</p></li>
+<li><p>implicitly, we have defined an object which maps space to quantum operators: <span class="math notranslate nohighlight">\(\vec{r}\to \hat{b}_x^\dagger\)</span>. Such maps are called “fields”. (E.g., think about electric field <span class="math notranslate nohighlight">\(\vec{r}\to \vec{E_{\vec{r}}}\)</span>. Our fields here are quantum mechanical in that they do not have simple point-wise multiplication but instead canonical commutation). Whence the name “QFT”</p></li>
 </ol>
 <p>Now, back to particle statistics. We have, for bosons,</p>
 <div class="math notranslate nohighlight">
@@ -313,7 +345,7 @@
 <p>So the exchange sign of <span class="math notranslate nohighlight">\(+1\)</span> is really the commutation of among the creation(annihilation) operators. It is then natural to guess what should happen for fermions:</p>
 <div class="math notranslate nohighlight">
 \[ \Psi _F\left( x_1,x_2 \right) =\langle 0|\hat{c}_{x_1}^{\dagger}\hat{c}_{x_2}^{\dagger}|0\rangle =-\langle 0|\hat{c}_{x_2}^{\dagger}\hat{c}_{x_1}^{\dagger}|0\rangle =\Psi _F\left( x_2,x_1 \right)  \]</div>
-<p>This implies the fermionic creation and annihilation operators should satisfy cannonical anti-commutation relations. Let <span class="math notranslate nohighlight">\(\{\hat{A},\hat{B}\}=\hat{A}\hat{B}+\hat{B}\hat{A}\)</span>. For fermions</p>
+<p>This implies the fermionic creation and annihilation operators should satisfy canonical anti-commutation relations. Let <span class="math notranslate nohighlight">\(\{\hat{A},\hat{B}\}=\hat{A}\hat{B}+\hat{B}\hat{A}\)</span>. For fermions</p>
 <div class="math notranslate nohighlight">
 \[ \left\{ \hat{c}_x,\hat{c}_y \right\} =\left\{ \hat{c}_{x}^{\dagger},\hat{c}_{y}^{\dagger} \right\} =0 \]</div>
 <div class="math notranslate nohighlight">
@@ -327,10 +359,10 @@
 \[ \Phi _{x_1,x_2,\cdots ,x_n}^{\phi _1,\phi _2,\cdots ,\phi _n}\xrightarrow{\mathrm{sym}}\hat{b}_{\phi _1}^{\dagger}\hat{b}_{\phi _2}^{\dagger}\cdots \hat{b}_{\phi _n}^{\dagger}|0\rangle \quad \mathrm{bosons}\]</div>
 <div class="math notranslate nohighlight">
 \[ \Phi _{x_1,x_2,\cdots ,x_n}^{\phi _1,\phi _2,\cdots ,\phi _n}\xrightarrow{\mathrm{anti}-\mathrm{sym}}\hat{c}_{\phi _1}^{\dagger}\hat{c}_{\phi _2}^{\dagger}\cdots \hat{c}_{\phi _n}^{\dagger}|0\rangle \quad \mathrm{fermions}\]</div>
-<p>where we assume the “orbitals” are distinct and orthogonal. (i.e., we are considering a cannonical transformation on the defining modes of the system).</p>
+<p>where we assume the “orbitals” are distinct and orthogonal. (i.e., we are considering a canonical transformation on the defining modes of the system).</p>
 <p>The above is rather schematic. In practice there are some factors of <span class="math notranslate nohighlight">\(\sqrt{n!}\)</span> etc. if one wants to relate first and second quantization. We won’t cover that here (usually covered in advanced QM), see e.g. Coleman Chapter-3 for more details.</p>
 <p>Final note: so is QHO bosonic?</p>
-<p><strong>It depends</strong>. IF you have exactly one particle, there is no exchange and hense no statistics. If you have multple particles, then the statistics is an “intrinsic” aspect of the problem in the sense that it defines the many-body Hilbert space, whereas being a QHO is “kinematic” in the sense that it’s just characterizing the Hamiltonian acting on the Hilbert space. E.g.,</p>
+<p><strong>It depends</strong>. IF you have exactly one particle, there is no exchange and hence no statistics. If you have multiple particles, then the statistics is an “intrinsic” aspect of the problem in the sense that it defines the many-body Hilbert space, whereas being a QHO is “kinematic” in the sense that it’s just characterizing the Hamiltonian acting on the Hilbert space. E.g.,</p>
 <ol class="simple">
 <li><p>Phonons: the momenta and displacements of different atoms commute, so we have a bosonic problem to start with. In the “harmonic approximation” we have a collection of coupled QHO</p></li>
 <li><p>Electronic quantum Hall: we have fermions to start with, but the B-field enters the single particle problem as a spatially varying gauge field. That also leads to the QHO Hamiltonian for the single particle problem. But now the raising / lowering operators act between different <strong>fermionic</strong> modes that could be empty or filled</p></li>
@@ -417,10 +449,10 @@
 \[\begin{split}
 \begin{align*}
     \hat{H}&amp;=\sum_i{\left( \sum_{\alpha}{\hat{c}_{\alpha}^{\dagger}}U_{\alpha i} \right) \varepsilon _i\left( \sum_{\beta}{\left( U^{\dagger} \right) _{i\beta}\hat{c}_{\beta}} \right)}\\
-    &amp;=\sum_i{\varepsilon _i\hat{c}_{i}^{\dagger}\hat{c}_i}\quad \mathrm{cannonical transformation}
+    &amp;=\sum_i{\varepsilon _i\hat{c}_{i}^{\dagger}\hat{c}_i}\quad \mathrm{canonical transformation}
 \end{align*}
 \end{split}\]</div>
-<p>(c.f. the phonon discusion)</p>
+<p>(c.f. the phonon discussion)</p>
 <p>Back to the two mode problem: this is again an exactly solved problem, which is in a way similar to the QHO / free phonon. We know all the eigenstates and eigen-energies. Yet, it is natural to ask how we can probe the “physics” of the system. Suppose we start with the ground state (<span class="math notranslate nohighlight">\(t&gt;0\)</span>):</p>
 <div class="math notranslate nohighlight">
 \[ |\Omega \rangle =\hat{c}_{-}^{\dagger}|0\rangle =\frac{1}{\sqrt{2}}\left( \hat{c}_{\uparrow}^{\dagger}-\hat{c}_{\downarrow}^{\dagger} \right) |0\rangle \]</div>
@@ -433,7 +465,7 @@
 \[ e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \quad \mathrm{vs}\quad \hat{c}_{\uparrow}^{\dagger}e^{-i\hat{H}t}|\Omega \rangle \]</div>
 <div class="math notranslate nohighlight">
 \[ \quad G_{\uparrow \uparrow}\left( t \right) =-i\langle \Omega |e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \]</div>
-<p>where <span class="math notranslate nohighlight">\(e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}\)</span> iss the conjugate action of time evolution on an operator. We clained</p>
+<p>where <span class="math notranslate nohighlight">\(e^{i\hat{H}t}\hat{c}_{\uparrow}e^{-i\hat{H}t}\)</span> is the conjugate action of time evolution on an operator. We claimed</p>
 <ol class="simple">
 <li><p>Such functions contains important dynamical info about the system</p></li>
 <li><p>It is natural to interpret it as a specific kind of correlation function</p></li>
@@ -454,7 +486,7 @@
 <p>Now imagine computing some observables as the state evolves</p>
 <div class="math notranslate nohighlight">
 \[ A\left( t \right) =\langle \Psi \left( t \right) |\hat{A}|\Psi \left( t \right) \rangle =\langle \Psi \left( 0 \right) |\hat{U}^{\dagger}\hat{A}\hat{U}|\Psi \left( 0 \right) \rangle \]</div>
-<p>It’s simply a mater of interpretation to say that the operator is evolving <span class="math notranslate nohighlight">\(\hat{A}\rightarrow \hat{U}^{\dagger}\hat{A}\hat{U}\)</span>, and we compute its expectation value with resepct to a fixed state <span class="math notranslate nohighlight">\(|\Psi\rangle(0)\)</span>. This perspective is called the “Heisenberg picture”.</p>
+<p>It’s simply a mater of interpretation to say that the operator is evolving <span class="math notranslate nohighlight">\(\hat{A}\rightarrow \hat{U}^{\dagger}\hat{A}\hat{U}\)</span>, and we compute its expectation value with respect to a fixed state <span class="math notranslate nohighlight">\(|\Psi\rangle(0)\)</span>. This perspective is called the “Heisenberg picture”.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} \mathrm{Schrodinger}\begin{cases}
   |\Psi \left( 0 \right) \rangle _S\rightarrow |\Psi \left( t \right) \rangle _S=\hat{U}|\Psi \left( 0 \right) \rangle _S\\
@@ -477,8 +509,8 @@
 <p>In fact, nothing in the check above demands that we use the actual Hamiltonian! One can imagine picking a “convenient” part of the actual Hamiltonian in defining the dynamics of the operators. Correspondingly, however, the state vectors are <strong>NOT</strong> static since we are not using the actual Hamiltonian. In this hybrid picture, both the operators and the state evolve. This is called the “interaction picture”; more later.</p>
 <p>Note: for those of you who know quantum optics, think about rotating wave approximation.</p>
 <p>\section{One-particle Green’s function: a first example}</p>
-<p>In the following, we keep the subscript <span class="math notranslate nohighlight">\(S\)</span> vs <span class="math notranslate nohighlight">\(H\)</span> implicit. Whenever we write a time dependence for a noperator, it is understood that we are in the Heisenberg picture.</p>
-<p>Back to our example. Recall we were compairing</p>
+<p>In the following, we keep the subscript <span class="math notranslate nohighlight">\(S\)</span> vs <span class="math notranslate nohighlight">\(H\)</span> implicit. Whenever we write a time dependence for an operator, it is understood that we are in the Heisenberg picture.</p>
+<p>Back to our example. Recall we were comparing</p>
 <div class="math notranslate nohighlight">
 \[ \hat{c}_{\uparrow}^{\dagger}e^{-i\hat{H}t}|\Omega \rangle \quad \mathrm{vs}\quad e^{-i\hat{H}t}\hat{c}_{\uparrow}^{\dagger}|\Omega \rangle \]</div>
 <p>where</p>
@@ -494,7 +526,7 @@
     &amp;=-i\langle \Omega |\hat{c}_{\uparrow}\left( t \right) \hat{c}_{\uparrow}^{\dagger}\left( 0 \right) |\Omega \rangle
 \end{align*}
 \end{split}\]</div>
-<p>which can be interpreted as a (quantum) auto-correlation function: we create an electron at time <span class="math notranslate nohighlight">\(t=0\)</span>, and then annihilate it at time <span class="math notranslate nohighlight">\(t\)</span>. We are measureing correlation across time. Yet, this is <strong>NOT</strong> by itself a physical observable! We cannot understand it as the expectation vlue of some Hermitian operator. Nevertheless, “unphysical” expressions of such form provides the basis for computing actual observables. As one first check, let us investigate how <span class="math notranslate nohighlight">\(G(t)\)</span> reflects the energy scale of the problem. Noticing</p>
+<p>which can be interpreted as a (quantum) auto-correlation function: we create an electron at time <span class="math notranslate nohighlight">\(t=0\)</span>, and then annihilate it at time <span class="math notranslate nohighlight">\(t\)</span>. We are measuring correlation across time. Yet, this is <strong>NOT</strong> by itself a physical observable! We cannot understand it as the expectation value of some Hermitian operator. Nevertheless, “unphysical” expressions of such form provides the basis for computing actual observables. As one first check, let us investigate how <span class="math notranslate nohighlight">\(G(t)\)</span> reflects the energy scale of the problem. Noticing</p>
 <div class="math notranslate nohighlight">
 \[ \hat{H}=\varepsilon \hat{c}_{+}^{\dagger}\hat{c}_+-\varepsilon \hat{c}_{-}^{\dagger}\hat{c}_-\]</div>
 <div class="math notranslate nohighlight">
@@ -584,10 +616,10 @@
             <p class="prev-next-title">lec03</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="test.html" title="next page">
+    <a class='right-next' id="next-link" href="lec05.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">test jupyterbook feature</p>
+        <p class="prev-next-title">lec05</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

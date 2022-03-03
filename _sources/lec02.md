@@ -217,7 +217,7 @@ We can do it in two orders: $e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle$ versus 
 
 $$ \langle \Omega |e^{i\hat{H}t/\hbar}\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle =e^{i\omega _{\Omega}t}\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle $$
 
-where $\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle$ iss a "propagator" in some basis.
+where $\langle \Omega |\hat{f}^{\dagger}e^{-i\hat{H}t/\hbar}\hat{f}|\Omega \rangle$ is a "propagator" in some basis.
 
 Notes
 
@@ -344,7 +344,7 @@ Here $\hat{p}_i^\alpha$ and $\hat{u}_i^\alpha$ are conjugate variables $\left[ \
 
 $$ \hat{\pi}_{i}^{\alpha}=\frac{\hat{p}_{i}^{\alpha}}{\sqrt{m_i}};\quad \hat{\phi}_{i}^{\alpha}=\hat{u}_{i}^{\alpha}\sqrt{m_i} $$
 
-which preserves the cannonical commutation relation
+which preserves the canonical commutation relation
 
 $$ \left[ \hat{\phi}_{i}^{\alpha},\hat{\pi}_{j}^{\beta} \right] =i\delta _{\alpha \beta}\delta _{ij}$$
 

@@ -114,6 +114,48 @@
    lec03
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -353,13 +395,13 @@
 \[ \hat{a}^{\dagger}|n\rangle =\sqrt{n+1}|n+1\rangle \]</div>
 <p>similar argument gives <span class="math notranslate nohighlight">\(\hat{a}|n\rangle =\sqrt{n}|n-1\rangle\)</span>. In a matrix picture.</p>
 <div class="math notranslate nohighlight">
-\[\begin{split} \hat{a}^\dagger=\left[ \begin{matrix}{l}
+\[\begin{split} \hat{a}^\dagger=\left[ \begin{matrix}
   0&amp;    &amp;    &amp;    &amp;    \\
   1&amp;    0&amp;    &amp;    &amp;    \\
   &amp;    \sqrt{2}&amp;    0&amp;    &amp;    \\
   &amp;    &amp;    \sqrt{3}&amp;    0&amp;    \\
   &amp;    &amp;    &amp;    \ddots&amp;    \ddots\\
-\end{matrix} \right] ,\quad \hat{a}=\left[ \begin{matrix}{l}
+\end{matrix} \right] ,\quad \hat{a}=\left[ \begin{matrix}
   0&amp;    1&amp;    &amp;    &amp;    \\
   &amp;    0&amp;    \sqrt{2}&amp;    &amp;    \\
   &amp;    &amp;    0&amp;    \sqrt{3}&amp;    \\
@@ -384,7 +426,7 @@
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-    1&amp;=\int_{-\infty}^{\infty}{\left| \phi _0\left( x \right) \right|}dx=\mathcal{N} ^2\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}dx}\\
+    1&amp;=\int_{-\infty}^{\infty}{\left| \phi _0\left( x \right) \right|^2 dx}=\mathcal{N} ^2\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}dx}\\
     &amp;=\mathcal{N} ^2\sqrt{\frac{\hbar}{2m\omega}}\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}\exp \left( -\left( \sqrt{\frac{\hbar}{2m\omega}}x \right) ^2/2 \right) d\left( \sqrt{\frac{\hbar}{2m\omega}}x \right)}\\
     &amp;=\mathcal{N} ^2\sqrt{\frac{\hbar}{2m\omega}}\sqrt{2\pi}
 \end{align*}
@@ -400,7 +442,7 @@
 </div>
 <div class="section" id="coherent-state">
 <h2>coherent state<a class="headerlink" href="#coherent-state" title="Permalink to this headline">¶</a></h2>
-<p>We have seen that the creation and annihilation operatos provides a simple way to analyze the QHO. Let’s now take these as the “coordinates” for our problem. Recall position basis <span class="math notranslate nohighlight">\(\hat{x}|x\rangle =x|x\rangle\)</span>. Similarly, we consider the eigenstates of the form</p>
+<p>We have seen that the creation and annihilation operators provides a simple way to analyze the QHO. Let’s now take these as the “coordinates” for our problem. Recall position basis <span class="math notranslate nohighlight">\(\hat{x}|x\rangle =x|x\rangle\)</span>. Similarly, we consider the eigenstates of the form</p>
 <div class="math notranslate nohighlight">
 \[ \hat{a}|\alpha \rangle =\alpha |\alpha \rangle ;\quad \alpha \in \mathbb{C} \]</div>
 <p>E.g., The ground state <span class="math notranslate nohighlight">\(\hat{a}|0\rangle =0|0\rangle =0\)</span>. To solve for the eigenstate, write</p>

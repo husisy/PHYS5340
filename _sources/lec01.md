@@ -118,13 +118,13 @@ $$ \hat{a}^{\dagger}|n\rangle =\sqrt{n+1}|n+1\rangle $$
 
 similar argument gives $\hat{a}|n\rangle =\sqrt{n}|n-1\rangle$. In a matrix picture.
 
-$$ \hat{a}^\dagger=\left[ \begin{matrix}{l}
+$$ \hat{a}^\dagger=\left[ \begin{matrix}
   0&    &    &    &    \\
   1&    0&    &    &    \\
   &    \sqrt{2}&    0&    &    \\
   &    &    \sqrt{3}&    0&    \\
   &    &    &    \ddots&    \ddots\\
-\end{matrix} \right] ,\quad \hat{a}=\left[ \begin{matrix}{l}
+\end{matrix} \right] ,\quad \hat{a}=\left[ \begin{matrix}
   0&    1&    &    &    \\
   &    0&    \sqrt{2}&    &    \\
   &    &    0&    \sqrt{3}&    \\
@@ -152,7 +152,7 @@ To get the normalization,
 
 $$
 \begin{align*}
-    1&=\int_{-\infty}^{\infty}{\left| \phi _0\left( x \right) \right|}dx=\mathcal{N} ^2\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}dx}\\
+    1&=\int_{-\infty}^{\infty}{\left| \phi _0\left( x \right) \right|^2 dx}=\mathcal{N} ^2\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}dx}\\
     &=\mathcal{N} ^2\sqrt{\frac{\hbar}{2m\omega}}\int_{-\infty}^{\infty}{e^{-m\omega x^2/\hbar}\exp \left( -\left( \sqrt{\frac{\hbar}{2m\omega}}x \right) ^2/2 \right) d\left( \sqrt{\frac{\hbar}{2m\omega}}x \right)}\\
     &=\mathcal{N} ^2\sqrt{\frac{\hbar}{2m\omega}}\sqrt{2\pi}
 \end{align*}
@@ -170,7 +170,7 @@ A standard discussion will next introduce the real-space wave function of the ex
 
 ## coherent state
 
-We have seen that the creation and annihilation operatos provides a simple way to analyze the QHO. Let's now take these as the "coordinates" for our problem. Recall position basis $\hat{x}|x\rangle =x|x\rangle$. Similarly, we consider the eigenstates of the form
+We have seen that the creation and annihilation operators provides a simple way to analyze the QHO. Let's now take these as the "coordinates" for our problem. Recall position basis $\hat{x}|x\rangle =x|x\rangle$. Similarly, we consider the eigenstates of the form
 
 $$ \hat{a}|\alpha \rangle =\alpha |\alpha \rangle ;\quad \alpha \in \mathbb{C} $$
 

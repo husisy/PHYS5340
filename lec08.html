@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec08 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="Impurity phonon" href="lec07_Impurity_phonon.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec08.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flec08.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solving-again-heisenberg-picture">
+   Solving again: Heisenberg picture
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec08</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solving-again-heisenberg-picture">
+   Solving again: Heisenberg picture
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec08">
+<h1>lec08<a class="headerlink" href="#lec08" title="Permalink to this headline">¶</a></h1>
+<p>20220302</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Impurity spectral function: solving again with Heisenberg</p></li>
+<li><p>Dyson series, time ordering, and time-ordered exponential</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Learning how to deal with time-dependent perturbations</p></li>
+</ol>
+<div class="section" id="solving-again-heisenberg-picture">
+<h2>Solving again: Heisenberg picture<a class="headerlink" href="#solving-again-heisenberg-picture" title="Permalink to this headline">¶</a></h2>
+<p>Our solution for the impurity (one-electron) spectral function was satisfactory (I think), in the sense that we have found a concrete expression which does encode a lot of interesting physics (e.g., enable numerical simulation, and analytical solution with the simplified Einstein phonons). Yet, it is also clear that our calculation approach worked because we have an exactly solved model. This is a luxury to have, and oftentimes people take “exactly solubility” to equate to “boring”. (Of course, this is subjected to personal taste)</p>
+<p>The bottom line is, our problem was exactly solvable because it ultimately decouples into independent QHO (shifted phonon Hamiltonian) and fermions (individually conserved particle number). We only have a minimal degree of interactions in our model, namely, the phonon-mediated density-density interactions between the electrons.</p>
+<p>Our course is called “Quantum many-body theory”, and apparently I cannot avoid introducing techniques for solving more general interacting many-body problems! This motivates to go through a more complicated approach of solving the same problem again, through the Heisenberg picture.</p>
+<p>Recall in the Heisenberg picture the states are stationary, and the operators evolve according to</p>
+<div class="math notranslate nohighlight">
+\[ \hat{O}_H\left( t \right) =e^{i\hat{H}t}\hat{O}_Se^{-i\hat{H}t}\]</div>
+<p>their time evolution is governed by the equation of motion</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{O}_H\left( t \right) =\left[ \hat{O}_H\left( t \right) ,\hat{H} \right] _H\]</div>
+<p>everything below will be in the Heisenberg picture, and we drop the subscript. Here we want to compute the real-time Green’s function</p>
+<div class="math notranslate nohighlight">
+\[G_{ii}\left( t \right) =\langle \Omega |\hat{c}_{i}^{\dagger}\left( t \right) \hat{c}_i\left( 0 \right) |\Omega \rangle \]</div>
+<p>and so we would want to compute the time evolution of <span class="math notranslate nohighlight">\(\hat{c}_i^\dagger(t)\)</span> under the Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\sum_{i=1}^N{\varepsilon _i\hat{n}_i}+\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}+\sum_{i,q}{\hat{n}_iM_{iq}\left( \hat{a}_q+\hat{a}_{q}^{\dagger} \right)}\]</div>
+<p>So we first find the equation of motion for <span class="math notranslate nohighlight">\(\hat{c}_i(t)\)</span>. Notice</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \left[ \hat{c}_{i}^{\dagger}\left( t \right) ,\hat{n}_j\left( t \right) \right] &amp;=\left[ \hat{c}_{i}^{\dagger}\left( t \right) ,\hat{c}_{j}^{\dagger}\left( t \right) \hat{c}_j\left( t \right) \right] \\
+    &amp;=\delta _{ij}\left( \hat{c}_{i}^{\dagger}\left( t \right) \left[ \hat{c}_{i}^{\dagger}\left( t \right) ,\hat{c}_i\left( t \right) \right] \right) \\
+    &amp;=\delta _{ij}\hat{c}_{i}^{\dagger}\left( t \right) \left( 2\hat{c}_{i}^{\dagger}\left( t \right) \hat{c}_i\left( t \right) -1 \right) \\
+    &amp;=-\delta _{ij}\hat{c}_{i}^{\dagger}\left( t \right)
+\end{align*}
+\end{split}\]</div>
+<p>we then have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    i\partial _t\hat{c}_{i}^{\dagger}\left( t \right) &amp;=\left[ \hat{c}_{i}^{\dagger}\left( t \right) ,\hat{H} \right] \\
+    &amp;=\sum_j{\left[ \hat{c}_{i}^{\dagger}\left( t \right) ,\varepsilon _j\hat{n}_j\left( t \right) +\hat{n}_j\left( t \right) \sum_q{M_{jq}\left( \hat{a}_q\left( t \right) +\hat{a}_{q}^{\dagger}\left( t \right) \right)} \right]}\\
+    &amp;=-\left( \varepsilon _i+\sum_q{M_{iq}\left( \hat{a}_q\left( t \right) +\hat{a}_{q}^{\dagger}\left( t \right) \right)} \right) \hat{c}_{i}^{\dagger}\left( t \right) \\
+    &amp;=\hat{O}\left( t \right) \hat{c}_{i}^{\dagger}\left( t \right)
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{O}\left( t \right) =-\varepsilon _i-\sum_q{M_{iq}\left( \hat{a}_q\left( t \right) +\hat{a}_{q}^{\dagger}\left( t \right) \right)}\]</div>
+<p>compared to our earlier “single-site” electronic model (c.f. Lecture-4), the difference is that the orbital energy <span class="math notranslate nohighlight">\(\varepsilon_i\)</span> is now promoted to a time-dependent operator. The “operators” act on the phonon Fock space, and reflects the electron-phonon coupling. The time-dependence comes from the time evolution of the phonon operators, which reflects their dynamics.</p>
+<p>This, therefore, implies that we have to also solve for the time-evolution of the phonon operators, Again, we first notice</p>
+<div class="math notranslate nohighlight">
+\[ \left[ \hat{a}_q\left( t \right) ,\hat{a}_{q'}^{\dagger}\left( t \right) \right] =\delta _{qq'}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \left[ \hat{a}_q\left( t \right) ,\hat{a}_{q'}^{\dagger}\left( t \right) \hat{a}_{q'}\left( t \right) \right] =\delta _{qq'}\hat{a}_q\left( t \right) \]</div>
+<p>and so the equation of motion is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    i\partial _t\hat{a}_q\left( t \right) &amp;=\left[ \hat{a}_q\left( t \right) ,\sum_{q'}{\left( \omega _{q'}\hat{a}_{q'}^{\dagger}\hat{a}_{q'}+\sum_i{\hat{n}_iM_{iq'}\left( \hat{a}_{q'}+\hat{a}_{q'}^{\dagger} \right)} \right)} \right] \\
+    &amp;=\omega _q\hat{a}_q\left( t \right) +\sum_i{\hat{n}_iM_{iq}}
+\end{align*}
+\end{split}\]</div>
+<p>the <span class="math notranslate nohighlight">\(e-ph\)</span> coupling again leads to a new piece, which requires us to consider</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{n}_i\left( t \right) =\left[ \hat{n}_i\left( t \right) ,\hat{H} \right] =0\]</div>
+<p>which means <span class="math notranslate nohighlight">\(\hat{n}_i(t)\)</span> is an “integral of motion” and stays constant <span class="math notranslate nohighlight">\(\hat{n}_i(t)=\hat{n}_i\)</span>.</p>
+<p>Note: We have basically set up a hierarchy of equation of motions (EOM): when we try to solve for the evolution of an operator, we see that its EOM contains some other operators, and we have to proceed with finding the EOM of these other operators etc. Such hierarchy is not closed in general, which makes it impossible to write down a closed set of equations (and let alone finding the exact solution). From this lens, our model is exactly solved in that the hierarchy terminates, and we only need to consider the coupled equations for <span class="math notranslate nohighlight">\(\hat{c}_i^\dagger (t)\)</span> and <span class="math notranslate nohighlight">\(\hat{a}_q(t)\)</span>. We may first solve</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{a}_q\left( t \right) =\omega _q\hat{a}_q\left( t \right) +\sum_i{\hat{n}_iM_{iq}}\]</div>
+<p>Let</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}_q\left( t \right) =\hat{A}+\hat{B}e^{-i\omega_qt}\]</div>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{a}_q\left( t \right) =\omega _q\hat{B}e^{-i\omega t}=\omega _q\left( \hat{a}_q\left( t \right) -\hat{A} \right) \]</div>
+<p>comparing the equations above,</p>
+<div class="math notranslate nohighlight">
+\[ -\omega _q\hat{A}=\sum_i{\hat{n}_iM_{iq}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow\quad \hat{a}_q\left( t \right) =-\sum_i{\hat{n}_i\frac{M_{iq}}{\omega _q}}+\hat{B}e^{-i\omega _qt}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{a}_q\left( 0 \right) =-\sum_i{\hat{n}_i\frac{M_{iq}}{\omega _q}}+\hat{B}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \hat{B}=\hat{a}_q\left( 0 \right) +\sum_i{\hat{n}_i\frac{M_{iq}}{\omega _q}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \hat{a}_q\left( t \right) +\sum_i{\hat{n}_i\frac{M_{iq}}{\omega _q}}=\left( \hat{a}_q\left( 0 \right) +\sum_i{\hat{n}_i\frac{M_{iq}}{\omega _q}} \right) e^{-i\omega _qt}\]</div>
+<p>Looks familiar? This simply reflects our earlier observation that, the “eigen” phonon operators in the <span class="math notranslate nohighlight">\(\{n_i\}\)</span> sector is related to the bare one (i.e., in the absence of <span class="math notranslate nohighlight">\(e-ph\)</span> coupling) by a shift using the displacement operator.</p>
+<p>To simplify notation, let us define</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}_{q}^{\left\{ n_i \right\}}\left( t \right) =\hat{a}_q\left( t \right) +\sum_i{\hat{n}_i\frac{M_{iq}}{\omega _q}}\]</div>
+<p>Then we simply have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}_{q}^{\left\{ n_i \right\}}\left( t \right) =\hat{a}_{q}^{\left\{ n_i \right\}}\left( 0 \right) e^{-i\omega _qt}\]</div>
+<p>With this preparation we can go back to study the time-evolution of  the fermion operator</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{c}_{i}^{\dagger}\left( t \right) =\hat{O}\left( t \right) \hat{c}_{i}^{\dagger}\left( t \right) \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{O}\left( t \right) &amp;=-\varepsilon _i-\sum_q{M_{iq}\left( \hat{a}_q\left( t \right) +\hat{a}_{q}^{\dagger}\left( t \right) \right)}\\
+    &amp;=-\varepsilon _i-\sum_q{M_{iq}\left( \hat{a}_{q}^{\left\{ n_i \right\}}\left( t \right) +\hat{a}_{q}^{\left\{ n_i \right\} \dagger}\left( t \right) -2\sum_j{\hat{n}_j\frac{M_{jq}}{\omega _q}} \right)}
+\end{align*}
+\end{split}\]</div>
+<p>How do we solve this? Recall, if we have a simple function</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _tf\left( t \right) =g\left( t \right) f\left( t \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \,\,f\left( t \right) =f\left( 0 \right) \exp \left( -i\int_0^t{g\left( t' \right) dt'} \right) \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    i\partial _tf\left( t \right) &amp;=f\left( 0 \right) \left( i\partial _t\exp \left( -i\int_0^t{g\left( t' \right) dt'} \right) \right) \\
+    &amp;=f\left( 0 \right) \left( \partial _t\int_0^t{g\left( t' \right) dt'} \right) \exp \left( -i\int_0^t{g\left( t' \right) dt'} \right) \\
+    &amp;=g\left( t \right) f\left( t \right)
+\end{align*}
+\end{split}\]</div>
+<p>It is then tempting to declare our formal solution is simply</p>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_{i}^{\dagger}\left( t \right) \stackrel{?}{=}\exp \left( -i\int_0^t{\hat{O}\left( t' \right) dt'} \right) \hat{c}_{i}^{\dagger}\left( 0 \right) \]</div>
+<p>But we should Remember the meaning of the exponential here is that it is a formal power series!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{c}_{i}^{\dagger}&amp;\stackrel{?}{=}\sum_{n=0}^{\infty}{\frac{\left( -i \right) ^n}{n!}\left[ \int_0^t{dt'\hat{O}\left( t' \right)} \right] ^n}\hat{c}_{i}^{\dagger}\left( 0 \right)\\
+    &amp;=\left( 1-i\int_0^t{dt_1\hat{O}\left( t_1 \right)}+\frac{\left( -i \right) ^2}{2}\int_0^t{dt_1\int_0^t{dt_2\hat{O}\left( t_1 \right) \hat{O}\left( t_2 \right)}}+\cdots \right) \hat{c}_{i}^{\dagger}\left( 0 \right)
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[i\partial _t\hat{c}_{i}^{\dagger}\left( t \right) \stackrel{?}{=}\left\{ \hat{O}\left( t \right) -\frac{i}{2}\left[ \hat{O}\left( t \right) \left( \int_0^t{dt_2\hat{O}\left( t_2 \right)} \right) +\left( \int_0^t{dt_1\hat{O}\left( t_1 \right)} \right) \hat{O}\left( t \right) \right] +\cdots \right\} \hat{c}_{i}^{\dagger}\left( 0 \right) \]</div>
+<p>versus</p>
+<div class="math notranslate nohighlight">
+\[ \hat{O}\left( t \right) \hat{c}_{i}^{\dagger}\left( t \right) =\hat{O}\left( t \right) \left( 1-i\int_0^t{dt_1\hat{O}\left( t_1 \right)}+\cdots \right) \hat{c}_{i}^{\dagger}\left( 0 \right) \]</div>
+<p>the two expression agree to this order only if</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{2}\left[ \hat{O}\left( t \right) \left( \int_0^t{dt_2\hat{O}\left( t_2 \right)} \right) +\left( \int_0^t{dt_1\hat{O}\left( t_1 \right)} \right) \hat{O}\left( t \right) \right] =\hat{O}\left( t \right) \int_0^t{dt_1\hat{O}\left( t_1 \right)}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \left[ \int_0^t{dt_1\hat{O}\left( t_1 \right)},\hat{O}\left( t \right) \right] =0\]</div>
+<p>But the “same” operator at different times may not commute with “itself”! E.g., consider a single QHO, let</p>
+<div class="math notranslate nohighlight">
+\[ \hat{O}\left( t \right) =\hat{a}\left( t \right) +\hat{a}^{\dagger}\left( t \right) =\hat{a}\left( 0 \right) e^{-i\omega t}+\hat{a}^{\dagger}\left( 0 \right) e^{i\omega t}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \left[ \hat{O}\left( t_1 \right) ,\hat{O}\left( t_2 \right) \right] &amp;=\left[ \hat{a}\left( 0 \right) e^{-i\omega t_1}+\hat{a}^{\dagger}\left( 0 \right) e^{i\omega t_1},\hat{a}\left( 0 \right) e^{-i\omega t_2}+\hat{a}^{\dagger}\left( 0 \right) e^{i\omega t_2} \right] \\
+    &amp;=\left[ \hat{a}^{\dagger}\left( 0 \right) ,\hat{a}\left( 0 \right) \right] e^{i\omega \left( t_1-t_2 \right)}+\left[ \hat{a}\left( 0 \right) ,\hat{a}^{\dagger}\left( 0 \right) \right] e^{-i\omega \left( t_1-t_2 \right)}\\
+    &amp;=-2i\sin \omega \left( t_1-t_2 \right)
+\end{align*}
+\end{split}\]</div>
+<p>In other words, the “solution” we proposed is problematic when such non-commutation arises. To solve the problem, we have two (equivalent) pictures:</p>
+<p>(1) Discretize then limit</p>
+<p>Consider a small time interval <span class="math notranslate nohighlight">\(\delta_t\)</span>. To leading order in <span class="math notranslate nohighlight">\(\delta_t\)</span>, we may pretend <span class="math notranslate nohighlight">\(\hat{O}(t)\approx \hat{O}(t+\delta_t)\)</span> is constant. Then we have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_{i}^{\dagger}\left( t+\delta _t \right) \approx e^{-i\hat{O}\delta _t}\hat{c}_{i}^{\dagger}\left( t \right) \]</div>
+<p>Doing this successively, we can approximate a long-time evolution</p>
+<p><img alt="lec08-fig00" src="_images/lec08-fig00.png" /></p>
+<p>and we claim this becomes exact in the limit</p>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_{i}^{\dagger}\left( t \right) =\lim_{N\rightarrow \infty} e^{-i\hat{O}\left( t_{N-1} \right) t/N}\cdots e^{-i\hat{O}\left( t_n \right) t/N}\cdots e^{-i\hat{O}\left( t_1 \right) t/N}e^{-i\hat{O}\left( 0 \right) t/N}\hat{c}_{i}^{\dagger}\left( 0 \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ t_n=\frac{nt}{N}\]</div>
+<p>Remarks:</p>
+<ol class="simple">
+<li><p>This is quite intuitive, but at the same time we did not justify its validity (e.g., error estimate, convergence of limit etc.). We will not worry about these problems, and just declare it’s okay.</p></li>
+<li><p>How might one even try to evaluate this? In the case when the operators are more general (complicated), it may not be feasible to work out everything explicitly and exactly using only the abstract operator algebra.</p></li>
+</ol>
+<p>One natural way forward is to go back to some explicit “basis”, e.g., in a coordinate-space basis we may replace <span class="math notranslate nohighlight">\(\hat{x}\to x\)</span>. Yet, in the same basis momentum <span class="math notranslate nohighlight">\(\hat{p}\to -i\partial_x\)</span> is still an operator. Rather, it becomes a number only if we go to a momentum basis. Such dichotomy of “what is easy” is the defining feature (trouble) of quantum mechanics.</p>
+<p>But we are considering small time intervals! Their failure to commute enters in <span class="math notranslate nohighlight">\(O(\delta_t^2)\)</span>. In other words, we can insert resolutions of identity for both <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(p\)</span> at each time-slice, and then treat them as commuting variables (since they are now only real numbers) in the limit <span class="math notranslate nohighlight">\(\delta_t\to 0\)</span>! This is the path integral picture.</p>
+<p>(2) Fix the ordering up</p>
+<p>Alternatively, we can also try to “repair” our good old solution</p>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_{i}^{\dagger}\left( t \right) \sim \exp \left( -i\int_0^t{dt'\hat{O}\left( t' \right)} \right) \hat{c}_{i}^{\dagger}\left( 0 \right) \]</div>
+<p>after all, we know it is perfectly fine when <span class="math notranslate nohighlight">\(\hat{O}(t)\)</span> at different times commute. (In particular, when it is time-independent.)</p>
+<p>To this end, we first notice if we write</p>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_{i}^{\dagger}\left( t \right) =\hat{U}\left( t \right) \hat{c}_{i}^{\dagger}\left( 0 \right) \]</div>
+<p>with the “initial condition” <span class="math notranslate nohighlight">\(\hat{U}\left( 0 \right) =1\)</span>, and demand it to be a solution to</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{c}_{i}^{\dagger}\left( t \right) =\hat{O}\left( t \right) \hat{c}_{i}^{\dagger}\left( t \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \left( i\partial _t\hat{U}\left( t \right) \right) \hat{c}_{i}^{\dagger}\left( 0 \right) =\hat{O}\left( t \right) \hat{U}\left( t \right) \hat{c}_{i}^{\dagger}\left( 0 \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad i\partial _t\hat{U}\left( t \right) =\hat{O}\left( t \right) \hat{U}\left( t \right) \]</div>
+<p>We can as well go from the “differential” equation to an “integral” equation</p>
+<div class="math notranslate nohighlight">
+\[ \hat{U}\left( t \right) =\hat{U}\left( 0 \right) -i\int_0^t{dt_1\hat{O}\left( t_1 \right) \hat{U}\left( t_1 \right)}\]</div>
+<p>This isn’t quite “solving” <span class="math notranslate nohighlight">\(\hat{U}(t)\)</span> yet, as it still appears on both left- and right-hand sides. But we may now iterate</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{U}\left( t \right) &amp;=1-i\int_0^t{dt_1\hat{O}\left( t_1 \right) \hat{U}\left( t_1 \right)}\\
+    &amp;=1-i\int_0^t{dt_1\hat{O}\left( t_1 \right) \left[ 1-i\int_0^{t_1}{dt_2\hat{O}\left( t_2 \right) \hat{U}\left( t_2 \right)} \right]}\\
+    &amp;=1-i\int_0^t{dt_1\hat{O}\left( t_1 \right)}+\left( -i \right) ^2\int_0^t{dt_1\int_0^{t_1}{dt_2\hat{O}\left( t_1 \right) \hat{O}\left( t_2 \right) \hat{U}\left( t_2 \right)}}\\
+    &amp;=1-i\int_0^t{dt_1\hat{O}\left( t_1 \right)}+\left( -i \right) ^2\int_0^t{dt_1\int_0^{t_1}{dt_2\hat{O}\left( t_1 \right) \hat{O}\left( t_2 \right)}}\\
+    &amp;\qquad+\left( -i \right) ^3\int_0^t{dt_1\int_0^{t_1}{dt_2\int_0^{t_2}{dt_3\hat{O}\left( t_1 \right) \hat{O}\left( t_2 \right) \hat{O}\left( t_3 \right) \hat{U}\left( t_3 \right)}}}\\
+    &amp;\vdots
+\end{align*}
+\end{split}\]</div>
+<p>we thus also get a formal power series solution to <span class="math notranslate nohighlight">\(\hat{U}(t)\)</span>, with the general form of the <span class="math notranslate nohighlight">\(n\)</span>-th term given by</p>
+<div class="math notranslate nohighlight">
+\[ \hat{U}\left( t \right) =\sum_{n=0}^{\infty}{\left( -1 \right) ^n\int_0^t{dt_1\int_0^{t_1}{dt_2}\cdots \int_0^{t_{n-1}}{dt_n\hat{O}\left( t_1 \right) \hat{O}\left( t_2 \right) \cdots \hat{O}\left( t_n \right)}}}\]</div>
+<p>This is called the “Dyson series”. We see that it is quite “close” to the expansion of the exponential. But with two important differences:</p>
+<ol>
+<li><p>we are missing a factor of <span class="math notranslate nohighlight">\(n!\)</span> in the factorial.</p></li>
+<li><p>the multiple time variables are ordered since each is bounded by the preceding one under the integral:</p>
+<div class="math notranslate nohighlight">
+\[ t_n&lt;t_{n-1}&lt;\cdots &lt;t_2&lt;t_1&lt;t\]</div>
+<p>such ordering is the key to repairing our “exponential solution” with regards to the non-commuting nature <span class="math notranslate nohighlight">\(\left[ \hat{O}\left( t \right) ,\hat{O}\left( t' \right) \right] \ne 0\)</span>.</p>
+</li>
+</ol>
+<p>Observation (1) invites us to “over count” the terms by treating the different <span class="math notranslate nohighlight">\(\hat{O}(t_n)\)</span> more equally, and in doing so we have to replace</p>
+<div class="math notranslate nohighlight">
+\[ \int_0^{t_{n-1}}{dt_n}\mapsto \int_0^t{dt_n}\]</div>
+<p>At the same time, observation (2) instructs us to be disciplined when we perform such over-counting, since otherwise we screw up with the ordering of the operators demanded by the non-commuting nature of <span class="math notranslate nohighlight">\(\hat{O}(t)\)</span> at different times. Combined, we claim</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{U}\left( t \right) &amp;=\sum_{n=0}^{\infty}{\frac{\left( -1 \right) ^n}{n!}\mathcal{T} \left[ \int_0^t{dt_1\int_0^t{dt_2}\cdots \int_0^t{dt_n\hat{O}\left( t_1 \right) \hat{O}\left( t_2 \right) \cdots \hat{O}\left( t_n \right)}} \right]}\\
+    &amp;=\mathcal{T} \left[ \exp \left\{ -i\int_0^t{dt'\hat{O}\left( t' \right)} \right\} \right]
+\end{align*}
+\end{split}\]</div>
+<p>called the “time-ordered exponential”. Here <span class="math notranslate nohighlight">\(\mathcal{T}\)</span> is the “time-ordering” operator</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{T} \left[ \hat{A}\hat{B}\hat{C}\hat{D} \right] =\hat{D}\hat{B}\hat{A}\hat{C}\]</div>
+<p>for</p>
+<p><img alt="lec08-fig01" src="_images/lec08-fig01.png" /></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec07_Impurity_phonon.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Impurity phonon</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By auther<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
