@@ -23,7 +23,7 @@ some abbreviation
 
 ## how to contribute
 
-see ![how-to-contribute](jupyterbook/contribute.md)
+see [how-to-contribute](jupyterbook/contribute.md)
 
 TODO add license claim
 
