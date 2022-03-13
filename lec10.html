@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec10 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="lec11" href="lec11.html" />
+    <link rel="prev" title="lec09" href="lec09.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec10.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec10.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#normal-order">
+   Normal order
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wick-s-theorem">
+   Wick’s theorem
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec10</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#normal-order">
+   Normal order
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wick-s-theorem">
+   Wick’s theorem
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec10">
+<h1>lec10<a class="headerlink" href="#lec10" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220309</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Normal order</p></li>
+<li><p>(Static) Wick’s theorem</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Learning how to compute ground state expectation values</p></li>
+<li><p>Appreciating the what it means to be “free”, “Gaussian”, “non-interacting”</p></li>
+</ol>
+<p>Remark: we will spend this week on a fairly technical (general) discussion.</p>
+<div class="section" id="normal-order">
+<h2>Normal order<a class="headerlink" href="#normal-order" title="Permalink to this headline">¶</a></h2>
+<p>As discussed last time, we announced the answer</p>
+<div class="math notranslate nohighlight">
+\[ \langle 0|\mathcal{T} \left[ e^{-i\int_0^t{dt'\left( \zeta \left( t' \right) \hat{a}^{\dagger}\left( t' \right) +\zeta ^*\left( t' \right) \hat{a}\left( t' \right) \right)}} \right] |0\rangle =e^{-i\int_0^t{dt_1\int_0^t{dt_2\zeta ^*\left( t_1 \right) \mathscr{G} \left( t_1-t_2 \right) \zeta \left( t_2 \right)}}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \mathscr{G} \left( t_1-t_2 \right) =\Theta \left( t_1-t_2 \right) e^{-i\omega \left( t_1-t_2 \right)}\]</div>
+<p>simply by “checking” the lowest nontrivial term! It will make sense to demand that we do a more honest check by considering the general terms.</p>
+<p>Let us expand the LHS</p>
+<div class="math notranslate nohighlight">
+\[ \mathrm{LHS}=\sum_{n=0}{\frac{\left( -i \right) ^n}{n!}\langle 0|\mathcal{T} \left[ \left( \int_0^t{dt'\hat{\phi}\left( t' \right)} \right) ^n \right] |0\rangle}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{\phi}\left( t \right) =\zeta \left( t \right) \hat{a}^{\dagger}\left( t \right) +\zeta ^*\left( t \right) \hat{a}\left( t \right) \]</div>
+<p>First, we notice that the only non-vanishing terms have to come with the same number of <span class="math notranslate nohighlight">\(\hat{a}\&amp; \hat{a}^\dagger\)</span>: otherwise we leave the ground state and will have zero overlap. In particular, the odd-order terms vanish identically since there is no way to “balance” <span class="math notranslate nohighlight">\(\hat{a}\&amp;\hat{a}^{\dagger}\)</span> there. In other words,</p>
+<div class="math notranslate nohighlight">
+\[ \mathrm{LHS}=\sum_{n=0}{\frac{\left( -i \right) ^{2n}}{\left( 2n \right) !}\langle 0|\mathcal{T} \left[ \left( \int_0^t{dt'\hat{\phi}\left( t' \right)} \right) ^{2n} \right] |0\rangle}\]</div>
+<p>Let us inspect the second nontrivial term now:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\frac{\left( -i \right) ^4}{4!}\langle 0|\mathcal{T} \left[ \int_0^t{dt_1\int_0^t{dt_2\int_0^t{dt_3\int_0^t{dt_4\hat{\phi}\left( t_1 \right) \hat{\phi}\left( t_2 \right) \hat{\phi}\left( t_3 \right) \hat{\phi}\left( t_4 \right)}}}} \right] |0\rangle \\
+    =&amp;\frac{\left( -i \right) ^4}{4!}\langle 0|\mathcal{T} \left[ \int_0^t{dt_1\int_0^t{dt_2\int_0^t{dt_3\int_0^t{dt_4\left( \zeta \left( t_1 \right) \zeta \left( t_2 \right) \zeta ^*\left( t_3 \right) \zeta ^*\left( t_4 \right) \hat{a}^{\dagger}\left( t_1 \right) \hat{a}^{\dagger}\left( t_2 \right) \hat{a}\left( t_3 \right) \hat{a}\left( t_4 \right) \right.}}}} \right. \\
+    &amp;\qquad \left. \left. +\zeta \left( t_1 \right) \zeta ^*\left( t_2 \right) \zeta ^*\left( t_3 \right) \zeta \left( t_4 \right) \hat{a}^{\dagger}\left( t_1 \right) \hat{a}\left( t_2 \right) \hat{a}\left( t_3 \right) \hat{a}^{\dagger}\left( t_4 \right) +\cdots \right) \right] |0\rangle
+\end{align*}
+\end{split}\]</div>
+<p>Ideally, we want to simplify our problem using</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}\left( t \right) |0\rangle =0\]</div>
+<div class="math notranslate nohighlight">
+\[ \langle 0|\hat{a}^{\dagger}\left( 0 \right) =0\]</div>
+<p>but, as we mentioned earlier, the precise ordering of the operators is to be determined by the time-ordering, which is “changing” as we perform the integrals! It is then not so obvious which terms survive and which do not.</p>
+<p>Nevertheless, it is indeed correct that we could greatly simplify the calculation if we can bring the <span class="math notranslate nohighlight">\(\hat{a}^\dagger\)</span> to the left and <span class="math notranslate nohighlight">\(\hat{a}\)</span> to the right. This is called the “normal order”. The normal ordering of a time-ordered operator is the key to our evaluation, facilitated by what is usually called the Wick’s theorem / lemma.</p>
+<p>Note: “the” normal order is defined with respect to the ground state. When we say we bring, e.g., <span class="math notranslate nohighlight">\(\hat{a}^\dagger\)</span> to the left and <span class="math notranslate nohighlight">\(\hat{a}\)</span> to the right, it is implicitly assumed that our goal is to evaluate some expectation values with respect to the vacuum. Generally speaking, a different ground state calls for a different “normal” order.</p>
+</div>
+<div class="section" id="wick-s-theorem">
+<h2>Wick’s theorem<a class="headerlink" href="#wick-s-theorem" title="Permalink to this headline">¶</a></h2>
+<p>Imagine taking the product of a string of creation and annihilation operators, e.g.,</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_5\hat{a}_{6}^{\dagger}\]</div>
+<p>here, the subscripts are quite general, in that they may not only be referring to the “modes”, but could also be, e.g., indicating the time as in <span class="math notranslate nohighlight">\(\hat{a}_{i}^{\dagger}=\hat{a}^{\dagger}\left( t_i \right)\)</span>. We have defined the normal order to be</p>
+<div class="math notranslate nohighlight">
+\[ :\hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_5\hat{a}_{6}^{\dagger}:=\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_{6}^{\dagger}\hat{a}_1\hat{a}_4\hat{a}_5\quad [\mathrm{bosonic]}\]</div>
+<p>where the notation <span class="math notranslate nohighlight">\(:\;:\)</span> denotes normal ordering. A natural question here is, how different is an operator <span class="math notranslate nohighlight">\(\hat{O}\)</span> compared to its normal order <span class="math notranslate nohighlight">\(:\hat{O}:\)</span>? Relatedly, what is the ground state expectation value</p>
+<div class="math notranslate nohighlight">
+\[ \langle 0|\hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_5\hat{a}_{6}^{\dagger}|0\rangle \]</div>
+<p>provided that it is not obviously <span class="math notranslate nohighlight">\(0\)</span>?</p>
+<p>To develop some feeling for the problem, let’s try to bring our example to the normal order</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4{\color{red} \hat{a}_5\hat{a}_{6}^{\dagger}}\\
+    =&amp;\hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4\left( \hat{a}_{6}^{\dagger}\hat{a}_5+\underset{\mathrm{c}-\mathrm{number}}{\underbrace{\left[ \hat{a}_5,\hat{a}_{6}^{\dagger} \right] }} \right) \\
+    =&amp;\hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}{\color{red} \hat{a}_4\hat{a}_{6}^{\dagger}}\hat{a}_5+\left[ \hat{a}_5,\hat{a}_{6}^{\dagger} \right] {\color{red} \hat{a}_1\hat{a}_{2}^{\dagger}}\hat{a}_{3}^{\dagger}\hat{a}_4\\
+    =&amp;\cdots
+\end{align*}
+\end{split}\]</div>
+<p>where the operators to be exchanged are in red color.</p>
+<p>Some observations:</p>
+<ol class="simple">
+<li><p>whenever we move an <span class="math notranslate nohighlight">\(\hat{a}\)</span> pass an <span class="math notranslate nohighlight">\(\hat{a}^\dagger\)</span>, we generate two terms. One now has the “right” order for the two operators involved, and the other leads to a commutator multiplied to a “shorter term” with fewer operators involved.</p></li>
+<li><p>We can now imagine iterating the procedure. There will be a “long string” remaining which contains the same number of operators inside (<span class="math notranslate nohighlight">\(6\)</span> in our example). But each of the “short strings” would also need to be brought to a normal order, and in doing so generate even shorter strings.</p></li>
+<li><p>Importantly, the process terminates when everything is normal ordered!</p></li>
+</ol>
+<p>Let’s now proceed with our example in a visually more suggestive manner</p>
+<p><img alt="lec10-fig00" src="_images/lec10-fig00.png" /></p>
+<p>we may rewrite this tree in a more conventional form</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_5\hat{a}_{6}^{\dagger}&amp;=^{{\color{red} (1)}}:\hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_5\hat{a}_{6}^{\dagger}:\\
+    &amp;\quad+^{{\color{red} (2)}}:\hat{a}_{1}^{\bullet}\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_5\hat{a}_{6}^{\dagger \bullet}:+^{{\color{red} (3)}}:\hat{a}_{1}^{\bullet}\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger \bullet}\hat{a}_4\hat{a}_5\hat{a}_{6}^{\dagger}:\\
+    &amp;\quad+^{{\color{red} (4)}}:\hat{a}_{1}^{\bullet}\hat{a}_{2}^{\dagger \bullet}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_5\hat{a}_{6}^{\dagger}:+^{{\color{red} (5)}}:\hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_{4}^{\bullet}\hat{a}_5\hat{a}_{6}^{\dagger \bullet}:\\
+    &amp;\quad+^{{\color{red} (6)}}:\hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_{5}^{\bullet}\hat{a}_{6}^{\dagger \bullet}:\\
+    &amp;\quad+^{{\color{red} (7)}}:\hat{a}_{1}^{\bullet}\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger \bullet}\hat{a}_{4}^{\bullet \bullet}\hat{a}_5\hat{a}_{6}^{\dagger \bullet \bullet}:+^{{\color{red} (8)}}:\hat{a}_{1}^{\bullet}\hat{a}_{2}^{\dagger \bullet}\hat{a}_{3}^{\dagger}\hat{a}_{4}^{\bullet \bullet}\hat{a}_5\hat{a}_{6}^{\dagger \bullet \bullet}:\\
+    &amp;\quad+^{{\color{red} (9)}}:\hat{a}_{1}^{\bullet}\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger \bullet}\hat{a}_4\hat{a}_{b}^{\bullet \bullet}\hat{a}_{6}^{\dagger \bullet \bullet}:+^{{\color{red} (10)}}:\hat{a}_{1}^{\bullet}\hat{a}_{2}^{\dagger \bullet}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_{b}^{\bullet \bullet}\hat{a}_{6}^{\dagger \bullet \bullet}:
+\end{align*}
+\end{split}\]</div>
+<p>Notes from website builder: Since the notation for the Wick contraction used in class is hard to type in LaTeX or HTML, here I use a different notation which is also widely used, like in Wikipedia <a class="reference external" href="https://en.wikipedia.org/wiki/Wick%27s_theorem">wiki/Wick’s-theorem</a>. Their mapping relations are</p>
+<p><img alt="lec10-fig01-md" src="_images/lec10-fig01-md.png" /></p>
+<p>In particular, by bringing it to normal order we may now conclude</p>
+<div class="math notranslate nohighlight">
+\[ \langle 0|\hat{a}_1\hat{a}_{2}^{\dagger}\hat{a}_{3}^{\dagger}\hat{a}_4\hat{a}_5\hat{a}_{6}^{\dagger}|0\rangle =0\]</div>
+<p>since no “constants” emerge in the ordered expansion, i.e., all terms contain an <span class="math notranslate nohighlight">\(\hat{a}_i\)</span> at the right-most end. This is not entirely obvious without calculating! Especially, given the generality of the statement: these could be acting on the same (different) modes at the same (different) times.</p>
+<p>Suggested sanity check: try the simple case when all operators act on the same mode at the same times, i.e., evaluate <span class="math notranslate nohighlight">\(\langle 0|\hat{a}\hat{a}^{\dagger 2}\hat{a}^2\hat{a}^{\dagger}|0\rangle\)</span></p>
+<p>From this exercise we can distill out a few rules:</p>
+<ol class="simple">
+<li><p>we can “expand” the original product into sum of sub-products, all of them in the normal order</p></li>
+<li><p>the coefficients of the sub-products are determined by what gets removed (pairwise) when we move the operators around, these are indicated by the symbol <span class="math notranslate nohighlight">\(a_i^\bullet a_j^\bullet\)</span>. We call them “contractions”</p></li>
+<li><p>we only contract <span class="math notranslate nohighlight">\(\hat{a}_{i}^{\bullet}\hat{a}_{j}^{\dagger \bullet}\)</span>, Terms like <span class="math notranslate nohighlight">\(\hat{a}_{i}^{\bullet}\hat{a}_{j}^{\bullet},\hat{a}_{i}^{\dagger \bullet}\hat{a}_{j}^{\dagger \bullet},\hat{a}_{i}^{\dagger \bullet}\hat{a}_{j}^{\bullet}\)</span> do not show up because we don’t need to commute them to reach normal order</p></li>
+</ol>
+<p>In particular, points (2) and (3) above suggest a sharper definition of what a “contraction” is: it involves a pair of annihilation and creation operators, and it measures its mismatch from the normal-ordered form, i.e.,</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}=\hat{\phi}_1\hat{\phi}_2-:\hat{\phi}_1\hat{\phi}_2:\]</div>
+<p>check that, e.g.,</p>
+<div class="math notranslate nohighlight">
+\[ \hat{a}_{i}^{\bullet}\hat{a}_{j}^{\dagger \bullet}=\hat{a}_i\hat{a}_{j}^{\dagger}-\hat{a}_{j}^{\dagger}\hat{a}_i=\left[ \hat{a}_i,\hat{a}_{j}^{\dagger} \right] \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{a}_{i}^{\dagger \bullet}\hat{a}_{j}^{\bullet}=\hat{a}_{i}^{\dagger}\hat{a}_j-\hat{a}_{i}^{\dagger}\hat{a}_j=0\]</div>
+<p>Importantly, our definition extends to the case when <span class="math notranslate nohighlight">\(\hat{phi}_i\)</span> is a linear superposition of <span class="math notranslate nohighlight">\(\hat{a}_i\)</span> and <span class="math notranslate nohighlight">\(\hat{a}_i^\dagger\)</span>, i.e., let</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\phi}_i=u_i\hat{a}_i+v_i\hat{a}_{i}^{\dagger}\]</div>
+<p>then,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{\phi}_{i}^{\bullet}\hat{\phi}_{j}^{\bullet}&amp;=\left( u_i\hat{a}_i+v_i\hat{a}_{i}^{\dagger} \right) \left( u_j\hat{a}_j+v_j\hat{a}_{j}^{\dagger} \right) -:\left( u_i\hat{a}_i+v_i\hat{a}_{i}^{\dagger} \right) \left( u_j\hat{a}_j+v_j\hat{a}_{j}^{\dagger} \right) :\\
+    &amp;=u_iv_j\hat{a}_i\hat{a}_{j}^{\dagger}-u_iv_j\hat{a}_{j}^{\dagger}\hat{a}_i\\
+    &amp;=u_iv_j\left[ \hat{a}_i,\hat{a}_{j}^{\dagger} \right]
+\end{align*}
+\end{split}\]</div>
+<p>We may now state Wick’s theorem more generally:</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\phi}_1\hat{\phi}_2\cdots \hat{\phi}_n=\sum{:\mathrm{all}\;\mathrm{possible}\;\mathrm{contractions}:}\]</div>
+<p>here, by “all” we mean everything from no contraction at all, to the case of everything grouped pairwise (if <span class="math notranslate nohighlight">\(n\)</span> is even) and contracted. As stated, it could be that many of the included terms are <span class="math notranslate nohighlight">\(0\)</span> identically. But that’s okay because it gives us a simple way to state the theorem!</p>
+<p>Remarks:</p>
+<ol class="simple">
+<li><p>Contraction is not symmetric, i.e., <span class="math notranslate nohighlight">\(\hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}\ne \hat{\phi}_{2}^{\bullet}\hat{\phi}_{1}^{\bullet}\)</span>. E.g., <span class="math notranslate nohighlight">\(\hat{a}_{1}^{\dagger \bullet}\hat{a}_{2}^{\bullet}=0\)</span> but <span class="math notranslate nohighlight">\(\hat{a}_{2}^{\bullet}\hat{a}_{1}^{\dagger \bullet}=\left[ \hat{a}_2,\hat{a}_{1}^{\dagger} \right] \)</span>. The order is fixed by that in the original operator we are “expanding”</p></li>
+<li><p>Wick’s theorem as stated is an operator identity.</p></li>
+</ol>
+<p>Evaluating vacuum expectation value is a special application. E.g., take four operators</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{\phi}_1\hat{\phi}_2\hat{\phi}_3\hat{\phi}_4&amp;=:\hat{\phi}_1\hat{\phi}_2\hat{\phi}_3\hat{\phi}_4:\\
+    &amp;\quad+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}:\hat{\phi}_3\hat{\phi}_4:+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{3}^{\bullet}:\hat{\phi}_2\hat{\phi}_4:+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{4}^{\bullet}:\hat{\phi}_2\hat{\phi}_3:\\
+    &amp;\quad+\hat{\phi}_{2}^{\bullet}\hat{\phi}_{2}^{\bullet}:\hat{\phi}_1\hat{\phi}_4:+\hat{\phi}_{2}^{\bullet}\hat{\phi}_{4}^{\bullet}:\hat{\phi}_1\hat{\phi}_3:+\hat{\phi}_{3}^{\bullet}\hat{\phi}_{4}^{\bullet}:\hat{\phi}_1\hat{\phi}_2:\\
+    &amp;\quad+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}\hat{\phi}_{3}^{\bullet \bullet}\hat{\phi}_{4}^{\bullet \bullet}+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{3}^{\bullet}\hat{\phi}_{2}^{\bullet \bullet}\hat{\phi}_{4}^{\bullet \bullet}+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{4}^{\bullet}\hat{\phi}_{2}^{\bullet \bullet}\hat{\phi}_{2}^{\bullet \bullet}
+\end{align*}
+\end{split}\]</div>
+<p>which contains <span class="math notranslate nohighlight">\(C_{0}^{4}+C_{2}^{4}+\frac{1}{2}C_{2}^{4}C_{2}^{2}\)</span> terms. If we take the expectation value</p>
+<div class="math notranslate nohighlight">
+\[ \langle \Phi |\hat{\phi}_1\hat{\phi}_2\hat{\phi}_3\hat{\phi}_4|\Psi \rangle =\langle \Phi |:\hat{\phi}_1\hat{\phi}_2\hat{\phi}_3\hat{\phi}_4:|\Psi \rangle +\hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}\langle \Phi |:\hat{\phi}_3\hat{\phi}_4:|\Psi \rangle +\cdots \]</div>
+<p>there isn’t much of a simplification as all the terms will contribute in general. Yet if we take the vacuum expectation value (VEV)</p>
+<div class="math notranslate nohighlight">
+\[ \langle 0|\hat{\phi}_1\hat{\phi}_2\hat{\phi}_3\hat{\phi}_4|0\rangle =\hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}\hat{\phi}_{3}^{\bullet \bullet}\hat{\phi}_{4}^{\bullet \bullet}+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{3}^{\bullet}\hat{\phi}_{2}^{\bullet \bullet}\hat{\phi}_{4}^{\bullet \bullet}+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{4}^{\bullet}\hat{\phi}_{2}^{\bullet \bullet}\hat{\phi}_{2}^{\bullet \bullet}\]</div>
+<p>as all the other normal-ordered operators will annihilate the vacuum.</p>
+<p>How many terms are there in this VEV? Consider the VEV of a string of <span class="math notranslate nohighlight">\(2n\)</span> operators. We are asking how many ways are there to group them in pairs, noticing that</p>
+<ol class="simple">
+<li><p>the order within the pair is “unimportant”, since that has to be fixed by the order in which they appeared in the original string, and</p></li>
+<li><p>once contracted, we get a c-number and it doesn’t matter how we order these c-numbers.</p></li>
+</ol>
+<p>So, the number of terms is successively choosing two out of the remaining</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\frac{1}{n!}C_{2}^{2n}C_{2}^{2n-2}\cdots C_{2}^{4}C_{2}^{2}\\
+    =&amp;\frac{1}{n!}\frac{\left( 2n \right) \left( 2n-1 \right)}{2}\frac{\left( 2n-2 \right) \left( 2n-3 \right)}{2}\cdots \frac{4\cdot 3}{2}\frac{2\cdot 1}{2}\\
+    =&amp;\left( 2n-1 \right) \left( 2n-3 \right) \cdots 3\cdot 1\\
+    =&amp;\left( 2n-1 \right) !!
+\end{align*}
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\frac{1}{n!}\)</span> is the permutation of the contracted pairs.</p>
+<p>Fun fact: you might think of the <span class="math notranslate nohighlight">\(2n\)</span> operators as the vertices of 2 <span class="math notranslate nohighlight">\(2n\)</span>-vertex complete graph, then a term in the VEV corresponds to a perfect matching on this graph. The number of such perfecting matching is, as argued, <span class="math notranslate nohighlight">\((2n-1)!!\)</span>.</p>
+<p>How fast does this grow? For the first few,</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p># operators</p></th>
+<th class="text-align:center head"><p>2</p></th>
+<th class="text-align:center head"><p>4</p></th>
+<th class="text-align:center head"><p>6</p></th>
+<th class="text-align:center head"><p>8</p></th>
+<th class="text-align:center head"><p>10</p></th>
+<th class="text-align:center head"><p>12</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p># of terms</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1!!=1\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(3!!=3\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(5!!=15\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(7!!=105\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(9!!=945\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(11!!=10395\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>For large <span class="math notranslate nohighlight">\(n\)</span> we may estimate using Stirling’s approximation</p>
+<div class="math notranslate nohighlight">
+\[ \left( 2n-1 \right) !!\sim \left( \frac{2n}{e} \right) ^n\]</div>
+<p>i.e., it grows super-exponentially! Combinatorial is hard… Yet, if many terms are the same then it maybe manageable</p>
+<p>Note that the “normal order” is not uniquely defined. In the above, we defined it with respect to the vacuum, which instructs us to pull all the <span class="math notranslate nohighlight">\(\hat{a}_i\)</span> to the left and <span class="math notranslate nohighlight">\(\hat{a}_i^\dagger\)</span> to the right, as they annihilate the ket and bra correspondingly.</p>
+<p>One could have “alternative” states which are annihilated by some transformed operators, e.g., we have saw that the “phonon vacuum” depends on the electronic configuration in the impurity-phonon problem. One can think of it simply as a “basis transformation”, and we can define “alternative” normal order with respect to such basis. The computation of expectation values then simplify in a similar manner.</p>
+<p>These alternative normal orders correspond to alternative contractions, defined still as the the (c-number) mismatch between the operator and its normal ordered form. In fact, such contractions encode the pairwise correlation functions for the annihilation (creation) operators in the “alternative state”. (see below) Wick’s theorem then implies that, for such states for which a normal order could be defined,</p>
+<blockquote>
+<div><p>general correlation functions = combinatorial product and sum of up to pairwise (two-point) correlation functions.</p>
+</div></blockquote>
+<p>This is clearly very special, as generally speaking “higher order” correlation functions contain new data compared to the ones at “2nd order”. The absence of such “new data” is the defining feature of a Gaussian distribution. Such states admitting a normal order are “Gaussian” in this sense.</p>
+<p>A powerful observation about such Gaussian state <span class="math notranslate nohighlight">\(|\mathrm{GS}\rangle\)</span> is that we do not actually need to know how to perform the normal ordering! We just need to suppose a normal order exist such that</p>
+<div class="math notranslate nohighlight">
+\[ \langle GS|:\hat{\phi}_1\hat{\phi}_2\cdots \hat{\phi}_n:|GS\rangle =0\]</div>
+<p>It then follows that</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \langle \hat{\phi}_1\hat{\phi}_2\rangle =&amp;\langle GS|\hat{\phi}_1\hat{\phi}_2|GS\rangle ,\quad \mathrm{computable\;in\;any\;basis}\\
+    =&amp;\langle GS|:\hat{\phi}_1\hat{\phi}_2:+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}|GS\rangle \\
+    =&amp;\hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}
+\end{align*}
+\end{split}\]</div>
+<p>In the above, the second derivation requires rotating to the right basis to literally perform the normal order. In particular, the general correlation functions can now be expressed as, e.g., for four operators</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \langle \hat{\phi}_1\hat{\phi}_2\hat{\phi}_3\hat{\phi}_4\rangle &amp;=\hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}\hat{\phi}_{3}^{\bullet \bullet}\hat{\phi}_{4}^{\bullet \bullet}+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{3}^{\bullet}\hat{\phi}_{2}^{\bullet \bullet}\hat{\phi}_{4}^{\bullet \bullet}+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{4}^{\bullet}\hat{\phi}_{2}^{\bullet \bullet}\hat{\phi}_{2}^{\bullet \bullet}\\
+    &amp;=\langle \hat{\phi}_1\hat{\phi}_2\rangle \langle \hat{\phi}_3\hat{\phi}_4\rangle +\langle \hat{\phi}_1\hat{\phi}_3\rangle \langle \hat{\phi}_2\hat{\phi}_4\rangle +\langle \hat{\phi}_1\hat{\phi}_4\rangle \langle \hat{\phi}_2\hat{\phi}_3\rangle
+\end{align*}
+\end{split}\]</div>
+<p>Looks familiar? Jumping ahead slightly, with “fermionic” operators, the corresponding expression is</p>
+<div class="math notranslate nohighlight">
+\[ \langle \hat{c}_{1}^{\dagger}\hat{c}_{2}^{\dagger}\hat{c}_3\hat{c}_4\rangle =\langle \hat{c}_{1}^{\dagger}\hat{c}_{2}^{\dagger}\rangle \langle \hat{c}_3\hat{c}_4\rangle +\langle \hat{c}_{1}^{\dagger}\hat{c}_4\rangle \langle \hat{c}_{2}^{\dagger}\hat{c}_3\rangle -\langle \hat{c}_{1}^{\dagger}\hat{c}_3\rangle \langle \hat{c}_{2}^{\dagger}\hat{c}_4\rangle \]</div>
+<p>The first term is “condensation” which will vanish unless superconducting mean field (BdG), the second term is the direct “Hartree”, and the third term is the exchange “Fock” (recalling that fermions is anti-commuting). This is the famous Hartree-Fock approximation, namely, when we approximate the actual ground state with a Gaussian state, the interaction energy consists simply of the Hartree and Fock terms. (Assuming no superconductivity)</p>
+<p>Lastly, we note that we did not actually prove Wick’s theorem. We just “motivated” and then “stated” it. For our purpose, it’s probably more important to understand what it means and how to use it, than to really prove it.</p>
+<p>Instead, let us just sketch how it could be proved</p>
+<ol>
+<li><p>In a “brute force” approach, we can establish Wick’s theorem by induction. The key step is to notice what happens when we “squeeze” a new operator into a normal-ordered one. Supposing</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{align*}
+        \hat{\phi}_1:\hat{\phi}_2\cdots \hat{\phi}_n:=&amp;:\hat{\phi}_1\hat{\phi}_2\cdots \hat{\phi}_n:+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{2}^{\bullet}:\hat{\phi}_3\hat{\phi}_4\cdots \hat{\phi}_n:\\
+        &amp;\quad+\hat{\phi}_{1}^{\bullet}\hat{\phi}_{3}^{\bullet}:\hat{\phi}_2\hat{\phi}_4\cdots \hat{\phi}_n:+\cdots ++\hat{\phi}_{1}^{\bullet}\hat{\phi}_{n}^{\bullet}:\hat{\phi}_2\hat{\phi}_3\cdots \hat{\phi}_{n-1}:
+   \end{align*} \end{split}\]</div>
+<p>is true for <span class="math notranslate nohighlight">\(n\)</span> operators, then we can show that it’s also true for <span class="math notranslate nohighlight">\(n+1\)</span> operators. With this established, the Wick’s theorem can again be proved by induction: supposing it holds for products of up to <span class="math notranslate nohighlight">\(n\)</span> operators, then we insert a new one from the left and all the “new contractions” are generated by the proposition above.</p>
+</li>
+<li><p>Another way to prove it is to first perform a path integral with sources inserted, and then take functional derivatives. This is perhaps the more popular “physicist” proof. See Coleman Chapter-5 for a discussion.</p></li>
+<li><p>More interestingly still, in the “serious QFT” literature, there’s some known connection of the Wick’s theorem to what is called the “homological perturbation lemma”. Let me know if you think you could explain that to me.</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec09.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec09</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="lec11.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">lec11</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
