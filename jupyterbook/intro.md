@@ -13,5 +13,6 @@ Table of Contents
 8. [lec08](lec08.md)
 9. [lec09](lec09.md)
 10. [lec10](lec10.md)
-11. [contribute](contribute.md)
-12. [test](test.md)
+11. [lec11](lec11.md)
+12. [contribute](contribute.md)
+13. [test](test.md)
