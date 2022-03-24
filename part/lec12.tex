@@ -1,0 +1,182 @@
+\chapter{Lec12 20220316}
+
+Topics
+
+\begin{enumerate}
+    \item Propagators
+    \item Frequency space, contours and real-time Green functions
+\end{enumerate}
+
+Goals
+
+\begin{enumerate}
+    \item Arriving at a more systematic treatment of the various notion of Green's functions we have encountered
+\end{enumerate}
+
+\section{Bare phonon propagator}
+
+Let us revisit the free-phonon problem again from this lens of T-contractions and correlation functions. Consider again
+\[ \hat{H}=\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}\]
+where for simplicity we have restricted ourselves to a single ``branch'' and so suppressed any additional indices which might be attached to the phonon operators aside from the (crystal) momentum $q$.
+
+In the real space, the phonon operators are related to the actual position (deviation) operators of the atoms through
+\[ \hat{\phi}_r=\frac{1}{\sqrt{V}}\sum_q{e^{-iqr}\left( \frac{\hat{a}_q+\hat{a}_{-q}^{\dagger}}{\sqrt{2m\omega _q}} \right)}=\frac{1}{\sqrt{V}}\sum_q{e^{-iqr}\hat{\phi}_q}\]
+In the Heisenberg picture, the phonon operators evolve in time according to
+\[ i\partial _t\hat{a}_q\left( t \right) =\left[ \hat{a}_q\left( t \right) ,\omega _q\hat{a}_{q}^{\dagger}\left( t \right) \hat{a}_q\left( t \right) \right] =\omega _q\hat{a}_q\left( t \right) \]
+\[ \hat{a}_q\left( t \right) =\hat{a}_q\left( 0 \right) e^{-i\omega _qt}\]
+And we may evaluate the one-particle Green's function with respect to the phonon vacuum (superscript $t$ emphasize it corresponds to the time-ordered two-point function)
+\begin{align*}
+    G^t\left( r,r';t,t' \right) &=-i\langle \mathrm{vac}|\mathcal{T} \left[ \hat{\phi}_r\left( t \right) \hat{\phi}_{r'}\left( t' \right) \right] |\mathrm{vac}\rangle \\
+    &=\frac{-i}{V}\sum_{qq'}{\frac{e^{-iq\cdot r}e^{-iq'\cdot r'}}{2m\sqrt{\omega _q\omega _{q'}}}\langle \mathrm{vac}|\mathcal{T} \left[ \overset{\hat{\phi}_q\left( t \right)}{\overbrace{\left( \hat{a}_q\left( t \right) +\hat{a}_{-q}^{\dagger}\left( t \right) \right) }}\left( \hat{a}_{q'}\left( t' \right) +\hat{a}_{-q'}^{\dagger}\left( t' \right) \right) \right] |\mathrm{vac}\rangle}\\
+    & \qquad\left( q=-q' \right) \\
+    &=\frac{-i}{V}\sum_q{\frac{e^{-iq\cdot \left( r-r' \right)}}{2m\omega _q}\langle \mathrm{vac}|\mathcal{T} \left[ \hat{a}_q\left( t \right) \hat{a}_{q}^{\dagger}\left( t' \right) +\hat{a}_{-q}^{\dagger}\left( t \right) \hat{a}_{-q}\left( t' \right) \right] |\mathrm{vac}\rangle}
+\end{align*}
+\begin{align*}
+    \Rightarrow \quad \langle \mathrm{vac}|\mathcal{T} \left[ \hat{a}_q\left( t \right) \hat{a}_{q}^{\dagger}\left( t' \right) \right] |\mathrm{vac}\rangle &=\Theta \left( t-t' \right) \langle \mathrm{vac}|\hat{a}_q\left( t \right) \hat{a}_{q}^{\dagger}\left( t' \right) |\mathrm{vac}\rangle \\
+    &=\Theta \left( t-t' \right) e^{-i\omega _q\left( t-t' \right)}
+\end{align*}
+\[ \Rightarrow \quad \,\,G^t\left( r,r';t,t' \right) =\frac{-i}{V}\sum_q{\frac{e^{-iq\cdot \left( r-r' \right)}}{2m\omega _q}\left( \Theta \left( t-t' \right) e^{-i\omega _q\left( t-t' \right)}+\Theta \left( t'-t \right) e^{-i\omega _{-q}\left( t'-t \right)} \right)}\]
+which depends only on $r-r'$ and $t-t'$
+\[ G^t\left( r,t \right) =\frac{-i}{V}\sum_q{\frac{e^{-iq\cdot r}}{2m\omega _q}\left( \Theta \left( t \right) e^{-i\omega _qt}+\Theta \left( -t \right) e^{i\omega _{-q}t} \right)}\]
+The translation invariance, exposed in the fact that the two-point function depends only on $r-r'$ implies $q$ is a good quantum number and it is natural to Fourier transform
+\begin{align*}
+    G^t\left( q,t \right) &=\sum_r{e^{iq\cdot r}G^t\left( r,t \right)}\\
+    &=\frac{-i}{2m\omega _q}\left( \Theta \left( t \right) e^{-i\omega _qt}+\Theta \left( -t \right) e^{i\omega _{-q}t} \right)
+\end{align*}
+We may further Fourier transform to the frequency space, using our ``exponential damping trick''
+\begin{align*}
+    G^t\left( q,\omega \right) &=\lim_{\eta \rightarrow 0^+} \int_{-\infty}^{\infty}{dtG^t\left( q,t \right) e^{i\omega t-\eta \left| t \right|}}\\
+    &=\frac{-i}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \left( \int_0^{\infty}{dte^{i\left( \omega -\omega _q+i\eta \right) t}}+\int_{-\infty}^0{dte^{i\left( \omega +\omega _q+i\eta \right) t}} \right) \\
+    &=\frac{-i}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \left( \frac{0-1}{i\left( \omega -\omega _q+i\eta \right)}+\frac{1-0}{i\left( \omega +\omega _q+i\eta \right)} \right) \\
+    &=\frac{1}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \left( \frac{1}{\omega -\omega _q+i\eta}-\frac{1}{\omega +\omega _q+i\eta} \right) \\
+    &=\frac{1}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \frac{2\omega _q}{\omega ^2-\left( \omega _q-i\eta \right) ^2}
+\end{align*}
+This is called the free/bare phonon ``propagator''. It is customary to denote it by $D$ (instead of $G$), since in an electron-phonon problem one might want to reserve $G$ for the electrons.
+
+\section{Contours, Green's function, Feynman's $i\epsilon$ prescription}
+
+Going from the real-time to frequency space, we have used an exponential damping term to regulate the oscillatory integral extending to $t\to\pm\infty$. In particular, the sign of the damping depends on the sign of $t$. We first introduced such tricks by alluding to the physical reality that our system cannot possibly exist all the way up to $t\to\pm\infty$ anyway, and so it is natural to regulate the integral by damping it off. Here, we provide an alternative way to make sense of such treatment.
+
+We first notice that the (bare) phonon Green's function $D^t(q,\omega)$, viewed as a complex function, contains two poles
+\[ D^+\left( q,\omega \right) =\frac{1}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \left( \frac{1}{\omega -\omega _q+i\eta}-\frac{1}{\omega +\omega _q+i\eta} \right) \]
+which are infinitesimally displaced from the real line.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig00.png}
+\end{figure}
+
+Now, imagine Fourier transforming back to the real time, which calls for an integral along the real line, with the two poles approaching our integration contour, Such integrals could alternatively be computed by trading the $\pm i\eta$ with an infinitesimal deformation of the integration contour.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig01.png}
+\end{figure}
+As a sanity check, let us verify that we could indeed go back to the real-time Green's function by performing such contour integrals. Consider
+\[ \frac{1}{2m\omega _q}\int_C{\frac{d\omega}{2\pi}\left( \frac{1}{\omega -\omega _q}-\frac{1}{\omega +\omega _q} \right)}e^{-i\omega t}\]
+Notice we have dropped the $\pm i\eta$, with the corresponding information encoded in how the contour $C$ is specified.
+
+One could evaluate this integral honestly, by splitting the contour $C$ into $5$ segments: three straight lines and two semi-circles. As the deformation is only infinitesimal, the ``straight line'' integrals return  the Cauchy principal value whereas the ``semi-circles'' give half of the residues. In addition, for the principal part one ultimately gets the Dirichlet sinc integral, which gives $\sim e^{\pm i\omega_q t}(i\pi \mathrm{sgn}(t))$. Combined with the partial residues, one does get back the original time-ordered real-time Green's function.
+
+Instead of going through the details of the steps sketeched above, let's use the usual ``physicist's argument'' to evaluate the integral. The main idea is to use the residue theorem, which states that (loosely) power series make sense except at the singularities (i.e., poles)
+\[ \oint{\gamma}{d\zeta f\left( \zeta \right)}=2\pi i\sum{\mathrm{Res}\left( f,a_k \right)}\]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig02.png}
+\end{figure}
+and for a meromorphic function with a simple pole, taking the form
+\begin{align*}
+    f\left( \zeta \right) &=\frac{g\left( \zeta \right)}{\zeta -a_k}=\frac{\sum_{n=0}{g_n\left( \zeta -a_k \right) ^n}}{\zeta -a_k}\\
+    &=\frac{g_0}{\zeta -a_k}+g_1+g_2\left( \zeta -a_k \right) +\cdots
+\end{align*}
+the residue is simply the coefficient $g_0$.
+
+Now, back to our problem: to take advantage of the residue theorem we would want to ``close'' our contour. The natural choice will be to complete it with an arc which we send off to infinity, e.g.,
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig03.png}
+\end{figure}
+We then see that, by the residue theorem, only one of the poles contribute:
+\begin{align*}
+    \int_{C+arc}{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}&=\frac{1}{2m\omega _q}\frac{2\pi i}{2\pi}\mathrm{Res}\left( \frac{-e^{-i\omega t}}{\omega +\omega _q},\omega -\omega _q \right) \\
+    &=\frac{-i}{2m\omega _q}e^{i\omega _qt}
+\end{align*}
+\[ \Rightarrow \quad \int_C{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}=\frac{-i}{2m\omega _q}e^{i\omega _qt}-\int_{arc}{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}\]
+almost! But we need to know what is the contribution from the arc. In what we considered above, we let $\omega$ go to infinity on the upper complex plane. In other words, we consider
+\[ \mathrm{Im}\left( \omega \right) \rightarrow +\infty \]
+as such, in the integrand we have
+\[ e^{-i\omega t}=e^{-i\mathrm{Re}\left( \omega \right) t}e^{\mathrm{Im}\left( \omega \right) t}\]
+and it is well-behaved (and exponentially suppressed) only if we have $t<0$ to start with. Provided $t<0$, the arc contribution goes to zero as the integrand is now exponentially suppressed. This gives
+\[ \int_C{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}=\frac{-i}{2m\omega _q}e^{i\omega _qt},\quad t<0\]
+Now, to obtain the result for $t>0$, we should consider the alternative way of closing off our contour (clockwise)
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig04.png}
+\end{figure}
+which now encloses the other pole at $\omega=\omega_q$. The same calculation as before then gives
+\begin{align*}
+    \int_C{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}&=\frac{-1}{2m\omega _q}\frac{2\pi i}{2\pi}\mathrm{Res}\left( \frac{e^{-i\omega t}}{\omega -\omega _q},\omega =\omega _q \right) -\int_{arc}{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}\\
+    &=\frac{-i}{2m\omega _q}e^{-i\omega _qt},\quad t>0
+\end{align*}
+We may then combine the two cases into
+\[ \int_C{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}=\frac{-i}{2m\omega _q}\left( \Theta \left( t \right) e^{-i\omega _qt}+\Theta \left( -t \right) e^{i\omega _qt} \right) =D^t\left( q,t \right) \]
+as promised. We note in passing that, this is also commonly referred to as the (Feynman) ``propagator''.
+
+Such time-ordered correlation function shows up in perturbation expansion (Feynman diagrams etc.), and we will see that they can be interpreted as the free propagation of phonons, whence the name.
+
+One may wonder what's the significance of undergoing such a lengthy discussion in order to simply Fourier transform back to the real time. The catch is that, in the calculation above, it will be natural to consider alternative contours which circumvent the two poles in some other means. For instance, consider the contour
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig05.png}
+\end{figure}
+It doesn't encircle any poles if we complete it in the upper complex plane (Fourier transform with $t<0$), and enclose both poles when we complete in the lower complex plane. This gives
+\[ \int_{C'}{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}=-i\Theta \left( t \right) \left( e^{-i\omega _qt}-e^{i\omega _qt} \right) =-2\Theta \left( t \right) \sin \left( \omega _qt \right)\]
+What is the process corresponding to this real-time Green's function? Notice that, what we have changed is really the integration around the pole at $\omega=-\omega_q$. First consider
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig06.png}
+\end{figure}
+\[ \oint{\frac{d\omega}{2\pi}\frac{-e^{-i\omega t}}{\omega +\omega _q}}=\left( -i \right) e^{i\omega _qt}=\left( -i \right) \left< \hat{a}_{-q}\left( 0 \right) \hat{a}_{-q}^{\dagger}\left( t \right) \right> =\left( -i \right) \left< \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_{q}^{\dagger}\left( t \right) \right> \]
+Now, we can compare the two contours considered
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig07.png}
+\end{figure}
+\begin{align*}
+    &\left( -i \right) \left< \mathcal{T} \left[ \hat{\phi}_q\left( t \right) \hat{\phi}_{-q}\left( 0 \right) \right] \right> -\left( -i \right) \left< \mathcal{T} \left[ \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_q\left( t \right) \right] \right> \\
+    =&\left( -i \right) \Theta \left( t \right) \left< \hat{\phi}_q\left( t \right) \hat{\phi}_{-q}\left( 0 \right) \right> +\left( -i \right) \Theta \left( -t \right) \left< \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_q\left( t \right) \right> \\
+    &\quad -\left( -i \right) \Theta \left( t \right) \left< \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_q\left( t \right) \right> -\left( -i \right) \Theta \left( -t \right) \left< \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_q\left( t \right) \right> \\
+    =&\left( -i \right) \Theta \left( t \right) \left< \left[ \hat{\phi}_{-q}\left( 0 \right) ,\hat{\phi}_q\left( t \right) \right] \right>
+\end{align*}
+i.e., it is the expectation value of a commutator with time $t>0$.
+
+By closing the contour on the lower complex plane, our real-time Green's function is non-vanishing only for $t>0$, which suggests a kind of causality, in the sense that we only allow time to move ``forward'' but not backward. Indeed, this is known as the causal / retarded Green's function of the phonons, and is closely related to the response of a system when we perturb it (and the system can only respond after we perturb it, by causality). More later.
+
+Lastly, a comment on contours vs $i\eta$: in the above, we see that the same frequency space Green's function, combined with different contour prescription (for avoiding the singularities on the real axis), gives rise to different real-time Green's functions. Yet, we also argued (heuristically) that, the contour prescription can be understood simply by the small shifts $\pm i\eta$ kicking the poles off the real axis. So, instead of specifying different contours, we can also stick with the real line (and leave the ``arc'' part implicit, dependent on the sign of time), and instead assign the $\pm i\eta$ as the definition for different Green's functions.
+
+This latter perspective is perhaps more popular among physicists, and this is called ``Feynman's $i\epsilon$ prescription''. (Probably he used $\epsilon$ for what we denoted by $\eta$ here.)
+
+A particularly important ``pole structure'' for our next topic (linear response) is as follows:
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig08.png}
+\end{figure}
+where the $i\eta$ displaces the poles to the lower complex plane. This corresponds to the contours we considered just now for the phonons:
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig09.png}
+\end{figure}
+When we Fourier transform back to real time, the integral vanishes when we close the contour on the upper complex plane, i.e., the only contribution comes from $t>0$, and the real-time Green's function is ``retarded'' in the sense that
+\[ G_{\mathrm{ret}}\left( t,t' \right) \propto \Theta \left( t-t' \right) \]
+To summarize, when we consider Fourier transform back to real time
+\begin{align*}
+    f\left( t \right) &=\int_{-\infty}^{\infty}{\frac{d\omega}{2\pi}f\left( \omega \right) e^{-i\omega t}}\\
+    &=\int_{-\infty}^{\infty}{\frac{d\mathrm{Re}\left( \omega \right)}{2\pi}f\left( \omega \right) e^{-i\mathrm{Re}\left( \omega \right) t}e^{\mathrm{Im}\left( \omega \right) t}}\\
+    &\sim \begin{cases}
+        \Theta \left( t \right) ,\quad t>0\\
+        \Theta \left( -t \right) ,\quad t<0\\
+    \end{cases}
+\end{align*}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{jupyterbook/data/fig/lec12-fig10.png}
+\end{figure}
