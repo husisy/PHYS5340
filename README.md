@@ -20,6 +20,7 @@ some abbreviation
 1. "i.e.": (id est) means “that is” or “in other words”. (It is used to paraphrase a statement that was just made, not to mean“for example”, and is always followed by a comma.)
 2. s.t.: such that, so that
 3. P.S. stands for postscript. It comes from the Latin post-scriptum, which literally means “written after.”
+4. cf. (short for the Latin: confer/conferatur, both meaning 'compare') is used in writing to refer the reader to other material to make a comparison with the topic being discussed
 
 ## how to contribute
 
