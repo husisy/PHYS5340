@@ -46,6 +46,7 @@ Table of Contents
 12. [lec12](lec12.md)
 13. [lec13](lec13.md)
 14. [lec14](lec14.md)
-15. website-related stuff
+15. [lec15](lec15.md)
+16. website-related stuff
     * [contribute](contribute.md)
     * [test](test.md)
