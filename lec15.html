@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec15 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec14" href="lec14.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec15.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec15.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interacting-so-what">
+   Interacting, so what?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bare-feynman-propagator">
+   Bare (Feynman) propagator
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec15</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interacting-so-what">
+   Interacting, so what?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bare-feynman-propagator">
+   Bare (Feynman) propagator
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec15">
+<h1>lec15<a class="headerlink" href="#lec15" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220325</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>What’s so hard about interaction?</p></li>
+<li><p>Bare electron propagator</p></li>
+<li><p>Full electron propagator</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Appreciating the steps it takes to develop perturbation theory</p></li>
+<li><p>Familiarizing with the one-particle Green’s function</p></li>
+</ol>
+<div class="section" id="interacting-so-what">
+<h2>Interacting, so what?<a class="headerlink" href="#interacting-so-what" title="Permalink to this headline">¶</a></h2>
+<p>Let’s first recall where we were last time. We considered an interacting problem of electrons, given schematically by</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\hat{H}_0+\hat{V}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_0\sim t\hat{c}^{\dagger}\hat{c}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{V}\sim V\hat{c}^{\dagger}\hat{c}^{\dagger}\hat{c}\hat{c}\]</div>
+<p>and we asked what is, for instance, the dielectric function of the system. They key point to note is that</p>
+<div class="math notranslate nohighlight">
+\[ \phi \left( r \right) \sim \frac{\rho _{\mathrm{ext}}}{\varepsilon r}\sim \frac{\rho _{\mathrm{tot}}}{\varepsilon _0r}\]</div>
+<div class="math notranslate nohighlight">
+\[ \rho _{\mathrm{tot}}=\rho _{\mathrm{ext}}+\rho _{sc}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\rho_{\text{sc}}\)</span> encodes how the system responds to the external potential, and in linear response is given by</p>
+<div class="math notranslate nohighlight">
+\[ \delta \rho \left( t \right) \sim -\chi ^{\mathrm{ret}}\left( t \right) \rho _{\mathrm{ext}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \chi ^{\mathrm{ret}}\left( t \right) =i\Theta \left( t \right) \left&lt; \left[ \hat{\rho}\left( t \right) ,\hat{\rho}\left( 0 \right) \right] \right&gt; \]</div>
+<p>is the retarded density-density response function of the interacting problem. (Note: we have deliberately kept the discussion schematic above, and ignored all the spatial / momentum dependence etc.)</p>
+<p>In principle, we can go ahead and compute the expectation value. Before attempting that, however, let us make a clarification remark about the interaction pictures involved:</p>
+<ol class="simple">
+<li><p>Linear response: Full, interacting Hamiltonian as the unperturbed problem and the external “probe” as the perturbation. The susceptibility are understood to be in the Heisenberg picture with respect to the full interacting Hamiltonian</p></li>
+<li><p>Adiabatic turning on: “Bare”, solvable (non-interacting / free / Gaussian) Hamiltonian as the unperturbed problem and “adiabatic turning on of interactions” as the perturbation.</p></li>
+</ol>
+<p>These two are really quite different. In particular, we bear in mind that the susceptibility (is equal to retarded density-density response function) is a Heisenberg picture quantity with respect to the full Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \chi ^{\mathrm{ret}}\left( t \right) =i\Theta \left( t \right) \langle \Omega _H|\left[ \hat{\rho}_H\left( t \right) ,\hat{\rho}_H\left( 0 \right) \right] |\Omega _H\rangle \]</div>
+<p>We also call this a retarded two-particle Green’s function. “Two-particle” because each density operator <span class="math notranslate nohighlight">\(\hat{\rho}\sim \hat{c}^{\dagger}\hat{c}\)</span>.</p>
+<p>Here, the ground state <span class="math notranslate nohighlight">\(|\Omega_H\rangle\)</span> is that of the interacting problem <span class="math notranslate nohighlight">\(\hat{H}=\hat{H}_0+\hat{V}\)</span>.</p>
+<p>Furthermore, we do not immediately know how to evaluate this expression! Recall, to take advantage of the magic of the S-matrix, time-ordering, and adiabatic turning on, we focused on the time-ordered Green’s function, so the closest analog we have is</p>
+<div class="math notranslate nohighlight">
+\[ \chi ^{\mathcal{T}}\left( t \right) =\langle \Omega _H|\mathcal{T} \left[ \hat{\rho}_H\left( t \right) \hat{\rho}_H\left( 0 \right) \right] |\Omega _H\rangle \]</div>
+<p>which can now be rewritten, though the adiabatic turning on, into a formal expression</p>
+<div class="math notranslate nohighlight">
+\[ \chi ^{\mathcal{T}}\left( t \right) =\frac{\langle \Omega _0|\mathcal{T} \left[ \hat{\rho}_I\left( t \right) \hat{\rho}_I\left( 0 \right) \exp \left( -i\int_{-\infty}^{\infty}{dt'\hat{V}_I\left( t' \right)} \right) \right] |\Omega _0\rangle}{\langle \Omega _0|\mathcal{T} \left[ \exp \left( -i\int_{-\infty}^{\infty}{dt'\hat{V}_I\left( t' \right)} \right) \right] |\Omega _0\rangle}\]</div>
+<p>The numerator can be expanded in a Dyson’s series</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\langle \Omega _0|\mathcal{T} \left[ \hat{\rho}_I\left( t \right) \hat{\rho}_I\left( 0 \right) \exp \left( -i\int_{-\infty}^{\infty}{dt'\hat{V}_I\left( t' \right)} \right) \right] |\Omega _0\rangle \\
+    =&amp;\sum_{n=0}^{\infty}{\frac{\left( -i \right) ^n}{n!}\int_{-\infty}^{\infty}{dt_1dt_2\cdots dt_n\langle \Omega _0|\mathcal{T} \left[ \hat{\rho}_I\left( t \right) \hat{\rho}_I\left( 0 \right) \hat{V}_I\left( t_1 \right) \hat{V}_I\left( t_2 \right) \cdots \hat{V}_I\left( t_n \right) \right] |\Omega _0\rangle}}
+\end{align*}
+\end{split}\]</div>
+<p>where the expectation value to take is, schematically,</p>
+<div class="math notranslate nohighlight">
+\[ V^n\langle \Omega _0|\mathcal{T} \left[ \hat{c}_{t}^{\dagger}\hat{c}_t\hat{c}_{0}^{\dagger}\hat{c}_0\;\hat{c}_{t_1}^{\dagger}\hat{c}_{t_1}^{\dagger}\hat{c}_{t_1}\hat{c}_{t_1}\;\hat{c}_{t_2}^{\dagger}\hat{c}_{t_2}^{\dagger}\hat{c}_{t_2}\hat{c}_{t_2}\cdots \;\hat{c}_{t_n}^{\dagger}\hat{c}_{t_n}^{\dagger}\hat{c}_{t_n}\hat{c}_{t_n} \right] |\Omega _0\rangle \]</div>
+<p>where, for sanity’s sake, we have dropped all labels and instead used the subscript to denote the time. Bear in mind that, here, <span class="math notranslate nohighlight">\(t\)</span> and <span class="math notranslate nohighlight">\(0\)</span> are “external” and <span class="math notranslate nohighlight">\(t_1,t_2,\cdots,t_n\)</span> are all integrated over.</p>
+<p>We know how to evaluate such an expression. It’s “just” Wick’s theorem and contractions! We know that the answer will be some combinatorial product of our basic building block</p>
+<div class="math notranslate nohighlight">
+\[ G_0\left( q,t \right) =\langle \Omega _0|\mathcal{T} \left[ \hat{c}_q\left( t \right) \hat{c}_{q}^{\dagger}\left( 0 \right) \right] |\Omega _0\rangle \]</div>
+<p>known as the (bare) Feynman propagator.</p>
+<p>A brute force evaluation for the lowest orders, say up to <span class="math notranslate nohighlight">\(V^2\)</span>, may seem perhaps tedious but possibly doable. But, it is wrong to think that such a calculation will suffice for finding the lowest order interaction corrections: we have to remember there is also a denominator, which is essentially the same power series but without the “density-density” part! Fortunately, as we have seen from the statistics mechanics correspondence, there is a way to handle both the numerator and the denominator in one-shot: by taking log!</p>
+<p>In the following, we address these challenges, one at a time. Before we lose sight of the picture and get buried in the technical details, it may be good to first summarize how we will attack the problem</p>
+<ol class="simple">
+<li><p>Evaluate the “bare” (Feynman) propagator</p></li>
+<li><p>Attempt to evaluate the Dyson’s series by “brute force”, through Wick’s theorem to Feynman diagrams as a mnemonic</p></li>
+<li><p>Take care of the denominator: linked cluster theorem</p></li>
+<li><p>Dyson’s equation and dressed propagators: resummation of series and 1PI</p></li>
+<li><p>Partial resummation and approximations</p></li>
+<li><p>Analytic continuation and going back to real time</p></li>
+</ol>
+</div>
+<div class="section" id="bare-feynman-propagator">
+<h2>Bare (Feynman) propagator<a class="headerlink" href="#bare-feynman-propagator" title="Permalink to this headline">¶</a></h2>
+<p>The starting point of our perturbation theory is, of course, the unperturbed problem. Here, we consider the “free” part of the problem, with the Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_0=\sum_{x,y,\sigma ,\sigma '}{\hat{c}_{x\sigma}^{\dagger}h_{xy}^{\sigma \sigma '}\hat{c}_{y\sigma '}}\]</div>
+<p>As discussed briefly (c.f. lecture on localized electrons), we can define “eigenmodes” such that</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_0=\sum_i{\varepsilon _i\hat{\tilde{c}}_{i}^{\dagger}\hat{\tilde{c}}_i}=\sum_i{\varepsilon _i\hat{\tilde{n}}_i}\]</div>
+<p>is readily diagonalized, with all the eigenstates built by specifying the values <span class="math notranslate nohighlight">\(\hat{\tilde{n}}_i=0,1\)</span> for the full set of mutually commuting number operators.</p>
+<p>The ground state, i.e., the lowest energy state, is constructed by setting</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \tilde{n}_i=\begin{cases}
+    1,\quad \mathrm{if} \varepsilon _i&lt;0\\
+    0,\quad \mathrm{if} \varepsilon _i&gt;0\\
+\end{cases}\end{split}\]</div>
+<p>and occupation of modes with exactly <span class="math notranslate nohighlight">\(\varepsilon _i=0\)</span> does not affect the energy of the state. Such zero modes, if exist, lead to ground-state degeneracy.</p>
+<p>Furthermore, these are eigenmodes, in the sense that their equations of motion are simply</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{\tilde{c}}_{i}^{\dagger}\left( t \right) =\left[ \hat{\tilde{c}}_{i}^{\dagger}\left( t \right) ,\hat{H}_0 \right] =-\varepsilon _i\hat{\tilde{c}}_{i}^{\dagger}\left( t \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \hat{\tilde{c}}_{i}^{\dagger}\left( t \right) =e^{i\varepsilon _it}\hat{\tilde{c}}_{i}^{\dagger}\left( 0 \right) \]</div>
+<p>Let us now assume the system has translation invariance, such that we can further Fourier transform</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\tilde{c}}_{k\sigma}^{\dagger}=\frac{1}{\sqrt{V}}\sum_x{\hat{\tilde{c}}_{x\sigma}^{\dagger}e^{ik\cdot x}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \hat{H}_0=\sum_k{\hat{\tilde{c}}_{k\sigma}^{\dagger}h^{\sigma \sigma '}\left( k \right) \hat{\tilde{c}}_{k\sigma '}}\]</div>
+<p>The momentum-space singular particle Hamiltonian is customary called the Bloch Hamiltonian. Its eigenvalues <span class="math notranslate nohighlight">\(\text{eig}(h(k))\)</span> form energy bands which, for local Hamiltonian, are continuous in the (quasi-)momentum <span class="math notranslate nohighlight">\(k\)</span>. The number of bands equals to the dimension of the Bloch Hamiltonian, which in turns is given by the number of fermion modes we retain in each unit cell. For simplicity, let us take that we only have one orbital per cell, such that <span class="math notranslate nohighlight">\(h(k)\)</span> is <span class="math notranslate nohighlight">\(2\times 2\)</span> because of the spin-<span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> nature of electrons.</p>
+<p>For spin-rotation invariant systems, <span class="math notranslate nohighlight">\(h\left( k \right) =\varepsilon _k\sigma ^0\)</span> and we have a single band (which is doubly degenerate). Our earlier discussion applies equally well, but now the energy is labeled by the momentum <span class="math notranslate nohighlight">\(k\)</span> (instead of a generic index).</p>
+<p><img alt="lec15-fig00" src="_images/lec15-fig00.png" /></p>
+<p>For a simple dispersion, say a “consine band”, there is a single Fermi surface defined by <span class="math notranslate nohighlight">\(\varepsilon_k=0\)</span>. The ground state is then the filled Fermi sea</p>
+<div class="math notranslate nohighlight">
+\[ |\Omega _0\rangle =\prod_{\left| k \right|&lt;\left| k_F \right|}{\hat{c}_{k}^{\dagger}}|0\rangle \]</div>
+<p>With this setup we can now evaluate the “bare propagator”. Remember, the building block of our perturbation theory is the “basic T-contraction”.</p>
+<div class="math notranslate nohighlight">
+\[ iG_{0}^{F}\left( k,t \right) =\left&lt; \mathcal{T} \left[ \hat{c}_k\left( t \right) \hat{c}_{k}^{\dagger}\left( 0 \right) \right] \right&gt; _0\]</div>
+<p>where we have used the fact that our ground state is translation invariant in both space and time (in particular, we used <span class="math notranslate nohighlight">\(\left&lt; \hat{c}_k\hat{c}_{k'}^{\dagger} \right&gt; \propto \delta _{kk'}\)</span> to focus on a single momentum). Evaluating</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    iG_{0}^{F}\left( k,t \right) &amp;=\Theta \left( t \right) \left&lt; \hat{c}_k\left( t \right) \hat{c}_{k}^{\dagger}\left( 0 \right) \right&gt; {\color{red} -}\Theta \left( -t \right) \left&lt; \hat{c}_{k}^{\dagger}\left( 0 \right) \hat{c}_k\left( t \right) \right&gt; \\
+    &amp;=\Theta \left( t \right) \Theta \left( \left| k \right|-\left| k_F \right| \right) e^{-i\varepsilon _kt}-\Theta \left( -t \right) \Theta \left( \left| k_F \right|-\left| k \right| \right) e^{-i\varepsilon _kt}
+\end{align*}
+\end{split}\]</div>
+<p>where the first term is the electron-excitation above the Fermi sea and the second term is the hole-excitation within the Fermi sea. Going to frequency space, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    iG_{0}^{F}\left( k,\omega \right) &amp;=\int_{-\infty}^{\infty}{dtG_{0}^{F}\left( k,t \right) e^{i\omega t}}\\
+    &amp;=\Theta \left( \left| k \right|-\left| k_F \right| \right) \lim_{\eta \rightarrow 0^+} \frac{\left( e^{-\infty}-1 \right)}{i\left( \omega -\varepsilon _k+i\eta \right)}-\Theta \left( \left| k_F \right|-\left| k \right| \right) \lim_{\eta \rightarrow 0^+} \frac{\left( 1-e^{-\infty} \right)}{i\left( \omega -\varepsilon _k-i\eta \right)}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ G_{0}^{F}\left( k,\omega \right) =\lim_{\eta \rightarrow 0^+} \left( \frac{\Theta \left( \left| k \right|-\left| k_F \right| \right)}{\omega -\varepsilon _k+i\eta}+\frac{\Theta \left( \left| k_F \right|-\left| k \right| \right)}{\omega -\varepsilon _k-i\eta} \right) \]</div>
+<p>Noticing that the Heaviside step function is simply an “on-off switch”, it will be natural to further define</p>
+<div class="math notranslate nohighlight">
+\[ \eta _k=\mathrm{sign}\left( \left| k \right|-\left| k_F \right| \right) \eta \]</div>
+<p>and we might write</p>
+<div class="math notranslate nohighlight">
+\[ G_{0}^{F}\left( k,\omega \right) =\lim_{\eta _k\rightarrow 0^{\pm}} \frac{1}{\omega -\varepsilon _k+i\eta _k}\]</div>
+<p>we call this the (Feynman) propagator.</p>
+<p><img alt="lec15-fig01" src="_images/lec15-fig01.png" /></p>
+<p>Notice that, in our single band problem, we have a single pole at each momentum <span class="math notranslate nohighlight">\(k\)</span>. (Contrast with the phonon propagator, which have two poles for each momentum <span class="math notranslate nohighlight">\(k\)</span>.) In particular, we see that a single Green’s function capture both the electron and hole excitations. The union of the two comes about in an interesting way, with the nature of the excitation (electron versus hole) encoded in the location of the pole (lower versus upper complex plane). In fact, going back to the real-time expression, we see that:</p>
+<ol class="simple">
+<li><p>Electron piece <span class="math notranslate nohighlight">\(\Theta \left( t \right) \left&lt; \hat{c}_k\left( 0 \right) \hat{c}_{k}^{\dagger}\left( t \right) \right&gt; \)</span>: <span class="math notranslate nohighlight">\(t&gt;0\)</span>, forward in time</p></li>
+<li><p>Hole piece <span class="math notranslate nohighlight">\(\Theta \left( -t \right) \left&lt; \hat{c}_{k}^{\dagger}\left( 0 \right) \hat{c}_k\left( t \right) \right&gt; \)</span>: <span class="math notranslate nohighlight">\(t&lt;0\)</span>, backward in time</p></li>
+</ol>
+<p>Remarks: The problem of QED electron is completely analogous. The only changes are</p>
+<ol class="simple">
+<li><p>the Fermi “wave vector” happens to be <span class="math notranslate nohighlight">\(k_F=0\)</span></p></li>
+<li><p>the “filled Fermi sea” is the whole set of negative energy solutions to Dirac equation</p></li>
+<li><p>we call the “holes” positrons</p></li>
+</ol>
+<p>What we mentioned above is a paraphrasing of Feynman’s famous interpretation that positron (electron traveling backward in time). (There is a second part of the interpretation: there is only one electron in the universe and it keeps traveling forward and backward. This “one-electron universe” is attributed to Wheeler, Feynman’s PhD advisor.)</p>
+<p>Let us clarify two points before moving on:</p>
+<ol>
+<li><p>What happened to the spin index? In principle, the one-particle propagator (two-point Green’s function) should be a matrix, since each of the two fermions carries an index. (E.g., we simplify the momentum part using <span class="math notranslate nohighlight">\(\left&lt; \hat{c}_k\hat{c}_{k'}^{\dagger} \right&gt; \sim \delta _{kk'}\)</span>) Correspondingly, when we restore spin indices, we simply have</p>
+<div class="math notranslate nohighlight">
+\[ G_{\sigma \sigma '}^{F}(k,t)=-i\left&lt; \mathcal{T} \left[ \hat{c}_{k\sigma}\left( t \right) \hat{c}_{k\sigma '}^{\dagger}\left( t \right) \right] \right&gt; \]</div>
+<p>for spin-rotation-invariant system, we also have <span class="math notranslate nohighlight">\(\left&lt; \hat{c}_{\sigma}\hat{c}_{\sigma '}^{\dagger} \right&gt; \sim \delta _{\sigma \sigma '}\)</span></p>
+<div class="math notranslate nohighlight">
+\[ G_{\sigma \sigma '}^{F}\left( k,t \right) =G^F\left( k,t \right) \delta _{\sigma \sigma '}\]</div>
+<p>and so we could focus on the “single band” discussion as if the spin did not exist. The spin, however, will actually still be important in giving “overall factors” for the different terms in the perturbation expansion.</p>
+</li>
+<li><p>Some of you might notice that the way we defined the propagator is actually ad hoc in a sense. Let us consider, instead, the contraction</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{align*}
+       &amp;\left( -i \right) \left&lt; \mathcal{T} \left[ \hat{c}_{k}^{\dagger}\left( t \right) \hat{c}_k\left( 0 \right) \right] \right&gt; \\
+       =&amp;\left( -i \right) \left[ \Theta \left( t \right) \left&lt; \hat{c}_{k}^{\dagger}\left( t \right) \hat{c}_k\left( 0 \right) \right&gt; -\Theta \left( -t \right) \left&lt; \hat{c}_k\left( 0 \right) \hat{c}_{k}^{\dagger}\left( t \right) \right&gt; \right] \\
+       =&amp;-ie^{i\varepsilon _kt}\left[ \Theta \left( t \right) \Theta \left( \left| k_F \right|-\left| k \right| \right) -\Theta \left( -t \right) \Theta \left( \left| k \right|-\left| k_F \right| \right) \right] \\
+       =&amp;-G_{0}^{F}\left( k,-t \right)
+   \end{align*}
+   \end{split}\]</div>
+<p>and, as such, we see that this alternative contraction does not provide us with additional data. (But, as a corollary, it also suggest that the “arrow of time” we assigned to electrons versus holes is not entirely unambiguous.) Similarly, we may go to frequency space and get</p>
+<div class="math notranslate nohighlight">
+\[ \left( -i \right) \int_{-\infty}^{\infty}{dt\left&lt; \mathcal{T} \left[ \hat{c}_{k}^{\dagger}\left( t \right) \hat{c}_k\left( 0 \right) \right] \right&gt; e^{i\omega t}}=-\int_{-\infty}^{\infty}{dtG_{0}^{F}\left( k,-t \right) e^{i\omega t}}=-G_{0}^{F}\left( k,-\omega \right) \]</div>
+</li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec14.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec14</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

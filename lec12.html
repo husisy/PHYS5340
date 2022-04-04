@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lec12 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec11" href="lec11.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec12.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec12.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bare-phonon-propagator">
+   Bare phonon propagator
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contours-green-s-function-feynman-s-i-epsilon-prescription">
+   Contours, Green’s function, Feynman’s
+   <span class="math notranslate nohighlight">
+    \(i\epsilon\)
+   </span>
+   prescription
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Lec12</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bare-phonon-propagator">
+   Bare phonon propagator
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contours-green-s-function-feynman-s-i-epsilon-prescription">
+   Contours, Green’s function, Feynman’s
+   <span class="math notranslate nohighlight">
+    \(i\epsilon\)
+   </span>
+   prescription
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec12">
+<h1>Lec12<a class="headerlink" href="#lec12" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220316</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Propagators</p></li>
+<li><p>Frequency space, contours and real-time Green functions</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Arriving at a more systematic treatment of the various notion of Green’s functions we have encountered</p></li>
+</ol>
+<div class="section" id="bare-phonon-propagator">
+<h2>Bare phonon propagator<a class="headerlink" href="#bare-phonon-propagator" title="Permalink to this headline">¶</a></h2>
+<p>Let us revisit the free-phonon problem again from this lens of T-contractions and correlation functions. Consider again</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q}\]</div>
+<p>where for simplicity we have restricted ourselves to a single “branch” and so suppressed any additional indices which might be attached to the phonon operators aside from the (crystal) momentum <span class="math notranslate nohighlight">\(q\)</span>.</p>
+<p>In the real space, the phonon operators are related to the actual position (deviation) operators of the atoms through</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\phi}_r=\frac{1}{\sqrt{V}}\sum_q{e^{-iqr}\left( \frac{\hat{a}_q+\hat{a}_{-q}^{\dagger}}{\sqrt{2m\omega _q}} \right)}=\frac{1}{\sqrt{V}}\sum_q{e^{-iqr}\hat{\phi}_q}\]</div>
+<p>In the Heisenberg picture, the phonon operators evolve in time according to</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{a}_q\left( t \right) =\left[ \hat{a}_q\left( t \right) ,\omega _q\hat{a}_{q}^{\dagger}\left( t \right) \hat{a}_q\left( t \right) \right] =\omega _q\hat{a}_q\left( t \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{a}_q\left( t \right) =\hat{a}_q\left( 0 \right) e^{-i\omega _qt}\]</div>
+<p>And we may evaluate the one-particle Green’s function with respect to the phonon vacuum (superscript <span class="math notranslate nohighlight">\(t\)</span> emphasize it corresponds to the time-ordered two-point function)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G^t\left( r,r';t,t' \right) &amp;=-i\langle \mathrm{vac}|\mathcal{T} \left[ \hat{\phi}_r\left( t \right) \hat{\phi}_{r'}\left( t' \right) \right] |\mathrm{vac}\rangle \\
+    &amp;=\frac{-i}{V}\sum_{qq'}{\frac{e^{-iq\cdot r}e^{-iq'\cdot r'}}{2m\sqrt{\omega _q\omega _{q'}}}\langle \mathrm{vac}|\mathcal{T} \left[ \overset{\hat{\phi}_q\left( t \right)}{\overbrace{\left( \hat{a}_q\left( t \right) +\hat{a}_{-q}^{\dagger}\left( t \right) \right) }}\left( \hat{a}_{q'}\left( t' \right) +\hat{a}_{-q'}^{\dagger}\left( t' \right) \right) \right] |\mathrm{vac}\rangle}\\
+    &amp; \qquad\left( q=-q' \right) \\
+    &amp;=\frac{-i}{V}\sum_q{\frac{e^{-iq\cdot \left( r-r' \right)}}{2m\omega _q}\langle \mathrm{vac}|\mathcal{T} \left[ \hat{a}_q\left( t \right) \hat{a}_{q}^{\dagger}\left( t' \right) +\hat{a}_{-q}^{\dagger}\left( t \right) \hat{a}_{-q}\left( t' \right) \right] |\mathrm{vac}\rangle}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Rightarrow \quad \langle \mathrm{vac}|\mathcal{T} \left[ \hat{a}_q\left( t \right) \hat{a}_{q}^{\dagger}\left( t' \right) \right] |\mathrm{vac}\rangle &amp;=\Theta \left( t-t' \right) \langle \mathrm{vac}|\hat{a}_q\left( t \right) \hat{a}_{q}^{\dagger}\left( t' \right) |\mathrm{vac}\rangle \\
+    &amp;=\Theta \left( t-t' \right) e^{-i\omega _q\left( t-t' \right)}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \,\,G^t\left( r,r';t,t' \right) =\frac{-i}{V}\sum_q{\frac{e^{-iq\cdot \left( r-r' \right)}}{2m\omega _q}\left( \Theta \left( t-t' \right) e^{-i\omega _q\left( t-t' \right)}+\Theta \left( t'-t \right) e^{-i\omega _{-q}\left( t'-t \right)} \right)}\]</div>
+<p>which depends only on <span class="math notranslate nohighlight">\(r-r'\)</span> and <span class="math notranslate nohighlight">\(t-t'\)</span></p>
+<div class="math notranslate nohighlight">
+\[ G^t\left( r,t \right) =\frac{-i}{V}\sum_q{\frac{e^{-iq\cdot r}}{2m\omega _q}\left( \Theta \left( t \right) e^{-i\omega _qt}+\Theta \left( -t \right) e^{i\omega _{-q}t} \right)}\]</div>
+<p>The translation invariance, exposed in the fact that the two-point function depends only on <span class="math notranslate nohighlight">\(r-r'\)</span> implies <span class="math notranslate nohighlight">\(q\)</span> is a good quantum number and it is natural to Fourier transform</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G^t\left( q,t \right) &amp;=\sum_r{e^{iq\cdot r}G^t\left( r,t \right)}\\
+    &amp;=\frac{-i}{2m\omega _q}\left( \Theta \left( t \right) e^{-i\omega _qt}+\Theta \left( -t \right) e^{i\omega _{-q}t} \right)
+\end{align*}
+\end{split}\]</div>
+<p>We may further Fourier transform to the frequency space, using our “exponential damping trick”</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    G^t\left( q,\omega \right) &amp;=\lim_{\eta \rightarrow 0^+} \int_{-\infty}^{\infty}{dtG^t\left( q,t \right) e^{i\omega t-\eta \left| t \right|}}\\
+    &amp;=\frac{-i}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \left( \int_0^{\infty}{dte^{i\left( \omega -\omega _q+i\eta \right) t}}+\int_{-\infty}^0{dte^{i\left( \omega +\omega _q+i\eta \right) t}} \right) \\
+    &amp;=\frac{-i}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \left( \frac{0-1}{i\left( \omega -\omega _q+i\eta \right)}+\frac{1-0}{i\left( \omega +\omega _q+i\eta \right)} \right) \\
+    &amp;=\frac{1}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \left( \frac{1}{\omega -\omega _q+i\eta}-\frac{1}{\omega +\omega _q+i\eta} \right) \\
+    &amp;=\frac{1}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \frac{2\omega _q}{\omega ^2-\left( \omega _q-i\eta \right) ^2}
+\end{align*}
+\end{split}\]</div>
+<p>This is called the free/bare phonon “propagator”. It is customary to denote it by <span class="math notranslate nohighlight">\(D\)</span> (instead of <span class="math notranslate nohighlight">\(G\)</span>), since in an electron-phonon problem one might want to reserve <span class="math notranslate nohighlight">\(G\)</span> for the electrons.</p>
+</div>
+<div class="section" id="contours-green-s-function-feynman-s-i-epsilon-prescription">
+<h2>Contours, Green’s function, Feynman’s <span class="math notranslate nohighlight">\(i\epsilon\)</span> prescription<a class="headerlink" href="#contours-green-s-function-feynman-s-i-epsilon-prescription" title="Permalink to this headline">¶</a></h2>
+<p>Going from the real-time to frequency space, we have used an exponential damping term to regulate the oscillatory integral extending to <span class="math notranslate nohighlight">\(t\to\pm\infty\)</span>. In particular, the sign of the damping depends on the sign of <span class="math notranslate nohighlight">\(t\)</span>. We first introduced such tricks by alluding to the physical reality that our system cannot possibly exist all the way up to <span class="math notranslate nohighlight">\(t\to\pm\infty\)</span> anyway, and so it is natural to regulate the integral by damping it off. Here, we provide an alternative way to make sense of such treatment.</p>
+<p>We first notice that the (bare) phonon Green’s function <span class="math notranslate nohighlight">\(D^t(q,\omega)\)</span>, viewed as a complex function, contains two poles</p>
+<div class="math notranslate nohighlight">
+\[ D^+\left( q,\omega \right) =\frac{1}{2m\omega _q}\lim_{\eta \rightarrow 0^+} \left( \frac{1}{\omega -\omega _q+i\eta}-\frac{1}{\omega +\omega _q+i\eta} \right) \]</div>
+<p>which are infinitesimally displaced from the real line.</p>
+<p><img alt="lec12-fig00" src="_images/lec12-fig00.png" /></p>
+<p>Now, imagine Fourier transforming back to the real time, which calls for an integral along the real line, with the two poles approaching our integration contour, Such integrals could alternatively be computed by trading the <span class="math notranslate nohighlight">\(\pm i\eta\)</span> with an infinitesimal deformation of the integration contour.</p>
+<p><img alt="lec12-fig01" src="_images/lec12-fig01.png" /></p>
+<p>As a sanity check, let us verify that we could indeed go back to the real-time Green’s function by performing such contour integrals. Consider</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{2m\omega _q}\int_C{\frac{d\omega}{2\pi}\left( \frac{1}{\omega -\omega _q}-\frac{1}{\omega +\omega _q} \right)}e^{-i\omega t}\]</div>
+<p>Notice we have dropped the <span class="math notranslate nohighlight">\(\pm i\eta\)</span>, with the corresponding information encoded in how the contour <span class="math notranslate nohighlight">\(C\)</span> is specified.</p>
+<p>One could evaluate this integral honestly, by splitting the contour <span class="math notranslate nohighlight">\(C\)</span> into <span class="math notranslate nohighlight">\(5\)</span> segments: three straight lines and two semi-circles. As the deformation is only infinitesimal, the “straight line” integrals return  the Cauchy principal value whereas the “semi-circles” give half of the residues. In addition, for the principal part one ultimately gets the Dirichlet sinc integral, which gives <span class="math notranslate nohighlight">\(\sim e^{\pm i\omega_q t}(i\pi \mathrm{sgn}(t))\)</span>. Combined with the partial residues, one does get back the original time-ordered real-time Green’s function.</p>
+<p>Instead of going through the details of the steps sketeched above, let’s use the usual “physicist’s argument” to evaluate the integral. The main idea is to use the residue theorem, which states that (loosely) power series make sense except at the singularities (i.e., poles)</p>
+<div class="math notranslate nohighlight">
+\[ \oint{\gamma}{d\zeta f\left( \zeta \right)}=2\pi i\sum{\mathrm{Res}\left( f,a_k \right)}\]</div>
+<p><img alt="lec12-fig02" src="_images/lec12-fig02.png" /></p>
+<p>and for a meromorphic function with a simple pole, taking the form</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    f\left( \zeta \right) &amp;=\frac{g\left( \zeta \right)}{\zeta -a_k}=\frac{\sum_{n=0}{g_n\left( \zeta -a_k \right) ^n}}{\zeta -a_k}\\
+    &amp;=\frac{g_0}{\zeta -a_k}+g_1+g_2\left( \zeta -a_k \right) +\cdots
+\end{align*}
+\end{split}\]</div>
+<p>the residue is simply the coefficient <span class="math notranslate nohighlight">\(g_0\)</span>.</p>
+<p>Now, back to our problem: to take advantage of the residue theorem we would want to “close” our contour. The natural choice will be to complete it with an arc which we send off to infinity, e.g.,</p>
+<p><img alt="lec12-fig03" src="_images/lec12-fig03.png" /></p>
+<p>We then see that, by the residue theorem, only one of the poles contribute:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \int_{C+arc}{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}&amp;=\frac{1}{2m\omega _q}\frac{2\pi i}{2\pi}\mathrm{Res}\left( \frac{-e^{-i\omega t}}{\omega +\omega _q},\omega -\omega _q \right) \\
+    &amp;=\frac{-i}{2m\omega _q}e^{i\omega _qt}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \int_C{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}=\frac{-i}{2m\omega _q}e^{i\omega _qt}-\int_{arc}{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}\]</div>
+<p>almost! But we need to know what is the contribution from the arc. In what we considered above, we let <span class="math notranslate nohighlight">\(\omega\)</span> go to infinity on the upper complex plane. In other words, we consider</p>
+<div class="math notranslate nohighlight">
+\[ \mathrm{Im}\left( \omega \right) \rightarrow +\infty \]</div>
+<p>as such, in the integrand we have</p>
+<div class="math notranslate nohighlight">
+\[ e^{-i\omega t}=e^{-i\mathrm{Re}\left( \omega \right) t}e^{\mathrm{Im}\left( \omega \right) t}\]</div>
+<p>and it is well-behaved (and exponentially suppressed) only if we have <span class="math notranslate nohighlight">\(t&lt;0\)</span> to start with. Provided <span class="math notranslate nohighlight">\(t&lt;0\)</span>, the arc contribution goes to zero as the integrand is now exponentially suppressed. This gives</p>
+<div class="math notranslate nohighlight">
+\[ \int_C{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}=\frac{-i}{2m\omega _q}e^{i\omega _qt},\quad t&lt;0\]</div>
+<p>Now, to obtain the result for <span class="math notranslate nohighlight">\(t&gt;0\)</span>, we should consider the alternative way of closing off our contour (clockwise)</p>
+<p><img alt="lec12-fig04" src="_images/lec12-fig04.png" /></p>
+<p>which now encloses the other pole at <span class="math notranslate nohighlight">\(\omega=\omega_q\)</span>. The same calculation as before then gives</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \int_C{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}&amp;=\frac{-1}{2m\omega _q}\frac{2\pi i}{2\pi}\mathrm{Res}\left( \frac{e^{-i\omega t}}{\omega -\omega _q},\omega =\omega _q \right) -\int_{arc}{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}\\
+    &amp;=\frac{-i}{2m\omega _q}e^{-i\omega _qt},\quad t&gt;0
+\end{align*}
+\end{split}\]</div>
+<p>We may then combine the two cases into</p>
+<div class="math notranslate nohighlight">
+\[ \int_C{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}=\frac{-i}{2m\omega _q}\left( \Theta \left( t \right) e^{-i\omega _qt}+\Theta \left( -t \right) e^{i\omega _qt} \right) =D^t\left( q,t \right) \]</div>
+<p>as promised. We note in passing that, this is also commonly referred to as the (Feynman) “propagator”.</p>
+<p>Such time-ordered correlation function shows up in perturbation expansion (Feynman diagrams etc.), and we will see that they can be interpreted as the free propagation of phonons, whence the name.</p>
+<p>One may wonder what’s the significance of undergoing such a lengthy discussion in order to simply Fourier transform back to the real time. The catch is that, in the calculation above, it will be natural to consider alternative contours which circumvent the two poles in some other means. For instance, consider the contour</p>
+<p><img alt="lec12-fig05" src="_images/lec12-fig05.png" /></p>
+<p>It doesn’t encircle any poles if we complete it in the upper complex plane (Fourier transform with <span class="math notranslate nohighlight">\(t&lt;0\)</span>), and enclose both poles when we complete in the lower complex plane. This gives</p>
+<div class="math notranslate nohighlight">
+\[ \int_{C'}{\frac{d\omega}{2\pi}D\left( q,\omega \right) e^{-i\omega t}}=-i\Theta \left( t \right) \left( e^{-i\omega _qt}-e^{i\omega _qt} \right) =-2\Theta \left( t \right) \sin \left( \omega _qt \right)\]</div>
+<p>What is the process corresponding to this real-time Green’s function? Notice that, what we have changed is really the integration around the pole at <span class="math notranslate nohighlight">\(\omega=-\omega_q\)</span>. First consider</p>
+<p><img alt="lec12-fig06" src="_images/lec12-fig06.png" /></p>
+<div class="math notranslate nohighlight">
+\[ \oint{\frac{d\omega}{2\pi}\frac{-e^{-i\omega t}}{\omega +\omega _q}}=\left( -i \right) e^{i\omega _qt}=\left( -i \right) \left&lt; \hat{a}_{-q}\left( 0 \right) \hat{a}_{-q}^{\dagger}\left( t \right) \right&gt; =\left( -i \right) \left&lt; \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_{q}^{\dagger}\left( t \right) \right&gt; \]</div>
+<p>Now, we can compare the two contours considered</p>
+<p><img alt="lec12-fig07" src="_images/lec12-fig07.png" /></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\left( -i \right) \left&lt; \mathcal{T} \left[ \hat{\phi}_q\left( t \right) \hat{\phi}_{-q}\left( 0 \right) \right] \right&gt; -\left( -i \right) \left&lt; \mathcal{T} \left[ \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_q\left( t \right) \right] \right&gt; \\
+    =&amp;\left( -i \right) \Theta \left( t \right) \left&lt; \hat{\phi}_q\left( t \right) \hat{\phi}_{-q}\left( 0 \right) \right&gt; +\left( -i \right) \Theta \left( -t \right) \left&lt; \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_q\left( t \right) \right&gt; \\
+    &amp;\quad -\left( -i \right) \Theta \left( t \right) \left&lt; \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_q\left( t \right) \right&gt; -\left( -i \right) \Theta \left( -t \right) \left&lt; \hat{\phi}_{-q}\left( 0 \right) \hat{\phi}_q\left( t \right) \right&gt; \\
+    =&amp;\left( -i \right) \Theta \left( t \right) \left&lt; \left[ \hat{\phi}_{-q}\left( 0 \right) ,\hat{\phi}_q\left( t \right) \right] \right&gt;
+\end{align*}
+\end{split}\]</div>
+<p>i.e., it is the expectation value of a commutator with time <span class="math notranslate nohighlight">\(t&gt;0\)</span>.</p>
+<p>By closing the contour on the lower complex plane, our real-time Green’s function is non-vanishing only for <span class="math notranslate nohighlight">\(t&gt;0\)</span>, which suggests a kind of causality, in the sense that we only allow time to move “forward” but not backward. Indeed, this is known as the causal / retarded Green’s function of the phonons, and is closely related to the response of a system when we perturb it (and the system can only respond after we perturb it, by causality). More later.</p>
+<p>Lastly, a comment on contours vs <span class="math notranslate nohighlight">\(i\eta\)</span>: in the above, we see that the same frequency space Green’s function, combined with different contour prescription (for avoiding the singularities on the real axis), gives rise to different real-time Green’s functions. Yet, we also argued (heuristically) that, the contour prescription can be understood simply by the small shifts <span class="math notranslate nohighlight">\(\pm i\eta\)</span> kicking the poles off the real axis. So, instead of specifying different contours, we can also stick with the real line (and leave the “arc” part implicit, dependent on the sign of time), and instead assign the <span class="math notranslate nohighlight">\(\pm i\eta\)</span> as the definition for different Green’s functions.</p>
+<p>This latter perspective is perhaps more popular among physicists, and this is called “Feynman’s <span class="math notranslate nohighlight">\(i\epsilon\)</span> prescription”. (Probably he used <span class="math notranslate nohighlight">\(\epsilon\)</span> for what we denoted by <span class="math notranslate nohighlight">\(\eta\)</span> here.)</p>
+<p>A particularly important “pole structure” for our next topic (linear response) is as follows:</p>
+<p><img alt="lec12-fig08" src="_images/lec12-fig08.png" /></p>
+<p>where the <span class="math notranslate nohighlight">\(i\eta\)</span> displaces the poles to the lower complex plane. This corresponds to the contours we considered just now for the phonons:</p>
+<p><img alt="lec12-fig09" src="_images/lec12-fig09.png" /></p>
+<p>When we Fourier transform back to real time, the integral vanishes when we close the contour on the upper complex plane, i.e., the only contribution comes from <span class="math notranslate nohighlight">\(t&gt;0\)</span>, and the real-time Green’s function is “retarded” in the sense that</p>
+<div class="math notranslate nohighlight">
+\[ G_{\mathrm{ret}}\left( t,t' \right) \propto \Theta \left( t-t' \right) \]</div>
+<p>To summarize, when we consider Fourier transform back to real time</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    f\left( t \right) &amp;=\int_{-\infty}^{\infty}{\frac{d\omega}{2\pi}f\left( \omega \right) e^{-i\omega t}}\\
+    &amp;=\int_{-\infty}^{\infty}{\frac{d\mathrm{Re}\left( \omega \right)}{2\pi}f\left( \omega \right) e^{-i\mathrm{Re}\left( \omega \right) t}e^{\mathrm{Im}\left( \omega \right) t}}\\
+    &amp;\sim \begin{cases}
+        \Theta \left( t \right) ,\quad t&gt;0\\
+        \Theta \left( -t \right) ,\quad t&lt;0\\
+    \end{cases}
+\end{align*}
+\end{split}\]</div>
+<p><img alt="lec12-fig10" src="_images/lec12-fig10.png" /></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec11.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec11</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec17 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec16" href="lec16.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec15.html">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec16.html">
+   lec16
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec17.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec17.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linked-cluster-theorem">
+   Linked-cluster theorem
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec17</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linked-cluster-theorem">
+   Linked-cluster theorem
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec17">
+<h1>lec17<a class="headerlink" href="#lec17" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220401</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Feynman diagrams</p></li>
+<li><p>Linked cluster theorem</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Understanding the relation between diagrams and Green’s functions</p></li>
+<li><p>Introducing common techniques in diagrammatic</p></li>
+</ol>
+<p>Last time, we discussed how one might use diagrams to organize the (many) contractions one obtains when evaluating a Dyson’s series expansion of the full propagator. Recall, to the first order in <span class="math notranslate nohighlight">\(V\)</span>, we have six possible contraction patterns, which can be conveniently indicated by “matching” vertices in a pair wise manner.</p>
+<p>However, we should not forget that our terms come with “coefficients” and integrals. E.g., focusing</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\frac{\left( -i \right) ^2}{2}\sum_{{\color{red} pp'q}}{V\left( {\color{red} q} \right) \sum_{{\color{red} \mu \mu '}}{\int_{-\infty}^{\infty}{d{\color{red} t_1}\left&lt; \hat{c}_{{\color[RGB]{0, 0, 240} k\sigma }}\left( {\color[RGB]{0, 0, 240} t} \right) \hat{c}_{{\color[RGB]{0, 0, 240} k\sigma }}^{\dagger}\left( {\color[RGB]{0, 0, 240} 0} \right) \right&gt; _{\mathcal{T}}\left&lt; \hat{c}_{{\color{red} p'-q,\mu '}}^{\dagger}\left( {\color{red} t_1} \right) \hat{c}_{{\color{red} p',\mu '}}\left( {\color{red} t_1} \right) \right&gt; _{\mathcal{T}}\left&lt; \hat{c}_{{\color{red} p+q,\mu }}^{\dagger}\left( {\color{red} t_1} \right) \hat{c}_{{\color{red} p,\mu }}\left( {\color{red} t_1} \right) \right&gt; _{\mathcal{T}}}}}\\
+    =&amp;\left( -i \right) \left&lt; \hat{c}_{{\color[RGB]{0, 0, 240} k\sigma }}\left( {\color[RGB]{0, 0, 240} t} \right) \hat{c}_{{\color[RGB]{0, 0, 240} k\sigma }}^{\dagger}\left( {\color[RGB]{0, 0, 240} 0} \right) \right&gt; _{\mathcal{T}}\int_{-\infty}^{\infty}{d{\color{red} t_1}\sum_{{\color{red} q}}{\frac{\left( -i \right) V\left( {\color{red} q} \right)}{2}\sum_{{\color{red} p'\mu '}}{\left&lt; \hat{c}_{{\color{red} p'-q,\mu '}}^{\dagger}\left( {\color{red} t_1} \right) \hat{c}_{{\color{red} p',\mu '}}\left( {\color{red} t_1} \right) \right&gt; _{\mathcal{T}}\sum_{{\color{red} p\mu }}{\left&lt; \hat{c}_{{\color{red} p+q,\mu }}^{\dagger}\left( {\color{red} t_1} \right) \hat{c}_{{\color{red} p,\mu }}\left( {\color{red} t_1} \right) \right&gt; _{\mathcal{T}}}}}}\\
+    =&amp;G_{\sigma \sigma}^{F}\left( k,t \right) \int_{-\infty}^{\infty}{dt_1\frac{\left( -i \right) V\left( q=0 \right)}{2}\left( \sum_p{\mathrm{Tr}\left( \left( -i \right) G_{0}^{F}\left( p,0^- \right) \right)} \right) ^2}
+\end{align*}
+\end{split}\]</div>
+<p>where the internal and summed / integrated over variables are colored in red and external variables in blue.
+note that</p>
+<div class="math notranslate nohighlight">
+\[ \left&lt; \hat{c}_{p+q,\mu}^{\dagger}\left( t_1 \right) \hat{c}_{p,\mu}\left( t_1 \right) \right&gt; _{\mathcal{T}}=-\delta \left( q \right) \lim_{t\rightarrow 0^-} G_{0\mu}^{F}\left( p,t \right) =\delta \left( q \right) \hat{n}_p\]</div>
+<p>and that the integral <span class="math notranslate nohighlight">\(\int_{-\infty}^{\infty}dt_1\)</span> has nothing to integrate!</p>
+<p>Instead of interpreting that as infinity, which is not very helpful, we can instead “regularize” it by claiming <span class="math notranslate nohighlight">\(\int{dt_1}=T\)</span>, the duration of time in which we turn on the interaction.</p>
+<p>Staring at the expression above, we see that the three propagators in the expression actually do rather different things. In particular, one of them is completely external (and has nothing to do with the interaction), whereas the other two effectively “caps” the interaction and gives us some integrals to do. In the same spirit as the diagrams we have drawn above, it will be natural to “complete” the diagram by indicating more clearly which of the propagators are related to the interaction:</p>
+<p><img alt="lec17-fig00" src="_images/lec17-fig00.png" /></p>
+<p>Similarly, we may now draw / write down the second term</p>
+<p><img alt="lec17-fig01" src="_images/lec17-fig01.png" /></p>
+<p>notice  that we have traded the crossing with a loop, this suggests the sign is now given by a loop counting (not proven here), and the term is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;G_{0\sigma}^{F}\left( k,t \right) \times \int{dt_1\sum_{pq}{G_{0\mu}^{F}\left( p,0^- \right) \frac{iV\left( q \right)}{2}G_{0\mu}^{F}\left( p+q,0^- \right) \times \left( -2S-1 \right)}}\\
+    =&amp;-\left( 2S+1 \right) TG_{0\sigma}^{F}\left( k,t \right) \sum_{pq}{\frac{-iV\left( q \right)}{2}n_{p+q}n_p}
+\end{align*}
+\end{split}\]</div>
+<p>Indeed, let us verify</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;-\left( -i \right) ^2\sum_{pp'q}{\frac{V\left( q \right)}{2}\sum_{\mu \mu '}{\int_{-\infty}^{\infty}{dt_1\underset{iG_{0\sigma}^{F}\left( k,t \right)}{\underbrace{\left&lt; \hat{c}_{k\sigma}\left( t \right) \hat{c}_{k\sigma}^{\dagger}\left( 0 \right) \right&gt; _{\mathcal{T}}}}\underset{\delta _{\mu \mu '}\hat{n}_{p+q}\delta \left( p+q-p' \right)}{\underbrace{\left&lt; \hat{c}_{p+q,\mu}^{\dagger}\left( t_1 \right) \hat{c}_{p',\mu '}\left( t_1 \right) \right&gt; _{\mathcal{T}}}}\underset{\hat{n}_p}{\underbrace{\left&lt; \hat{c}_{p'-q,\mu '}^{\dagger}\left( t_1 \right) \hat{c}_{p,\mu}\left( t_1 \right) \right&gt; _{\mathcal{T}}}}}}}\\
+    =&amp;-\sum_{pq}{\frac{-iV\left( q \right)}{2}T\left( 2S+1 \right) G_{0\sigma}^{F}\left( k,t \right) \hat{n}_{p+q}\hat{n}_p}
+\end{align*}
+\end{split}\]</div>
+<p>Hopefully, the idea is now clear: starting with the operator to be contracted, which we represent diagrammatically as</p>
+<p><img alt="lec17-fig02" src="_images/lec17-fig02.png" /></p>
+<p>we “connect the dots” in all possible ways, as instructed by the Wick’s theorem. All terms here will lead to, schematically, <span class="math notranslate nohighlight">\(\sim G\cdot G\cdot V\cdot G\)</span>, but the contraction can pair various internal indices and so some parts may get combined. Furthermore, we have to keep track of the sign and multiplicity factors (in our context, one sign change and one factor of <span class="math notranslate nohighlight">\((2S+1)\)</span> per fermion loop).</p>
+<p>For instance, the rest of our terms become</p>
+<p><img alt="lec17-fig03" src="_images/lec17-fig03.png" /></p>
+<p><img alt="lec17-fig04" src="_images/lec17-fig04.png" /></p>
+<p>Combined, we see that these four diagrams, correspondingly initially to four distinct contraction patterns, actually give only two distinct terms. One could, and should, check that the prefactors and signs all agree, and as such we may write schematically that</p>
+<p><img alt="lec17-fig05" src="_images/lec17-fig05.png" /></p>
+<p>Now we may start to guess how the higher order terms look like. For instance, suppose we consider a <span class="math notranslate nohighlight">\(V^2\)</span> term. We will begin by drawing what we ought to connect</p>
+<p><img alt="lec17-fig06" src="_images/lec17-fig06.png" /></p>
+<p>where we leave the internal variables implicit. For our current problem, we have <span class="math notranslate nohighlight">\(10\)</span> “vertices” (<span class="math notranslate nohighlight">\(5\)</span> for <span class="math notranslate nohighlight">\(\hat{c}\)</span> and <span class="math notranslate nohighlight">\(5\)</span> for <span class="math notranslate nohighlight">\(\hat{c}^\dagger\)</span>) to connect. For instance, one can have (skipping the directions)</p>
+<p><img alt="lec17-fig07" src="_images/lec17-fig07.png" /></p>
+<p><img alt="lec17-fig08" src="_images/lec17-fig08.png" /></p>
+<p><img alt="lec17-fig09" src="_images/lec17-fig09.png" /></p>
+<p><img alt="lec17-fig10" src="_images/lec17-fig10.png" /></p>
+<p>We may clean up the drawings and arrive at a more compact form</p>
+<p><img alt="lec17-fig11" src="_images/lec17-fig11.png" /></p>
+<p>Now, instead of what we have been doing, namely, first consider all the possible contractions, one could as well start directly with the “compact” diagrams and ask the reverse question of what the corresponding contraction is, and how many contractions are there which will give the same diagram. This “reversed” approach is essentially called “Feynman diagrams”, and the rules for converting the diagrams back to some integrals (corresponding to an actual term in the perturbative expansion) are called Feynman rules.</p>
+<div class="section" id="linked-cluster-theorem">
+<h2>Linked-cluster theorem<a class="headerlink" href="#linked-cluster-theorem" title="Permalink to this headline">¶</a></h2>
+<p>In this process, a question naturally arises: how do we organize the diagrams? So far, we have only considered the order-by-order expansion in powers of <span class="math notranslate nohighlight">\(V\)</span>. That, however, is not necessarily the best organization principle. Instead, we could notice that,</p>
+<p><img alt="lec17-fig12" src="_images/lec17-fig12.png" /></p>
+<p>In other words, in our brute-force expansion, many of the diagrams actually consist of disconnected pieces. Out of these disconnected pieces, exactly one depends on the external variables. The rest are all “(linked) loops” and so whatever variables they carry are dummy and eventually integrated / summed over. As such, we see that it is natural to factor out the “linked-cluster” terms, which get multiplied to all possible ways of forming “disconnected clusters of loops” which do not depend on our external variables.</p>
+<p>What are these “purely internal” diagrams? Remember, form Gell-Mann-Low, we see that the full propagator takes the form of</p>
+<div class="math notranslate nohighlight">
+\[ \langle \Omega |\mathcal{T} \left[ \hat{c}_k\left( t \right) \hat{c}_{k}^{\dagger}\left( 0 \right) \right] |\Omega \rangle =\frac{\langle \Omega _0|\mathcal{T} \left[ \hat{c}_k\left( t \right) \hat{c}_{k}^{\dagger}\left( 0 \right) \exp \left( -i\int_{-\infty}^{\infty}{dt\hat{V}_I\left( t \right)} \right) \right] |\Omega _0\rangle}{\langle \Omega _0|\mathcal{T} \left[ \exp \left( -i\int_{-\infty}^{\infty}{dt\hat{V}_I\left( t \right)} \right) \right] |\Omega _0\rangle}\]</div>
+<p>So far, we only focused on the numerator. Let us imagine performing the same kind of perturbative expansion for the denominator.</p>
+<p><img alt="lec17-fig13" src="_images/lec17-fig13.png" /></p>
+<p>Diagrammatically, we see that we necessarily get what we have factored out above! This is almost a consequence of tautology: in the numerator, we factor out everything that is “purely internal”, and the denominator is, indeed, “purely internal”. On top of that, they follow the same set of contraction / diagram-drawing rules, and so they must look the same.</p>
+<p>The only question, therefore, is whether or not all the details like signs and coefficients will exactly agree with each other. The answer is a reassuring yes, and we conclude</p>
+<p><img alt="lec17-fig14" src="_images/lec17-fig14.png" /></p>
+<p>i.e., although we worried about how to properly count powers of <span class="math notranslate nohighlight">\(V\)</span> given the cancellation from the denominator, this can be fixed by simply focusing on the diagrams which do not contain any disconnected pieces! This is called the linked-cluster theorem. Of course we only motivated why the linked-cluster theorem makes sense, and didn’t actually prove it. There are usually two approaches to prove it:</p>
+<ol class="simple">
+<li><p>Show that, indeed, these terms in the numerator and denominator cancel out with all the signs and factors agreeing with each other;</p></li>
+<li><p>Go back to the statistics mechanics correspondence, in which the linked-cluster diagrams emerge naturally upon taking the log (and in the statistics mechanics context this is called the cumulant expansion)</p></li>
+</ol>
+<p>In the interest of time, we will not prove it here (we are not in a position to do so anyway: the heuristic discussion above doesn’t contain enough details to really establish the theorem). If you are interested, you can consult Coleman-7.2 for a cool argument along route(2), through introducing the generating functional and a replica trick for <span class="math notranslate nohighlight">\(\ln(S)\)</span></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec16.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec16</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -29,6 +29,8 @@ Contribution is always **welcome**. if you find any typo, incorrect/inaccurate/i
 * contact me directly
 :::
 
+*TODO:* replace $\zeta^*$ with $\bar{\zeta}$
+
 20220309
 
 Topics
@@ -49,7 +51,7 @@ As discussed last time, we announced the answer
 
 $$ \langle 0|\mathcal{T} \left[ e^{-i\int_0^t{dt'\left( \zeta \left( t' \right) \hat{a}^{\dagger}\left( t' \right) +\zeta ^*\left( t' \right) \hat{a}\left( t' \right) \right)}} \right] |0\rangle =e^{-i\int_0^t{dt_1\int_0^t{dt_2\zeta ^*\left( t_1 \right) \mathscr{G} \left( t_1-t_2 \right) \zeta \left( t_2 \right)}}}$$
 
-$$ \mathscr{G} \left( t_1-t_2 \right) =\Theta \left( t_1-t_2 \right) e^{-i\omega \left( t_1-t_2 \right)}$$
+$$ \mathscr{G} \left( t_1-t_2 \right) = (-i)\Theta \left( t_1-t_2 \right) e^{-i\omega \left( t_1-t_2 \right)}$$
 
 simply by "checking" the lowest nontrivial term! It will make sense to demand that we do a more honest check by considering the general terms.
 

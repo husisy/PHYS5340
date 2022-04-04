@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lec13 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="Lec12" href="lec12.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec13.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec13.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recap-reasons-for-thinking-about-green-s-functions">
+   Recap: reasons for thinking about Green’s functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linear-response">
+   Linear response
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#driven-qho">
+   Driven QHO
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Lec13</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recap-reasons-for-thinking-about-green-s-functions">
+   Recap: reasons for thinking about Green’s functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linear-response">
+   Linear response
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#driven-qho">
+   Driven QHO
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec13">
+<h1>Lec13<a class="headerlink" href="#lec13" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220318</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Linear response</p></li>
+<li><p>Susceptibility and retarded Greens’ function</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Establishing a more precise connection between Green’s function and experimental observables</p></li>
+</ol>
+<div class="section" id="recap-reasons-for-thinking-about-green-s-functions">
+<h2>Recap: reasons for thinking about Green’s functions<a class="headerlink" href="#recap-reasons-for-thinking-about-green-s-functions" title="Permalink to this headline">¶</a></h2>
+<p>Let us briefly recap what we have learnt about (zero-temperature) Green’s functions.</p>
+<ol class="simple">
+<li><p>We argued that, in real time, they could be understood simply as the matrix-element of the time-evolution operator evaluated in the ground state (Level I)</p></li>
+<li><p>We also showed that, in the frequency space, the Green’s function contains important physical information about the ground state and its excitations (Level II)</p></li>
+<li><p>We then see that specific “time-ordered” combination of the real-time Green’s function form the basic ingredients when we try to solve equation of motion with time-dependent operator “coefficients”, which leads to the time-ordered exponential (Level III)</p></li>
+<li><p>We just saw that, in fact, all these Green’s functions are really the same in the frequency space, but just with different contour prescription in going to the real time (at least for free phonons)!</p></li>
+</ol>
+<p>In particular, we saw that when we close the contour on the lower complex plane, we get the “retarded Green’s function” taking the form</p>
+<div class="math notranslate nohighlight">
+\[ G^{\mathrm{ret}}\left( q,t \right) =\left( -i \right) \Theta \left( t \right) \left&lt; \left[ \hat{A}\left( t \right) ,\hat{B}\left( 0 \right) \right] \right&gt; \]</div>
+<p>It has a sense of causality, in that it is non-vanishing only for <span class="math notranslate nohighlight">\(t&gt;0\)</span>. Furthermore, when <span class="math notranslate nohighlight">\(\hat{A}\)</span> and <span class="math notranslate nohighlight">\(\hat{B}\)</span> are Hermitian,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \left( -i\left[ \hat{A}\left( t \right) ,\hat{B}\left( 0 \right) \right] \right) ^{\dagger}&amp;=\left( -i\hat{A}\left( t \right) \hat{B}\left( 0 \right) +i\hat{B}\left( 0 \right) \hat{A}\left( t \right) \right) ^{\dagger}\\
+    &amp;=i\hat{B}\left( 0 \right) \hat{A}\left( t \right) -i\hat{A}\left( t \right) \hat{B}\left( 0 \right) \\
+    &amp;=-i\left[ \hat{A}\left( t \right) ,\hat{B}\left( 0 \right) \right]
+\end{align*}
+\end{split}\]</div>
+<p>this implies our retarded Green’s function could be measurable! Note how things start to fall into place: the mysterious “conventional factor” <span class="math notranslate nohighlight">\((-i)\)</span> now makes sense too!</p>
+</div>
+<div class="section" id="linear-response">
+<h2>Linear response<a class="headerlink" href="#linear-response" title="Permalink to this headline">¶</a></h2>
+<p>Let us now consider a general problem and see how, indeed, the retarded Green’s functions appear as the response of a system to perturbations.</p>
+<p>Consider a static Hamiltonian <span class="math notranslate nohighlight">\(\hat{H}_0\)</span> which wee disturb at some time by a perturbation <span class="math notranslate nohighlight">\(\hat{V}(t)\)</span>. The full Hamiltonian is given by</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}\left( t \right) =\hat{H}_0+\hat{V}\left( t \right) \]</div>
+<p>in the Schrodinger picture, i.e., the Schrodinger states evolve as</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t|\Psi_S \left( t \right) \rangle=\hat{H}\left( t \right) |\Psi_S \left( t \right) \rangle\]</div>
+<p>Taking the perspective that “the system” is simply described by <span class="math notranslate nohighlight">\(\hat{H}_0\)</span> and <span class="math notranslate nohighlight">\(\hat{V}(t)\)</span> is only “a probe”, it will be natural to try going into a Heisenberg picture defined using <span class="math notranslate nohighlight">\(\hat{H}_0\)</span> (instead of <span class="math notranslate nohighlight">\(\hat{H}(t)\)</span>). Consider an operator <span class="math notranslate nohighlight">\(\hat{O}\)</span> which is time-independent in the Schrodinger picture:</p>
+<div class="math notranslate nohighlight">
+\[ \langle \Psi_S \left( t \right) |\hat{O}_S|\Psi_S \left( t \right) \rangle =\langle \Psi_S \left( t \right) |e^{-i\hat{H}_0t}\left( e^{i\hat{H}_0t}\hat{O}_Se^{-i\hat{H}_0t} \right) e^{i\hat{H}_0t}|\Psi_S \left( t \right) \rangle \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{O}_I\left( t \right) =e^{i\hat{H}_0t}\hat{O}_Se^{-i\hat{H}_0t}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\hat{O}_I(t)\)</span> is equivalently Heisenberg picture for <span class="math notranslate nohighlight">\(\hat{O}\)</span> defined using <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>. Of course, this is something like a hybrid picture, because ultimately our full Hamiltonian (and so the “true” Heisenberg picture) also contains the perturbation.</p>
+<p>We call this the “interaction picture”. The equations of motions are now</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t\hat{O}_I\left( t \right) =\left[ \hat{O}_I\left( t \right) ,\hat{H}_0 \right] \]</div>
+<p>same as the Heisenberg picture for the unperturbed system.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    i\partial _t|\Psi_I \left( t \right) \rangle&amp;=i\partial _t\left( e^{i\hat{H}_0t}|\Psi_S \left( t \right) \rangle \right) \\
+    &amp;=-\hat{H}_0\left( e^{i\hat{H}_0t}|\Psi_S \left( t \right) \rangle  \right) +e^{i\hat{H}_0t}\left( i\partial _t|\Psi_S \left( t \right) \rangle \right) \\
+    &amp;=-\hat{H}_0|\Psi_I \left( t \right) \rangle+e^{i\hat{H}_0t}\left( \hat{H}_0+\hat{V}\left( t \right) \right) e^{-i\hat{H}_0t}|\Psi_I \left( t \right) \rangle\\
+    &amp;=\hat{V}_I\left( t \right) |\Psi_I \left( t \right) \rangle
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{V}_I\left( t \right) =e^{i\hat{H}_0t}\hat{V}\left( t \right) e^{-i\hat{H}_0t}\]</div>
+<p>i.e., the “effective Hamiltonian” for <span class="math notranslate nohighlight">\(|\Psi_I(t)\rangle\)</span> is simply the perturbation, but with the operators acquiring additional time-dependence according to the Heisenberg picture of the unperturbed system. (Note: this holds even if <span class="math notranslate nohighlight">\(\hat{V}\)</span> itself is time-independent to start with.)</p>
+<p>We have seen already how such equation of motion could be solved: the (formal) solution is simply the time-ordered exponential:</p>
+<div class="math notranslate nohighlight">
+\[ |\Psi _I\left( t \right) \rangle =\mathcal{T} \left[ e^{-i\int_{t_0}^t{dt'\hat{V}_I\left( t' \right)}} \right] |\Psi _I\left( t_0 \right) \rangle \]</div>
+<p>In particular, at <span class="math notranslate nohighlight">\(t_0\to -\infty\)</span> we simply have the original ground state <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span> of the unperturbed system <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>, so</p>
+<div class="math notranslate nohighlight">
+\[ |\Psi _I\left( t \right) \rangle =\mathcal{T} \left[ e^{-i\int_{-\infty}^t{dt'\hat{V}_I\left( t' \right)}} \right] |\Omega \rangle \]</div>
+<p>We are now all set-up to consider how the system responds to the perturbations! As discussed, the expectation value of a physical observable is</p>
+<div class="math notranslate nohighlight">
+\[ O\left( t \right) =\langle \Psi _I\left( t \right) |\hat{O}_I\left( t \right) |\Psi _I\left( t \right) \rangle \]</div>
+<p>We could evaluate it as a perturbation series in powers of <span class="math notranslate nohighlight">\(\hat{V}\)</span>. Recall, <span class="math notranslate nohighlight">\(\hat{O}_I(t)\)</span> is simply equivalently to the unperturbed Heisenberg operator, and so the lowest order term comes from</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    |\Psi _I\left( t \right) \rangle &amp;=\mathcal{T} \left[ e^{-i\int_{-\infty}^t{dt'\hat{V}_I\left( t' \right)}} \right] |\Omega \rangle \\
+    &amp;=\left( I-i\int_{-\infty}^t{dt'\hat{V}_I\left( t' \right)}+\cdots \right) |\Omega \rangle
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    O\left( t \right) &amp;=\langle \Omega |\left( I+i\int_{-\infty}^t{dt'\hat{V}_I\left( t' \right)}+\cdots \right) \hat{O}_I\left( t \right) \left( I-i\int_{-\infty}^t{dt'\hat{V}_I\left( t' \right)}+\cdots \right) |\Omega \rangle \\
+    &amp;\approx \langle \Omega |\hat{O}_I\left( t \right) |\Omega \rangle -i\langle \Omega |\left[ \hat{O}_I\left( t \right) ,\int_{-\infty}^t{dt'\hat{V}_I\left( t' \right)} \right] |\Omega \rangle
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \delta O\left( t \right) &amp;=O\left( t \right) -\langle \Omega |\hat{O}_S|\Omega \rangle \\
+    &amp;=O\left( t \right) -\langle \Omega |\hat{O}_I\left( t \right) |\Omega \rangle \\
+    &amp;=-i\langle \Omega |\left[ \hat{O}_I\left( t \right) ,\int_{-\infty}^t{dt'\hat{V}_I\left( t' \right)} \right] |\Omega \rangle
+\end{align*}
+\end{split}\]</div>
+<p>This relates the change in the observable to the lowest (linear) order in the perturbation <span class="math notranslate nohighlight">\(\hat{V}\)</span>. Let us further assume the perturbation takes the form</p>
+<div class="math notranslate nohighlight">
+\[ \hat{V}_S\left( t \right) =\hat{O}_{S}^{'}f\left( t \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \hat{V}_I\left( t \right) =\hat{O}_{I}^{'}f\left( t \right) \]</div>
+<p>i.e., its only time-dependence in the Schrodinger picture comes solely from a time-dependent “driving force” <span class="math notranslate nohighlight">\(f(t)\)</span>.</p>
+<p>Our discussions simplify further in the frequency space. Consider the Fourier transform of the force</p>
+<div class="math notranslate nohighlight">
+\[ f\left( t \right) =\int_{-\infty}^{\infty}{\frac{d\omega}{2\pi}f\left( \omega \right) e^{-i\omega t}}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Rightarrow \delta O\left( t \right) &amp;=\left( -i \right) \int_{-\infty}^t{dt'\langle \Omega |\left[ \hat{O}_I\left( t \right) ,\hat{O}_{I}^{'}\left( t' \right) \right] |\Omega \rangle \int_{-\infty}^{\infty}{\frac{d\omega}{2\pi}f\left( \omega \right) e^{-i\omega t'}}}\\
+    &amp;=\int_{-\infty}^{\infty}{\frac{d\omega}{2\pi}f\left( \omega \right) \left( -i \right) \int_{-\infty}^t{dt'\langle \Omega |\left[ \hat{O}_I\left( t \right) ,\hat{O}_{I}^{'}\left( t' \right) \right] |\Omega \rangle e^{-i\omega t'}}}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \langle \Omega |\left[ \hat{O}_I\left( t \right) ,\hat{O}_{I}^{'}\left( t' \right) \right] |\Omega \rangle =\langle \Omega |\left[ \hat{O}_I\left( t-t' \right) ,\hat{O}_{I}^{'}\left( 0 \right) \right] |\Omega \rangle \]</div>
+<p>where the time-translation invariance follows from a static non-perturbed <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>, and that our interaction picture operators are simply the Heisenberg picture operators with respect to <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>. Let <span class="math notranslate nohighlight">\(\delta_t=t-t'&gt;0\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\int_{-\infty}^t{dt'\left( -i \right) \langle \Omega |\left[ \hat{O}_I\left( t-t' \right) ,\hat{O}_{I}^{'}\left( 0 \right) \right] |\Omega \rangle e^{-i\omega t'}}\\
+    &amp;=\left( \int_0^{\infty}{d\delta _t\left( -i \right) \langle \Omega |\left[ \hat{O}_I\left( \delta _t \right) ,\hat{O}_{I}^{'}\left( 0 \right) \right] |\Omega \rangle e^{i\omega \delta _t}} \right) e^{-i\omega t}
+\end{align*}
+\end{split}\]</div>
+<p>Let us define the susceptibility</p>
+<div class="math notranslate nohighlight">
+\[ \chi \left( \omega \right) =\int_{-\infty}^{\infty}{d\delta _t\left( -i \right) \Theta \left( \delta _t \right) \langle \Omega |\left[ \hat{O}_I\left( \delta _t \right) ,\hat{O}_{I}^{'}\left( 0 \right) \right] |\Omega \rangle e^{i\omega \delta _t}}\]</div>
+<p>where we have again traded the integration bound with the Heaviside step function.</p>
+<p>Importantly, notice that <span class="math notranslate nohighlight">\(\chi(\omega)\)</span> is simply the frequency-space version of some retarded Green’s function!</p>
+<p>When the dust settles, we arrive at</p>
+<div class="math notranslate nohighlight">
+\[ \delta O\left( t \right) =\int_{-\infty}^{\infty}{\frac{d\omega}{2\pi}\chi \left( \omega \right) f\left( \omega \right) e^{-i\omega t}}\]</div>
+<p>and so, when we Fourier transform the observable, we get</p>
+<div class="math notranslate nohighlight">
+\[ \delta O\left( \omega \right) =\chi \left( \omega \right) f\left( \omega \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \chi \left( \omega \right) =\frac{\delta O\left( \omega \right)}{f\left( \omega \right)}\]</div>
+<p>i.e., the susceptibility is measurable simply as the ratio of the Fourier component of the (change in the) observable and the driving force we used to perturb the system, and it is given by</p>
+<div class="math notranslate nohighlight">
+\[ \chi \left( \omega \right) =\int_{-\infty}^{\infty}{dt\chi _R\left( t \right) e^{i\omega t}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \chi _R\left( t \right) =\left( -i \right) \Theta \left( t \right) \langle \Omega |\left[ \hat{O}_I\left( t \right) ,\hat{O}_{I}^{'}\left( 0 \right) \right] |\Omega \rangle ,\quad \mathrm{retarded}\]</div>
+<p>Such relationships (linear-response susceptibilities to retarded Green’s functions) are called “Kubo formulas”. It is customary to split it into real and imaginary parts:</p>
+<div class="math notranslate nohighlight">
+\[ \chi \left( \omega \right) =\Re \left[ \chi \left( \omega \right) \right] +i\Im \left[ \chi \left( \omega \right) \right] \]</div>
+<div class="math notranslate nohighlight">
+\[ \Re \left[ \chi \left( \omega \right) \right] =\int_{-\infty}^{\infty}{\chi _R\left( t \right) \cos \left( \omega t \right)}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Im \left[ \chi \left( \omega \right) \right] =\int_{-\infty}^{\infty}{\chi _R\left( t \right) \sin \left( \omega t \right)}\]</div>
+<p>From which we see that the real part is an even function of <span class="math notranslate nohighlight">\(\omega\)</span>, whereas the imaginary part is odd. Therefore, we may also simply write</p>
+<div class="math notranslate nohighlight">
+\[ \Re \left[ \chi \left( \omega \right) \right] =\frac{\chi \left( \omega \right) +\chi \left( -\omega \right)}{2}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Im \left[ \chi \left( \omega \right) \right] =\frac{\chi \left( \omega \right) -\chi \left( -\omega \right)}{2i}\]</div>
+<p>You might recall that, the imaginary susceptibility corresponds to energy dissipation / absorption. To see why, let us consider a “monochromatic” drive</p>
+<div class="math notranslate nohighlight">
+\[ f\left( t \right) =f_0\cos \left( \Omega t \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ f\left( \omega \right) =\pi f_0\delta \left( \omega +\Omega \right) +\pi f_0\delta \left( \omega -\Omega \right) \]</div>
+<p>Correspondingly, the change in the physical observable is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \delta O\left( t \right) &amp;=\int_{-\infty}^{\infty}{\frac{d\omega}{2\pi}\chi \left( \omega \right) f\left( \omega \right) e^{-i\omega t}}\\
+    &amp;=\int_{-\infty}^{\infty}{\frac{d\omega}{2}f_0\chi \left( \omega \right) \left( \delta \left( \omega +\Omega \right) +\delta \left( \omega -\Omega \right) \right) e^{-i\omega t}}\\
+    &amp;=\frac{f_0}{2}\chi \left( \Omega \right) e^{-i\Omega t}+\frac{f_0}{2}\chi \left( -\Omega \right) e^{i\Omega t}\\
+    &amp;=f_0\cos \left( \Omega t \right) \Re \left[ \chi \left( \Omega \right) \right] +f_0\sin \left( \Omega t \right) \Im \left[ \chi \left( \Omega \right) \right]
+\end{align*}
+\end{split}\]</div>
+<p>In other words, the real part <span class="math notranslate nohighlight">\(\Re[\chi(\omega)]\)</span> corresponds to the in-phase (also known as reactive) response, whereas the imaginary part <span class="math notranslate nohighlight">\(\Im[\chi(\omega)]\)</span> corresponds to the out-of-phase response. As you might recall, the out-of-phase response corresponds to energy dissipation / absorption. To see that, let us consider a generalized power</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    P\left( t \right) &amp;=f\left( t \right) \frac{d}{dt}\delta O\left( t \right) ,\quad \left( \mathrm{c}.\mathrm{f}. P=Fv=F\frac{dx}{dt} \right) \\
+    &amp;=f_{0}^{2}\cos \left( \Omega t \right) \frac{d}{dt}\left( \Re \left[ \chi \left( \Omega \right) \right] \cos \left( \Omega t \right) +\Im \left[ \chi \left( \Omega \right) \right] \sin \left( \Omega t \right) \right) \\
+    &amp;=f_{0}^{2}\Omega \left( -\Re \left[ \chi \left( \Omega \right) \right] \cos \left( \Omega t \right) \sin \left( \Omega t \right) +\Im \left[ \chi \left( \Omega \right) \right] \cos ^2\left( \Omega t \right) \right) \\
+    &amp;=\frac{f_{0}^{2}\Omega}{2}\left( -\Re \left[ \chi \left( \Omega \right) \right] \sin \left( 2\Omega t \right) +\Im \left[ \chi \left( \Omega \right) \right] \cos \left( 2\Omega t \right) +\Im \left[ \chi \left( \Omega \right) \right] \right)
+\end{align*}
+\end{split}\]</div>
+<p>When we average the power over one period of the drive, the only survive piece is</p>
+<div class="math notranslate nohighlight">
+\[ \left&lt; P\left( t \right) \right&gt; =\pi f_{0}^{2}\Im \left[ \chi \left( \Omega \right) \right] \]</div>
+<p>this shows explicitly the imaginary (the odd-in-frequency) part of the susceptibility captures the dissipation / absorption of the system.</p>
+<p>These are very general conclusions, and, in fact, apply similarly even to systems at finite temperature. In particular, it provides a general platform for understanding the response, fluctuation, and dissipation in a system.</p>
+<p>Let us now unpack these formal calculations by considering a “canonical” example.</p>
+</div>
+<div class="section" id="driven-qho">
+<h2>Driven QHO<a class="headerlink" href="#driven-qho" title="Permalink to this headline">¶</a></h2>
+<p>As our first example, let us consider again our old friend now perturbed by a driving term</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_0=\frac{\hat{p}^2}{2m}+\frac{1}{2}m\omega _{0}^{2}\hat{x}^2-\frac{1}{2}\omega _0=\omega _0\hat{a}^{\dagger}\hat{a}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{a}=\frac{1}{\sqrt{2}}\left( \sqrt{m\omega _0}\hat{x}+i\frac{\hat{p}}{\sqrt{m\omega _0}} \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{V}_s=f\left( t \right) \hat{x}\]</div>
+<p>Let us consider how the position of the particle responds to the drive, i.e., we look at the susceptibility</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \chi \left( t \right) &amp;=\left( -i \right) \Theta \left( t \right) \langle 0|\left[ \hat{x}\left( t \right) ,\hat{x}\left( 0 \right) \right] |0\rangle \\
+    &amp;=\frac{\left( -i \right) \Theta \left( t \right)}{2m\omega _0}\langle 0|\left[ \hat{a}\left( t \right) +\hat{a}^{\dagger}\left( t \right) ,\hat{a}\left( 0 \right) +\hat{a}^{\dagger}\left( 0 \right) \right] |0\rangle \\
+    &amp;=\frac{\left( -i \right) \Theta \left( t \right)}{2m\omega _0}\left( e^{-i\omega _0t}-e^{i\omega _0t} \right) \\
+    &amp;=-\frac{\Theta \left( t \right)}{m\omega _0}\sin \left( \omega _0t \right)
+\end{align*}
+\end{split}\]</div>
+<p>Hopefully this looks familiar. We already saw that it corresponds to the frequency-space pole structure</p>
+<p><img alt="lec13-fig00" src="_images/lec13-fig00.png" /></p>
+<p>In the <span class="math notranslate nohighlight">\(i\eta\)</span> prescription, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \chi \left( \omega \right) &amp;=\frac{1}{2m\omega _0}\lim_{\eta \rightarrow 0^+} \left( \frac{1}{\omega -\omega _0+i\eta}-\frac{1}{\omega +\omega _0+i\eta} \right) \\
+    &amp;=\frac{1}{2m\omega _0}\lim_{\eta \rightarrow 0^+} \frac{2\omega _0}{\left( \omega +i\eta \right) ^2-\omega _{0}^{2}}\\
+    &amp;=\frac{1}{m}\lim_{\eta \rightarrow 0^+} \frac{1}{\omega ^2-\omega _{0}^{2}+2i\omega \eta}
+\end{align*}
+\end{split}\]</div>
+<p>This may look familiar to you: the response has a strong peak at the natural frequency, with the peak width controlled by <span class="math notranslate nohighlight">\(i\eta\)</span>.</p>
+<p>Furthermore, we can extract the imaginary part. Recall the Sokhotski-Plemelj theorem</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{\eta \rightarrow 0^+} \frac{1}{x\pm i\eta}=P\frac{1}{x}\mp i\pi \delta \left( x \right) \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Rightarrow \quad \Im \left[ \chi \left( \omega \right) \right] &amp;=\frac{1}{2m\omega _0}\Im \left[ \lim_{\eta \rightarrow 0^+} \left( \frac{1}{\omega -\omega _0+i\eta}-\frac{1}{\omega +\omega _0+i\eta} \right) \right] \\
+    &amp;=\frac{\pi}{2m\omega _0}\left( -\delta \left( \omega -\omega _0 \right) +\delta \left( \omega +\omega _0 \right) \right)
+\end{align*}
+\end{split}\]</div>
+<p>Earlier, we introduced this as the “spectral” function, obtained by the spectral decomposition for a general many-body Hamiltonian, which could be understood as the matrix-element-weighed density of states. Here, we see that, indeed, it corresponds to experimental observables.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec12.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Lec12</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

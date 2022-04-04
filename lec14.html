@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec14 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="Lec13" href="lec13.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec14.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec14.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recap-what-have-we-learnt-so-far">
+   Recap: what have we learnt so far?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adiabatic-turning-on-gell-mann-low-theorem">
+   Adiabatic turning on &amp; Gell-Mann-Low Theorem
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interacting-electrons">
+   Interacting electrons
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec14</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recap-what-have-we-learnt-so-far">
+   Recap: what have we learnt so far?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adiabatic-turning-on-gell-mann-low-theorem">
+   Adiabatic turning on &amp; Gell-Mann-Low Theorem
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interacting-electrons">
+   Interacting electrons
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec14">
+<h1>lec14<a class="headerlink" href="#lec14" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220323</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Recap of what we have learnt</p></li>
+<li><p>Adiabatic turning on, Gell-Mann-Low theorem</p></li>
+<li><p>Primer into interacting electrons</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Introducing many-body perturbation theory</p></li>
+<li><p>Setting up methods for treating interacting electrons</p></li>
+</ol>
+<div class="section" id="recap-what-have-we-learnt-so-far">
+<h2>Recap: what have we learnt so far?<a class="headerlink" href="#recap-what-have-we-learnt-so-far" title="Permalink to this headline">¶</a></h2>
+<p>Today happens to be the mid-way point of our course: let’s quickly recap what we’ve covered</p>
+<p><img alt="lec14-fig00" src="_images/lec14-fig00.png" /></p>
+</div>
+<div class="section" id="adiabatic-turning-on-gell-mann-low-theorem">
+<h2>Adiabatic turning on &amp; Gell-Mann-Low Theorem<a class="headerlink" href="#adiabatic-turning-on-gell-mann-low-theorem" title="Permalink to this headline">¶</a></h2>
+<p>Suppose we have a Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\hat{H}_0+\hat{V}\]</div>
+<p>where we view <span class="math notranslate nohighlight">\(\hat{V}\)</span> as a perturbation and <span class="math notranslate nohighlight">\(\hat{H}_0\)</span> defines the “unperturbed” problem. As the name suggests, we consider the scenario in which the unperturbed problem is solvable, such that we can attempt to systematically add the corrections from <span class="math notranslate nohighlight">\(\hat{V}\)</span> to our physical observables. The typical setup is that <span class="math notranslate nohighlight">\(\hat{H}_0\)</span> is a free theory (with Gaussian ground states), and <span class="math notranslate nohighlight">\(\hat{V}\)</span> is an interaction. We will refer to <span class="math notranslate nohighlight">\(\hat{V}\)</span> as the “interaction” as such.</p>
+<p>One clever trick for developing such a perturbation theory is to imagine turning on the perturbation <span class="math notranslate nohighlight">\(\hat{V}\)</span> “slowly”. Imagine modifying our Hamiltonian into (in Schrodinger picture)</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}\left( t \right) =\hat{H}_0+e^{-\left| t \right|/\tau}\hat{V}\]</div>
+<p>such that it interpolates from <span class="math notranslate nohighlight">\(\hat{H}_0\)</span> to <span class="math notranslate nohighlight">\(\hat{H}=\hat{H}_0+\hat{V}\)</span> as go from <span class="math notranslate nohighlight">\(t=-\infty\)</span> to <span class="math notranslate nohighlight">\(t=0\)</span>, and interpolates back to <span class="math notranslate nohighlight">\(\hat{H}_0\)</span> as we further send <span class="math notranslate nohighlight">\(t\to +\infty\)</span></p>
+<p><img alt="lec14-fig01" src="_images/lec14-fig01.png" /></p>
+<p>Now, let us suppose we start with the ground state <span class="math notranslate nohighlight">\(|\Omega_0\rangle\)</span> of <span class="math notranslate nohighlight">\(\hat{H}_0\)</span> at <span class="math notranslate nohighlight">\(t\to -\infty\)</span>. In the Schrodinger’s picture, the state evolve according to</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t|\Omega \left( t \right) \rangle =\hat{H}\left( t \right) |\Omega \left( t \right) \rangle \]</div>
+<p>with the initial value</p>
+<div class="math notranslate nohighlight">
+\[ |\Omega \left( -\infty \right) \rangle =|\Omega _0\rangle \]</div>
+<p>We (probably) don’t know how to solve the time-evolution of the state exactly. If we knew, we could have solved <span class="math notranslate nohighlight">\(\hat{H}\)</span> directly! Instead, let us imagine plotting the many-body eigen-energies as a function of <span class="math notranslate nohighlight">\(t\)</span>:</p>
+<p><img alt="lec14-fig02" src="_images/lec14-fig02.png" /></p>
+<p><strong>Suppose</strong> the excitation gap remains finite for all values of <span class="math notranslate nohighlight">\(t\)</span>. This sets a timescale</p>
+<div class="math notranslate nohighlight">
+\[ \tau _A\sim \frac{1}{\min \left( \Delta E\left( t \right) \right)}\]</div>
+<p>The adiabatic theorem then states that, so long as the dynamics in <span class="math notranslate nohighlight">\(\hat{H}(t)\)</span> is slow compared to <span class="math notranslate nohighlight">\(\tau_A\)</span>, i.e., <span class="math notranslate nohighlight">\(\tau\gg \tau_A\)</span>, then our “black dot” stays in the lowest branch to good approximation.</p>
+<p>Heuristically, this could be understood from energy considerations: to transit from the ground state to the excited state, we need to supply energy, In our setup, the only possible energy source is the dynamics in <span class="math notranslate nohighlight">\(\hat{H}(t)\)</span>, with scale set by <span class="math notranslate nohighlight">\(1/\tau\)</span>. If we keep that arbitrarily slow, i.e., take <span class="math notranslate nohighlight">\(\tau\to \inf\infty\)</span>, then we are not giving energy to the system to make a transition to the excited states. In other words, we stay in the instantaneous ground state.</p>
+<p>We caution that the adiabatic limit is tricky for two reasons</p>
+<ol class="simple">
+<li><p>For a many-body system in the thermodynamic limit, there may be gapless excitations directly above the ground state. As such there is no reason to expect the adiabatic theorem to hold at all. However, one might imagine circumventing the difficulty by considering a finite system and taking the adiabatic limit first, before taking the thermodynamic limit. In practice, of course, these are subtle problems, and we will not address them carefully here.</p></li>
+<li><p>More importantly, the interaction may be strong enough that a quantum phase transition occurs as we crank the interaction strength up to its full value. Such quantum phase transitions are characterized by a crossing of the energy levels as a function of the interpolation time <span class="math notranslate nohighlight">\(t\)</span>. In that case, the adiabatic theorem also fails. And, indeed, one should not hope to get a satisfactory perturbation theory starting from a “wrong” <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>!</p></li>
+</ol>
+<p>Setting the subtleties aside, let us now consider taking expectation values (with a goal of finally computing some physical observables). We can choose to work in the Heisenberg picture of <span class="math notranslate nohighlight">\(\hat{H}(t)\)</span>, and consider the time-ordered Green’s functions, i.e., quantities of the form</p>
+<div class="math notranslate nohighlight">
+\[ \langle \Omega _H\left( -\infty \right) |\mathcal{T} \left[ \hat{O}_{H}^{\left( 1 \right)}\left( t_1 \right) \hat{O}_{H}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{O}_{H}^{\left( n \right)}\left( t_n \right) \right] |\Omega _H\left( -\infty \right) \rangle \]</div>
+<p>The motivation for specializing to time-ordered operators will be clear in a moment, and we consider times <span class="math notranslate nohighlight">\(t_i\)</span> which remain finite even as <span class="math notranslate nohighlight">\(\tau\to\infty\)</span>, i.e., we stay near <span class="math notranslate nohighlight">\(t=0\)</span> in the adiabatic limit.</p>
+<p>In the above, we take advantage of the fact that, in the Heisenberg picture, the state is stationary and all the time-dependence is assigned to the operators. One may for a moment revert back to the Schrodinger picture, supposing for simplicity that <span class="math notranslate nohighlight">\(t_1&gt;t_2&gt;\cdots&gt;t_n\)</span> such that the time-ordering does nothing. The quantity we wrote down can be understood as</p>
+<div class="math notranslate nohighlight">
+\[ \langle \Omega _S\left( t_1 \right) |\mathcal{T} \left[ \hat{O}_{S}^{\left( 1 \right)}\left( t_1 \right) \hat{U}_S\left( t_1,t_2 \right) \hat{O}_{S}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{U}_S\left( t_{n-1},t_n \right) \hat{O}_{S}^{\left( n \right)}\left( t_n \right) \right] |\Omega _S\left( t_n \right) \rangle \]</div>
+<p>where <span class="math notranslate nohighlight">\(\hat{U}_S\)</span> is the time-evolution operator in the Schrodinger picture</p>
+<div class="math notranslate nohighlight">
+\[ \hat{U}_S\left( t_i,t_j \right) =\mathcal{T} \left[ \exp \left( -i\int_{t_i}^{t_j}{dt'\hat{H}_S\left( t' \right)} \right) \right] \]</div>
+<p>In the adiabatic limit, for finite times <span class="math notranslate nohighlight">\(t_i\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_S\left( t_i \right) \rightarrow \hat{H}\]</div>
+<div class="math notranslate nohighlight">
+\[ |\Omega _S\left( t_i \right) \rangle \rightarrow |\Omega \rangle \]</div>
+<p>where <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span> denotes the many-body ground state of full Hamiltonian <span class="math notranslate nohighlight">\(\hat{H}=\hat{H}_0+\hat{V}\)</span>. As such, we see that, in the adiabatic limit, we are simply computing some sort of correlation functions for the interacting ground state.</p>
+<p>At the same time, we know that the “initial state”</p>
+<div class="math notranslate nohighlight">
+\[ |\Omega _H\left( -\infty \right) \rangle =|\Omega _S\left( -\infty \right) \rangle =|\Omega _0\rangle \]</div>
+<p>is simply the ground state of the unperturbed Hamiltonian <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>. This connects the “hard problems” of interest (concerning the interacting system) to those in our “simple starting point”.</p>
+<p>To show this more explicitly, we recall the interaction picture introduced in the last lecture. For our problem, it is natural to use <span class="math notranslate nohighlight">\(\hat{H}_0\)</span> to define the dynamics of the operators, such that the interaction-picture operators (for the full problem with adiabatic turning on) evolve in time according to the Heisenberg picture defined with respect to <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>. Starting from the reference time of <span class="math notranslate nohighlight">\(t\to -\infty\)</span>, the quantum states evolve in the interaction picture according</p>
+<div class="math notranslate nohighlight">
+\[ |\Omega _I\left( t \right) \rangle =\hat{S}\left( t,-\infty \right) |\Omega _0\rangle \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{S}\left( t,-\infty \right) =\mathcal{T} \left[ \exp \left( -i\int_{-\infty}^t{dt'\hat{V}_I\left( t' \right)} \right) \right] \]</div>
+<p>where <span class="math notranslate nohighlight">\(\hat{V}_I(t)\)</span> is the interaction Hamiltonian (perturbation) in the interaction picture. The “S-matrix” is unitary and could be related to backward time evolution</p>
+<div class="math notranslate nohighlight">
+\[ \hat{S}^{\dagger}\left( t_1,t_2 \right) \hat{S}\left( t_1,t_2 \right) =I\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{S}^{\dagger}\left( t_1,t_2 \right) =\hat{S}\left( t_2,t_1 \right) \]</div>
+<p>Now, in computing observables we know that</p>
+<div class="math notranslate nohighlight">
+\[ \langle \Omega _0|\hat{O}_H\left( t \right) |\Omega _0\rangle =\langle \Omega _I\left( t \right) |\hat{S}\left( t,-\infty \right) \hat{O}_H\left( t \right) \hat{S}^{\dagger}\left( t,-\infty \right) |\Omega _I\left( t \right) \rangle \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{O}_I\left( t \right) =\hat{S}\left( t,-\infty \right) \hat{O}_H\left( t \right) \hat{S}^{\dagger}\left( t,-\infty \right) \]</div>
+<p>where the state <span class="math notranslate nohighlight">\(|\Omega_0\rangle\)</span> doesn’t evolve in the Heisenberg picture. i.e., we have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{O}_H\left( t \right) =\hat{S}^{\dagger}\left( t,-\infty \right) \hat{O}_I\left( t \right) \hat{S}\left( t,-\infty \right) =\hat{S}\left( -\infty ,t \right) \hat{O}_I\left( t \right) \hat{S}\left( t,-\infty \right) \]</div>
+<p>Supposing for the moment that <span class="math notranslate nohighlight">\(t_1&gt;t_2&gt;\cdots &gt;t_n\)</span>, in the interaction picture we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\langle \Omega _0|\mathcal{T} \left[ \hat{O}_{H}^{\left( 1 \right)}\left( t_1 \right) \hat{O}_{H}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{O}_{H}^{\left( n \right)}\left( t_n \right) \right] |\Omega _0\rangle \\
+    =&amp;\langle \Omega _0|\hat{O}_{H}^{\left( 1 \right)}\left( t_1 \right) \hat{O}_{H}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{O}_{H}^{\left( n \right)}\left( t_n \right) |\Omega _0\rangle \\
+    =&amp;\langle \Omega _0|\hat{S}\left( -\infty ,t_1 \right) \hat{O}_{I}^{\left( 1 \right)}\left( t_1 \right) \hat{S}\left( t_1,-\infty \right) \hat{S}\left( -\infty ,t_2 \right) \hat{O}_{I}^{\left( 2 \right)}\left( t_2 \right) \hat{S}\left( t_2,-\infty \right) \\
+    &amp;\quad \cdots \hat{S}\left( t_{n-1},-\infty \right) \hat{S}\left( -\infty ,t_n \right) \hat{O}_{I}^{\left( n \right)}\left( t_n \right) \hat{S}\left( t_n,-\infty \right) |\Omega _0\rangle \\
+    =&amp;\langle \Omega _0|\hat{S}\left( -\infty ,t_1 \right) \hat{O}_{I}^{\left( 1 \right)}\left( t_1 \right) \hat{S}\left( t_1,t_2 \right) \hat{O}_{I}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{O}_{I}^{\left( n \right)}\left( t_n \right) \hat{S}\left( t_n,-\infty \right) |\Omega _0\rangle \\
+    =&amp;\langle \Omega _0|\hat{S}\left( -\infty ,+\infty \right) \mathcal{T} \left[ \hat{S}\left( +\infty ,t_1 \right) \hat{O}_{I}^{\left( 1 \right)}\left( t_1 \right) \hat{S}\left( t_1,t_2 \right) \hat{O}_{I}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{O}_{I}^{\left( n \right)}\left( t_n \right) \hat{S}\left( t_n,-\infty \right) \right] |\Omega _0\rangle \\
+    =&amp;\langle \Omega _I\left( +\infty \right) |\mathcal{T} \left[ \hat{S}\left( +\infty ,-\infty \right) \hat{O}_{I}^{\left( 1 \right)}\left( t_1 \right) \hat{O}_{I}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{O}_{I}^{\left( n \right)}\left( t_n \right) \right] |\Omega _I\left( -\infty \right) \rangle
+\end{align*}
+\end{split}\]</div>
+<p>when the dust settles, we see that the final expression is independent on the initial time-ordering. In other words, even if the times were ordered differently in the beginning, we still get the same expression at the end. Importantly, all the insertion of the S-matrix can be lumped into a single one going <span class="math notranslate nohighlight">\(-\infty\)</span> to <span class="math notranslate nohighlight">\(+\infty\)</span>. The time-ordering ensures that we break it down into pieces in the actual expression.</p>
+<p>The only problem left is that what we have is not an “expectation value” with respect to a given state. This can be fixed by noticing that, in the adiabatic limit, the state <span class="math notranslate nohighlight">\(|\Omega_0\rangle\)</span> is both the initial and final state. Yet, in the interaction picture the states have to evolve, and so we can only reconcile the initial and final states up to a phase in the interaction picture:</p>
+<div class="math notranslate nohighlight">
+\[ |\Omega _I\left( -\infty \right) \rangle =|\Omega _0\rangle \]</div>
+<div class="math notranslate nohighlight">
+\[ |\Omega _I\left( +\infty \right) \rangle =\hat{S}\left( +\infty ,-\infty \right) |\Omega _I\left( -\infty \right) \rangle =e^{2i\delta}|\Omega _0\rangle \]</div>
+<p>In particular, the phase can be understood as the overlap</p>
+<div class="math notranslate nohighlight">
+\[ \langle \Omega _0|\Omega _I\left( +\infty \right) \rangle =\langle \Omega _0|\hat{S}\left( +\infty ,-\infty \right) |\Omega _0\rangle =e^{2i\delta}\]</div>
+<div class="math notranslate nohighlight">
+\[ \langle \Omega _I\left( +\infty \right) |=e^{-2i\delta}\langle \Omega _0|=\frac{\langle \Omega _0|}{\langle \Omega _0|\hat{S}\left( +\infty ,-\infty \right) |\Omega _0\rangle}\]</div>
+<p>Altogether, we conclude</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\langle \Omega _H\left( -\infty \right) |\mathcal{T} \left[ \hat{O}_{H}^{\left( 1 \right)}\left( t_1 \right) \hat{O}_{H}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{O}_{H}^{\left( n \right)}\left( t_n \right) \right] |\Omega _H\left( -\infty \right) \rangle \\
+    =&amp;\frac{\langle \Omega _0|\mathcal{T} \left[ \hat{O}_{I}^{\left( 1 \right)}\left( t_1 \right) \hat{O}_{I}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{O}_{I}^{\left( n \right)}\left( t_n \right) \hat{S}\left( +\infty ,-\infty \right) \right] |\Omega _0\rangle}{\langle \Omega _0|\hat{S}\left( +\infty ,-\infty \right) |\Omega _0\rangle}
+\end{align*}
+\end{split}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[ \hat{S}\left( +\infty ,-\infty \right) =\mathcal{T} \left[ \exp \left( -i\int_{-\infty}^{+\infty}{dt'\hat{V}_I\left( t' \right)} \right) \right] \]</div>
+<p>and the interaction-picture operators evolve according to the Heisenberg picture with respect to <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>. Furthermore, we end up with an expression involving only the ground-state expectation value of the unperturbed problem. This fulfills our promise of relating the interacting problem to the unperturbed one. The remaining task is “simply” to expand in powers <span class="math notranslate nohighlight">\(\hat{V}_I\)</span> and we would get a perturbation series!</p>
+<p>Remark: the final expression obtained above is highly reminiscent of what we have learnt in statistics mechanics. Recall, for instance, that the average energy</p>
+<div class="math notranslate nohighlight">
+\[ \left&lt; \hat{H} \right&gt; =\frac{\mathrm{Tr}\left( \hat{H}e^{-\beta \hat{H}} \right)}{\mathcal{Z} \left( \beta \right)}=-\partial _{\beta}\ln \mathcal{Z} \left( \beta \right) \]</div>
+<p>This suggests that we can define</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{Z} \left[ J^{\alpha}\left( t \right) \right] =\langle \Omega _0|\mathcal{T} \left[ \exp \left( -i\int_{-\infty}^{+\infty}{dt'\left( \hat{V}_I\left( t' \right) +J^{\alpha}\left( t \right) \hat{O}^{\alpha}\left( t \right) \right)} \right) \right] |\Omega _0\rangle \]</div>
+<p>such that our expression can be simplified further into something like</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\langle \Omega _0|\mathcal{T} \left[ \hat{O}_{I}^{\left( 1 \right)}\left( t_1 \right) \hat{O}_{I}^{\left( 2 \right)}\left( t_2 \right) \cdots \hat{O}_{I}^{\left( n \right)}\left( t_n \right) \hat{S}\left( +\infty ,-\infty \right) \right] |\Omega _0\rangle}{\langle \Omega _0|\hat{S}\left( +\infty ,-\infty \right) |\Omega _0\rangle}\sim \left. \partial _{J_1}\partial _{J_2}\cdots \partial _{J_n}\ln \mathcal{Z} \left[ J^{\alpha}\left( t \right) \right] \right|_{J=0}\]</div>
+<p>this is the spirit of a generating functional (c.f. PS3). In any case, we see that a close parallel with statistics mechanics emerges.</p>
+</div>
+<div class="section" id="interacting-electrons">
+<h2>Interacting electrons<a class="headerlink" href="#interacting-electrons" title="Permalink to this headline">¶</a></h2>
+<p>Let us be brave and go straight now to a problem of interacting electrons. Consider a fermionic problem with the full Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\hat{H}_0+\hat{V}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_0=\sum_{x,y,\sigma ,\sigma '}{\hat{c}_{x\sigma}^{\dagger}h_{xy}^{\sigma \sigma '}\hat{c}_{y\sigma '}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{V}=\sum_{x,y}{V\left( \left| x-y \right| \right) :\hat{n}_x\hat{n}_y:}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\hat{n}_x=\sum_{\sigma}{\hat{c}_{x\sigma}^{\dagger}\hat{c}_{x\sigma}}\)</span> denotes the on-site density of the electrons. Notice that the interaction term is normal-ordered, such that</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    :\hat{n}_x\hat{n}_y:&amp;=\sum_{\sigma \sigma '}{:\hat{c}_{x\sigma}^{\dagger}\hat{c}_{x\sigma}\hat{c}_{y\sigma '}^{\dagger}\hat{c}_{y\sigma '}:}\\
+    &amp;=\sum_{\sigma \sigma '}{\hat{c}_{x\sigma}^{\dagger}\hat{c}_{y\sigma '}^{\dagger}\hat{c}_{y\sigma '}\hat{c}_{x\sigma}}
+\end{align*}
+\end{split}\]</div>
+<p>and the last line holds even if <span class="math notranslate nohighlight">\(x=y\;\&amp;\;\sigma=\sigma'\)</span>, in which case the term vanishes. This ensures</p>
+<div class="math notranslate nohighlight">
+\[ \hat{V}|0\rangle =0\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{V}\left( \hat{c}_{x\sigma}^{\dagger}|0\rangle \right) =0\]</div>
+<p>i.e., there is no interaction when we have zero or one electron.</p>
+<p>Of course, it’s quite meaningless if we just state the Hamiltonian and leave it there. Let us attempt to evaluate some physical quantities, say the dielectric function. (The full problem is more complicated, with distinctions between longitudinal vs transverse response and DC versus AC etc. In the following, we only sketch a simplified version of the key points.)</p>
+<p>Recall, in a medium the EM scalar potential is modified into</p>
+<div class="math notranslate nohighlight">
+\[ \phi _0\left( r \right) =\frac{\rho _{\mathrm{ext}}}{4\pi \varepsilon _0r}\quad \rightarrow \quad \phi \left( r \right) =\frac{\rho _{\mathrm{ext}}}{4\pi \varepsilon r}\]</div>
+<p>In momentum space, we have</p>
+<div class="math notranslate nohighlight">
+\[ \phi \left( q \right) \sim \frac{\rho _{\mathrm{ext}}\left( q \right)}{q^2\varepsilon \left( q \right)}\]</div>
+<p>The modification to the dielectric “constant” ( which is <span class="math notranslate nohighlight">\(q\)</span> dependent here) can also be understood as a modification of the “true” charge density in the medium, due to the screening from the system. I.e., we can consider</p>
+<div class="math notranslate nohighlight">
+\[ \phi \left( q \right) \sim \frac{\rho _{\mathrm{tot}}\left( q \right)}{q^2\varepsilon _0}\]</div>
+<div class="math notranslate nohighlight">
+\[ \rho _{\mathrm{tot}}\left( q \right) =\rho _{\mathrm{ext}}\left( q \right) +\rho _{\mathrm{sc}}\left( q \right) \]</div>
+<p>Comparing the two, we find</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\rho _{\mathrm{ext}}\left( q \right) +\rho _{\mathrm{sc}}\left( q \right)}{\varepsilon _0}=\frac{\rho _{\mathrm{tot}}\left( q \right)}{\varepsilon _0}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \frac{\varepsilon _0}{\varepsilon \left( q \right)}=1+\frac{\rho _{\mathrm{sc}}\left( q \right)}{\rho _{\mathrm{ext}}\left( q \right)}\]</div>
+<p>Now, within linear response, the screening charges appear as a response to the external potential</p>
+<div class="math notranslate nohighlight">
+\[ \rho _{\mathrm{sc}}\left( q \right) \sim -\chi \left( q,\omega =0 \right) \frac{\rho _{\mathrm{ext}}\left( q \right)}{4\pi \varepsilon _0q^2}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[ \chi \left( q,\omega \right) =i\int_{-\infty}^{\infty}{dt\Theta \left( t \right) \left&lt; \left[ \hat{\rho}\left( q,t \right) ,\hat{\rho}\left( -q,0 \right) \right] \right&gt; e^{i\omega t}}\]</div>
+<p>is the density-density response function (maybe up to the sign). This gives</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\varepsilon _0}{\varepsilon \left( q \right)}=1-\frac{\chi \left( q \right)}{4\pi \varepsilon _0q^2}\]</div>
+<p>So we could determine the dielectric function by evaluating the density-density response function! But, how do we relate that to the Gell-Mann-Low formula (and hence perturbation theory)?</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec13.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Lec13</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
