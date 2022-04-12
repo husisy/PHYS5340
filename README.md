@@ -32,3 +32,11 @@ TODO
 
 1. [ ] add copyright claim
 2. [ ] replace some not perfect figures using code plotting
+
+## misc
+
+Feynman diagram python package
+
+1. link
+   * [github/feynman](https://github.com/GkAntonius/feynman)
+   * [github/pyfeyn](https://github.com/aminnj/pyfeyn)
