@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec19 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec18" href="lec18.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec15.html">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec16.html">
+   lec16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec17.html">
+   lec17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec18.html">
+   lec18
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec19.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec19.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hartree-fock-self-energy">
+   Hartree-Fock (self-)energy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dielectric-function-and-rpa">
+   Dielectric function and RPA
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec19</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hartree-fock-self-energy">
+   Hartree-Fock (self-)energy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dielectric-function-and-rpa">
+   Dielectric function and RPA
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec19">
+<h1>lec19<a class="headerlink" href="#lec19" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220408</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Jellium: positive background charge</p></li>
+<li><p>Hartree-Fock (self-)energy</p></li>
+<li><p>Dielectric function, effective interaction, and RPA</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Putting our formalism to use</p></li>
+<li><p>A first taste on physics of interacting electrons</p></li>
+</ol>
+<p>Recall the jellium model Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\int{\frac{d^3p}{\left( 2\pi \right) ^3}\varepsilon _p\sum_{\sigma}{\hat{\psi}_{p\sigma}^{\dagger}\hat{\psi}_{p\sigma}}}+\frac{e^2}{2}\int{d^3rd^3r'\frac{:\left( \hat{\rho}\left( r \right) -\rho \left( 0 \right) \right) \left( \hat{\rho}\left( r' \right) -\rho \left( 0 \right) \right) :}{\left| r-r' \right|}}\]</div>
+<p>in which we assumed the presence of a positive, neutralizing background uniform charge of <span class="math notranslate nohighlight">\(e\rho_0\)</span> such that the Coulomb energy only depends on the variation of local charge density, and equals to zero when we replace <span class="math notranslate nohighlight">\(\left&lt; \hat{\rho}\left( r \right) \right&gt; \rightarrow \rho _0\)</span>. As the ground state is uniform (or, at least, we assume that is the case), it will be interesting to ask the following: is there an interaction energy in the ground state?</p>
+<p>To answer this question, it will be helpful to first Fourier transform into the momentum space. Here we define</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\psi}_{r\sigma}^{\dagger}=\int{\frac{d^3k}{\left( 2\pi \right) ^3}\hat{\psi}_{k\sigma}^{\dagger}e^{-ikr}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{\psi}_{k\sigma}^{\dagger}=\int{d^3r\hat{\psi}_{r\sigma}^{\dagger}e^{\,\,ikr}}\]</div>
+<p>where we used the “plane-wave” normalization</p>
+<div class="math notranslate nohighlight">
+\[ \int{d^3re^{ikr}}=\left( 2\pi \right) ^3\delta \left( k \right) \]</div>
+<p>In momentum space, the density operator reads</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\rho}\left( r \right) =\int{\frac{d^3kd^3p}{\left( 2\pi \right) ^6}\sum_{\sigma}{\hat{\psi}_{k\sigma}^{\dagger}\hat{\psi}_{p\sigma}e^{-i\left( k-p \right) r}}}\]</div>
+<p>and the number of electrons is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    N_e&amp;=\int{d^3r\hat{\rho}\left( r \right)}\\
+    &amp;=\int{d^3r\frac{d^3kd^3p}{\left( 2\pi \right) ^6}\sum_{\sigma}{\hat{\psi}_{k\sigma}^{\dagger}\hat{\psi}_{p\sigma}e^{-i\left( k-p \right) r}}}\\
+    &amp;=\int{\frac{d^3k}{\left( 2\pi \right) ^3}\sum_{\sigma}{\hat{\psi}_{k\sigma}^{\dagger}\hat{\psi}_{k\sigma}}}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{n}_k=\sum_{\sigma}{\hat{\psi}_{k\sigma}^{\dagger}\hat{\psi}_{k\sigma}}\]</div>
+<p>The interaction term is now given by</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{V}&amp;=\frac{e^2}{2}\int{d^3rd^3r':\left( \hat{\rho}\left( r \right) -\rho \left( 0 \right) \right) \left( \hat{\rho}\left( r' \right) -\rho \left( 0 \right) \right) :V\left( r-r' \right)}\\
+    &amp;=\frac{e^2}{2}\int{d^3rd^3r':\hat{\rho}\left( r \right) \hat{\rho}\left( r' \right) :V\left( r-r' \right)}^{{\color{red} \left( 1 \right) }}\\
+    &amp;\quad -e^2\rho _0\int{d^3rd^3r'\hat{\rho}\left( r \right) V\left( r-r' \right)}^{{\color{red} \left( 2 \right) }}+\frac{e^2\rho _{0}^{2}}{2}\int{d^3rd^3r'V\left( r-r' \right)}^{{\color{red} \left( 3 \right) }}
+\end{align*}
+\end{split}\]</div>
+<p>Let us look at these three terms one-by-one</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    {\color{red} \left( 1 \right) }=&amp;\frac{e^2}{2}\int{d^3rd^3r'\frac{d^3kd^3pd^3k'd^3p'}{\left( 2\pi \right) ^{12}}}\\
+    &amp;\quad \times \sum_{\sigma \sigma '}{e^{-i\left( k-p \right) r}e^{-i\left( k'-p' \right) r}V\left( r-r' \right) :\hat{\psi}_{k\sigma}^{\dagger}\hat{\psi}_{p\sigma}\hat{\psi}_{k'\sigma '}^{\dagger}\hat{\psi}_{p'\sigma '}:}
+\end{align*}
+\end{split}\]</div>
+<p>Let <span class="math notranslate nohighlight">\(R=r+r'\)</span> and <span class="math notranslate nohighlight">\(\delta _r=r-r'\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    {\color{red} \left( 1 \right) }&amp;=\frac{e^2}{16}\int{d^3Rd^3\delta _r\frac{d^3kd^3pd^3k'd^3p'}{\left( 2\pi \right) ^{12}}}\\
+    &amp;\quad \times \sum_{\sigma \sigma '}{e^{-i\left( k-p+k'-p' \right) R/2}e^{-i\left( k-p-k'+p' \right) \delta _r/2}V\left( \delta _r \right) :\hat{\psi}_{k\sigma}^{\dagger}\hat{\psi}_{p\sigma}\hat{\psi}_{k'\sigma '}^{\dagger}\hat{\psi}_{p'\sigma '}:}
+\end{align*}
+\end{split}\]</div>
+<p>Integrating over the center of mass <span class="math notranslate nohighlight">\(R\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[ \int{d^3Re^{-i\left( k-p+k'-p' \right) R/2}}=8\left( 2\pi \right) ^3\delta \left( k-p+k'-p' \right) \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} \Rightarrow \begin{cases}
+   k=p+q\\
+   k'=p'-q\\
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ V\left( q \right) =\int{d^3\delta _rV\left( \delta _r \right) e^{-iq\delta _r}}\]</div>
+<div class="math notranslate nohighlight">
+\[ {\color{red} \left( 1 \right) }=\frac{e^2}{2}\int{\frac{d^3pd^3p'd^3q}{\left( 2\pi \right) ^9}V\left( q \right) \sum_{\sigma \sigma '}{:\hat{\psi}_{p+q,\sigma}^{\dagger}\hat{\psi}_{p'-q,\sigma '}^{\dagger}\hat{\psi}_{p'\sigma '}\hat{\psi}_{p\sigma}:}}\]</div>
+<p>It will be instructive to look at the piece contributed by <span class="math notranslate nohighlight">\(q=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;\Rightarrow \frac{e^2}{2}\int{\frac{d^3pd^3p'}{\left( 2\pi \right) ^6}\frac{V\left( q=0 \right)}{\mathcal{V}}\sum_{\sigma \sigma '}{:\hat{\psi}_{p,\sigma}^{\dagger}\hat{\psi}_{p\sigma}\hat{\psi}_{p',\sigma '}^{\dagger}\hat{\psi}_{p'\sigma '}:}}\\
+    &amp; =\frac{e^2}{2}\frac{V\left( q=0 \right)}{\mathcal{V}}:\left( \int{\frac{d^3p}{\left( 2\pi \right) ^3}\hat{n}_p} \right) ^2:\\
+    &amp;=\frac{e^2}{2}V\left( q=0 \right) N_e\rho _0
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    {\color{red} \left( 2 \right) }&amp;=-e^2\rho _0\int{d^3rd^3r'\frac{d^3kd^3p}{\left( 2\pi \right) ^6}\frac{\sum_{\sigma}{\hat{\psi}_{k\sigma}^{\dagger}\hat{\psi}_{p\sigma}e^{-i\left( k-p \right) r}}}{\left| r-r' \right|}}\\
+    &amp;=-8e^2\rho _0\int{d^3Rd^3\delta _r\frac{d^3kd^3p}{\left( 2\pi \right) ^6}\frac{\sum_{\sigma}{\hat{\psi}_{k\sigma}^{\dagger}\hat{\psi}_{p\sigma}e^{-i\left( k-p \right) R/2}e^{-i\left( k-p \right) \delta _r/2}}}{\left| \delta _r \right|}}\\
+    &amp;=-e^2\rho _0\int{\frac{d^3k}{\left( 2\pi \right) ^3}\sum_{\sigma}{\hat{\psi}_{k\sigma}^{\dagger}\hat{\psi}_{k\sigma}}}\int{d^3\delta _rV\left( \delta _r \right)}\\
+    &amp;=-e^2\rho _0N_eV\left( q=0 \right)
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    {\color{red} \left( 3 \right) }&amp;=\frac{e^2\rho _{0}^{2}}{2}\int{d^3rd^3r'V\left( r-r' \right)}\\
+    &amp;=\frac{e^2\rho _{0}^{2}\mathcal{V}}{2}\int{d^3\delta _rV\left( \delta _r \right)}\\
+    &amp;=\frac{e^2\rho _0N_e}{2}V\left( q=0 \right)
+\end{align*}
+\end{split}\]</div>
+<p>Combined, we have</p>
+<div class="math notranslate nohighlight">
+\[ {\color{red} \left( 2 \right) +\left( 3 \right) }=-\frac{e^2\rho _0N_e}{2}V\left( q=0 \right) \]</div>
+<p>But this is, as anticipated, exactly the <span class="math notranslate nohighlight">\(q=0\)</span> piece in <span class="math notranslate nohighlight">\({\color{red} \left( 2 \right)}\)</span>. This gives</p>
+<div class="math notranslate nohighlight">
+\[ \hat{V}=\frac{1}{2}\int{\frac{d^3pd^3p'd^3q}{\left( 2\pi \right) ^9}V^*\left( q \right) \sum_{\sigma \sigma '}{:\hat{\psi}_{p+q,\sigma}^{\dagger}\hat{\psi}_{p'-q,\sigma '}^{\dagger}\hat{\psi}_{p'\sigma '}\hat{\psi}_{p\sigma}:}}\]</div>
+<p>where, using the Fourier transform of the Coulomb potential, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} V^*\left( q \right) =\begin{cases}
+   \frac{4\pi e^2}{q^2},\quad \mathrm{if}\; q\ne 0\\
+   0,\quad \mathrm{if}\; q=0\\
+\end{cases}\end{split}\]</div>
+<p>In other words, the positive background charge precisely cancels the <span class="math notranslate nohighlight">\(q=0\)</span> piece of the Coulomb potential. As we will soon see this is intuitive.</p>
+<p>For simplicity, we simply write <span class="math notranslate nohighlight">\(V(q)\)</span> instead of <span class="math notranslate nohighlight">\(V^*(q)\)</span> in the following, with the understanding that the <span class="math notranslate nohighlight">\(q=0\)</span> piece has been removed.</p>
+<div class="section" id="hartree-fock-self-energy">
+<h2>Hartree-Fock (self-)energy<a class="headerlink" href="#hartree-fock-self-energy" title="Permalink to this headline">¶</a></h2>
+<p>As an application of the perturbative theory we discussed, let’s look at the self-energy of the electron in the jellium model.</p>
+<p>As mentioned, the self-energy consist of all 1PI diagram</p>
+<p><img alt="lec19-fig00" src="_images/lec19-fig00.png" /></p>
+<p>Keeping the lowest order contributions, we have only two terms:</p>
+<p><img alt="lec19-fig01" src="_images/lec19-fig01.png" /></p>
+<div class="math notranslate nohighlight">
+\[ V\left( q=0 \right) \int{\frac{d^3p}{\left( 2\pi \right) ^3}G_{0}^{F}\left( p,\tilde{\omega} \right)}\]</div>
+<p>But we have <span class="math notranslate nohighlight">\(V(q=0)=0\)</span>! In other words, this Hartree term vanishes identically in the jellium model. One way to phrase this is that, the positive background charges contribute a potential term which precisely cancel the Hartree term in the e-e interaction. (c.f. Coleman 7.7.1)</p>
+<p>What about the Fock term? We have (restoring vector notation for clarity)</p>
+<p><img alt="lec19-fig02" src="_images/lec19-fig02.png" /></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;=\int{\frac{d^3\vec{p}d\tilde{\omega}}{\left( 2\pi \right) ^4}\left( iV\left( \vec{p}-\vec{k} \right) \right) G_{0}^{F}\left( \vec{p},\tilde{\omega} \right) e^{i\omega 0^+}}\\
+    &amp;=\int{\frac{d^3\vec{p}d\tilde{\omega}}{\left( 2\pi \right) ^3}\frac{4\pi e^2}{\left( \vec{p}-\vec{k} \right) ^2}\int{\frac{d\tilde{\omega}}{2\pi}iG_{0}^{F}\left( \vec{p},\tilde{\omega} \right) e^{i\omega 0^+}}}\\
+    &amp;\quad \Downarrow iG_{0}^{F}\left( \vec{p},t\rightarrow 0^- \right) =\lim_{t\rightarrow 0^-} \left&lt; \mathcal{T} \left[ \hat{c}_{\vec{p}}\left( t \right) \hat{c}_{\vec{p}}^{\dagger}\left( 0 \right) \right] \right&gt; _0=-n_{\vec{p}}\\
+    &amp;=-\int{\frac{d^3\vec{p}d\tilde{\omega}}{\left( 2\pi \right) ^3}\frac{4\pi e^2}{\left( \vec{p}-\vec{k} \right) ^2}n_{\vec{p}}}\\
+    &amp;=-\frac{4\pi e^2}{\left( 2\pi \right) ^3}\int_0^{k_F}{p^2dp\int_0^{\pi}{\sin \theta d\theta \int_0^{2\pi}{d\phi \frac{1}{p^2+k^2-2pk\cos \theta}}}}\\
+    &amp;\quad \Downarrow u=\cos \theta \\
+    &amp;=-\frac{e^2}{\pi}\int_0^{k_F}{p^2dp\int_{-1}^1{\frac{du}{p^2+k^2-2pku}}}\\
+    &amp;=-\frac{e^2}{2\pi k}\int_0^{k_F}{dp\left( p\ln \frac{\left( k+p \right) ^2}{\left( k-p \right) ^2} \right)}\\
+    &amp;=-\frac{e^2}{\pi k}\int_0^{k_F}{dp\left( p\ln \left| \frac{k+p}{k-p} \right| \right)}\\
+    &amp;=-\frac{e^2k_F}{\pi}\left( 1+\frac{k_{F}^{2}-k^2}{2kk_F}\ln \left| \frac{k_F+k}{k_F-k} \right| \right)
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \left| \frac{k_F+k}{k_F-k} \right|\ge 1\]</div>
+<p>As such, we have <span class="math notranslate nohighlight">\(\Sigma^{\text{HF}}(k,\omega)&lt;0\)</span>, due to the Fock / exchange piece!</p>
+<p>We might plot the self-energy as a function of <span class="math notranslate nohighlight">\(k\)</span> (Plot by Wolfram alpha)</p>
+<p><img alt="lec19-fig03" src="_images/lec19-fig03.png" /></p>
+<p>We can also compute the Hartree-Fock ground state energy. Recall, the full propagator is</p>
+<div class="math notranslate nohighlight">
+\[ G\simeq \frac{1}{G_{0}^{-1}-\Sigma _{k}^{\mathrm{HF}}}=\frac{1}{\omega -\varepsilon _k-\Sigma _{k}^{\mathrm{HF}}+i\eta}\]</div>
+<p>and so we could simply interpret the self-energy as an interaction correction to the dispersion. The ground state energy per particle is</p>
+<div class="math notranslate nohighlight">
+\[ E=\frac{2\cdot 4\pi}{N_e}\int_0^{k_F}{\frac{dk}{\left( 2\pi \right) ^3}k^2\left( \varepsilon _k+\Sigma _{k}^{\mathrm{HF}} \right)}\]</div>
+<p>Instead of computing this seriously (doable, just some integrals), let us simply compare the competition between the two terms.</p>
+<p>First, the kinetic energy</p>
+<div class="math notranslate nohighlight">
+\[ E_{\mathrm{kinetic}}\sim \frac{1}{N_e}\int_0^{k_F}{dk\left( \frac{k^4}{2m} \right)}\sim \frac{k_{F}^{5}}{N_e}\]</div>
+<p>The number of electrons equals to the volume inside the Fermi surface, and so</p>
+<div class="math notranslate nohighlight">
+\[ N_e\sim k_{F}^{3}\quad \Rightarrow E_{\mathrm{kinetic}}\sim K_{F}^{2}\]</div>
+<p>In contrast, the exchange energy scales as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    E_{\mathrm{ex}}&amp;\sim -\frac{k_F}{N_e}\int_0^{k_F}{k^2dk\left( 1+\frac{k_{F}^{2}-k^2}{2kk_F}\ln \left| \frac{k_F+k}{k_F-k} \right| \right)}\\
+    &amp;=-\frac{k_{F}^{4}}{N_e}\int_0^1{dyy^2\left( 1+\frac{1-y^2}{2y}\ln \left| \frac{1+y}{1-y} \right| \right)}\\
+    &amp;\sim -\frac{k_{F}^{4}}{N_e}\\
+    &amp;\sim -k_F
+\end{align*}
+\end{split}\]</div>
+<p>The inverse of the Fermi wave vector is a length scale characterizing the inter-particle spacing (i.e., the density of the electrons), and this is typically parameterized by</p>
+<div class="math notranslate nohighlight">
+\[ \frac{4\pi \left( r_sa_0 \right) ^3}{3}\rho _0=1\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow k_F\sim \frac{1}{r_sa_0}\]</div>
+<p>where <span class="math notranslate nohighlight">\(a_0\)</span> is the Bohr radius. In other words, <span class="math notranslate nohighlight">\(r_s\)</span> is the radius, in terms of the Bohr radius, of a sphere containing one electron. A high density electron gas has a small <span class="math notranslate nohighlight">\(r_s\)</span>. This implies the ground state energy of the jellium model is, within the Hartree-Fock approximation</p>
+<div class="math notranslate nohighlight">
+\[ E\simeq \frac{\#}{r_{s}^{2}}-\frac{\#1}{r_s}+\cdots \]</div>
+<p>It turns out that, in the “standard” units, the energy is</p>
+<div class="math notranslate nohighlight">
+\[ E\simeq \frac{2.2099}{r_{s}^{2}}-\frac{0.9163}{r_s}+\cdots \]</div>
+<p>(c.f. Mahan Eq.(5.28)).</p>
+<p>An important observation to make is that the kinetic energy dominates for small <span class="math notranslate nohighlight">\(r_s\)</span>! I.e., the interaction correction is small for a high-density gas. In contrast, at low density the interaction effects become more important.</p>
+</div>
+<div class="section" id="dielectric-function-and-rpa">
+<h2>Dielectric function and RPA<a class="headerlink" href="#dielectric-function-and-rpa" title="Permalink to this headline">¶</a></h2>
+<p>After 5 lectures or so we are finally ready to tackle our “humble” motivating question: how do we compute the basic quantities of an interacting electronic system, like the dielectric function? Recall, the key insight is that the system could respond to the external perturbation and screen part of that. Such response leads to an effective dielectric function in the medium (restoring units for highlight)</p>
+<div class="math notranslate nohighlight">
+\[ V\left( q \right) =\frac{e^2}{\varepsilon _0q^2}\rightarrow \frac{e^2}{\left( \varepsilon \varepsilon _0 \right) q^2}\]</div>
+<p>Equivalently, we can also think of the response of the system as modifying the effective interaction between the elctrons. In our perturbative theory, such modification comes from processes like</p>
+<p><img alt="lec19-fig04" src="_images/lec19-fig04.png" /></p>
+<p>Of course more distinct terms appear as we go to higher orders in the interaction strength. In the same spirit as the 1PI discussion, it makes sense to organize the diagrams as</p>
+<p><img alt="lec19-fig05" src="_images/lec19-fig05.png" /></p>
+<p>such terms are called the “polarization bubble”. Physically, they represent (virtual) processes in which electron-hole pairs emerge, interact, and then disappear. In fact, our “wavy line” could be recognized as the photon (although we didn’t keep their dynamics in the theory), and such diagrams are simply the self-energy for the photon. correspondingly, we also have a Dyson’s equation</p>
+<p><img alt="lec19-fig06" src="_images/lec19-fig06.png" /></p>
+<div class="math notranslate nohighlight">
+\[ iV_{\mathrm{eff}}=iV+\left( iV \right) \left( i\chi \right) \left( iV_{\mathrm{eff}} \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow V_{\mathrm{eff}}\left( q,\omega \right) =\frac{V\left( q \right)}{1+V\left( q \right) \chi \left( q,\omega \right)}\]</div>
+<p>As with the earlier discussion on electron self-energy, we see that all the correction to the interaction has been encapsulated in the bubble</p>
+<p><img alt="lec19-fig07" src="_images/lec19-fig07.png" /></p>
+<p>In the simplest approximation we simply drop all the higher order terms</p>
+<p><img alt="lec19-fig08" src="_images/lec19-fig08.png" /></p>
+<p>this is called the “random phase approximation”. Of course, in the way we introduced it, the approximation seems rather ad hoc. The name “RPA” is also quite mysterious. This can be better justified by</p>
+<ol class="simple">
+<li><p>In the original treatment, the RPA was introduced by looking at the equation of motion and assuming certain terms with non-cancelling momentum average to zero. This is (?) the origin of the name “random phase” (I think??). See Mahan 5.5.2.</p></li>
+<li><p>One can also ask more seriously which terms in the electronic self-energy, at every order of interaction <span class="math notranslate nohighlight">\(V\)</span>, diverges most significantly with the Coulomb potential. E.g., compare
+<img alt="lec19-fig09" src="_images/lec19-fig09.png" />
+from this analysis, the key divergence comes from terms with the maximal number of interaction depending on one single momentum <span class="math notranslate nohighlight">\(q\to 0\)</span>. I.e., in the polarization bubble we ignore diagrams with wavy lines featuring internal momentum. This corresponds to the RPA (discussed in a seminal paper by Gell-Mann and Brueckner)</p></li>
+<li><p>From yet another angle, the RPA can also be justified as the exact (mean-field) result in the large-<span class="math notranslate nohighlight">\(N\)</span> limit, if we promote the “flavor” symmetry of the electron from <span class="math notranslate nohighlight">\(SU(2)\to SU(N)\)</span>: recall each fermion loop corresponds to a trace over the spin indices. At the same order of <span class="math notranslate nohighlight">\(V\)</span>, diagrams with the maximum number of fermion loops dominate in the large-<span class="math notranslate nohighlight">\(N\)</span> limit. This again implies the RPA approximation.</p></li>
+</ol>
+<p>In any case, within the RPA and for the Coulomb potential, we have</p>
+<div class="math notranslate nohighlight">
+\[ V_{\mathrm{eff}}\left( q,\omega \right) =\frac{V\left( q \right)}{1+V\left( q \right) \chi _{\mathrm{RPA}}\left( q,\omega \right)}=\frac{4\pi e^2}{q^2\left( 1+\frac{4\pi e^2}{q^2}\chi _{\mathrm{RPA}}\left( q,\omega \right) \right)}\]</div>
+<div class="math notranslate nohighlight">
+\[ \varepsilon _{\mathrm{RPA}}=1+\frac{4\pi e^2}{q^2}\chi _{\mathrm{RPA}}\left( q,\omega \right) \]</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec18.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec18</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
