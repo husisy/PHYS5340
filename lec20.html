@@ -1,0 +1,653 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec20 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec19" href="lec19.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec15.html">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec16.html">
+   lec16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec17.html">
+   lec17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec18.html">
+   lec18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec19.html">
+   lec19
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec20.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec20.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rpa-recap">
+   RPA: recap
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#screening">
+   Screening
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plasmon">
+   Plasmon
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec20</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rpa-recap">
+   RPA: recap
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#screening">
+   Screening
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plasmon">
+   Plasmon
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec20">
+<h1>lec20<a class="headerlink" href="#lec20" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220420</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Jellium in RPA, Lindhard function</p></li>
+<li><p>Screening</p></li>
+<li><p>Plasmon</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Computing the dielectric function in RPA</p></li>
+<li><p>Appreciating how screening and plasmons in metals arise in our formalism</p></li>
+</ol>
+<div class="section" id="rpa-recap">
+<h2>RPA: recap<a class="headerlink" href="#rpa-recap" title="Permalink to this headline">¶</a></h2>
+<p>Let us recap what we last considered before the one-week break. We consider the electrons in 3D continuum space interacting with the “neutralized” Coulomb</p>
+<div class="math notranslate nohighlight">
+\[ \hat{V}=\frac{1}{2}\int{\frac{d^3pd^3p'd^3q}{\left( 2\pi \right) ^9}V\left( q \right) :\hat{\psi}_{p+q,\sigma}^{\dagger}\hat{\psi}_{p'-q,\sigma '}^{\dagger}\hat{\psi}_{p'\sigma '}\hat{\psi}_{q\sigma}:}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} V\left( q \right) =\begin{cases}
+   \frac{4\pi e^2}{q^2},\quad \mathrm{if}\; q\ne 0\\
+   0,\quad \mathrm{if}\; q=0\\
+\end{cases}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(V(q=0)=0\)</span> follows from the cancellation from the uniform positive background, and corresponding the Hartree term</p>
+<p><img alt="lec20-fig00" src="_images/lec20-fig00.png" /></p>
+<p>We motivated the RPA by asking how we might incorporate screening into our evaluation of the (finite-frequency) dielectric function. This could be understood by considering the Dyson’s equation for the “photon”</p>
+<p><img alt="lec20-fig01" src="_images/lec20-fig01.png" /></p>
+<div class="math notranslate nohighlight">
+\[ V_{\mathrm{eff}}\left( q,\omega \right) =\frac{V\left( q \right)}{1+V\left( q \right) \chi \left( q,\omega \right)}\]</div>
+<p><img alt="lec20-fig02" src="_images/lec20-fig02.png" /></p>
+<div class="math notranslate nohighlight">
+\[ i\chi \left( q,\omega \right) =i\chi _{\mathrm{RPA}}\left( q,\omega \right) +\cdots \]</div>
+<p>Our main task for “performing the RPA” is, therefore, to evaluate</p>
+<p><img alt="lec20-fig03" src="_images/lec20-fig03.png" /></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    i\chi _{\mathrm{RPA}}\left( q,\omega \right) &amp;=-\int{\frac{d\tilde{\omega}}{2\pi}\int{\frac{d^3p}{\left( 2\pi \right) ^3}\sum_{\sigma}{G_{\sigma}\left( p+q,\tilde{\omega}+\omega \right) G_{\sigma}\left( p,\tilde{\omega} \right)}}}\\
+    &amp;=-\left( 2S+1 \right) \int{\frac{d\tilde{\omega}d^3p}{\left( 2\pi \right) ^4}\frac{1}{\omega +\tilde{\omega}-\varepsilon _{p+q}+i\eta _{p+q}}\frac{1}{\tilde{\omega}-\varepsilon _p+i\eta _p}e^{i\tilde{\omega}0^+}}
+\end{align*}
+\end{split}\]</div>
+<p>We could perform the frequency integral by noticing the function contains two poles, and closing the contour in the upper complex plane</p>
+<p><img alt="lec20-fig04" src="_images/lec20-fig04.png" /></p>
+<p>In particular, we enclose the poles only if they correspond to “hole” excitations (which live in the upper complex plane), i.e., the pole contribution in proportional to <span class="math notranslate nohighlight">\(n_k\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ i\chi _{\mathrm{RPA}}\left( q,\omega \right) =-\left( 2S+1 \right) \frac{2\pi i}{2\pi}\int{\frac{d^3p}{\left( 2\pi \right) ^3}\left( \frac{n_{\vec{p}}}{\omega +\varepsilon _{\vec{p}}-\varepsilon _{\vec{p}+\vec{q}}}+\frac{n_{\vec{p}+\vec{q}}}{\varepsilon _{\vec{p}+\vec{q}}-\omega -\varepsilon _{\vec{p}}} \right)}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \chi _{\mathrm{RPA}}\left( q,\omega \right) =\left( 2S+1 \right) \int{\frac{d^3p}{\left( 2\pi \right) ^3}\frac{n_{\vec{p}}-n_{\vec{p}+\vec{q}}}{\varepsilon _{\vec{p}+\vec{q}}-\varepsilon _{\vec{p}}-\omega}}\]</div>
+<p>Note that we have, with a sleight of hand, dropped the <span class="math notranslate nohighlight">\(i\eta\)</span> factors. More later.</p>
+<p>The integral above is called Lindhard function. Its evaluation is very similar to what we have seen for the Fock / exchange self-energy:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \chi _{\mathrm{RPA}}\left( q,\omega \right) &amp;=\left( 2S+1 \right) \int{\frac{d^3p}{\left( 2\pi \right) ^3}\left( \frac{n_{\vec{p}}}{\varepsilon _{\vec{p}+\vec{q}}-\varepsilon _{\vec{p}}-\omega}-\frac{n_{\vec{p}}}{\varepsilon _{\vec{p}}-\varepsilon _{\vec{p}-\vec{q}}-\omega} \right)}\\
+    &amp;=\frac{2S+1}{\left( 2\pi \right) ^3}\int_0^{k_F}{dp\int_0^{\pi}{d\theta p^2\sin \theta \int_0^{2\pi}{d\phi}}}\\
+    &amp;\quad \times \left( \frac{2m}{q^2+2pq\cos \theta -2m\omega}-\frac{2m}{2pq\cos \theta -q^2-2m\omega} \right)
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \int_0^{\pi}{d\theta \sin \theta \frac{1}{a+b\cos \theta}}=\int_{-1}^1{du\frac{1}{a+bu}}=\frac{1}{b}\ln \left( \frac{a+bu}{a-bu} \right) \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \chi _{\mathrm{RPA}}\left( q,\omega \right) &amp;=\frac{2S+1}{4\pi ^2}\int_0^{k_F}{dp\frac{p^2m}{pq}\left[ \ln \left( \frac{-2m\omega +q^2+2pq}{-2m\omega +q^2-2pq} \right) -\ln \left( \frac{-2m\omega -q^2+2pq}{-2m\omega -q^2-2pq} \right) \right]}\\
+    &amp;=\frac{\left( 2S+1 \right) mk_F}{4\pi ^2\tilde{q}}\int_0^1{d\tilde{p}\tilde{p}\left[ \ln \left( \frac{-\tilde{\omega}/\tilde{q}+\tilde{q}+2\tilde{p}}{-\tilde{\omega}/\tilde{q}+\tilde{q}-2\tilde{p}} \right) -\ln \left( \frac{-\tilde{\omega}/\tilde{q}-\tilde{q}+2\tilde{p}}{-\tilde{\omega}/\tilde{q}-\tilde{q}-2\tilde{p}} \right) \right]}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \tilde{p}=\frac{p}{k_F},\tilde{q}=\frac{q}{k_F},\tilde{\omega}=\frac{\omega}{k_{F}^{2}/2m}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \int_0^1{dxx\ln \left( \frac{a+x}{a-x} \right)}&amp;=\left. \frac{x^2}{2}\ln \left( \frac{a+x}{a-x} \right) \right|_{0}^{1}-\int_0^1{\frac{x^2}{2}\frac{2a}{a^2-x^2}dx}\\
+    &amp;=\frac{1}{2}\ln \left( \frac{a+1}{a-1} \right) +a\int_0^1{\left( 1-\frac{a^2}{a^2-x^2} \right) dx}\\
+    &amp;=\frac{1}{2}\ln \left( \frac{a+1}{a-1} \right) +a-\frac{a^2}{2}\int_0^1{\left( \frac{1}{a+x}+\frac{1}{a-x} \right) dx}\\
+    &amp;=\frac{1}{2}\ln \left( \frac{a+1}{a-1} \right) +a-\frac{a^2}{2}\left. \ln \left( \frac{a+x}{a-x} \right) \right|_{0}^{1}\\
+    &amp;=\frac{1}{2}\left( 1-a^2 \right) \ln \left( \frac{a+1}{a-1} \right) +a
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \chi _{\mathrm{RPA}}\left( q,\omega \right) =\frac{\left( 2S+1 \right) mk_F}{4\pi ^2\tilde{q}}\left( a_++\frac{1}{2}\left( 1-a_{+}^{2} \right) \ln \left( \frac{a_++1}{a_+-1} \right) -\left( a_+\leftrightarrow a_- \right) \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ a_{\pm}=\pm \frac{\tilde{q}}{2}-\frac{\tilde{\omega}}{2\tilde{q}}\]</div>
+<p>The prefactor could be simplified further using the 3D density of states (per spin)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    N_0&amp;=\left. \frac{d}{d\varepsilon _k}\left( \frac{4\pi}{3}\frac{\left( 2m\varepsilon _k \right) ^{3/2}}{\left( 2\pi \right) ^3} \right) \right|_{k=k_F}\\
+    &amp;=2\pi \left( \frac{\sqrt{2m}}{2\pi} \right) ^3\sqrt{\varepsilon _{k_F}}\\
+    &amp;=\frac{2mk_F}{4\pi ^2};\quad \varepsilon _k=\frac{k^2}{2m}
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \chi _{\mathrm{RPA}}\left( q,\omega \right) &amp;=\frac{\left( 2S+1 \right) N_0}{2\tilde{q}}\left( \frac{1}{2}\left( 1-a_{+}^{2} \right) \ln \left( \frac{a_++1}{a_+-1} \right) -\left( a_+\leftrightarrow a_- \right) +\tilde{q} \right) \\
+    &amp;=\left( 2S+1 \right) N_0F\left( \tilde{q},\tilde{\omega} \right)
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ F\left( \tilde{q},\tilde{\omega} \right) =\frac{1}{4\tilde{q}}\left( 1-a_{+}^{2} \right) \ln \left( \frac{a_++1}{a_+-1} \right) -\left( a_+\leftrightarrow a_- \right) +\frac{1}{2}\]</div>
+<p>The function <span class="math notranslate nohighlight">\(F(\tilde{q},\tilde{\omega})\)</span> is known as the Lindhard function. Let us first consider its static limit</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{\omega \rightarrow 0} a_{\pm}=\lim_{\omega \rightarrow 0} \left( \pm \frac{\tilde{q}}{2}-\frac{\tilde{\omega}}{2\tilde{q}} \right) =\pm \frac{\tilde{q}}{2}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    F\left( \tilde{q},\tilde{\omega}=0 \right) &amp;=\frac{1}{4\tilde{q}}\left( 1-\frac{\tilde{q}^2}{4} \right) \left[ \ln \left( \frac{\tilde{q}+2}{\tilde{q}-2} \right) -\ln \left( \frac{-\tilde{q}+2}{-\tilde{q}-2} \right) \right] +\frac{1}{2}\\
+    &amp;=\frac{1}{2\tilde{q}}\left( 1-\frac{\tilde{q}^2}{4} \right) \ln \left| \frac{\tilde{q}+2}{\tilde{q}-2} \right|+\frac{1}{2}
+\end{align*}
+\end{split}\]</div>
+<p>Notice that, this time, we have a singularity at <span class="math notranslate nohighlight">\(\tilde{q}=2 \Rightarrow q=2k_F\)</span> when the absolute value inside the log changes sign. We may plot it (the following by Wolfram alpha)</p>
+<p><img alt="lec20-fig05" src="_images/lec20-fig05.png" /></p>
+<p>More generally, we obtain the RPA result for the dielectric function</p>
+<div class="math notranslate nohighlight">
+\[ V_{\mathrm{eff}}\left( q,\omega \right) =\frac{V\left( q \right)}{1+V\left( q \right) \chi _{\mathrm{RPA}}\left( q,\omega \right)}=\frac{1}{\varepsilon _{\mathrm{RPA}}\left( q,\omega \right)}V\left( q \right) \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Rightarrow \varepsilon _{\mathrm{RPA}}\left( q,\omega \right) &amp;=1+V\left( q \right) \chi _{\mathrm{RPA}}\left( q,\omega \right) \\
+    &amp;=1+\frac{4\pi e^2}{q^2}\left( 2S+1 \right) N_0F\left( \frac{q}{k_F},\frac{\omega}{k_{F}^{2}/2m} \right)
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="section" id="screening">
+<h2>Screening<a class="headerlink" href="#screening" title="Permalink to this headline">¶</a></h2>
+<p>One interesting observation now is that, in the static limit,</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{q\rightarrow 0} \varepsilon _{\mathrm{RPA}}\left( q,\omega =0 \right) =\lim_{q\rightarrow 0} \left( 1+\frac{4\pi e^2}{q^2}\left( 2S+1 \right) N_0F\left( \frac{q}{k_F},\frac{\omega}{k_{F}^{2}/2m} \right) \right) \rightarrow +\infty \]</div>
+<p>such divergence of the dielectric constant is characteristic of a metal, in which the charges always move to shield the interior from any possible external, static electric field. The picture may be clearer if we instead consider the effective interaction</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    V_{\mathrm{eff}}\left( q,\omega =0 \right) &amp;\stackrel{\text{RPA}}{=}\frac{V\left( q \right)}{1+V\left( q \right) \left( 2S+1 \right) N_0F\left( \frac{q}{k_F},0 \right)}\\
+    &amp;=\frac{4\pi e^2}{q^2+4\pi e^2\left( 2S+1 \right) N_0F\left( \frac{q}{k_F},0 \right)}\\
+    &amp;\stackrel{q\to 0}{\approxeq}\frac{4\pi e^2}{q^2+k^2}
+\end{align*}
+\end{split}\]</div>
+<p>We may Fourier transform back to the real space, which gives (c.f. PS4)</p>
+<div class="math notranslate nohighlight">
+\[ V_{\mathrm{eff}}^{\mathrm{static}}\stackrel{\text{RPA}}{=}\frac{e^2e^{-kr}}{r}\]</div>
+<p>and we could interpret <span class="math notranslate nohighlight">\(k^{-1}=\frac{1}{\sqrt{4\pi e^2\left( 2S+1 \right) N_0}}\)</span> as the length scale characterizing the screening of any stray charges in the metal. This is known as the Thomas-Fermi screening length.</p>
+</div>
+<div class="section" id="plasmon">
+<h2>Plasmon<a class="headerlink" href="#plasmon" title="Permalink to this headline">¶</a></h2>
+<p>As a second interesting observation, we consider the other order of the limits, in which we first send <span class="math notranslate nohighlight">\(q\to 0\)</span> and keep <span class="math notranslate nohighlight">\(\omega\)</span> finite. This order of limit might be considered by expanding the integrand directly</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \chi ^{\mathrm{RPA}}\left( q,\omega \right) &amp;=\frac{\left( 2S+1 \right) N_0}{2\tilde{q}}\int_0^1{d\tilde{p}\tilde{p}\left[ \ln \left( \frac{-\tilde{\omega}/\tilde{q}+\tilde{q}+2\tilde{p}}{-\tilde{\omega}/\tilde{q}+\tilde{q}-2\tilde{p}} \right) -\ln \left( \frac{-\tilde{\omega}/\tilde{q}-\tilde{q}+2\tilde{p}}{-\tilde{\omega}/\tilde{q}-\tilde{q}-2\tilde{p}} \right) \right]}\\
+    &amp;=\frac{\left( 2S+1 \right) N_0}{2\tilde{q}}\int_0^1{d\tilde{p}\tilde{p}\ln \left( \frac{\left( \tilde{\omega}/\tilde{q} \right) ^2-\left( \tilde{q}+2\tilde{p} \right) ^2}{\left( \tilde{\omega}/\tilde{q} \right) ^2-\left( \tilde{q}-2\tilde{p} \right) ^2} \right)}\\
+    &amp;\Downarrow \omega \ne 0;q\rightarrow 0\\
+    &amp;=\frac{\left( 2S+1 \right) N_0}{2}\int_0^1{d\tilde{p}\tilde{p}\left( -\frac{8\tilde{p}\tilde{q}^2}{\tilde{\omega}^2}+O\left( \tilde{q}^4 \right) \right)}\\
+    &amp;\approx -\frac{4\left( 2S+1 \right) N_0}{3}\frac{\tilde{q}^2}{\tilde{\omega}^2}+O\left( \tilde{q}^4 \right) \\
+    &amp;=-\frac{4\left( 2S+1 \right) N_0}{3}\frac{q^2}{k_{F}^{2}\omega ^2}\frac{k_{F}^{4}}{4m^2}+O\left( \tilde{q}^4 \right) \\
+    &amp;=-\frac{\left( 2S+1 \right) k_{F}^{2}}{3m}\frac{mk_F}{2\pi ^2}\frac{q^2}{m\omega ^2}+O\left( \tilde{q}^4 \right) \\
+    &amp;=-n_0\frac{q^2}{m\omega ^2}+O\left( \tilde{q}^4 \right)
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ n_0=\frac{\left( 2S+1 \right)}{\left( 2\pi \right) ^3}\frac{4}{3}\pi k_{F}^{3}\]</div>
+<p>where <span class="math notranslate nohighlight">\(n_0\)</span> is the electron density. This gives the dielectric function</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{q\rightarrow 0} \varepsilon _{\mathrm{RPA}}\left( q,\omega \right) =1+\frac{4\pi e^2}{q^2}\left( -n_0\frac{q^2}{m\omega ^2}+O\left( \tilde{q}^4 \right) \right) =1-\frac{\omega _{p}^{2}}{\omega ^2}\left( 1+O\left( q^2 \right) \right) \]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[ \omega _p=\sqrt{\frac{4\pi e^2n_0}{m}}\]</div>
+<p>is the plasma frequency. This characterizes the time it takes for the electrons to respond to an oscillating electric field: while they screen stray charges completely in the static limit, such screening is ineffective when the field is changing at frequencies <span class="math notranslate nohighlight">\(\omega &gt; \omega_p\)</span> such that the electron distribution is not able to follow.</p>
+<p>To get a more physical sense, let us try to put in some numbers. First we go from the CGS-ESU units to SI:</p>
+<div class="math notranslate nohighlight">
+\[ \omega _p=\sqrt{\frac{4\pi e^2n_0}{m}}\rightarrow \sqrt{\frac{e^2n_0}{\varepsilon _0m}}\]</div>
+<p>As an example, consider sodium</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{cases}
+   n_0=2.65\times 10^{22}cm^{-3}=2.65\times 10^{28}m^{-3}\\
+   m=1.06m_e=9.656\times 10^{-31}kg\\
+\end{cases}\end{split}\]</div>
+<p>and putting in</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{cases}
+   e^2/\varepsilon _0=0.29\times 10^{-26}kgm^3s^{-2}\\
+   \hbar =6.58\times 10^{-16}eV\cdot s^{-1}\\
+\end{cases}\end{split}\]</div>
+<p>We find</p>
+<div class="math notranslate nohighlight">
+\[ \hbar \omega _p=5.87eV\]</div>
+<p>In comparison, the visible spectrum is around <span class="math notranslate nohighlight">\(\sim 1.6-3.3 eV\)</span>. This explains why metals are shiny: visible light is not oscillating fast enough to penetrate, and it gets reflected.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec19.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec19</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
