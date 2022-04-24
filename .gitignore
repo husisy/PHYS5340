@@ -27,3 +27,4 @@
 
 # jupyterbook
 jupyterbook/_build
+.vscode/
