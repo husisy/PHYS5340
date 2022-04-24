@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec21 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec20" href="lec20.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec15.html">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec16.html">
+   lec16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec17.html">
+   lec17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec18.html">
+   lec18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec19.html">
+   lec19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec20.html">
+   lec20
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec21.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec21.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#complex-dielectric-function-and-particle-hole-excitations">
+   Complex dielectric function and particle-hole excitations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#turning-the-heat-on-finite-temperature-as-imaginary-time">
+   Turning the heat on: finite temperature as imaginary time
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#schrodinger-vs-heisenberg-vs-interaction-with-finite-temperature">
+   Schrodinger vs Heisenberg vs Interaction with finite temperature
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec21</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#complex-dielectric-function-and-particle-hole-excitations">
+   Complex dielectric function and particle-hole excitations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#turning-the-heat-on-finite-temperature-as-imaginary-time">
+   Turning the heat on: finite temperature as imaginary time
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#schrodinger-vs-heisenberg-vs-interaction-with-finite-temperature">
+   Schrodinger vs Heisenberg vs Interaction with finite temperature
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec21">
+<h1>lec21<a class="headerlink" href="#lec21" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220422</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Last words on Jellium: particle-hole excitations</p></li>
+<li><p>Finite temperature: imaginary time, thermal Green’s functions</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Connecting the dielectric function to collective excitations</p></li>
+<li><p>Appreciating the (striking) similarity between zero and finite temperature physics</p></li>
+</ol>
+<div class="section" id="complex-dielectric-function-and-particle-hole-excitations">
+<h2>Complex dielectric function and particle-hole excitations<a class="headerlink" href="#complex-dielectric-function-and-particle-hole-excitations" title="Permalink to this headline">¶</a></h2>
+<p>In the last class, we have treated the frequency <span class="math notranslate nohighlight">\(\omega\)</span> as a real number when we interpret the results for the dielectric function. There is, however, an important subtlety which we glossed over: as reasoned earlier, physical observables correspond to retarded Green’s functions, whereas Gell-Mann-Loww and its associated diagrammatic expansion gives us the time-ordered Green’s functions. The two are related by an analytic continuation</p>
+<div class="math notranslate nohighlight">
+\[ \chi ^{\mathrm{ret}}\left( q,\omega \right) =\lim_{\delta \rightarrow 0^+} \chi ^T\left( q,\omega +i\delta \right) \]</div>
+<p>which guarantees that, in the spectral decomposition, we shift all the poles to the negative complex plane and therefore respects causality when Fourier transformed back to real time. Correspondingly, in the above we have implicitly focused only on the real part of the true RPA dielectric function. The full expression should have been</p>
+<div class="math notranslate nohighlight">
+\[ \varepsilon _{\mathrm{RPA}}\left( q,\omega \right) =1+\frac{4\pi e^2}{q^2}\left( 2S+1 \right) N_0\lim_{\delta \rightarrow 0^+} F\left( \frac{q}{k_F},\frac{\omega +i\delta}{k_{F}^{2}/2m} \right) \]</div>
+<p>One could anticipate a nontrivial imaginary part given the branch cuts associated with the natural log in the Lindhard function. Instead of analyzing the function directly, however, it is a bit less tedious to revert back to the integral itself:</p>
+<div class="math notranslate nohighlight">
+\[  \chi _{\mathrm{RPA}}^{\mathrm{ret}}\left( q,\omega \right) =\lim_{\delta \rightarrow 0^+} \left( 2S+1 \right) \int{\frac{d^3\vec{p}}{\left( 2\pi \right) ^3}\frac{n_{\vec{p}}-n_{\vec{p}+\vec{q}}}{\varepsilon _{\vec{p}+\vec{q}}-\varepsilon _{\vec{p}}-\omega -i\delta}}\]</div>
+<p>we again use the “Cauchy-Dirac” relation</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{\delta \rightarrow 0^+} \frac{1}{x-i\delta}=P\frac{1}{x}+i\pi \delta \left( x \right) \]</div>
+<p>to tease out the imaginary part</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Im \left[ \chi _{\mathrm{RPA}}^{\mathrm{ret}}\left( q,\omega \right) \right] &amp;=\pi \left( 2S+1 \right) \int{\frac{d^3\vec{p}}{\left( 2\pi \right) ^3}\left( n_{\vec{p}}-n_{\vec{p}+\vec{q}} \right) \delta \left( \varepsilon _{\vec{p}+\vec{q}}-\varepsilon _{\vec{p}}-\omega \right)}\\
+    &amp;=\frac{2S+1}{4\pi}\int_0^{k_F}{dp\int_0^{\pi}{d\theta p^2\sin \theta}}\\
+    &amp;\quad \times \left[ \delta \left( \omega -\left( \varepsilon _{\vec{p}+\vec{q}}-\varepsilon _{\vec{p}} \right) \right) -\delta \left( \omega -\left( \varepsilon _{\vec{p}}-\varepsilon _{\vec{p}-\vec{q}} \right) \right) \right]
+\end{align*}
+\end{split}\]</div>
+<p>the delta functions could be interpreted as a density of states of the particle-hole excitations. The energy is</p>
+<div class="math notranslate nohighlight">
+\[ \varepsilon _{\vec{p}+\vec{q}}-\varepsilon _{\vec{p}}=\frac{2pq\cos \theta +q^2}{2m}\]</div>
+<div class="math notranslate nohighlight">
+\[ \varepsilon _{\vec{p}}-\varepsilon _{\vec{p}-\vec{q}}=\frac{2pq\cos \theta -q^2}{2m}\]</div>
+<p>with <span class="math notranslate nohighlight">\(\vec{p}\)</span> restricted inside the Fermi sea. It is helpful to try plotting the “dispersion”</p>
+<p><img alt="lec21-fig00" src="_images/lec21-fig00.png" /></p>
+<p>To really relate to the excitation energies in the electron gas, we recall the two-particle Green’s function / density-density response function</p>
+<div class="math notranslate nohighlight">
+\[ \Theta \left( t \right) \left&lt; \left[ \hat{\rho}\left( t \right) ,\hat{\rho}\left( 0 \right) \right] \right&gt; \]</div>
+<p><img alt="lec21-fig01" src="_images/lec21-fig01.png" /></p>
+<p>and its spectral function is</p>
+<div class="math notranslate nohighlight">
+\[ S\left( q,\omega \right) =-\frac{q^2}{4\pi e^2n_0}\Im \left[ \frac{1}{\varepsilon ^{\mathrm{ret}}\left( q,\omega \right)} \right] \]</div>
+<p>(c.f. Mahan Eqs.(5.111)-(5.119) for a derivation)</p>
+<p>Writing the dielectric function as</p>
+<div class="math notranslate nohighlight">
+\[ \varepsilon ^{\mathrm{ret}}\left( q,\omega \right) =\varepsilon _1\left( q,\omega \right) +i\varepsilon _2\left( q,\omega \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow S\left( q,\omega \right) =\frac{q^2}{4\pi e^2n_0}\frac{\varepsilon _2\left( q,\omega \right)}{\varepsilon _{1}^{2}\left( q,\omega \right) +i\varepsilon _{2}^{2}\left( q,\omega \right)}\]</div>
+<p>This suggests the excitation spectral function is non-zero precisely when <span class="math notranslate nohighlight">\(\varepsilon _2\left( q,\omega \right) \sim \Im \left[ \chi _{\mathrm{RPA}}^{\mathrm{ret}}\left( q,\omega \right) \right] \)</span> is non-zero. But there is a catch: the expression above is ill-defined when both <span class="math notranslate nohighlight">\(\varepsilon_1\)</span> and <span class="math notranslate nohighlight">\(\varepsilon_2\)</span> vanish. This happens when we hit the plasmon frequency, for which <span class="math notranslate nohighlight">\(\varepsilon_1=0\)</span> in a region with <span class="math notranslate nohighlight">\(\varepsilon_2=0\)</span>. More concretely,</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{q\rightarrow 0} \varepsilon _1\left( q,\omega \right) =1-\frac{\omega _{p}^{2}}{\omega ^2}\left( 1+\#q^2 \right) =0\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Rightarrow \omega &amp;=\omega _p\sqrt{1+\#q^2}\\
+    &amp;=\omega _p\left( 1+\frac{\#}{2}q^2+\cdots \right)
+\end{align*}
+\end{split}\]</div>
+<p>Along this plasmon branch, we have</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{\delta \rightarrow 0^+} \Im \left[ \frac{1}{\varepsilon _{\mathrm{RPA}}\left( q,\omega +i\delta \right)} \right] =\lim_{\delta \rightarrow 0^+} \Im \left[ \frac{1}{\varepsilon _1\left( q,\omega \right) +i\delta} \right] =-\pi \delta \left( \varepsilon _1\left( q,\omega \right) \right) \]</div>
+<p>and so, schematically, we have</p>
+<p><img alt="lec21-fig02" src="_images/lec21-fig02.png" /></p>
+<p>(c.f. Coleman Fig-7.8 for a fancier color plot)</p>
+<p>Notice that the spectral isolation of the plasmon is critical for its identity as a well-defined excitation: otherwise, it can readily decay into lower-energy particle-hole excitations. This indeed happens at higher momentum when it merges with the continuum.</p>
+<p>This concludes our discussion for the dielectric function of an interacting electron gas (in RPA). Let us just remark that we have barely scratched the surface: for instance, instead of simply considering the EM scalar potential one could have considered the more complete discussion with the vector potential, and consider current-current response functions. What we discussed corresponds only to what is called the “longitudinal dielectric function”.</p>
+<p>Along another direction, one can naturally ask how one might improve beyond the RPA. C.f. Mahan Chapter-5 for a detailed discussions on the more popular schemes.</p>
+</div>
+<div class="section" id="turning-the-heat-on-finite-temperature-as-imaginary-time">
+<h2>Turning the heat on: finite temperature as imaginary time<a class="headerlink" href="#turning-the-heat-on-finite-temperature-as-imaginary-time" title="Permalink to this headline">¶</a></h2>
+<p>So far, we have focused quite exclusively on the quantum many-body ground state, which one could argue capture the physics at temperature <span class="math notranslate nohighlight">\(T=0\)</span>. As our last topic on perturbative quantum many-body theory, we go back to the physical reality of a finite-temperature problem.</p>
+<p>Before we go into the details, let us highlight two “conclusions”:</p>
+<ol class="simple">
+<li><p>The finite-temperature calculation is not any harder</p></li>
+<li><p>The repeatedly mentioned “Statistics Mechanics” correspondence will become clearer</p></li>
+</ol>
+<p>Let us recall some quantum Statistics mechanics. Given a Hamiltonian <span class="math notranslate nohighlight">\(\hat{H}\)</span>, an inverse temperature <span class="math notranslate nohighlight">\(\beta=\frac{1}{k_BT}\)</span>, the expectation value of an observable <span class="math notranslate nohighlight">\(\hat{O}\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[ \left&lt; \hat{O} \right&gt; =\mathrm{Tr}\left( \hat{O}\hat{\rho} \right) =\frac{\mathrm{Tr}\left( \hat{O}e^{-\beta \hat{H}} \right)}{\mathrm{Tr}\left( e^{-\beta \hat{H}} \right)}\]</div>
+<p>In particular, the partition function</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{Z} =\mathrm{Tr}\left( e^{-\beta \hat{H}} \right) =\mathrm{Tr}\left( e^{-i\left( -i\beta \right) \hat{H}} \right) =\mathrm{Tr}\left( \hat{U}\left( -i\beta \right) \right) \]</div>
+<p>can be recognized as the trace of the time-evolution operator <span class="math notranslate nohighlight">\(\hat{U}\)</span> (in the Schrodinger picture), but with an imaginary time <span class="math notranslate nohighlight">\(-i\beta\)</span>.</p>
+<p>In this notation, the expectation value is simply</p>
+<div class="math notranslate nohighlight">
+\[ \left&lt; \hat{O} \right&gt; =\frac{\mathrm{Tr}\left[ \hat{O}\hat{U}\left( -i\beta \right) \right]}{\mathrm{Tr}\left[ \hat{U}\left( -i\beta \right) \right]}\]</div>
+<p>as we mentioned earlier, this is very similar in form to the Gell-Mann-Low formula, with the key differences</p>
+<ol class="simple">
+<li><p>S matrix (evolution in the interaction picture) vs <span class="math notranslate nohighlight">\(\hat{U}\sim e^{-i\hat{H}t}\)</span></p></li>
+<li><p>evaluating the ground-state expectation value with respect to the unperturbed ground state vs trace</p></li>
+<li><p>infinite time <span class="math notranslate nohighlight">\(t:-\infty\to +\infty\)</span> vs <span class="math notranslate nohighlight">\(t:0\to -i\beta\)</span></p></li>
+</ol>
+<p>This suggests the following modifications are needed in order to tackle finite temperature</p>
+<ol class="simple">
+<li><p>We should reconsider the Schrodinger vs Heisenberg vs interaction picture with imaginary time</p></li>
+<li><p>We should replace our definition of expectation value by the thermal one</p></li>
+<li><p>We should consider a finite imaginary time interval</p></li>
+</ol>
+<p>Let us consider these one by one. (Essentially following Coleman)</p>
+</div>
+<div class="section" id="schrodinger-vs-heisenberg-vs-interaction-with-finite-temperature">
+<h2>Schrodinger vs Heisenberg vs Interaction with finite temperature<a class="headerlink" href="#schrodinger-vs-heisenberg-vs-interaction-with-finite-temperature" title="Permalink to this headline">¶</a></h2>
+<p>Starting with the Schrodinger equation</p>
+<div class="math notranslate nohighlight">
+\[ i\partial _t|\Psi \left( t \right) \rangle =\hat{H}|\Psi \left( t \right) \rangle \]</div>
+<p>we now consider imaginary time by a change of variable</p>
+<div class="math notranslate nohighlight">
+\[ \tau =it\quad \Rightarrow \quad -\partial _{\tau}|\Psi \left( t \right) \rangle =\hat{H}|\Psi \left( t \right) \rangle \]</div>
+<p>This is still solved, formally, by</p>
+<div class="math notranslate nohighlight">
+\[ |\Psi \left( t \right) \rangle =e^{-\hat{H}\tau}|\Psi \left( 0 \right) \rangle \]</div>
+<p>Accordingly, to go to the Heisenberg picture, we instead keep the state fixed and ascribe the dynamics to that of the operators:</p>
+<div class="math notranslate nohighlight">
+\[ \hat{O}_H\left( \tau \right) =e^{\hat{H}\tau}\hat{O}_H\left( 0 \right) e^{-\hat{H}\tau}\]</div>
+<p>we can then verify that its equation of motion is</p>
+<div class="math notranslate nohighlight">
+\[ -\partial _{\tau}\hat{O}_H\left( \tau \right) =\left[ \hat{O}_H\left( \tau \right) ,\hat{H} \right] \]</div>
+<p>Lastly, to go to the interaction picture, we evolve the operators according to the “unperturbed” Hamiltonian <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>, evolve the state in such a way that it would be consistent with the full Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=\hat{H}_0+\hat{V}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} \Rightarrow \begin{cases}
+   \hat{O}_I\left( \tau \right) =e^{\hat{H}_0\tau}\hat{O}_I\left( 0 \right) e^{-\hat{H}_0\tau}\\
+   |\Psi _I\left( \tau \right) \rangle =e^{\hat{H}_0\tau}e^{-\hat{H}\tau}|\Psi _I\left( 0 \right) \rangle\\
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Rightarrow -\partial _{\tau}|\Psi _I\left( \tau \right) \rangle &amp;=-\left( e^{\hat{H}_0\tau}\hat{H}_0e^{-\hat{H}\tau}-e^{\hat{H}_0\tau}\hat{H}e^{-\hat{H}\tau} \right) |\Psi _I\left( 0 \right) \rangle \\
+    &amp;=\hat{V}_I\left( \tau \right) |\Psi _I\left( \tau \right) \rangle
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{V}_I\left( \tau \right) =e^{\hat{H}_0\tau}\hat{V}e^{-\hat{H}_0\tau}\]</div>
+<p>The imaginary time evolution of the state is again solved by a time-ordered exponential</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{cases}
+   |\Psi _I\left( \tau _1 \right) \rangle =\hat{S}\left( \tau _1,\tau _2 \right) |\Psi _I\left( \tau _2 \right) \rangle\\
+   \hat{S}\left( \tau _1,\tau _2 \right) =\mathcal{T} \left[ \exp \left( -\int_{\tau _1}^{\tau _2}{\hat{V}_I\left( \tau \right) d\tau} \right) \right]\\
+\end{cases}\end{split}\]</div>
+<p>We will also need to know how to relate the Heisenberg-picture operators (with respect to the full Hamiltonian) to the interaction-picture ones</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{O}_H\left( \tau \right) &amp;=e^{\hat{H}\tau}\hat{O}_Se^{-\hat{H}\tau}\\
+    &amp;=\left( e^{\hat{H}\tau}e^{-\hat{H}_0\tau} \right) e^{\hat{H}_0\tau}\hat{O}_Se^{-\hat{H}_0\tau}\left( e^{\hat{H}_0\tau}e^{-\hat{H}\tau} \right) \\
+    &amp;=\hat{U}\left( \tau \right) ^{-1}\hat{O}_I\left( \tau \right) \hat{U}\left( \tau \right)
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{U}\left( \tau \right) =\hat{S}\left( \tau ,0 \right) \]</div>
+<p>So far, it looks like we are just doing a revision, and nothing seems to be different. If you have keen eyes, however, you would have noticed that we wrote <span class="math notranslate nohighlight">\(-1\)</span> instead of <span class="math notranslate nohighlight">\(\dagger\)</span> above: it’s important to notice that with an imaginary time the “evolution” is no longer unitary. Correspondingly, one now has to be careful with how Hermitian conjugate pairs “evolve”. For instance, let us take the unperturbed part to be that of non-interacting electrons:</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_0=\sum_k{\varepsilon _k\hat{c}_{k}^{\dagger}\hat{c}_k}\]</div>
+<p>The interaction-picture equations of motion for the fermion operators are</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{cases}
+   -\partial _{\tau}\hat{c}_k=\varepsilon _k\hat{c}_k\\
+   -\partial _{\tau}\hat{c}_{k}^{\dagger}=-\varepsilon _k\hat{c}_{k}^{\dagger}\\
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} \Rightarrow \begin{cases}
+   \hat{c}_k\left( \tau \right) =e^{-\varepsilon _k\tau}\hat{c}_k\left( 0 \right)\\
+   \hat{c}_{k}^{\dagger}\left( \tau \right) =e^{\varepsilon _k\tau}\hat{c}_{k}^{\dagger}\left( 0 \right)\\
+\end{cases}\end{split}\]</div>
+<p>Importantly, notice that</p>
+<div class="math notranslate nohighlight">
+\[ \left( \hat{c}_k\left( \tau \right) \right) ^{\dagger}=e^{{\color{red} -\varepsilon _k\tau }}\hat{c}_{k}^{\dagger}\left( 0 \right) =\hat{c}_{k}^{\dagger}\left( -\tau \right) \ne \hat{c}_{k}^{\dagger}\left( \tau \right) \]</div>
+<p>where <span class="math notranslate nohighlight">\({\color{red} -\varepsilon_k\tau}\)</span> is real.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec20.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec20</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
