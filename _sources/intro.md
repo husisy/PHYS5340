@@ -53,6 +53,7 @@ Table of Contents
 19. [lec19](lec19.md)
 20. [lec20](lec20.md)
 21. [lec21](lec21.md)
-22. website-related stuff
+22. [lec22](lec22.md)
+23. website-related stuff
     * [contribute](contribute.md)
     * [test](test.md)

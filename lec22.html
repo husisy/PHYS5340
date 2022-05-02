@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec22 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec21" href="lec21.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec15.html">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec16.html">
+   lec16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec17.html">
+   lec17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec18.html">
+   lec18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec19.html">
+   lec19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec20.html">
+   lec20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec21.html">
+   lec21
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec22.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec22.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finite-temperature-green-s-functions">
+   Finite-temperature Green’s functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bare-matsubara-green-s-functions">
+   Bare Matsubara Green’s functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#euclidean-time-is-a-loop">
+   Euclidean time is a loop
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec22</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finite-temperature-green-s-functions">
+   Finite-temperature Green’s functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bare-matsubara-green-s-functions">
+   Bare Matsubara Green’s functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#euclidean-time-is-a-loop">
+   Euclidean time is a loop
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec22">
+<h1>lec22<a class="headerlink" href="#lec22" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220427</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Matsubara Green’s functions and frequencies</p></li>
+<li><p>Periodicity and anti-periodicity in Euclidean time</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Gather the ingredients required for developing the perturbation theory at finite temperature</p></li>
+<li><p>Reconcile the finite vs zero temperature results on the complex frequency plane</p></li>
+</ol>
+<div class="section" id="finite-temperature-green-s-functions">
+<h2>Finite-temperature Green’s functions<a class="headerlink" href="#finite-temperature-green-s-functions" title="Permalink to this headline">¶</a></h2>
+<p>As our second step, we consider expectation values for system in thermal equilibrium. In parallel with the zero-temperature discussion, we expect that, ultimately, the perturbation theory will be built upon the various Green’s functions. Here, the natural extension is to simply replace the meaning of <span class="math notranslate nohighlight">\(\langle \cdots \rangle\)</span> from a ground state expectation value to that of the thermal ensemble in the Heisenberg picture:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \mathcal{G} _{\sigma \sigma '}\left( \tau -\tau ' \right) &amp;=-\left&lt; \mathcal{T} \left[ \hat{\psi}_{\sigma}\left( \tau \right) \hat{\psi}_{\sigma '}^{\dagger}\left( \tau ' \right) \right] \right&gt; \\
+    &amp;=-\mathrm{Tr}\left[ e^{-\beta \left( \hat{H}-F \right)}\mathcal{T} \left[ \hat{\psi}_{\sigma}\left( \tau \right) \hat{\psi}_{\sigma '}^{\dagger}\left( \tau ' \right) \right] \right]
+\end{align*}
+\end{split}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[ e^{\beta F}=\frac{1}{\mathcal{Z}}\Rightarrow F=-\frac{1}{\beta}\ln \mathcal{Z} \]</div>
+<p>is the free energy, and <span class="math notranslate nohighlight">\(\mathcal{T}\)</span> denotes the (Euclidean) time-ordering operator as usual. Explicitly,</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{G} _{\sigma \sigma '}\left( \tau -\tau ' \right) =-\Theta \left( \tau -\tau ' \right) \left&lt; \hat{\psi}_{\sigma}\left( \tau \right) \hat{\psi}_{\sigma '}^{\dagger}\left( \tau ' \right) \right&gt; -\zeta \Theta \left( \tau '-\tau \right) \left&lt; \hat{\psi}_{\sigma '}^{\dagger}\left( \tau ' \right) \hat{\psi}_{\sigma}\left( \tau \right) \right&gt; \]</div>
+<p>and we add a variable <span class="math notranslate nohighlight">\(\zeta=\pm 1\)</span> to facilitate a unified treatment for both bosons (<span class="math notranslate nohighlight">\(\zeta =+1\)</span>) and fermions (<span class="math notranslate nohighlight">\(\zeta =-1\)</span>)</p>
+<p>In the above, the LHS suggests that the expression depends only on the difference <span class="math notranslate nohighlight">\(\tau-\tau\prime\)</span>. Previously we said that it follows from the time-translation symmetry associated with the static Hamiltonian. With Euclidean time, it will be good to check that explicitly too (for one of the two terms; the other follows similarly):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \left&lt; \hat{\psi}_{\sigma}\left( \tau \right) \hat{\psi}_{\sigma '}^{\dagger}\left( \tau ' \right) \right&gt; &amp;=\mathrm{Tr}\left( e^{-\beta \left( \hat{H}-F \right)}e^{\hat{H}\tau}\hat{\psi}_{\sigma}\left( 0 \right) e^{-\hat{H}\tau}e^{\hat{H}\tau '}\hat{\psi}_{\sigma '}^{\dagger}{\color{red} e^{-\hat{H}\tau '}} \right) \\
+    &amp;=\mathrm{Tr}\left( e^{-\beta \left( \hat{H}-F \right)}e^{\hat{H}\left( \tau {\color{red} -\tau '} \right)}\hat{\psi}_{\sigma}\left( 0 \right) e^{-\hat{H}\left( \tau -\tau ' \right)}\hat{\psi}_{\sigma '}^{\dagger} \right) \\
+    &amp;=\left&lt; \hat{\psi}_{\sigma}\left( \tau -\tau ' \right) \hat{\psi}_{\sigma '}^{\dagger}\left( 0 \right) \right&gt;
+\end{align*}
+\end{split}\]</div>
+<p>where we assumed the cyclic property of the trace. (If you care about rigor, this is more subtle than is might appear: the Hilbert space is very often infinite dimensional!)</p>
+<p>Following the same program (as in the zero-temperature case), we can now consider the relation between the Heisenberg and interaction picture, from which tease out a perturbation theory building upon the unperturbed Hamiltonian.</p>
+<p>Let us restrict our attention to <span class="math notranslate nohighlight">\(\tau &gt;0\)</span> (suppressing subscripts)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \mathcal{G} \left( \tau \right) &amp;\stackrel{\tau &gt;0}{=}-\mathrm{Tr}\left[ e^{-\beta \left( \hat{H}-F \right)}\hat{\psi}_H\left( \tau \right) \hat{\psi}_{H}^{\dagger}\left( 0 \right) \right] \\
+    &amp;=\frac{-\mathrm{Tr}\left[ e^{-\beta \hat{H}}\hat{U}\left( \tau \right) ^{-1}\hat{\psi}_I\left( \tau \right) \hat{U}\left( \tau \right) \hat{\psi}_{I}^{\dagger}\left( 0 \right) \right]}{\mathrm{Tr}\left[ e^{-\beta \hat{H}} \right]}
+\end{align*}
+\end{split}\]</div>
+<p>Now we notice that the “thermal” factor of <span class="math notranslate nohighlight">\(e^{-\beta \hat{H}}\)</span> can be absorbed into the S-matrix</p>
+<div class="math notranslate nohighlight">
+\[ \hat{U}\left( \tau \right) =\hat{S}\left( \tau ,0 \right) =\mathcal{T} \left[ e^{-\int_0^{\tau}{d\tau '\hat{V}_I\left( \tau ' \right)}} \right] =e^{\hat{H}_0\tau}e^{-\hat{H}\tau}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \hat{S}\left( \beta ,0 \right) =e^{\beta \hat{H}_0}e^{-\beta \hat{H}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow e^{-\beta \hat{H}}=e^{-\beta \hat{H}_0}\hat{S}\left( \beta ,0 \right) \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Rightarrow \mathcal{G} \left( \tau \right) &amp;\stackrel{\tau &gt;0}{=}\frac{-\mathrm{Tr}\left[ e^{-\beta \hat{H}_0}\hat{S}\left( \beta ,0 \right) \hat{S}\left( 0,\tau \right) \hat{\psi}_I\left( \tau \right) \hat{S}\left( \tau ,0 \right) \hat{\psi}_{I}^{\dagger}\left( 0 \right) \right]}{\mathrm{Tr}\left[ e^{-\beta \hat{H}_0}\hat{S}\left( \beta ,0 \right) \right]}\\
+    &amp;=\frac{-\mathrm{Tr}\left[ e^{-\beta \hat{H}_0}\mathcal{T} \left[ \hat{\psi}_I\left( \tau \right) \hat{\psi}_{I}^{\dagger}\left( 0 \right) \hat{S}\left( \beta ,0 \right) \right] \right]}{\mathrm{Tr}\left[ e^{-\beta \hat{H}_0}\hat{S}\left( \beta ,0 \right) \right]}
+\end{align*}
+\end{split}\]</div>
+<p>This is basically Gell-Mann-Low: to make it even more explicit, we define</p>
+<div class="math notranslate nohighlight">
+\[ \left&lt; \cdots \right&gt; _0=\frac{\mathrm{Tr}\left[ e^{-\beta \hat{H}_0}\cdots \right]}{\mathrm{Tr}\left[ e^{-\beta \hat{H}_0} \right]}\]</div>
+<p>(note: Mahan chose to not include the bare partition function <span class="math notranslate nohighlight">\(\mathcal{Z} _0=\mathrm{Tr}\left[ e^{-\beta \hat{H}_0} \right] \)</span> in Eq.(3.184))</p>
+<p>When the dust settles, we may simply write</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{G} \left( \tau \right) \stackrel{\tau &gt;0}{=}\frac{-\left&lt; \mathcal{T} \left[ \hat{\psi}_I\left( \tau \right) \hat{\psi}_{I}^{\dagger}\left( 0 \right) \hat{S}\left( \beta ,0 \right) \right] \right&gt;}{\left&lt; \hat{S}\left( \beta ,0 \right) \right&gt; _0}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{S}\left( \beta ,0 \right) =\mathcal{T} \left[ e^{-\int_0^{\beta}{d\tau \hat{V}_I\left( \tau \right)}} \right] \]</div>
+<p>This, of course, is only one particular expectation value. The more general discussion for any expectation values follows similarly, just like what we have seen for the zero-temperature formulation.</p>
+</div>
+<div class="section" id="bare-matsubara-green-s-functions">
+<h2>Bare Matsubara Green’s functions<a class="headerlink" href="#bare-matsubara-green-s-functions" title="Permalink to this headline">¶</a></h2>
+<p>To gain some experience, and also in anticipation of a perturbation theory, let us evaluate the Matsubara Green’s functions for non-interacting fermions and bosons.</p>
+<p>First, consider the free fermion Hamiltonian (from last lecture)</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_0=\sum_k{\varepsilon _k\hat{c}_{k}^{\dagger}\hat{c}_k}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} \Rightarrow \begin{cases}
+   \hat{c}_k\left( \tau \right) =e^{-\varepsilon _k\tau}\hat{c}_k\left( 0 \right)\\
+   \hat{c}_{k}^{\dagger}\left( \tau \right) =e^{\varepsilon _k\tau}\hat{c}_{k}^{\dagger}\left( 0 \right)\\
+\end{cases}\end{split}\]</div>
+<p>Here, for simplicity we absorb the chemical potential (which affects the Fermi wave vector) into the definition of <span class="math notranslate nohighlight">\(\varepsilon_k\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Rightarrow \mathcal{G} _0\left( k,\tau \right) &amp;=-\left&lt; \mathcal{T} \left[ \hat{c}_k\left( \tau \right) \hat{c}_{k}^{\dagger}\left( 0 \right) \right] \right&gt; \\
+    &amp;=-\Theta \left( \tau \right) e^{-\varepsilon _k\tau}\left&lt; \hat{c}_k\left( 0 \right) \hat{c}_{k}^{\dagger}\left( 0 \right) \right&gt; -\Theta \left( -\tau \right) e^{-\varepsilon _k\tau}\left&lt; \hat{c}_{k}^{\dagger}\left( 0 \right) \hat{c}_k\left( 0 \right) \right&gt; \\
+    &amp;=-e^{-\varepsilon _k\tau}\left[ \Theta \left( \tau \right) \left( 1-f\left( \varepsilon _k \right) \right) +\Theta \left( -\tau \right) f\left( \varepsilon _k \right) \right]
+\end{align*}
+\end{split}\]</div>
+<p>where (TODO, strange subscription below)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    f\left( \varepsilon _k \right) &amp;=\left&lt; \hat{c}_{k}^{\dagger}\hat{c}_k \right&gt; \\
+    &amp;=\frac{\mathrm{Tr}\left[ \hat{n}_ke^{-\beta \sum_s{\varepsilon _s\hat{n}_s}} \right]}{\mathrm{Tr}\left[ e^{-\beta \sum_s{\varepsilon _s\hat{n}_s}} \right]}\\
+    &amp;=\frac{0+e^{-\beta \varepsilon _k}}{1+e^{-\beta \varepsilon _k}}\\
+    &amp;=\frac{1}{e^{\beta \varepsilon _k}+1}
+\end{align*}
+\end{split}\]</div>
+<p>The discussion for bosons follows in the same way</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_0=\sum_k{\omega _k\hat{a}_{k}^{\dagger}\hat{a}_k}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{cases}
+   -\partial _{\tau}\hat{a}_k=\left[ \hat{a}_k,\hat{H}_0 \right] =\omega _k\hat{a}_k\\
+   -\partial _{\tau}\hat{a}_{k}^{\dagger}=\left[ \hat{a}_{k}^{\dagger},\hat{H}_0 \right] =-\omega _k\hat{a}_{k}^{\dagger}\\
+\end{cases}\Rightarrow \begin{cases}
+   \hat{a}_k\left( \tau \right) =e^{-\omega _k\tau}\hat{a}_k\left( 0 \right)\\
+   \hat{a}_{k}^{\dagger}\left( \tau \right) =e^{\omega _k\tau}\hat{a}_{k}^{\dagger}\left( 0 \right)\\
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \mathcal{G} '\left( k,\tau \right) &amp;=-\left&lt; \mathcal{T} \left[ \hat{a}_k\left( \tau \right) \hat{a}_{k}^{\dagger}\left( 0 \right) \right] \right&gt; \\
+    &amp;=-e^{-\omega \tau}\left[ \Theta \left( \tau \right) \left&lt; \hat{a}_k\left( 0 \right) \hat{a}_{k}^{\dagger}\left( 0 \right) \right&gt; +\Theta \left( -\tau \right) \left&lt; \hat{a}_{k}^{\dagger}\left( 0 \right) \hat{a}_k\left( 0 \right) \right&gt; \right] \\
+    &amp;=-e^{-\omega \tau}\left[ \Theta \left( \tau \right) \left( 1+n\left( \omega _k \right) \right) +\Theta \left( -\tau \right) n\left( \omega _k \right) \right]
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    n\left( \omega _k \right) &amp;=\frac{\mathrm{Tr}\left[ \hat{a}_{k}^{\dagger}\hat{a}_ke^{-\beta \hat{H}_0} \right]}{\mathrm{Tr}\left[ e^{-\beta \hat{H}_0} \right]}\\
+    &amp;=\frac{\sum_{s=0}{se^{-\beta \omega _ks}}}{\sum_{s=0}{e^{-\beta \omega _ks}}}\\
+    &amp;=\frac{1}{e^{\beta \omega _k}-1}
+\end{align*}
+\end{split}\]</div>
+<p>For bosons, however, it is also typical to consider the Green’s functions associated with</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\phi}_k=\frac{1}{\sqrt{2m\omega _k}}\left( \hat{a}_k+\hat{a}_{-k}^{\dagger} \right) \]</div>
+<p>(e.g., for phonons this corresponds to the Fourier transform of the atomic position)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \mathscr{D} \left( k,\tau \right) &amp;=-\left&lt; \mathcal{T} \left[ \hat{\phi}_k\left( \tau \right) \hat{\phi}_{-k}\left( 0 \right) \right] \right&gt; \\
+    &amp;=\frac{-1}{2m\omega _k}\left\{ \Theta \left( \tau \right) \left&lt; \left( e^{-\omega _k\tau}\hat{a}_k+e^{\omega _k\tau}\hat{a}_{-k}^{\dagger} \right) \left( \hat{a}_{-k}+\hat{a}_{k}^{\dagger} \right) \right&gt; \right. \\
+    &amp;\quad +\left. \Theta \left( -\tau \right) \left&lt; \left( \hat{a}_{-k}+\hat{a}_{k}^{\dagger} \right) \left( e^{-\omega _k\tau}\hat{a}_k+e^{\omega _k\tau}\hat{a}_{-k}^{\dagger} \right) \right&gt; \right\} \\
+    &amp;=\frac{-1}{2m\omega _k}\left[ \Theta \left( \tau \right) \left( e^{-\omega _k\tau}\left( 1+n\left( \omega _k \right) \right) +e^{\omega _k\tau}n\left( \omega _k \right) \right) +\left( \tau \leftrightarrow -\tau \right) \right]
+\end{align*}
+\end{split}\]</div>
+<p>For both fermions and bosons, we see that the thermal occupation numbers <span class="math notranslate nohighlight">\(f(\varepsilon) \&amp; n(\omega)\)</span> appear, as expected. Since we will eventually think about complex frequencies when we Fourier transform the Matsubara Green’s functions, it will be interesting to consider <span class="math notranslate nohighlight">\(f(\varepsilon)\&amp; n(\omega)\)</span> as a complex function of the single-particle energies.</p>
+<p>For instance, consider</p>
+<p><img alt="lec22-fig00" src="_images/lec22-fig00.png" /></p>
+<p>While it is a positive and non-singular over real <span class="math notranslate nohighlight">\(\varepsilon\)</span>, it can develop more interesting features when understood as a complex function. In particular, we can ask where the poles are</p>
+<div class="math notranslate nohighlight">
+\[ f\left( \varepsilon \right) =\frac{1}{e^{\beta \varepsilon}+1}\]</div>
+<p>A pole at <span class="math notranslate nohighlight">\(\varepsilon^*\)</span> if</p>
+<div class="math notranslate nohighlight">
+\[ e^{\beta \varepsilon ^*}+1=0\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \varepsilon ^*=i\left( 2n+1 \right) \pi /\beta ,\quad n\in \mathbb{Z} \]</div>
+<p>Similarly, for bosons we have</p>
+<div class="math notranslate nohighlight">
+\[ n\left( \omega \right) =\frac{1}{e^{\beta \omega}-1}\]</div>
+<p>A pole at <span class="math notranslate nohighlight">\(\omega^*\)</span> if</p>
+<div class="math notranslate nohighlight">
+\[ e^{\beta \omega ^*}-1=0\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \omega ^*=i2\pi n/\beta ,\quad n\in \mathbb{Z} \]</div>
+<p>We make one curious observation here: the thermal occupation function for fermions and bosons are highly similar, and they both have an evenly spaced series of poles, it’s just that the fermion ones are shifted by <span class="math notranslate nohighlight">\(\pi/\beta\)</span>. If we let <span class="math notranslate nohighlight">\(\omega_\beta=\pi/\beta\)</span>, then we can conclude the “boson frequencies” are even multiples of <span class="math notranslate nohighlight">\(\omega_\beta\)</span>, whereas the “fermion frequencies” are odd multiples.</p>
+</div>
+<div class="section" id="euclidean-time-is-a-loop">
+<h2>Euclidean time is a loop<a class="headerlink" href="#euclidean-time-is-a-loop" title="Permalink to this headline">¶</a></h2>
+<p>At long last, let’s explore the consequences of the third required modification mentioned in the last lecture, namely, that the temporal direction is now finite.</p>
+<p>Let us make two observations before doing the math:</p>
+<ol class="simple">
+<li><p>While the Euclidean time is restricted to <span class="math notranslate nohighlight">\(\tau\in\left[0,\beta\right]\)</span>, in discussing the Green’s function we allow for <span class="math notranslate nohighlight">\(\tau&lt;0\)</span> under the time-ordering operator. This implies the Green’s function is now defined over the interval <span class="math notranslate nohighlight">\(\tau \in \left[-\beta,\beta\right]\)</span>, but at the same time, the negative part is not independent of the positive one (the two related by a switch of operator ordering)</p></li>
+<li><p>(Recap of discrete Fourier) Given a function defined over a finite interval, we can always choose to repeat it to obtain a periodic function defined over the full range. This extended function has, by definition, a period of <span class="math notranslate nohighlight">\(2\beta\)</span>. Correspondingly, its Fourier series only contains frequencies at integer multiple of the fundamental frequency <span class="math notranslate nohighlight">\(\omega_\beta=\frac{2\pi}{2\beta}=\frac{\pi}{\beta}\)</span></p></li>
+</ol>
+<p><img alt="lec22-fig01" src="_images/lec22-fig01.png" /></p>
+<p>In other words, the Fourier transform of the Matsubara Green’s functions could only contain frequencies which are at integer multiples of <span class="math notranslate nohighlight">\(\omega_\beta\)</span>. Furthermore, we have seen a hint from the thermal occupation numbers that bosons and fermions respectively correspond to the even and odd multiples. This is related to observation (1) above, as we now show.</p>
+<p>For this purpose, let us consider a somewhat general setup of some (interacting) Hamiltonian <span class="math notranslate nohighlight">\(\hat{H}\)</span>. We consider a pair of operators <span class="math notranslate nohighlight">\(\hat{A}\&amp;\hat{B}\)</span> such that the corresponding Matsubara Green’s function reads</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \mathcal{G} _{AB}\left( \tau \right) &amp;=-\left&lt; \mathcal{T} \left[ \hat{A}\left( \tau \right) \hat{B}\left( 0 \right) \right] \right&gt; \\
+    &amp;=-\Theta \left( \tau \right) \left&lt; \hat{A}\left( \tau \right) \hat{B}\left( 0 \right) \right&gt; -\zeta _{A,B}\Theta \left( -\tau \right) \left&lt; \hat{B}\left( 0 \right) \hat{A}\left( \tau \right) \right&gt;
+\end{align*}
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\zeta_{A,B}=\pm 1\)</span> encodes whether the two operators are mutually bosonic or fermionic</p>
+<p>By observation (1) above, it should suffice to consider only half of the interval and recover the other. Let us focus on</p>
+<div class="math notranslate nohighlight">
+\[ \tau \in \left[ -\beta ,0 \right] \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \mathcal{G} _{AB}\left( \tau \right) &amp;\stackrel{\tau &lt;0}{=}-\zeta _{A,B}\left&lt; \hat{B}\left( 0 \right) \hat{A}\left( \tau \right) \right&gt; \\
+    &amp;=-\zeta _{A,B}\mathrm{Tr}\left[ e^{-\beta \left( \hat{H}-F \right)}\hat{B}\left( 0 \right) e^{\tau \hat{H}}\hat{A}\left( 0 \right) e^{-\tau \hat{H}} \right] \\
+    &amp;\Downarrow \text{cyclic}\; \text{trace}\\
+    &amp;=-\zeta _{A,B}e^{\beta F}\mathrm{Tr}\left[ e^{\tau \hat{H}}\hat{A}\left( 0 \right) {\color[RGB]{0, 0, 240} e^{-\tau \hat{H}}e^{-\beta \hat{H}}}\hat{B}\left( 0 \right) \right] \\
+    &amp;=-\zeta _{A,B}e^{\beta F}\mathrm{Tr}\left[ e^{-\beta \hat{H}}\left( e^{\left( \tau +\beta \right) \hat{H}}\hat{A}\left( 0 \right) {\color[RGB]{0, 0, 240} e^{-\left( \tau +\beta \right) \hat{H}}} \right) \hat{B}\left( 0 \right) \right] \\
+    &amp;=-\zeta _{A,B}\left&lt; \hat{A}\left( {\color{red} \tau +\beta } \right) \hat{B}\left( 0 \right) \right&gt;
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ {\color{red} \left( \tau +\beta \right) \in \left[ 0,\beta \right] }\]</div>
+<p>This, indeed, recovers the Green’s function in the segment <span class="math notranslate nohighlight">\(\tau \in \left[ 0,\beta \right]\)</span>, but with a possible “twist” <span class="math notranslate nohighlight">\(\zeta_{A,B}\)</span>. As such, we conclude</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{G} _{AB}\left( \tau +\beta \right) =\zeta _{A,B}\mathcal{G} _{AB}\left( \tau \right) \]</div>
+<p>In particular, we could check that</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{G} _{AB}\left( \tau +2\beta \right) =\zeta _{A,B}\mathcal{G} _{AB}\left( \tau +\beta \right) =\zeta _{A,B}^{2}\mathcal{G} _{AB}\left( \tau \right) =\mathcal{G} _{AB}\left( \tau \right) \]</div>
+<p>So, indeed, this defines an extended function over <span class="math notranslate nohighlight">\(\tau\in\mathbb{R}\)</span> which is periodic in <span class="math notranslate nohighlight">\(2\beta\)</span>. Yet, it is perhaps more natural (and popular) to think of the Matsubara Green’s function as one with “period” <span class="math notranslate nohighlight">\(\beta\)</span>, but subjected to</p>
+<ol class="simple">
+<li><p>periodic boundary condition <span class="math notranslate nohighlight">\(\mathcal{G}_{AB}\left( \tau +\beta \right) =\mathcal{G}_{AB}\left( \tau \right)\)</span> for bosonic operators with <span class="math notranslate nohighlight">\(\zeta _{A,B}=1\)</span></p></li>
+<li><p>anti-periodic boundary condition <span class="math notranslate nohighlight">\(\mathcal{G}_{AB}\left( \tau +\beta \right) =-\mathcal{G}_{AB}\left( \tau \right)\)</span> for fermionic operators with <span class="math notranslate nohighlight">\(\zeta _{A,B}=-1\)</span></p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec21.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec21</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
