@@ -1,0 +1,705 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec24 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec23" href="lec23.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec15.html">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec16.html">
+   lec16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec17.html">
+   lec17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec18.html">
+   lec18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec19.html">
+   lec19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec20.html">
+   lec20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec21.html">
+   lec21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec22.html">
+   lec22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec23.html">
+   lec23
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec24.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec24.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contour-integral-for-frequency-summation">
+   Contour integral for frequency summation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evaluating-the-electron-self-energy">
+   Evaluating the electron self-energy
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec24</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contour-integral-for-frequency-summation">
+   Contour integral for frequency summation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evaluating-the-electron-self-energy">
+   Evaluating the electron self-energy
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec24">
+<h1>lec24<a class="headerlink" href="#lec24" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220504</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Contour integral for Matsubara frequency summation</p></li>
+<li><p>Phonon effects on electron self-energy</p></li>
+<li><p>Recovering the zero-temperature limit and Fermi-liquid</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Learning how to evaluate diagrams in the Matsubara formalism</p></li>
+<li><p>Providing a microscopic model for Fermi liquid behavior</p></li>
+</ol>
+<div class="section" id="contour-integral-for-frequency-summation">
+<h2>Contour integral for frequency summation<a class="headerlink" href="#contour-integral-for-frequency-summation" title="Permalink to this headline">¶</a></h2>
+<p>Generally speaking, finding the closed form solution of an infinite sum is quite challenging. But in our context, such closed forms are especially desirable since we will oftentimes be interested in analytically continuing the results to find, e.g., the retarded Green’s functions (c.f. PS6)</p>
+<p>Thankfully, there’s a smart trick for evaluating such infinite series: If the summands could be understood as the residues of a meromorphic function, then we could “reverse” the residue theorem and recast the sum into a contour integral! Importantly, the contours integral might be much easier to evaluate when deformed, which them allows us to evaluate the series.</p>
+<p>Now, in our context, we need to pose the following question: which function has poles at exactly the Matsubara frequencies.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{cases}
+   i\omega _n=i\left( 2n+1 \right) \pi /\beta ,\quad \mathrm{fermionic}\\
+   i\nu _n=i2n\pi /\beta ,\quad \mathrm{bosonic}\\
+\end{cases}\end{split}\]</div>
+<p>If you still remember how we introduced these frequencies in the first place, you might recall the answer: these are exactly the poles for the respective thermal distribution functions! In other words, we expect (taking the bosonic case for instance)</p>
+<div class="math notranslate nohighlight">
+\[n\left( \omega \right) =\frac{1}{e^{\beta \omega}-1}=c+\sum_{n=-\infty}^{\infty}{\frac{r_n}{\omega -i\nu _n}}\]</div>
+<p>First, we can determine the residues <span class="math notranslate nohighlight">\(r_n\)</span> by letting <span class="math notranslate nohighlight">\(\omega =i\nu_n+\delta\)</span> with <span class="math notranslate nohighlight">\(|\delta|\to 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow n\left( i\nu _n+\delta \right) =\frac{1}{e^{i\beta \nu _n}e^{\beta \delta}-1}=\frac{1}{e^{\beta \delta}-1}=\frac{1}{\beta \delta +O\left( \delta ^2 \right)}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow r_n=\frac{1}{\beta}\]</div>
+<p>Now suppose we have some function <span class="math notranslate nohighlight">\(F(\zeta)\)</span> which can have some simple poles but is analytic along the entire imaginary axis (this is stronger than needed; imposed for simplicity here). We now consider the contour integral</p>
+<p><img alt="lec24-fig00" src="_images/lec24-fig00.png" /></p>
+<div class="math notranslate nohighlight">
+\[ \int_C{\frac{d\zeta}{2\pi i}F\left( \zeta \right) n\left( \zeta \right)}=\frac{1}{\beta}\sum_n{F\left( i\nu _n \right)}\]</div>
+<p>Now further assuming that the function <span class="math notranslate nohighlight">\(F(\zeta)n(\zeta)\)</span> decays faster than <span class="math notranslate nohighlight">\(\frac{1}{|\zeta|}\)</span> as <span class="math notranslate nohighlight">\(|\zeta|\to \infty\)</span>, we use the usual trick of “adding arcs at infinity” to close the contours</p>
+<p><img alt="lec24-fig01" src="_images/lec24-fig01.png" /></p>
+<div class="math notranslate nohighlight">
+\[ \int_C{\frac{d\zeta}{2\pi i}F\left( \zeta \right) n\left( \zeta \right)}=-\sum_{i\in \mathrm{poles}\left( F \right)}{\mathrm{Res}\left[ F\left( \zeta \right) n\left( \zeta \right) \right]}\]</div>
+<p>In other words, we can trade the infinite sum over the Matsubara frequencies with a sum over the (typically only a) handful of poles of <span class="math notranslate nohighlight">\(F(\zeta)\)</span>!</p>
+<p>Note that, in the above, we argued the technique only for the case of summing bosonic frequencies for a function <span class="math notranslate nohighlight">\(F(\zeta)\)</span> with simple poles. THe generalization to the fermionic case is anticipated simply through replacing <span class="math notranslate nohighlight">\(n(\omega)\to f(\varepsilon)\)</span>. (In that case, though, note that there will be a change of sign in the pole strengths.) However, for more general <span class="math notranslate nohighlight">\(F(\zeta)\)</span>, one has to also handle potential branch cuts. These are discussed, e.g., in Coleman 8.3 (also Bruus-Flensberg if you want more details)</p>
+</div>
+<div class="section" id="evaluating-the-electron-self-energy">
+<h2>Evaluating the electron self-energy<a class="headerlink" href="#evaluating-the-electron-self-energy" title="Permalink to this headline">¶</a></h2>
+<p>With such preparation, we may now go back to evaluating the electron self-energy</p>
+<p><img alt="lec24-fig02" src="_images/lec24-fig02.png" /></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;=\frac{1}{\beta}\sum_{qn}{-g_{q}^{2}\frac{2\omega _q}{\left( i\nu _n \right) ^2-\omega _{q}^{2}}\frac{1}{i\left( \omega _n-\nu _n \right) -\varepsilon _{k-q}}}\\
+    &amp;=-\sum_{q}{g_{q}^{2}\frac{1}{\beta}\sum_n{F\left( i\nu _n \right)}}
+\end{align*}
+\end{split}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[F\left( \zeta \right) =\frac{2\omega _q}{\zeta ^2-\omega _{q}^{2}}\frac{1}{i\omega _n-\varepsilon _{k-q}-\zeta}\]</div>
+<p>which has poles at</p>
+<div class="math notranslate nohighlight">
+\[\zeta ^*=\omega _q,-\omega _q,i\omega _n-\varepsilon _{k-q}\]</div>
+<p>To find out the residues it will be convenient to massage it slightly further</p>
+<div class="math notranslate nohighlight">
+\[ F\left( \zeta \right) =\left( \frac{1}{\zeta +\omega _q}-\frac{1}{\zeta -\omega _q} \right) \frac{1}{\zeta -\left( i\omega _n-\varepsilon _{k-q} \right)}\]</div>
+<p>and so we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Sigma \left( k,i\omega _n \right) &amp;\approx =-\sum_q{g_{q}^{2}\frac{1}{\beta}\sum_n{F\left( i\nu _n \right)}}\\
+    &amp;=\sum_q{g_{q}^{2}\sum_i{\mathrm{Res}\left[ F\left( \zeta \right) n\left( \zeta \right) \right]}}\\
+    &amp;=\sum_q{g_{q}^{2}\left( \frac{-n\left( -\omega _q \right)}{\omega _q+i\omega _n-\varepsilon _{k-q}}+\frac{-n\left( \omega _q \right)}{\omega _q-i\omega _n+\varepsilon _{k-q}} \right.}\\
+    &amp;\quad \left. +n\left( i\omega _n-\varepsilon _{k-q} \right) \left( \frac{1}{i\omega _n+\omega _q-\varepsilon _{k-q}}-\frac{1}{i\omega _n-\omega _q-\varepsilon _{k-q}} \right) \right) \\
+    &amp;=\sum_q{g_{q}^{2}\left( \frac{-n\left( -\omega _q \right) +n\left( i\omega _n-\varepsilon _{k-q} \right)}{i\omega _n+\omega _q-\varepsilon _{k-q}}+\frac{n\left( \omega _q \right) -n\left( i\omega _n-\varepsilon _{k-q} \right)}{i\omega _n-\omega _q-\varepsilon _{k-q}} \right)}
+\end{align*}
+\end{split}\]</div>
+<p>the appearance of the fermionic frequencies <span class="math notranslate nohighlight">\(i\omega_n\)</span> inside the bosonic <span class="math notranslate nohighlight">\(n(\omega)\)</span> is a bit peculiar. Indeed, we can verify</p>
+<div class="math notranslate nohighlight">
+\[ n\left( i\omega _n-\varepsilon _{k-q} \right) =\frac{1}{e^{i\omega _n\beta}e^{-\beta \varepsilon _{k-q}}-1}=\frac{-1}{e^{-\beta \varepsilon _{k-q}}+1}=f\left( \varepsilon _{k-1} \right) -1\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \Sigma \left( k,i\omega _n \right) =\sum_q{g_{q}^{2}\left( \frac{n\left( \omega _q \right) +f\left( \varepsilon _{k-q} \right)}{i\omega _n-\left( \varepsilon _{k-q}-\omega _q \right)}+\frac{n\left( \omega _q \right) +1-f\left( \varepsilon _{k-q} \right)}{i\omega _n-\left( \omega _q+\varepsilon _{k-q} \right)} \right)}\]</div>
+<p>While this expression could be readily evaluated numerically, it would be helpful to analyze it slightly further within some approximations and limits. We will use the “density of states” trick, which convert (e.g.) momentum integrals into energy ones. To this end, we first notice that it suffices to focus on the effect of e-ph coupling near the Fermi surface: for electrons deep inside (far outside) the Fermi surface, i.e., with energy <span class="math notranslate nohighlight">\(\varepsilon\gg \omega_D\)</span>, the Debye frequency setting the energy scale of the phonons, we do not expect them to be affected by the e-ph coupling. Now, we observe that the only momentum dependence of <span class="math notranslate nohighlight">\(\Sigma\)</span> comes from its dependence on <span class="math notranslate nohighlight">\(\varepsilon_{k-q}\)</span>. By definition, <span class="math notranslate nohighlight">\(\varepsilon_{k-q}\approx 0\)</span> near the Fermi surface. In other words, to good approximation we can drop the momentum dependence</p>
+<div class="math notranslate nohighlight">
+\[\Sigma \left( k,\zeta \right) \approx \Sigma \left( \zeta \right) \]</div>
+<p>where we have also replace the Matsubara frequency <span class="math notranslate nohighlight">\(i\omega_n\)</span> by a more general complex variable <span class="math notranslate nohighlight">\(\zeta\)</span>.</p>
+<p>More concretely, this can be achieved by explicitly averaging over the Fermi surface:</p>
+<div class="math notranslate nohighlight">
+\[ \Sigma \left( \zeta \right) =\frac{\int{dS\Sigma \left( k_F\hat{k},\zeta \right)}}{\int{dS}}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[ \int{dS}=\int_0^{\pi}{k_{F}^{2}\sin \theta d\theta \int_0^{2\pi}{d\phi}}\]</div>
+<p>for a spherical Fermi surface. Next, we trade the sum over the (internal) integral by an energy integral. Rewrite</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Sigma \left( k,\zeta \right) &amp;=\sum_q{g_{q}^{2}\left( \frac{n\left( \omega _q \right) +f\left( \varepsilon _{k-q} \right)}{\zeta -\left( \varepsilon _{k-q}-\omega _q \right)}+\frac{n\left( \omega _q \right) +1-f\left( \varepsilon _{k-q} \right)}{\zeta -\left( \omega _q+\varepsilon _{k-q} \right)} \right)}\\
+    &amp;=\sum_{k'}{g_{k-k'}^{2}\left( \frac{n_{k-k'}+f_{k'}}{\zeta -\left( \varepsilon _{k'}-\omega _{k-k'} \right)}+\frac{n_{k-k'}+1-f_{k'}}{\zeta -\left( \varepsilon _{k'}+\omega _{k-k'} \right)} \right)}
+\end{align*}
+\end{split}\]</div>
+<p>and the sum over <span class="math notranslate nohighlight">\(k\prime\)</span> may be approximated by</p>
+<div class="math notranslate nohighlight">
+\[ \sum_{k'}{}\sim \int{dS'dk_{\bot}^{'}}=\int{dS'\frac{1}{\left| d\varepsilon _{k'}/dk' \right|}d\varepsilon _{k'}}\approx \int{\frac{dS'd\varepsilon _{k'}}{V_F\left( S' \right)}}\]</div>
+<p>where in the last step we essentially linearized the bare electronic dispersion around the Fermi surface. This allows us to trade the momentum integral with a Fermi surface integral, together with one over the electronic energy. Lastly, we may also trade phonon dispersion with an integral over some dummy frequency together with a delta-function</p>
+<div class="math notranslate nohighlight">
+\[ h\left( \omega _q \right) =\int_0^{\infty}{d\nu h\left( \nu \right) \delta \left( \nu -\omega _q \right)}\]</div>
+<p>Altogether, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Sigma \left( \zeta \right) &amp;=\int_{-\infty}^{\infty}{d\varepsilon '\int_0^{\infty}{d\nu \frac{1}{\int{dS}}\int{\frac{dSdS'}{V_F\left( S' \right)}g_{k-k'}^{2}\delta \left( \nu -\omega _{k-k'} \right)}}}\\
+    &amp;\quad \times \left( \frac{n\left( \nu \right) +f\left( \varepsilon ' \right)}{\zeta -\left( \varepsilon '-\nu \right)}+\frac{n\left( \nu \right) +1-f\left( \varepsilon ' \right)}{\zeta -\left( \nu +\varepsilon ' \right)} \right) \\
+\end{align*}
+\end{split}\]</div>
+<p>It is customary to denote the Fermi surface integral by</p>
+<div class="math notranslate nohighlight">
+\[ \alpha ^2\left( \nu \right) F\left( \nu \right) =\frac{1}{\int{dS}}\int{\frac{dSdS'}{V_F\left( S' \right)}g_{k-k'}^{2}\delta \left( \nu -\omega _{k-k'} \right)}\]</div>
+<p>which can be viewed as a Fermi surface average of the e-ph coupling weighted by the density of states. We then arrive at</p>
+<div class="math notranslate nohighlight">
+\[ \Sigma \left( \zeta \right) =\int_{-\infty}^{\infty}{d\varepsilon '\int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right) \left( \frac{n\left( \nu \right) +f\left( \varepsilon ' \right)}{\zeta -\left( \varepsilon '-\nu \right)}+\frac{n\left( \nu \right) +1-f\left( \varepsilon ' \right)}{\zeta -\left( \nu +\varepsilon ' \right)} \right)}}\]</div>
+<p>To probe the physical properties of the system, let us go to the retarded version by setting <span class="math notranslate nohighlight">\(\zeta \rightarrow \omega +i\delta\)</span> (c.f. PS6)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Sigma ^{\mathrm{ret}}\left( \omega \right) &amp;=\lim_{\delta \rightarrow 0^+} \Sigma \left( \omega +i\delta \right) \\
+    &amp;=P\int_{-\infty}^{\infty}{d\varepsilon '\int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right) \left( \frac{n\left( \nu \right) +f\left( \varepsilon ' \right)}{\omega -\left( \varepsilon '-\nu \right)}+\frac{n\left( \nu \right) +1-f\left( \varepsilon ' \right)}{\omega -\left( \nu +\varepsilon ' \right)} \right)}}\\
+    &amp;\quad -i\pi \int_{-\infty}^{\infty}{d\varepsilon '\int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right) \left[ \left( n\left( \nu \right) +f\left( \varepsilon ' \right) \right) \delta \left( \omega -\varepsilon '+\nu \right) \right.}}\\
+    &amp;\quad \quad \left. +\left( n\left( \nu \right) +1-f\left( \varepsilon ' \right) \right) \delta \left( \omega -\varepsilon '-\nu \right) \right]
+\end{align*}
+\end{split}\]</div>
+<p>Furthermore, consider the low-temperature limit in which</p>
+<div class="math notranslate nohighlight">
+\[ n\left( \nu \right) \rightarrow 0,\quad f\left( \varepsilon \right) =\Theta \left( -\varepsilon \right) \]</div>
+<p>We could evaluate the <span class="math notranslate nohighlight">\(\varepsilon'\)</span> integral and find</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Re \left[ \Sigma _{\tau =0}^{\mathrm{ret}}\left( \omega \right) \right] &amp;=P\int_{-\infty}^{\infty}{d\varepsilon '\int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right) \left( \frac{\Theta \left( -\varepsilon ' \right)}{\omega -\varepsilon '+\nu}+\frac{\Theta \left( \varepsilon ' \right)}{\omega -\nu -\varepsilon '} \right)}}\\
+    &amp;=\int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right) \lim_{R\rightarrow \infty} \left[ \int_{-R}^0{\frac{d\varepsilon '}{\omega -\varepsilon '+\nu}}+\int_0^R{\frac{d\varepsilon '}{\omega -\varepsilon '-\nu}} \right]}\\
+    &amp;=\int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right) \lim_{R\rightarrow \infty} \left[ \ln \left( \frac{\omega +R+\nu}{\omega +\nu} \right) +\ln \left( \frac{\omega -\nu}{\omega -\nu -R} \right) \right]}\\
+    &amp;=\int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right) \lim_{R\rightarrow \infty} \ln \left( \frac{R+\nu +\omega}{R+\nu -\omega}\frac{\nu -\omega}{\nu +\omega} \right)}\\
+    &amp;=\int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right) \ln \left( \frac{\nu -\omega}{\nu +\omega} \right)}
+\end{align*}
+\end{split}\]</div>
+<p>In the low-frequency limit, we might expand</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Re \left[ \Sigma _{\tau =0}^{\mathrm{ret}}\left( \omega \right) \right] &amp;\approx \int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right) \left( -\frac{2\omega}{\nu}+\cdot s \right)}\\
+    &amp;=-2\left[ \int_0^{\infty}{d\nu \frac{\alpha ^2\left( \nu \right) F\left( \nu \right)}{\nu}} \right] \omega \\
+    &amp;=-\lambda \omega
+\end{align*}
+\end{split}\]</div>
+<p>As we will soon see, such frequency dependence ultimately translates into a reduction of the quasi-particle weight.</p>
+<p>The meaning of the parameter <span class="math notranslate nohighlight">\(\lambda\)</span> will become clearer if we recast it back into the full form</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \lambda &amp;=2\int_0^{\infty}{d\nu \frac{1}{\int{dS}}\int{\frac{dSdS'}{V_F\left( S' \right)}\delta \left( \nu -\omega _{k-k'} \right) \frac{g_{k-k'}^{2}}{\nu}}}\\
+    &amp;=\frac{2}{\int{dS}}\int{\frac{dSdS'}{V_F\left( S' \right)}\frac{g_{k-k'}^{2}}{\omega _{k-k'}}}\\
+    &amp;&gt;0
+\end{align*}
+\end{split}\]</div>
+<p>This combination may look familiar: back in the impurity-phonon problem, we found that the energy correction to the impurity takes the form <span class="math notranslate nohighlight">\(\sim \sum_q{M_{iq}^{2}/\omega_q}\)</span>, where <span class="math notranslate nohighlight">\(M_{iq}\)</span> is e-ph coupling parameter there. Here, what we have is essentially a Fermi-surface averaging of the coupling!</p>
+<p>Next, let us look into the imaginary part</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Im \left[ \Sigma _{\tau =0}^{\mathrm{ret}}\left( \omega \right) \right] &amp;=-\pi \int_{-\infty}^{\infty}{d\varepsilon '\int_0^{\infty}{d\nu \alpha ^2\left( \nu \right) F\left( \nu \right)}}\\
+    &amp;\quad \times \left[ \Theta \left( -\varepsilon ' \right) \delta \left( \omega -\varepsilon '+\nu \right) +\Theta \left( \varepsilon ' \right) \delta \left( \omega -\varepsilon '-\nu \right) \right] \\
+    &amp;=-\pi \int_{-\infty}^{\infty}{d\varepsilon '\left[ \Theta \left( -\varepsilon ' \right) \Theta \left( \varepsilon '-\omega \right) \alpha ^2\left( \varepsilon '-\omega \right) F\left( \varepsilon '-\omega \right) \right.}\\
+    &amp;\quad \left. +\Theta \left( \varepsilon ' \right) \Theta \left( \omega -\varepsilon ' \right) \alpha ^2\left( \omega -\varepsilon ' \right) F\left( \omega -\varepsilon ' \right) \right] \\
+    &amp;=-\pi \left[ \int_{\min \left( 0,\omega \right)}^0{d\varepsilon '\alpha ^2\left( \varepsilon '-\omega \right) F\left( \varepsilon '-\omega \right)}+\int_0^{\max \left( 0,\omega \right)}{d\varepsilon '\alpha ^2\left( \omega -\varepsilon ' \right) F\left( \omega -\varepsilon ' \right)} \right]
+\end{align*}
+\end{split}\]</div>
+<p>Notice the interesting feature that <span class="math notranslate nohighlight">\(\Im \left[ \Sigma _{\tau =0}^{\mathrm{ret}}\left( \omega \rightarrow 0 \right) \right] \rightarrow 0\)</span>! We may now tie all these discussions together by looking at the electron spectral function, which is given by the imaginary part of the retarded propagator:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    A\left( k,\omega \right) &amp;=\frac{-1}{\pi}\Im \left[ G^{\mathrm{ret}}\left( k,\omega \right) \right] \\
+    &amp;=\frac{-1}{\pi}\lim_{\delta \rightarrow 0^+} \Im \left[ G\left( k,\omega +i\delta \right) \right] \\
+    &amp;=\frac{-1}{\pi}\lim_{\delta \rightarrow 0^+} \Im \left[ \frac{1}{\mathcal{G} _{0}^{-1}\left( k,\omega +i\delta \right) -\Sigma \left( \omega +i\delta \right)} \right] \\
+    &amp;=\frac{-1}{\pi}\lim_{\delta \rightarrow 0^+} \Im \left[ \frac{1}{\omega +i\delta -\varepsilon _k-\Re \left[ \Sigma ^{\mathrm{ret}}\left( \omega \right) \right] -i\Im \left[ \left[ \Sigma ^{\mathrm{ret}}\left( \omega \right) \right] \right]} \right] \\
+    &amp;\Downarrow \omega \sim 0\\
+    &amp;\approx A_{\mathrm{coh}}\left( k,\omega \right) +\cdots
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ A_{\mathrm{coh}}\left( k,\omega \right) =\frac{-1}{\pi}\lim_{\delta \rightarrow 0^+} \Im \left[ \frac{1}{\omega -\varepsilon _k+\lambda \omega +i\delta -i\Im \left[ \left[ \Sigma ^{\mathrm{ret}}\left( \omega \right) \right] \right]} \right] \]</div>
+<p>where we have given a name to the leading piece (will be clearer later). Let’s further clean it up by defining</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{Z} =\frac{1}{1+\lambda}\]</div>
+<div class="math notranslate nohighlight">
+\[ \varepsilon _{k}^{*}=\frac{\varepsilon _k}{1+\lambda}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Gamma _{\omega}^{*}=-\frac{2\Im \left[ \Sigma ^{\mathrm{ret}}\left( \omega \right) \right]}{1+\lambda}\ge 0\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Rightarrow A_{\mathrm{coh}}\stackrel{\omega\sim 0}{\approx}\frac{-1}{\pi}\lim_{\delta \rightarrow 0^+} \Im \left[ \frac{\mathcal{Z}}{\omega -\varepsilon _{k}^{*}+i\Gamma _{\omega}^{*}/2+i\delta} \right] \\
+    &amp;=\begin{cases}
+        \frac{1}{2\pi}\frac{\mathcal{Z} \Gamma _{\omega}^{*}}{\left( \omega -\varepsilon_{k}^{*} \right) ^2+\left( \Gamma _{\omega}^{*} \right) ^2/4},\quad \mathrm{if}\; \Gamma _{\omega}^{*}&gt;0\\
+        \mathcal{Z} \delta \left( \omega -\varepsilon _{k}^{*} \right) ,\quad \mathrm{if}\; \Gamma _{\omega}^{*}=0\\
+    \end{cases}\\
+\end{align*}
+\end{split}\]</div>
+<p>The piece corresponding to <span class="math notranslate nohighlight">\(\Gamma_\omega^*&gt;0\)</span> is simply the Lorentzian, which is normalized as</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{2\pi}\int_{-\infty}^{\infty}{d\omega \frac{\Gamma _{\omega}^{*}}{\left( \omega -\varepsilon _{k}^{*} \right) ^2+\left( \Gamma _{\omega}^{*} \right) ^2/4}}=1\]</div>
+<p>and since it recovers the delta function in the limit <span class="math notranslate nohighlight">\(\Gamma _{\omega}^{*}\rightarrow 0^*\)</span>, we may combine the two pieces simply as</p>
+<div class="math notranslate nohighlight">
+\[ A_{\mathrm{coh}}=\frac{1}{2\pi}\frac{\mathcal{Z} \Gamma _{\omega}^{*}}{\left( \omega -\varepsilon _{k}^{*} \right) ^2+\left( \Gamma _{\omega}^{*} \right) ^2/4}\]</div>
+<p>We may now sketch it schematically</p>
+<p><img alt="lec24-fig03" src="_images/lec24-fig03.png" /></p>
+<p>If you still recall, this is exactly the Fermi-liquid behavior we mentioned!</p>
+<p>Note: but our zero-temperature calculation is a bit of a lie: in reality there’s a superconducting instability!</p>
+<p>To unpack the physics further, we note that:</p>
+<ol>
+<li><p>We lose the delta-function spectral function characteristic of the free-fermion problem in the present case, due to a generally finite particle decay rate, which can be represented schematically as
+<img alt="lec24-fig04" src="_images/lec24-fig04.png" />
+in other words, as the electron moves, it drags around it a cloud of phonons. Such dressing modifies the properties of the electron!</p></li>
+<li><p>Nevertheless, exactly on the Fermi surface we have no “room” to decay, and that recovers a sharp delta function. However, the quasi-particle weight <span class="math notranslate nohighlight">\(\mathcal{Z}=\frac{1}{1+\lambda}&lt;1\)</span> (with the rest of the spectral weight transferred to the “incoherent” background)</p></li>
+<li><p>The dressing also modifies the effective mass of the electrons as</p>
+<div class="math notranslate nohighlight">
+\[ \varepsilon _{k}^{*}=\frac{\varepsilon _k}{1+\lambda}=\frac{k^2}{2m^*}-\frac{\mu}{1+\lambda}\]</div>
+<div class="math notranslate nohighlight">
+\[ m^*=\left( 1+\lambda \right) m\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \frac{m^*}{m}=1+\lambda &gt;1\]</div>
+<p>i.e., the electrons become effectively more massive due to the dressing by phonons! A simple physical picture is that, within an energy windows of size <span class="math notranslate nohighlight">\(\omega_D\)</span> or so, the e-ph coupling renormalizes the electronic energy towards <span class="math notranslate nohighlight">\(0\)</span>. This leads to a smaller effective Fermi velocity, and bigger effective mass, and a bigger effective density of states.</p>
+</li>
+</ol>
+<p>For an illustration in a specific model, see, e.g. Coleman Example 8.7.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec23.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec23</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

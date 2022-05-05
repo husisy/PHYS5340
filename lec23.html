@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec23 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec22" href="lec22.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec15.html">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec16.html">
+   lec16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec17.html">
+   lec17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec18.html">
+   lec18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec19.html">
+   lec19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec20.html">
+   lec20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec21.html">
+   lec21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec22.html">
+   lec22
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec23.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec23.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#matsubara-green-s-functions-in-frequency-space">
+   Matsubara Green’s functions in frequency space
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electron-phonon-problem">
+   Electron-phonon problem
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electron-self-energy">
+   Electron self-energy
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec23</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#matsubara-green-s-functions-in-frequency-space">
+   Matsubara Green’s functions in frequency space
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electron-phonon-problem">
+   Electron-phonon problem
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electron-self-energy">
+   Electron self-energy
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec23">
+<h1>lec23<a class="headerlink" href="#lec23" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220429</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Matsubara Green’ functions in frequency space</p></li>
+<li><p>Electron-phonon problem</p></li>
+<li><p>Electron self-energy</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Understand the new features of the finite-T problem in frequency space</p></li>
+<li><p>Demonstrate the formalism in the electron-phonon problem</p></li>
+</ol>
+<div class="section" id="matsubara-green-s-functions-in-frequency-space">
+<h2>Matsubara Green’s functions in frequency space<a class="headerlink" href="#matsubara-green-s-functions-in-frequency-space" title="Permalink to this headline">¶</a></h2>
+<p>As usual, let us now Fourier transform to the frequency space. Since all data is contained within the interval <span class="math notranslate nohighlight">\(\tau \in \left[ 0,\beta \right]\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{G} _{AB}\left( i\omega _n \right) =\int_0^{\beta}{d\tau \mathcal{G} _{AB}\left( \tau \right) e^{i\omega _n\tau}}\]</div>
+<p>where the Matsubara frequencies for <span class="math notranslate nohighlight">\(n\in\mathbb{Z}\)</span> are</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \omega _n=\begin{cases}
+   2\pi n/\beta ,\quad \mathrm{bosonic}, \mathrm{periodic}\\
+   \left( 2n+1 \right) \pi /\beta ,\quad \mathrm{fermionic},\text{anti-periodic}\\
+\end{cases}\end{split}\]</div>
+<p>verify that, for the fermionic one, the phase factor satisfies</p>
+<div class="math notranslate nohighlight">
+\[ e^{i\omega _n\left( \tau +\beta \right)}=e^{i\omega _n\beta}e^{i\omega _{\tau}}=e^{i\left( 2n+1 \right) \pi}e^{i\omega _{\tau}}=-e^{i\omega _{\tau}}\]</div>
+<p>as desired.</p>
+<p>The inverse transform is now given by</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{G} _{AB}\left( \tau \right) =\frac{1}{\beta}\sum_n{\mathcal{G} _{AB}\left( i\omega _n \right) e^{-i\omega _n\tau}}\]</div>
+<p>As a quick demonstration, let us now apply the general discussions above to the bare Matsubara Green’s functions.</p>
+<p>Free fermions:</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{G} \left( k,\tau \right) =-e^{-i\varepsilon _k\tau}\left[ \Theta \left( \tau \right) \left( 1-f\left( \varepsilon _k \right) \right) +\Theta \left( -\tau \right) f\left( \varepsilon _k \right) \right] \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \mathcal{G} \left( k,i\omega _n \right) &amp;=\int_0^{\beta}{d\tau \mathcal{G} \left( k,\tau \right) e^{i\omega _n\tau}}\\
+    &amp;=-\int_0^{\beta}{d\tau e^{-i\varepsilon _k\tau}e^{i\omega _n\tau}\left( 1-f\left( \varepsilon _k \right) \right)}\\
+    &amp;=-\left( 1-\frac{1}{e^{\beta \varepsilon _k}+1} \right) \frac{e^{i\left( \omega _n-\varepsilon _k \right) \beta}-1}{i\omega _n-\varepsilon _k}\\
+    &amp;\Downarrow \quad e^{i\omega _n\beta}=-1\\
+    &amp;=\frac{-1}{e^{-\beta \varepsilon _k}+1}\frac{-\left( e^{-\beta \varepsilon _k}+1 \right)}{i\omega _n-\varepsilon _k}\\
+    &amp;=\frac{1}{i\omega _n-\varepsilon _k}
+\end{align*}
+\end{split}\]</div>
+<p>Free bosons</p>
+<div class="math notranslate nohighlight">
+\[ \mathscr{D} \left( k,\tau \right) =\frac{-1}{2m\omega _k}\left[ \Theta \left( \tau \right) \left( e^{-\omega _k\tau}\left( 1+n\left( \omega _k \right) \right) +e^{\omega _k\tau}n\left( \omega _k \right) \right) +\left( \tau \leftrightarrow -\tau \right) \right] \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \mathscr{D} \left( k,i\nu _n \right) &amp;=\frac{-1}{2m\omega _k}\int_0^{\beta}{d\tau e^{i\nu _n\tau}\left( e^{-\omega _k\tau}\left( 1+n\left( \omega _k \right) \right) +e^{\omega _k\tau}n\left( \omega _k \right) \right)}\\
+    &amp;=\frac{-1}{2m\omega _k}\left[ \left( 1+n\left( \omega _k \right) \right) \frac{e^{\left( i\nu _n-\omega _k \right) \beta}-1}{i\nu _n-\omega _k}+n\left( \omega _k \right) \frac{e^{\left( i\nu _n+\omega _k \right) \beta}-1}{i\nu _n+\omega _k} \right] \\
+    &amp;\Downarrow e^{i\nu _n\beta}=1\\
+    &amp;=\frac{-1}{2m\omega _k}\left[ \frac{e^{-\beta \omega _k}}{e^{\beta \omega _k}-1}\frac{e^{-\beta \omega _k}-1}{i\nu _n-\omega _k}+\frac{1}{e^{\beta \omega _k}-1}\frac{e^{\beta \omega _k}-1}{i\nu _n+\omega _k} \right] \\
+    &amp;=\frac{1}{2m\omega _k}\left[ \frac{1}{i\nu _n-\omega _k}-\frac{1}{i\nu _n+\omega _k} \right]
+\end{align*}
+\end{split}\]</div>
+<p>Notice how the expressions resemble the zero-temperature results we have derived! In fact, the zero-temperature limit can be recovered by simply “Wick rotation” back to real frequencies (and real time):</p>
+<div class="math notranslate nohighlight">
+\[ i\omega _n\rightarrow \omega \]</div>
+<div class="math notranslate nohighlight">
+\[ i\nu _n\rightarrow \omega \]</div>
+<p>In this sense, when defined on the complex plane there is only “one” propagator, although to differentiate, e.g., the retarded vs Feynman propagator, one needs to specify the frequency integral contour (typically through Feynman’s <span class="math notranslate nohighlight">\(i\varepsilon\)</span> prescription, i.e., for retarded Green’s function we Wick rotate by <span class="math notranslate nohighlight">\(i\omega_n\to \omega+i\delta\)</span> etc.)</p>
+<p>But where is the temperature? In the Matsubara formalism, it is encoded in the spacing between the allowed frequencies. In other words, it is encoded in the sum over frequencies.</p>
+<p>Having developed the basic formalism, let’s put it to use in a physical problem.</p>
+</div>
+<div class="section" id="electron-phonon-problem">
+<h2>Electron-phonon problem<a class="headerlink" href="#electron-phonon-problem" title="Permalink to this headline">¶</a></h2>
+<p>Recall the impurity-phonon problem we studied a couple of months ago, which served as our first nontrivial, but still exactly solved problem. After half a semester, let us “promote” our problem to a general quantum many-body problem, and see how we could attack it perturbative.</p>
+<p>Consider electrons and phonons described respectively by (here, we roughly follow the notations in Coleman)</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_e=\sum_{k\sigma}{\varepsilon _k\hat{c}_{k\sigma}^{\dagger}\hat{c}_{k\sigma}};\quad \varepsilon _k\sim \frac{k^2}{2m}-\mu \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_{\mathrm{ph}}=\sum_q{\omega _q\hat{a}_{q}^{\dagger}\hat{a}_q};\quad \omega _q\sim c\left| q \right|\]</div>
+<p>where for simplicity we have restricted our model to a single phonon mode, say the longitudinal acoustic mode. Let us now consider the possible form of the electron-phonon coupling. As fermion parity is conserved (or, one can say the Hamiltonian is always a bosonic operator) we have to start with a minimum of two fermion operators. In our problem, the electron number is conserved, so we consider some <span class="math notranslate nohighlight">\(\hat{c}_{k'\sigma '}^{\dagger}\hat{c}_{k\sigma}\)</span> to start with. Spin rotation invariance requires spin to be a spectator, “dummy” index, and so we have <span class="math notranslate nohighlight">\(\sum_{\sigma}{\hat{c}_{k'\sigma}^{\dagger}\hat{c}_{k\sigma}}\)</span>. In contrast, the phonon operators can enter “alone” into the Hamiltonian, and so the minimal coupling takes the form</p>
+<div class="math notranslate nohighlight">
+\[ g_{k'kq}\sum_{\sigma}{\hat{c}_{k'\sigma}^{\dagger}\hat{c}_{k\sigma}}\hat{a}_q+\mathrm{h}.\mathrm{c}.\]</div>
+<p>Under (discrete) translation, the momentum-space operators pick up phases</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{cases}
+   \hat{t}_R\hat{c}_{k\sigma}^{\dagger}\hat{t}_{R}^{-1}=e^{-ik\cdot R}\hat{c}_{k\sigma}^{\dagger}\\
+   \hat{t}_R\hat{a}_q\hat{t}_{R}^{-1}=e^{-iq\cdot R}\hat{a}_q\\
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \hat{t}_R\hat{c}_{k'\sigma}^{\dagger}\hat{c}_{k\sigma}\hat{a}_q\hat{t}_{R}^{-1}=e^{-i\left( k'-k-q \right) \cdot R}\hat{c}_{k'\sigma}^{\dagger}\hat{c}_{k\sigma}\hat{a}_q\]</div>
+<p>and so translation invariance fixes <span class="math notranslate nohighlight">\(k'=k+q\)</span></p>
+<p>We also assume time-reversal symmetry,</p>
+<div class="math notranslate nohighlight">
+\[\sum_{kq}{g_{kq}\hat{c}_{k+q}^{\dagger}\hat{c}_k\hat{a}_q}\xrightarrow{\mathrm{TR}}\sum_{kq}{g_{kq}^{*}\hat{c}_{\bar{k}+\bar{q}}^{\dagger}\hat{c}_{\bar{k}}\hat{a}_{\bar{q}}}\]</div>
+<div class="math notranslate nohighlight">
+\[ \bar{q}=-q\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow g_{\bar{k}\bar{q}}=g_{kq}^{*}\]</div>
+<p>Lastly, for simplicity let us assume <span class="math notranslate nohighlight">\(g_{kq}\)</span> is independent of <span class="math notranslate nohighlight">\(k\)</span>. This cannot be easily justified based on the “symmetry principles” we are using here, but can be motivated from a more microscopic treatment (similar to our earlier discussion in the impurity-phonon model; see e.g. Coleman 8.7 for details).</p>
+<p>These considerations / assumptions bring us down to</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{H}_{\text{e-ph}}&amp;=\sum_{kq}{g_q\sum_{\sigma}{\hat{c}_{k+q,\sigma}^{\dagger}\hat{c}_{k\sigma}\hat{a}_q}}+\mathrm{h}.\mathrm{c}.\\
+    &amp;=\sum_{kq}{\left( g_q\sum_{\sigma}{\hat{c}_{k+q,\sigma}^{\dagger}\hat{c}_{k\sigma}\hat{a}_q}+g_{q}^{*}\sum_{\sigma}{\hat{c}_{k\sigma}^{\dagger}\hat{c}_{k+q,\sigma}\hat{a}_{q}^{\dagger}} \right)}\\
+    &amp;=\sum_{kq}{g_q\sum_{\sigma}{\hat{c}_{k+q,\sigma}^{\dagger}\hat{c}_{k\sigma}\hat{a}_q}}+\sum_{kq}{g_{\bar{q}}^{*}\sum_{\sigma}{\hat{c}_{k\sigma}^{\dagger}\hat{c}_{k+\bar{q},\sigma}\hat{a}_{\bar{q}}^{\dagger}}}\\
+    &amp;=\sum_{kq}{g_q\sum_{\sigma}{\hat{c}_{k+q,\sigma}^{\dagger}\hat{c}_{k\sigma}\left( \hat{a}_q+\hat{a}_{\bar{q}}^{\dagger} \right)}}
+\end{align*}
+\end{split}\]</div>
+<p>The full Hamiltonian <span class="math notranslate nohighlight">\(\hat{H}=\hat{H}_e+\hat{H}_{\mathrm{ph}}+\hat{H}_{\text{e-ph}}\)</span> is slightly simplified version of what is known as the “Frohlich Hamiltonian”. This can be viewed as the solid analog of QED, in which the role of the EM gauge field is played by the phonons. Note that we ignore e-e interactions here.</p>
+<p>Unlike the impurity-phonon model, the current model is not (known to be) exactly solvable. To appreciate why, recall our solution to the impurity-phonon problem relied on the observation that the electron-number operators <span class="math notranslate nohighlight">\(\hat{n}_i\)</span> for each orbital commute with the Hamiltonian, i.e., <span class="math notranslate nohighlight">\(\left[ \hat{n}_i,\hat{H} \right] =0\)</span>. Such conservation of the occupation numbers, however, are not “protected” by any physical principles, and so was instead a special feature of the model we wrote down. Such conservation is absent in the present problem, and as such we can only solve the physical properties perturbatively.</p>
+<p>To be more concrete, we split the Hamiltonian into</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_0=\hat{H}_e+\hat{H}_{\mathrm{ph}}\]</div>
+<div class="math notranslate nohighlight">
+\[\hat{V}=\hat{H}_{\text{e-ph}}\]</div>
+<p>and the perturbation theory is obtained by going to the interaction picture with respect to <span class="math notranslate nohighlight">\(\hat{H}_0\)</span>. For instance, let us compute the Matsubara electron propagator. Suppressing the spin indices,</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{G} \left( k,i\omega _n \right) =\int_0^{\beta}{d\tau e^{i\omega _n\tau}\mathcal{G} \left( k,\tau \right)}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \mathcal{G} \left( k,\tau \right) &amp;=-\left&lt; \mathcal{T} \left[ \hat{c}_k\left( \tau \right) \hat{c}_{k}^{\dagger}\left( 0 \right) \right] \right&gt; \\
+    &amp;=\frac{-\left&lt; \mathcal{T} \left[ \hat{c}_{I,k}\left( \tau \right) \hat{c}_{I,k}^{\dagger}\left( 0 \right) \hat{S}\left( \beta ,0 \right) \right] \right&gt; _0}{\left&lt; \hat{S}\left( \beta ,0 \right) \right&gt; _0}
+\end{align*}
+\end{split}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[ \left&lt; \cdots \right&gt; _0=\frac{\mathrm{Tr}\left[ e^{-\beta \hat{H}_0}\cdots \right]}{\mathrm{Tr}\left[ e^{-\beta \hat{H}_0} \right]}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{S}\left( \beta ,0 \right) =\mathcal{T} \left[ e^{-\int_0^{\beta}{d\tau \hat{V}_I\left( \tau \right)}} \right] \]</div>
+<p>as we have mentioned repeatedly, the expression above is essentially identical with the Gell-Mann-Low formula, except for the Euclidean time (and factors of <span class="math notranslate nohighlight">\(i\)</span>), and the definition of the expectation value (which is thermal).</p>
+<p>We now claim without proof that the perturbation expansion is essentially identical to that we have discussed for the zero-temperature problem, in particular</p>
+<ol class="simple">
+<li><p>Wick’s theorem still applies, and so the expectation value <span class="math notranslate nohighlight">\(\langle\cdots\rangle_0\)</span> can be evaluated through the combinatorial product and some of the basic contractions</p></li>
+<li><p>The contractions can be organized through diagrams, i.e., we can still use Feynman diagrams</p></li>
+<li><p>The linked cluster theorem holds, and so the presence of the denominator simply instructs us to focus on the connected diagrams</p></li>
+<li><p>Dyson’s equation holds, and so we can encode all the interaction correction to the self-energy.</p></li>
+</ol>
+<p>Although we will not prove the validity of the treatment (neither did we really “prove” it for the zero-temperature case; we just tried to explain why it is plausible), it may be good to briefly discuss how one could establish that.</p>
+<p>First, for the Wick’s theorem, we note that the version needed is a “weaker” version concerning only the expectation values. In the modern treatment this is usually established through a path integral treatment with “sources” inserted, followed by taking functional derivatives. See, e.g., Coleman 8.4 for a discussion.</p>
+<p>Alternatively, as a slightly less popular approach one can actually (formally) map the finite-temperature physics to the zero-temperature case by “purifying” the thermal density matrix into a pure state defined on a doubled system. This is called the thermal field dynamics / double. One can then imply that the thermal expectation value form of Wick’s theorem through that of the TFD.</p>
+<p>One might wonder about the operator version though, which is apparently stronger. Indeed, according to <a class="reference external" href="https://arxiv.org/abs/hep-ph/9601268">hep-ph/9601268</a> this was a topic of confusion. The conclusion from that paper is that, the operation form still holds, but with a suitably generalized notion of path ordering (replacing time and normal ordering).</p>
+<p>Given the Wick’s theorem continues to hold, the rest of the discussion follows in essentially the same way. Long story short, we can simply treat the present perturbation theory in the same way as we did. THere are two main differences in practice:</p>
+<ol class="simple">
+<li><p>The Feynman rules (i.e. transcribing diagrams into mathematical expressions) have some modifications on factors of <span class="math notranslate nohighlight">\(i\)</span> versus <span class="math notranslate nohighlight">\(-i\)</span> etc.</p></li>
+<li><p>The frequency integrals now become sums over the discrete Matsubara frequencies</p></li>
+</ol>
+<p>Modification (1) is mild; in this course we didn’t pay too much attention to those factors anyway (in practice, of course, it is important to get all the factors right in any serious calculation). Modification (ii), in contrast, is more profound. We will see how that is achieved in the following.</p>
+</div>
+<div class="section" id="electron-self-energy">
+<h2>Electron self-energy<a class="headerlink" href="#electron-self-energy" title="Permalink to this headline">¶</a></h2>
+<p>Compared to the jellium model, the present perturbation theory is modified in two ways:</p>
+<ol class="simple">
+<li><p>We have another particle, the phonon, which comes with its own propagator</p></li>
+<li><p>Instead of a (normal ordered) density-density interaction between the electrons, we have a coupling between electrons and phonons.</p></li>
+</ol>
+<p>Diagrammatically, we can represent them by</p>
+<p>(1) phonon propagator</p>
+<p><img alt="lec23-fig00" src="_images/lec23-fig00.png" /></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;=\mathscr{D} \left( q,i\nu _n \right) \\
+    &amp;=-\int_0^{\beta}{d\tau e^{i\nu _n\tau}\left&lt; \mathcal{T} \left[ \hat{\phi}_q\left( \tau \right) \hat{\phi}_q\left( 0 \right) \right] \right&gt;}\\
+    &amp;=\frac{1}{i\nu _n-\omega _q}-\frac{1}{i\nu _n+\omega _q}\\
+    &amp;=\frac{2\omega _q}{\left( i\nu _n \right) ^2-\omega _{q}^{2}}
+\end{align*}
+\end{split}\]</div>
+<p>(2) e-ph coupling vertex <span class="math notranslate nohighlight">\(ig_q\)</span></p>
+<p><img alt="lec23-fig01" src="_images/lec23-fig01.png" /></p>
+<p>As one might anticipate from the notations, the phonons can be viewed as mediation interactions between the electrons. Indeed, the following diagram</p>
+<p><img alt="lec23-fig02" src="_images/lec23-fig02.png" /></p>
+<div class="math notranslate nohighlight">
+\[=\left( ig_q \right) ^2\mathscr{D} _0\left( q,i\nu _n \right) =-g_{q}^{2}\frac{2\omega _q}{\left( i\nu _n \right) ^2-\omega _{q}^{2}}\]</div>
+<p>can be understood as an effective interaction. In particular, notice that while <span class="math notranslate nohighlight">\(i\nu_n\)</span> corresponds to the energy difference <span class="math notranslate nohighlight">\(\sim\varepsilon_{k+q}-\varepsilon_k\)</span>, <span class="math notranslate nohighlight">\(\omega_q\)</span> is at the phonon energy scale <span class="math notranslate nohighlight">\(\omega_D\)</span>. Curiously the effective interaction changes sign for <span class="math notranslate nohighlight">\(\delta\varepsilon \gtrsim \omega_D\)</span> vs <span class="math notranslate nohighlight">\(\delta\varepsilon \lesssim \omega_D\)</span>: in particular, the interaction is attractive as <span class="math notranslate nohighlight">\(\delta \varepsilon\to 0\)</span>. THis corresponds to the celebrated phonon-mediated attraction!</p>
+<p>There are of course many questions one could investigate within the electron-phonon model. In the interest of time let us focus on the electron self-energy. Similar to before, we can reconcile the self-energy with the 1PI diagrams:</p>
+<p><img alt="lec23-fig03" src="_images/lec23-fig03.png" /></p>
+<p>Let us focus on the lowest order diagram</p>
+<p><img alt="lec23-fig04" src="_images/lec23-fig04.png" /></p>
+<p>This is actually fairly well-justified as an approximation, but we will not discuss why here in the interest of time (see, e.g., Coleman 8.7.3). Translating our diagram into an expression</p>
+<p><img alt="lec23-fig05" src="_images/lec23-fig05.png" /></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    &amp;=\frac{1}{\beta}\sum_{q\nu _n}{-g_{q}^{2}\mathscr{D} \left( q,i\nu _n \right) \mathcal{G} _0\left( k-q,i\left( \omega _n-\nu _n \right) \right)}\\
+    &amp;=\frac{1}{\beta}\sum_{q\nu _n}{-g_{q}^{2}\frac{2\omega _q}{\left( i\nu _n \right) ^2-\omega _{q}^{2}}\frac{1}{i\left( \omega _n-\nu _n \right) -\varepsilon _{k-q}}}
+\end{align*}
+\end{split}\]</div>
+<p>Now we “only” need to evaluate the sum over the Matsubara frequencies – but how do we do that?</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec22.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec22</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
