@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec25 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec24" href="lec24.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec15.html">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec16.html">
+   lec16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec17.html">
+   lec17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec18.html">
+   lec18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec19.html">
+   lec19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec20.html">
+   lec20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec21.html">
+   lec21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec22.html">
+   lec22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec23.html">
+   lec23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec24.html">
+   lec24
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec25
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec25.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec25.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finally-we-are-in-count-down-model">
+   Finally, we are in count-down model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#when-are-electrons-electrons">
+   When are electrons electrons?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hubbard-model">
+   Hubbard model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#magnons-bosonic-excitations-from-fermions">
+   Magnons: bosonic excitations from fermions
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec25</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finally-we-are-in-count-down-model">
+   Finally, we are in count-down model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#when-are-electrons-electrons">
+   When are electrons electrons?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hubbard-model">
+   Hubbard model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#magnons-bosonic-excitations-from-fermions">
+   Magnons: bosonic excitations from fermions
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec25">
+<h1>lec25<a class="headerlink" href="#lec25" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contribution is always <strong>welcome</strong>. if you find any typo, incorrect/inaccurate/improper statements or necessary references, do not hesitate to</p>
+<ul class="simple">
+<li><p>raise an issue on github repo</p></li>
+<li><p>make an pull request on github repo</p></li>
+<li><p>contact me directly</p></li>
+</ul>
+</div>
+<p>20220506</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Recap of the course so far</p></li>
+<li><p>Intro to strongly correlated quantum many-body problems</p></li>
+<li><p>Hubbard model and quantum magnets</p></li>
+<li><p>Magnetic order and magnons</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>A taste of how interactions can change what we see from what we started with</p></li>
+</ol>
+<div class="section" id="finally-we-are-in-count-down-model">
+<h2>Finally, we are in count-down model<a class="headerlink" href="#finally-we-are-in-count-down-model" title="Permalink to this headline">¶</a></h2>
+<p>For these last two lectures, let’s do something a bit different: for the previous classes we have tried to stay relatively “pedagogical”, in the sense that we tried to elaborate on every detail of the calculations (e.g., doing integrals, discussing how to take limits, crank through most of the steps etc.). The idea was that, alongside the discussion on the physical pictures, these lectures would hopefully provide you with a starting point for really learning how to do related calculations in quantum many-body theory (e.g., to complete the problems sets). For these last two lectures, however, let’s switch to a “topic course” style in which we will skip all the steps in calculations and instead try to highlight only the physics!</p>
+<p>Let’s begin by recapping (again!) what we’ve covered</p>
+<p><img alt="lec25-fig00" src="_images/lec25-fig00.png" /></p>
+<p>For this very last stretch of the course, let’s focus on strong-correlation problems! Of course, you can skip this if you prefer (it’s not like you can’t skip any of the parts before… This is a grad-school course, and you learn what you want :)</p>
+</div>
+<div class="section" id="when-are-electrons-electrons">
+<h2>When are electrons electrons?<a class="headerlink" href="#when-are-electrons-electrons" title="Permalink to this headline">¶</a></h2>
+<p>Quantum many-body problems are usually specified in two steps: first, we gather the actresses / actors; second, we give them a script. For instance, in the electron-phonon problem we first specify the degrees of freedom being a collection of electrons and phonons, and then describe their dynamics (both individually, and also their interplay) with a Hamiltonian.</p>
+<p>In practice, however, one really only cares about the dynamics which is accessible on experimentally relevant time / energy scale. For instance, recall our “three levels” of reasons why the Green’s functions are physically significant: the ground state itself, in complete isolation, has no dynamics and so no physics. It is only when we “probe” the system that wee have anything interesting happening. Schematically, one can imagine drawing the many-body energy levels</p>
+<p><img alt="lec25-fig01" src="_images/lec25-fig01.png" /></p>
+<p>In particular, our observation results depend on what we use to probe (e.g., one- vs two-particle Green’s functions), as well as how we measure (e.g., AC vs DC). In any case, we are mostly interested only in the low-energy degrees of freedom. So far in this course, we have assumed that these relevant degrees of freedom are well-described by the microscopic ones which enter into the Hamiltonian: the actors / actresses may be dressed but they retain their identities. That is, in fact, an implicit assumption of a perturbative treatment: by definition one cannot go too far from where we started (of course, one could also consider non-perturbative effects in the same framework).</p>
+<p>The preceding discussion then suggests that we could have alternative scenarios in which the effective degrees of freedom do not need to resemble the microscopic ones. This, by definition, does not happen when the Hamiltonian is non-interacting. As such, this alternative scenario is usually referred to as “strongly correlated”. In the following we will attempt to take a quick tour on some of the possible physics happening in such problems.</p>
+</div>
+<div class="section" id="hubbard-model">
+<h2>Hubbard model<a class="headerlink" href="#hubbard-model" title="Permalink to this headline">¶</a></h2>
+<p>As the “standard” model for strongly correlated electrons, let us consider the single-band Hubbard model of the form</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=-t\sum_{\left&lt; i,j \right&gt;}{\sum_{\sigma =\uparrow ,\downarrow}{\hat{c}_{i\sigma}^{\dagger}\hat{c}_{j\sigma}}}+U\sum_i{\left( \hat{n}_i-1 \right) ^2}\]</div>
+<p>where the onsite number operator</p>
+<div class="math notranslate nohighlight">
+\[ \hat{n}_i=\sum_{\sigma}{\hat{c}_{i\sigma}^{\dagger}\hat{c}_{i\sigma}}\]</div>
+<p>takes values of <span class="math notranslate nohighlight">\(0,1,2\)</span>. We take the interaction to be repulsive, i.e., <span class="math notranslate nohighlight">\(U&gt;0\)</span>. The spatial indices <span class="math notranslate nohighlight">\(i,j\)</span> usually correspond to sites on some lattices, and <span class="math notranslate nohighlight">\(\langle i,j\rangle\)</span> denotes some bonds (say nearest neighbors). For our purpose here, we will just keep them generic. (Note: it is more standard to include a chemical potential term which can be tuned to adjust the electron filling, i.e., average number of electrons per site. We have implicitly absorbed that into the interaction piece here.)</p>
+<p>The strongly correlated limit is obtained when we consider <span class="math notranslate nohighlight">\(t/U\ll 1\)</span>. In that limit, we can as well just start with <span class="math notranslate nohighlight">\(t=0\)</span>. When <span class="math notranslate nohighlight">\(t=0\)</span>, the Hamiltonian simply reads</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=U\sum_i{\left( \hat{n}_i-1 \right) ^2}\]</div>
+<p>and since the number operators commute <span class="math notranslate nohighlight">\(\left[ \hat{n}_i,\hat{n}_j \right] =0\)</span>, the eigenstates of the Hamiltonian are specified by their eigenvalues <span class="math notranslate nohighlight">\(|n_1,n_2,\cdots\rangle\)</span>, giving</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}|n_1n_2\cdots \rangle =U\sum_i{\left( n_i-1 \right) ^2}|n_1n_2\cdots \rangle \]</div>
+<p>The ground state is obtained by setting <span class="math notranslate nohighlight">\(n_i=1,\forall i\)</span>, which has eigenenergy <span class="math notranslate nohighlight">\(0\)</span>. The spectrum is then equally spaced at intervals of <span class="math notranslate nohighlight">\(U\)</span>.</p>
+<p><img alt="lec25-fig02" src="_images/lec25-fig02.png" /></p>
+<p>note that we have color-coded the fermion parity of the states, i.e., lines with same color represent states with the same number of electrons mod <span class="math notranslate nohighlight">\(2\)</span> (e.g., blue=even and red=odd). The fermion parity is an important aspect of a (many-body) fermionic problem, since the Hamiltonian is always bosonic and therefore conserves the number of fermions mod <span class="math notranslate nohighlight">\(2\)</span>.</p>
+<p>However, this <span class="math notranslate nohighlight">\(t=0\)</span> limit is deceivingly simple: on every site there are two states with <span class="math notranslate nohighlight">\(n=1\)</span>: <span class="math notranslate nohighlight">\(\hat{c}_{i\uparrow}^{\dagger}|0\rangle ,\hat{c}_{i\downarrow}^{\dagger}|0\rangle\)</span>. The interaction alone does not differentiate between these two states, and so far a system with <span class="math notranslate nohighlight">\(V\)</span> sites we actually have <span class="math notranslate nohighlight">\(2^V\)</span> ground states which are all at zero energy! Of course, this exact degeneracy is rather unphysical: we expect any perturbation to split it. The highly nontrivial question now is how the degeneracy is split.</p>
+<p>To this end, let us turn on the electron hopping <span class="math notranslate nohighlight">\(t\)</span>. In the limit <span class="math notranslate nohighlight">\(t/U\ll 1\)</span>, we expect the lowest energy states to stay within the sector one electron per site. The effect of the kinetic energy parametrized by <span class="math notranslate nohighlight">\(t\)</span> can then be understood perturbatively. We claim its main effect is to factor anti-parallel alignment of neighboring electrons.</p>
+<p>To see why, let us consider a simplified problem with only two sites. Let us contrast how the perturbation could affect two different initial states:</p>
+<p><img alt="lec25-fig03" src="_images/lec25-fig03.png" /></p>
+<p>as such, while the energy of the anti-parallel arrangement could be lowered in second-order perturbation by <span class="math notranslate nohighlight">\(O(t^2/U)\)</span>, the parallel-spin arrangement does not. Combining with the presence of the spin-rotation symmetry in our model, we see that the ground state of the system will be the spin singlet state <span class="math notranslate nohighlight">\(\left( |\uparrow \downarrow \rangle -|\downarrow \uparrow \rangle \right) /\sqrt{2}\)</span>. (One may wonder what happens to the “even” combination: that is part of the spin triplet, and by symmetry has to be degenerate with the “parallel-spin” states. Consistently, one can verify that the second-order perturbation actually vanishes for the even combination.)</p>
+<p>Extending the argument to a lattice, we expect the effective Hamiltonian to look like</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_{\mathrm{eff}}=J\sum_{\left&lt; i,j \right&gt;}{\sum_{\alpha =x,y,z}{\hat{S}_{i}^{\alpha}\hat{S}_{j}^{\alpha}}}\]</div>
+<p>where <span class="math notranslate nohighlight">\(J\sim \frac{t^2}{U}&gt;0\)</span> is anti-ferromagnetic, in that it favors the spin-singlet configuration across nearest neighbors. Such spin-rotation invariant model is usually called the “Heisenberg model”. In terms of the electrons, the spin operators are given by</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \hat{S}_{i}^{\alpha}=\frac{1}{2}\left( \begin{matrix}
+   \hat{c}_{i\uparrow}^{\dagger}&amp;      \hat{c}_{i\downarrow}^{\dagger}\\
+\end{matrix} \right) \sigma ^{\alpha}\left( \begin{array}{c}
+   \hat{c}_{i\uparrow}\\
+   \hat{c}_{i\downarrow}\\
+\end{array} \right) \end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\sigma^\alpha\)</span> denotes the Pauli matrices. E.g.,</p>
+<div class="math notranslate nohighlight">
+\[ \hat{S}_{i}^{x}=\frac{1}{2}\left( \hat{c}_{i\uparrow}^{\dagger}\hat{c}_{i\downarrow}+\hat{c}_{i\downarrow}^{\dagger}\hat{c}_{i\uparrow} \right) \]</div>
+<p>In particular, notice that these “spin operators” do not change the site occupancy, and so they manifestly stay within the ground-state sector defined by the <span class="math notranslate nohighlight">\(U\to\infty\)</span>. Indeed, we have (dropping the site index)</p>
+<div class="math notranslate nohighlight">
+\[ \hat{S}^x\hat{c}_{\uparrow}^{\dagger}|0\rangle =\frac{1}{2}\left( \hat{c}_{\downarrow}^{\dagger}|0\rangle \right) \]</div>
+<p>implements a spin-flip for the electron on the site (and similarly for <span class="math notranslate nohighlight">\(\hat{S}^y\)</span>). Furthermore, and importantly,</p>
+<div class="math notranslate nohighlight">
+\[ \left( 1-\delta _{ij} \right) \left[ \hat{S}_{i}^{\alpha},\hat{S}_{j}^{\beta} \right] =0\]</div>
+<p>And as such we can make the following conclusions concerning the “strong coupling” <span class="math notranslate nohighlight">\(t/U\ll 1\)</span> limit:</p>
+<ol class="simple">
+<li><p>The relevant Hilbert space (defined by single occupancy on every site) is <span class="math notranslate nohighlight">\(2^V\)</span> dimensional, with <span class="math notranslate nohighlight">\(V\)</span> being the number of sites in the system</p></li>
+<li><p>The effective operators (observables) are the spin operators, which are microscopically bilinears of the electrons on the same site</p></li>
+<li><p>Operators localized to different sites simply commute, and this defines a (effective) bosonic Hilbert space</p></li>
+</ol>
+<p>In other words, this gives one example in which the “relevant” states are bosonic in nature, although microscopically we start with the fermionic electrons!</p>
+<p><img alt="lec25-fig04" src="_images/lec25-fig04.png" /></p>
+</div>
+<div class="section" id="magnons-bosonic-excitations-from-fermions">
+<h2>Magnons: bosonic excitations from fermions<a class="headerlink" href="#magnons-bosonic-excitations-from-fermions" title="Permalink to this headline">¶</a></h2>
+<p>Let us now take the perspective that the relevant Hilbert space is that of the localized spin moments, and as such is bosonic. We call such systems “quantum magnets”. Given this setup, our next question would be to ask what is the ground state of the effective Hamiltonian, and, correspondingly, what are the low-energy excitations.</p>
+<p>Generally speaking, predicting the ground state for an interacting, quantum many-body system is an extremely hard problem. In contrast, experiments can often give us a clear physical picture. As the name suggests, one possible outcome of a quantum magnet is the development of magnetism, i.e., the spin moments spontaneously pick an axis and point in that direction in the ground state. (There can be many varieties, for instance, maybe the system has some anisotropy to start with and prefer one direction over the two others, which leads to an Ising-like model; alternatively, maybe one direction is disfavored over the two others, which gives an “easy-plane” model. The magnetic ordering itself can also be very diverse. For instance, maybe all moments are pointing in the same direction leading to a ferromagnet. Alternatively, maybe they alternate and form an anti-ferromagnet. More exotic properties could involve spin textures which vary in space with some wavelength.)</p>
+<p>To be concrete, let us suppose we have the following setup</p>
+<ol class="simple">
+<li><p>A quantum magnet with one spin-half localized to each site on a 2D square lattice (e.g., one electron per site)</p></li>
+<li><p>An anti-ferromagnetic ground state in which nearest neighbors point in opposite directions</p></li>
+</ol>
+<p>Pictorially, the ground state can be pictured as follows:</p>
+<p><img alt="lec25-fig05" src="_images/lec25-fig05.png" /></p>
+<p>Such ground state is usually called the Neel order. Supposing this is indeed the ground state, we can choose to pick the spin ordering direction as the “z axis” (which doesn’t need to be out-of-plane). Furthermore, it will be convenient for us to perform a “basis rotation” (i.e., unitary rotations) on half of the sites, say the blue ones, such that</p>
+<div class="math notranslate nohighlight">
+\[ \left( \hat{S}_{i}^{x},\hat{S}_{i}^{y},\hat{S}_{i}^{z} \right) \rightarrow \left( \hat{S}_{i}^{x},-\hat{S}_{i}^{y},-\hat{S}_{i}^{z} \right) \]</div>
+<p>(Recall the magnetic moments transform as a vector under SO(3) rotation. We see that the above can be achieved through a <span class="math notranslate nohighlight">\(\pi\)</span> rotation about the x-axis.)</p>
+<p>The nearest-neighbor square lattice Heisenberg model can then be written as</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=J\sum_{\left&lt; i,j \right&gt;}{\sum_{\alpha}{\hat{S}_{i}^{\alpha}\hat{S}_{j}^{\alpha}}};\quad J&gt;0\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad \hat{H}=J\sum_{\left&lt; i,j \right&gt;}{\hat{S}_{i}^{x}\hat{S}_{j}^{x}}-J\sum_{\left&lt; i,j \right&gt;}{\hat{S}_{i}^{y}\hat{S}_{j}^{y}}-J\sum_{\left&lt; i,j \right&gt;}{\hat{S}_{i}^{z}\hat{S}_{j}^{z}}\]</div>
+<p>where we have used the property that any “bond” is between a red site and a blue site. In this rotated basis, the anti-ferromagnetic order can be described as one in which all spins are points “up”!</p>
+<p>Since the spin operators define a bosonic Hilbert space, it will be tempting to describe our local two-level system using canonical bosonic creation and annihilation operators. In particular, it will be natural to let the bosonic vacuum be our asserted ground state, i.e., the all-up state in the rotated basis. Indeed, using a bosonic occupancy basis we have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{S}^z\Rightarrow \frac{1}{2}\left( |0\rangle \langle 0|-|1\rangle \langle 1| \right) =\frac{1}{2}-\hat{n}_0\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{S}^x\Rightarrow \frac{1}{2}\left( |0\rangle \langle 1|+|1\rangle \langle 0| \right) =\frac{1}{2}\left( \hat{b}^{\dagger}+\hat{b} \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{S}^y\Rightarrow \frac{1}{2}\left( i|0\rangle \langle 1|-i|1\rangle \langle 0| \right) =\frac{i}{2}\left( \hat{b}^{\dagger}-\hat{b} \right) \]</div>
+<p>there is a big problem though: the bosonic occupancy goes off to infinity, and so the bosonic problem has an infinite dimensional Hilbert space. In contrast, the original spin-1/2 problem is a two level system! On  way to go around this conceptual difficulty will be to impose a hardcore constraint, namely, we kick out all states in the bosonic Hilbert space with <span class="math notranslate nohighlight">\(n_b&gt;1\)</span>. This could be energetically enforced by adding a “constraint” in the effective Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_{\mathrm{hardcore}}=\tilde{U}\sum_i{\hat{n}_{b,i}\left( \hat{n}_{b,i}-1 \right)}\]</div>
+<p>and send <span class="math notranslate nohighlight">\(\tilde{U} \to \infty\)</span>. Alternatively, one can consider a more proper transformation in which the <span class="math notranslate nohighlight">\(n_b=0,1\)</span> states are guaranteed to be decoupled from the <span class="math notranslate nohighlight">\(n_b&gt;1\)</span> sector. This latter option is called the “Holstein-Primakoff” bosons (which works for general spin <span class="math notranslate nohighlight">\(S\)</span>); see, e.g., Auerbach for a discussion.</p>
+<p>Setting aside he constraint, we might now rewrite the (rotated) Hamiltonian in terms of <span class="math notranslate nohighlight">\(\hat{b}\&amp; \hat{b}^\dagger\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \hat{H}&amp;=J\sum_{\left&lt; i,j \right&gt;}{\hat{S}_{i}^{x}\hat{S}_{j}^{x}}-J\sum_{\left&lt; i,j \right&gt;}{\hat{S}_{i}^{y}\hat{S}_{j}^{y}}-J\sum_{\left&lt; i,j \right&gt;}{\hat{S}_{i}^{z}\hat{S}_{j}^{z}}\\
+    &amp;\Rightarrow \frac{J}{4}\sum_{\left&lt; i,j \right&gt;}{\left[ \left( \hat{b}_{i}^{\dagger}+\hat{b}_i \right) \left( \hat{b}_{j}^{\dagger}+\hat{b}_j \right) -i^2\left( \hat{b}_{i}^{\dagger}-\hat{b}_i \right) \left( \hat{b}_{j}^{\dagger}-\hat{b}_j \right) \right]}\\
+    &amp;\quad -J\sum_{\left&lt; i,j \right&gt;}{\left( \frac{1}{2}-\hat{n}_{b,i} \right)}\left( \frac{1}{2}-\hat{n}_{b,j} \right) \\
+    &amp;=\frac{J}{2}\sum_{\left&lt; i,j \right&gt;}{\left( \hat{b}_{i}^{\dagger}\hat{b}_{j}^{\dagger}+b_ib_j \right)}+4J\sum_i{\frac{1}{2}\hat{n}_{b,i}}+\frac{J}{4}\sum_{\left&lt; i,j \right&gt;}{\hat{n}_{b,i}\hat{n}_{b,j}}+\mathrm{constant}
+\end{align*}
+\end{split}\]</div>
+<p>Introducing Fourier transform as usual</p>
+<div class="math notranslate nohighlight">
+\[ \hat{b}_k=\frac{1}{\sqrt{V}}\sum_i{\hat{b}_ie^{-ik\cdot r}};\quad k=\left( k_x,k_y \right) ;r_i=\left( x_i,y_i \right) \]</div>
+<p>and in momentum space we have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_b=\frac{J}{2}\sum_k{\hat{b}_{k}^{\dagger}\hat{b}_{-k}^{\dagger}\left( e^{ik_x}+e^{ik_y} \right)}+\mathrm{h}.\mathrm{c}.+2J\sum_k{\hat{b}_{k}^{\dagger}\hat{b}_k}+\mathrm{interactions}\]</div>
+<p>Now, if our ground state was a good starting point, we expect <span class="math notranslate nohighlight">\(n_b\sim 0\)</span> to be small. That then suggests the interaction term <span class="math notranslate nohighlight">\(\sim \hat{n}_{b,i}\hat{n}_{b,j}\)</span> to be “doubly small” and so might be neglected. Similar argument applies to the hardcore constraint. (Admittedly, these are pretty hand-waving and are not truly justified. For a more careful treatment, see, e.g., Auerbach, for how the mean-field approximation can be justified in the large-S limit. Note that we have the smallest possible <span class="math notranslate nohighlight">\(S\)</span> of <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> in the present problem!)</p>
+<p>We are then left with the quadratic Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_b\simeq J\sum_k{\left[ \frac{\cos k_x+\cos k_y}{2}\left( \hat{b}_{k}^{\dagger}\hat{b}_{-k}^{\dagger}+\hat{b}_{-k}\hat{b}_k \right) +2\hat{b}_{k}^{\dagger}\hat{b}_k \right]}\]</div>
+<p>which can be diagonalized by some Bogoliubov transform</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\alpha}_k=\cosh \theta _k\hat{b}_k-\sinh \theta _k\hat{b}_{-k}^{\dagger}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{b}_k=\cosh \theta _k\hat{\alpha}_k+\sinh \theta _k\hat{\alpha}_{-k}^{\dagger}\]</div>
+<p>with <span class="math notranslate nohighlight">\(\theta_k\)</span> real and even in <span class="math notranslate nohighlight">\(k\)</span>. The Hamiltonian can then be diagonalized by choosing <span class="math notranslate nohighlight">\(\theta_k\)</span> such that the anomalous terms <span class="math notranslate nohighlight">\(\hat{\alpha}_{k}^{\dagger}\hat{\alpha}_{-k}^{\dagger}\;\&amp;\;\hat{\alpha}_k\hat{\alpha}_{-k}\)</span> vanish. This gives the result</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_b\simeq \sum_k{\omega _k\left( \hat{\alpha}_{k}^{\dagger}\hat{\alpha}_k+\frac{1}{2} \right)}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[ \omega _k=2J\sqrt{1-\left( \frac{\cos k_x+\cos k_y}{2} \right) ^2}\]</div>
+<p>is the dispersion of the bosonic quasiparticle. Let’s try to plot it (the following by <a class="reference external" href="https://www.math3d.org/">Math3D.org</a>)</p>
+<p><img alt="lec25-fig06" src="_images/lec25-fig06.png" /></p>
+<p>Notice that <span class="math notranslate nohighlight">\(\omega_k\to 0\)</span> linearly at both <span class="math notranslate nohighlight">\(k=(0,0)\)</span> and <span class="math notranslate nohighlight">\(k=(\pi,\pi)\)</span>. These are the lowest energy excitations in our model (starting from the Neel order ground state). They are examples of Goldstone modes: low-energy excitations guaranteed by the spontaneous breaking of a continuous global symmetry. Note that these excitations are physically created by acting <span class="math notranslate nohighlight">\(\hat{\alpha}_k^\dagger\)</span> on the vacuum (i.e., the state annihilated by <span class="math notranslate nohighlight">\(\hat{\alpha}_k|\Omega \rangle =0\)</span>)</p>
+<p>Since</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\alpha}_{k}^{\dagger}=\cosh \theta _k\hat{b}_{k}^{\dagger}-\sinh \theta \hat{b}_{-k}\sim \cosh \theta _k\hat{S}_{k}^{-}-\sinh \theta _k\hat{S}_{-k}^{\dagger}\]</div>
+<p>the excitation can be physically interpreted as the creation of spin flips on top of the ground state. Considering the quantum numbers</p>
+<div class="math notranslate nohighlight">
+\[ \downarrow S^z=-\frac{1}{2}\quad \stackrel{\Delta S=1}{\rightarrow} \quad \uparrow S^z=+\frac{1}{2}\]</div>
+<p>In other words, our lowest-energy excitations have integer spin! Also, the spin flip clearly carries no electric charge (recall, charged excitations are very costly in the <span class="math notranslate nohighlight">\(U\to \infty\)</span> limit). We call such collective excitations “magnons”, and our system is eventually described by</p>
+<p><img alt="lec25-fig07" src="_images/lec25-fig07.png" /></p>
+<p>Notice that, starting with a model of electrons, we ended up with a system in which the lowest-energy excitations do not resemble the electron at all! (fermion vs boson, charge-e vs neutral, and spin-1/2 vs integer spin).</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec24.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec24</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
