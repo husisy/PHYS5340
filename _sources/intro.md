@@ -57,6 +57,7 @@ Table of Contents
 23. [lec23](lec23.md)
 24. [lec24](lec24.md)
 25. [lec25](lec25.md)
-26. website-related stuff
+26. [lec26](lec26.md)
+27. website-related stuff
     * [contribute](contribute.md)
     * [test](test.md)

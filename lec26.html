@@ -1,0 +1,729 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec26 &#8212; PHYS5340</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="how to contribute" href="contribute.html" />
+    <link rel="prev" title="lec25" href="lec25.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PHYS5340</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to PHYS5340
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec01.html">
+   lec01
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec02.html">
+   lec02
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec03.html">
+   lec03
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec04.html">
+   lec04
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec05.html">
+   lec05
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec06.html">
+   lec06
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="lec07.html">
+   lec07
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lec07_Impurity_phonon.html">
+     Impurity phonon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec08.html">
+   lec08
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec09.html">
+   lec09
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec10.html">
+   lec10
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec11.html">
+   lec11
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec12.html">
+   Lec12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec13.html">
+   Lec13
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec14.html">
+   lec14
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec15.html">
+   lec15
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec16.html">
+   lec16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec17.html">
+   lec17
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec18.html">
+   lec18
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec19.html">
+   lec19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec20.html">
+   lec20
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec21.html">
+   lec21
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec22.html">
+   lec22
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec23.html">
+   lec23
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec24.html">
+   lec24
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lec25.html">
+   lec25
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   lec26
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contribute.html">
+   how to contribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   test
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/lec26.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="http://github.com/whoissy/PHYS5340"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="http://github.com/whoissy/PHYS5340/issues/new?title=Issue%20on%20page%20%2Flec26.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fermions-become-bosons-and-the-story-continues">
+   Fermions become bosons, and the story continues
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#d-quantum-magnets-with-a-z2-symmetry">
+   1D quantum magnets with a Z2 symmetry
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#d-is-special-or-not">
+   1D is special … or not
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topological-order-spin-liquids-and-what-not">
+   Topological order, spin liquids, and what not
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#that-s-it">
+   That’s it
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#one-last-time">
+   One last time
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>lec26</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fermions-become-bosons-and-the-story-continues">
+   Fermions become bosons, and the story continues
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#d-quantum-magnets-with-a-z2-symmetry">
+   1D quantum magnets with a Z2 symmetry
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#d-is-special-or-not">
+   1D is special … or not
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topological-order-spin-liquids-and-what-not">
+   Topological order, spin liquids, and what not
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#that-s-it">
+   That’s it
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#one-last-time">
+   One last time
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="lec26">
+<h1>lec26<a class="headerlink" href="#lec26" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the official course PHYS5340 website yet!</p>
+<ul class="simple">
+<li><p>If you are student in this course, <strong>always</strong> take the lecture notes as the correct one if you find any differences between lecture notes and website contents</p></li>
+<li><p>If you are just passerby, use the materials below at your own risk. Since the website is still the first version (even alpha version), there could be some typos, incorrect/inaccurate/improper statements.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials in this website are based on the course offered at HKUST</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As a “casual course”, we provide only general references but not specific ones to the materials introduced</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>All</strong> materials’ copyright in this website are reserved for the course lecturer</p>
+<ul class="simple">
+<li><p>If you want to use the material somewhere, you might need to contact the lecturer first</p></li>
+</ul>
+</div>
+<p>20220511</p>
+<p>Topics</p>
+<ol class="simple">
+<li><p>Fermions to bosons, and back</p></li>
+<li><p>1D quantum magnet and Jordan-Wigner</p></li>
+<li><p>Spin liquids</p></li>
+</ol>
+<p>Goals</p>
+<ol class="simple">
+<li><p>Appreciating how the emergent degrees of freedom can be vastly different from the microscopic ones</p></li>
+<li><p>Introducing the ideas of fractionalization</p></li>
+</ol>
+<div class="section" id="fermions-become-bosons-and-the-story-continues">
+<h2>Fermions become bosons, and the story continues<a class="headerlink" href="#fermions-become-bosons-and-the-story-continues" title="Permalink to this headline">¶</a></h2>
+<p>In the magnon problem, we obtain bosonic excitation from fermionic (electronic) building blocks. While that is interesting, it might not be too surprising after all: combining an even number of fermions lead to a boson. In fact, we already encountered one such collective excitation in the jellium model, namely, the plasmon.</p>
+<p>Conversely, can we get fermions out of bosonic building blocks? (The bosons need not be “microscopic”, as in the quantum magnets.) At a glance, this may seem pretty impossible: bosons stay as bosons no matter how we combine them. Yet, let’s imagine what happens in a 1D Neel magnet:</p>
+<p><img alt="lec26-fig00" src="_images/lec26-fig00.png" /></p>
+<p>Importantly, the original spin flip of <span class="math notranslate nohighlight">\(\Delta S=1\)</span> is now shared by two independent excitations. Each of them can only carry half of that, i.e., <span class="math notranslate nohighlight">\(\Delta S_x=\frac{1}{2}\)</span>. This is superficially like an electron, but in our quantum magnet model the low-energy excitations must be charge neutral! We call this phenomenon “spin-charge separation”.</p>
+</div>
+<div class="section" id="d-quantum-magnets-with-a-z2-symmetry">
+<h2>1D quantum magnets with a Z2 symmetry<a class="headerlink" href="#d-quantum-magnets-with-a-z2-symmetry" title="Permalink to this headline">¶</a></h2>
+<p>To investigate how such interesting physics could arise, let us consider a 1D quantum magnet with a spin-<span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> moment on each site. For simplicity, we let <span class="math notranslate nohighlight">\(\hat{X}_i,\hat{Y}_i,\hat{Z}_i\)</span> be the respective “Pauli operators” on site <span class="math notranslate nohighlight">\(i\)</span>, which differ by the earlier spin operator only by a factor of <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> and satisfies</p>
+<div class="math notranslate nohighlight">
+\[ \hat{X}_{i}^{2}=\hat{Y}_{i}^{2}=\hat{Z}_{i}^{2}=1\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{X}_i\hat{Y}_i=-\hat{Y}_i\hat{X}\]</div>
+<div class="math notranslate nohighlight">
+\[ \left[ \hat{X}_i,\hat{Y}_i \right] =2i\hat{Z}_i\]</div>
+<p>Consider the Hamiltonian</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=J\sum_i{\hat{X}_i\hat{X}_{i+1}}+h\sum_i{\hat{Z}_i}\]</div>
+<p>with <span class="math notranslate nohighlight">\(J&gt;0\)</span>. If we had <span class="math notranslate nohighlight">\(h=0\)</span>, it will be the AFM Ising model. The Ising model is classical, in the sense that all the eigenstates of the Hamiltonian are necessarily specified by the simultaneous eigenstates of <span class="math notranslate nohighlight">\(\left\{ X_i=\pm 1 \right\}\)</span>. The term proportional to <span class="math notranslate nohighlight">\(h\)</span> breaks such property, and so serves to introducing some “quantumness” into the problem. This model is usually called the transverse-field Ising model.</p>
+<p>First, we notice that the model has a Z2 spin-flip symmetry, given by</p>
+<div class="math notranslate nohighlight">
+\[ \hat{G}=\prod_i{\hat{Z}_i}\]</div>
+<p>since</p>
+<div class="math notranslate nohighlight">
+\[ \hat{G}\left( \hat{X}_i\hat{X}_{i+1} \right) \hat{G}^{\dagger}=\left( -\hat{X}_i \right) \left( -\hat{X}_{i+1} \right) =\hat{X}_i\hat{X}_{i+1}\]</div>
+<p>as it turns out, this global symmetry has an interesting interpretation in our solution to the problem.</p>
+<p>Let us now try to solve the Hamiltonian exactly (unlike the magnon mean-field discussion, which was only approximate given the bosons are interacting). At first sight, it is not obvious that it could be solved, afterall this is not a “quadratic” boson / fermion Hamiltonian. Also, the terms in the Hamiltonian do not commute with each other and so we cannot readily write down their joint eigenstates. Nevertheless ,this model is exactly solved, through the “Jordan-Wigner transformation” which relates fermions to hardcore bosons (spin-<span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> moments).</p>
+<p>To motivate the transformation, we first notice that, for a single site, there’s no difference between hardcore boson (two-level system) and spinless fermion: in all cases the Hilbert space is two-dimensional. Now we may denote</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \hat{Z}_i=\begin{cases}
+   |+\rangle \Rightarrow |\hat{n}_i=1\rangle\\
+   |-\rangle \Rightarrow |\hat{n}_i=0\rangle\\
+\end{cases}\end{split}\]</div>
+<p>If we interpret the local Hilbert space as that of a fermion, we have</p>
+<div class="math notranslate nohighlight">
+\[ |\hat{n}_i=1\rangle =\hat{c}_{i}^{\dagger}|0\rangle \]</div>
+<p>which seems fine. In addition, the action of the Pauli operators can now be reconciled with</p>
+<div class="math notranslate nohighlight">
+\[ \hat{X}_i\mapsto \hat{c}_{i}^{\dagger}+\hat{c}_i\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{Y}_i\mapsto i\left( \hat{c}_i-\hat{c}_{i}^{\dagger} \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{Z}_i\mapsto -e^{i\pi \hat{n}_i}\]</div>
+<p>note that</p>
+<div class="math notranslate nohighlight">
+\[ -e^{i\pi \hat{n}_i}=-\left( 1+\left( e^{i\pi}-1 \right) \hat{n}_i \right) =2\hat{c}_{i}^{\dagger}\hat{c}_i-1\]</div>
+<p>It will be good to verify that the algebraic relations between the Pauli operators are preserved. For instance, check that</p>
+<div class="math notranslate nohighlight">
+\[ \hat{X}_{i}^{2}\mapsto \left( \hat{c}_{i}^{\dagger}+\hat{c}_i \right) ^2=\hat{c}_{i}^{\dagger}\hat{c}_i+\hat{c}_i\hat{c}_{i}^{\dagger}=I\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{X}_i\hat{Y}_i\mapsto \left( \hat{c}_{i}^{\dagger}+\hat{c}_i \right) \left( i\hat{c}_i-i\hat{c}_{i}^{\dagger} \right) =-i\hat{c}_i\hat{c}_{i}^{\dagger}+i\hat{c}_{i}^{\dagger}\hat{c}_i=i\left( 2\hat{c}_{i}^{\dagger}\hat{c}_i-1 \right) \]</div>
+<p>it will be natural to give these even and odd combinations of the fermion operators a symbol. Define</p>
+<div class="math notranslate nohighlight">
+\[ \hat{X}_i\mapsto \hat{\gamma}_i=\hat{c}_{i}^{\dagger}+\hat{c}_i\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{Y}_i\mapsto \hat{\gamma}'_i=i\left( \hat{c}_i-\hat{c}_{i}^{\dagger} \right) \]</div>
+<p>which anti-commutes <span class="math notranslate nohighlight">\(\left\{ \hat{\gamma}_i,\hat{\gamma}'_i \right\} =0\)</span>, and we may as well write</p>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_i=\frac{1}{2}\left( \hat{\gamma}_i-i\hat{\gamma}'_i \right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{c}_{i}^{\dagger}=\frac{1}{2}\left( \hat{\gamma}_i+i\hat{\gamma}'_i \right) \]</div>
+<p>the operators <span class="math notranslate nohighlight">\(\hat{\gamma}_i\)</span> and <span class="math notranslate nohighlight">\(\hat{\gamma}'_i\)</span> can therefore be viewed as the “real and imaginary parts” of the complex fermions, analogous to representing a complex number as a pair of real numbers. These “real fermions” are called Majorana, which have famously disappeared multiple times in history (if you get the joke here, you know too much :)</p>
+<p>So far, we have seen that it is completely consistent to describe the single two-level system with these fermionic operators. But the very notion of fermions requires that we consider what happens when we have a collection of them, i.e., when we have multiple sites. Here we see a major problem with our identification. E.g., consider, for <span class="math notranslate nohighlight">\(i,j\)</span></p>
+<div class="math notranslate nohighlight">
+\[ \left[ \hat{X}_i,\hat{X}_j \right] =0\quad \mathrm{vs}\quad \left[ \hat{\gamma}_i,\hat{\gamma}_j \right] =2\hat{\gamma}_i\hat{\gamma}_j\]</div>
+<p>In other words, our fermionic interpretation of the quantum magnet Hilbert space is inconsistent once we have more than one site! The root of the problem is the following observation: in the quantum magnet Hilbert space, which is a tensor product of the local Hilbert spaces, operators localized to different sites necessarily commute. However, fermions at different sites anti-commute by definition, and so we can never consistently identify all of the local fermion operators with local spin operators.</p>
+<p>The discussion above also suggests immediately how we could circumvent the problem: we just need to invoke some non-locality! That’s the idea behind the Jordan-Wigner transformation. Starting from a reference site (call that 0), we attach a string to all operators to the right of the site such that</p>
+<p><img alt="lec26-fig01" src="_images/lec26-fig01.png" /></p>
+<p>Similar requirement applies to <span class="math notranslate nohighlight">\(\hat{\gamma}'_i\mapsto \sim \hat{Y}_i\)</span>. In addition, notice that the product <span class="math notranslate nohighlight">\(i\hat{\gamma}_i\hat{\gamma}'_i\sim -\hat{Z}_i\)</span> commutes with the other fermions <span class="math notranslate nohighlight">\(\hat{\gamma}_j,\hat{\gamma}'_j\)</span> at <span class="math notranslate nohighlight">\(j\ne i\)</span>. Combined, we see that it will be natural to identify the “string” with a product of <span class="math notranslate nohighlight">\(\hat{Z}\)</span> operators, up to a phase. Let us pick</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\gamma}_i\leftrightarrow \hat{Z}_0\hat{Z}_1\cdots \hat{Z}_{i-1}\hat{X}_i\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{\gamma}'_i\leftrightarrow \hat{Z}_0\hat{Z}_1\cdots \hat{Z}_{i-1}\hat{Y}_i\]</div>
+<p>And we may now toy with some fermionic terms and see how they translate into spin operators:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    i\hat{\gamma}_i\hat{\gamma}'_i&amp;\leftrightarrow i\left( \hat{Z}_0\hat{Z}_1\cdots \hat{Z}_{i-1}\hat{X}_i \right) \left( \hat{Z}_0\hat{Z}_1\cdots \hat{Z}_{i-1}\hat{Y}_i \right) \\
+    &amp;=i\left( \hat{Z}_0\hat{Z}_1\cdots \hat{Z}_{i-1} \right) ^2\hat{X}_i\hat{Y}_i\\
+    &amp;=-\hat{Z}_i
+\end{align*}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    i\hat{\gamma}'_i\hat{\gamma}_{i+1}&amp;\leftrightarrow i\left( \hat{Z}_0\hat{Z}_1\cdots \hat{Z}_{i-1}\hat{Y}_i \right) \left( \hat{Z}_0\hat{Z}_1\cdots \hat{Z}_i\hat{X}_{i+1} \right) \\
+    &amp;=i\hat{Y}_i\hat{Z}_i\hat{X}_{i+1}\\
+    &amp;=-\hat{X}_i\hat{X}_{i+1}
+\end{align*}
+\end{split}\]</div>
+<p>Notice how the string cancels! Such cancellation is general for any product of an even number of fermionic operators. Schematically,</p>
+<p><img alt="lec26-fig02" src="_images/lec26-fig02.png" /></p>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow i\hat{\gamma}_i\hat{\gamma}_j\leftrightarrow \hat{Y}_i\hat{Z}_{i+1}\hat{Z}_{i+2}\cdots \hat{Z}_{j-1}\hat{X}_j\]</div>
+<p>So a local fermionic Hamiltonian gets transformed into a local (bosonic) quantum magnet problem! The only cost is that there would generally be a string connecting the two end points of the fermionic process.</p>
+<p>The converse question is also interesting: what kind of quantum magnet Hamiltonian will become a local fermionic problem under the inverse transformation?</p>
+<p>One could, indeed, write down the inverse transform for which the string operator become <span class="math notranslate nohighlight">\(\sim \exp \left( i\pi \prod_{j&lt;i}{\hat{n}_j} \right)\)</span>. Since the string appears only for the inverse transform of <span class="math notranslate nohighlight">\(\hat{X},\hat{Y}\)</span>, but not <span class="math notranslate nohighlight">\(\hat{Z}\)</span>, we conclude locality is preserved so long as the <span class="math notranslate nohighlight">\(\hat{X},\hat{Y}\)</span> operators always appear in pairs. Now, notice that the spin flip symmetry</p>
+<div class="math notranslate nohighlight">
+\[ \hat{G}\hat{X}_i\hat{G}=-\hat{X}_i\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{G}\hat{Y}_i\hat{G}=-\hat{Y}_i\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{G}\hat{Z}_i\hat{G}=+\hat{Z}_i\]</div>
+<p>imposes the same condition! This tells us that the mapping between fermions and bosons (spin-<span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>) with a Z2 spin-flip symmetry is actually very general, and the cancellation of the string in 1D implies locality is also preserved.</p>
+<p>Finally, back to the main thread: by looking at the terms <span class="math notranslate nohighlight">\(i\hat{\gamma}_i\hat{\gamma}'_i\)</span> and <span class="math notranslate nohighlight">\(i\hat{\gamma}'_i\hat{\gamma}_{i+1}\)</span> above, we see that</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}=J\sum_i{\hat{X}_i\hat{X}_{i+1}}+h\sum_i{\hat{Z}_i}\]</div>
+<div class="math notranslate nohighlight">
+\[ \leftrightarrow \hat{H}_{\gamma}=-J\sum_i{i\hat{\gamma}'_i\hat{\gamma}_{i+1}}-h\sum_i{i\hat{\gamma}_i\hat{\gamma}'_i} + \mathrm{boundary}\;\mathrm{problems}\]</div>
+<p>where we have added a warning that the mapping actually becomes more subtle in the presence (or not) of a boundary. The main reason is the need of defining a string starting with a “reference site”. When we have an open chain, it will be natural to use the left-most site as our reference. For a closed chain (i.e. a circle), any choice of reference is arbitrary and indeed the interpretation of the transformation becomes more subtle. Depending on taste, such “boundary problem” is the most interesting / annoying part of the discussion. In any case, it will be more involved than what we would want to cover here.</p>
+<p>Instead, we simply emphasize that <span class="math notranslate nohighlight">\(\hat{H}_\gamma\)</span> above is quadratic in the (Majorana) fermions, and so we should have the confidence that it will be an exactly solvable problem. (There are some small generalizations required, like <span class="math notranslate nohighlight">\(U(n)\mapsto SO(2n)\)</span> etc., but the diagonalization is fundamentally similar to that of the free-fermion tight-binding like models.) It would be a good question for a problem set but we have no PS left. So, let us be content with simply drawing some pictures.</p>
+<p>Recall the Majorana fermions are like “half” of the regular fermion, in that a pair of them make a fermion (with occupancy state of 0 and 1). It is typical to represent them as splitting a site (with one fermion mode) into two dots:</p>
+<p><img alt="lec26-fig03" src="_images/lec26-fig03.png" /></p>
+<p>where the oval emphasizes that the two Majorana fermions belonged to the same site. Now, we can try to compare the two terms we have in <span class="math notranslate nohighlight">\(\hat{H}_\gamma\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ h\sum_i{\hat{Z}_i}\rightarrow -h\sum_i{i\hat{\gamma}_i\hat{\gamma}'_i}\]</div>
+<p><img alt="lec26-fig04" src="_images/lec26-fig04.png" /></p>
+<div class="math notranslate nohighlight">
+\[ J\sum_i{\hat{X}_i\hat{X}_{i+1}}\rightarrow -J\sum_i{i\hat{\gamma}'_i\hat{\gamma}_{i+1}}\]</div>
+<p><img alt="lec26-fig05" src="_images/lec26-fig05.png" /></p>
+<p>If you have heard about the Kitaev chain / 1D topological superconductors, you most likely have seen these pictures before. Our transverse field Ising model is essentially the same problem in disguise! In particular, the competition between the AFM coupling <span class="math notranslate nohighlight">\(J\)</span> and the transverse field <span class="math notranslate nohighlight">\(h\)</span> becomes that between the inter-site (p-wave) pairing and an on-site term.</p>
+<p>To finish up the story, let us imagine starting with the large <span class="math notranslate nohighlight">\(J&gt;0\)</span> limit, for which we expect the ground state to be</p>
+<p><img alt="lec26-fig06" src="_images/lec26-fig06.png" /></p>
+<p>(This is an example of spontaneous symmetry breaking; there are actually a pair of ground states differing by a flip of all spins. On a finite ring the true ground state becomes the even / odd combination of them, usually called cat states. Those are interesting problems but unfortunately we don’t have the time to cover any of them. Anyway, for our picture we simply use one of the symmetry-broken ground states to illustrate the idea.)</p>
+<p>Now, recall our discussion on the excitations on top of the ordered ground state. While it takes an energy cost of <span class="math notranslate nohighlight">\(4J\)</span> to create a single localized spin flip, it takes little energy (if <span class="math notranslate nohighlight">\(h\)</span> is small) to separate the two “wrong bonds” apart. What operator might create such a pair of well-separated excitations? Consider</p>
+<p><img alt="lec26-fig07" src="_images/lec26-fig07.png" /></p>
+<p>What is this “string of spin flip” operator? Under the Jordan-Wigner transformation, we have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{X}_i\hat{Z}_{i+1}\hat{Z}_{i+2}\cdots \hat{Z}_{j-1}\hat{Z}_j\mapsto i\hat{\gamma}'_i\hat{\gamma}_j\]</div>
+<p>and so, in fact, our lowest-energy excitations have a fermionic interpretation. This is remarkable, considering we have gone from strongly interacting electrons (fermions) to an effective quantum magnet problem (bosons), and finally back to fractionalized low-energy fermionic excitations!</p>
+</div>
+<div class="section" id="d-is-special-or-not">
+<h2>1D is special … or not<a class="headerlink" href="#d-is-special-or-not" title="Permalink to this headline">¶</a></h2>
+<p>According to the standard lore, I should end here by declaring that the Jordan-Wigner transformation is nice and powerful, but its utility is sort of restricted to (quasi-)1D. The main problem is one on locality: We could always perform the transformation in any dimension, but in doing so one needs to pick a one-dimensional ordering of the sites in order to define the string operator. For instance, on a 2D lattice it is common to pick a “snake” (zigzag) ordering, e.g., (Wiki page on JPEG encoding),</p>
+<p><img alt="lec26-fig08" src="_images/lec26-fig08.png" /></p>
+<p>For our purpose, however, it will be more convenient to pick a “spiral” ordering, i.e., starting with a reference site (say at the center), we order other sites according to an anti-clockwise spiral</p>
+<p><img alt="lec26-fig09" src="_images/lec26-fig09.png" /></p>
+<p>Now, imagine performing the classic Jordan-Wigner transformation in this scheme. Consider, for instance, a fermion bilinear involving the sites labeled by <span class="math notranslate nohighlight">\(11\)</span> and <span class="math notranslate nohighlight">\(27\)</span>. In terms of the operators, we have</p>
+<div class="math notranslate nohighlight">
+\[ \hat{\gamma}'_{11}\leftrightarrow \hat{Z}_0\hat{Z}_1\cdots \hat{Z}_{10}\hat{Y}_{11}\]</div>
+<div class="math notranslate nohighlight">
+\[ \hat{\gamma}_{27}\leftrightarrow \hat{Z}_0\hat{Z}_1\cdots \hat{Z}_{26}\hat{X}_{27}\]</div>
+<div class="math notranslate nohighlight">
+\[ \Rightarrow \quad i\hat{\gamma}'_{11}\hat{\gamma}_{27}\leftrightarrow -\hat{X}_{11}\hat{Z}_{12}\hat{Z}_{13}\cdots \hat{Z}_{26}\hat{X}_{27}\]</div>
+<p>while the string cancellations work in the same way as in the 1D problem, when we draw it in the 2D space the problem becomes apparent:</p>
+<p><img alt="lec26-fig10" src="_images/lec26-fig10.png" /></p>
+<p>therefore, although on the fermionic side we considered a local operator (next-nearest neighbor), after Jordan-Wigner the string part becomes non-local. In other words, while the transformation continues to provide an exact rewriting of the original fermionic problem, on the bosonic side it ceases to be a reasonable “quantum magnet” Hamiltonian.</p>
+<p>Can we do better? THe short answer is a reassuring yes! Of course this “higher-dimensional Jordan-Wigner” problem has been investigated for decades from multiple angles (lattice vs field theory vs quantum information). In the following we offer a sketch of a solution based on the recent decades of research on topological orders.</p>
+<p>Our strategy is simple: if you dislike something, get rid of it. In our context, we hope to get rid of the non-local part of the Jordan-Wigner string. This can be sharpened as follows: staring with a hardcore boson (spin-<span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>) qubit per site, we consider states <span class="math notranslate nohighlight">\(|\Psi\rangle\)</span> in the Hilbert space for which</p>
+<div class="math notranslate nohighlight">
+\[ \Box |\Psi \rangle =|\Psi \rangle \]</div>
+<p>where <span class="math notranslate nohighlight">\(\Box\)</span> denotes a small, closed loop of JW string (say around a plaquette).</p>
+<p>Now, restricting our attention to these states (which span a sub-Hilbert space), we can deform the “non-local” operators as follows</p>
+<p><img alt="lec26-fig11" src="_images/lec26-fig11.png" /></p>
+<p>In other words, we define the restricted Hilbert space such that the states inside are capable of “dissolving” the small JW loops. Now acting on this restricted sub-Hilbert space, the JW transformed fermionic Hamiltonian can stay local! As the JW string we saw was simply a product of <span class="math notranslate nohighlight">\(\hat{Z}\)</span>, our constraint reads</p>
+<p><img alt="lec26-fig12" src="_images/lec26-fig12.png" /></p>
+<p>for all plaquettes on the lattice. Nice and easy! Except that it doesn’t work… To see why, consider the “basic” deformation procedure we discussed</p>
+<p><img alt="lec26-fig13" src="_images/lec26-fig13.png" /></p>
+<p>So, for our idea to work we need to find an alternative way to define the JW string! Turns out the solution is just round the corner. More specifically, we consider</p>
+<p><img alt="lec26-fig14" src="_images/lec26-fig14.png" /></p>
+<p>where we associate either <span class="math notranslate nohighlight">\(\hat{X}\)</span> or <span class="math notranslate nohighlight">\(\hat{Y}\)</span> to the site depending on the direction of the segment there. Note that we have added an orientation to the loop, which is required to keep track of signs: if we reverse the arrow compared to what we draw above, we add a <span class="math notranslate nohighlight">\(-1\)</span> sign.</p>
+<p>At a first sight, it might seem a bit odd that we are using <span class="math notranslate nohighlight">\(\hat{X}\)</span> and <span class="math notranslate nohighlight">\(\hat{Y}\)</span> but not <span class="math notranslate nohighlight">\(\hat{Z}\)</span>. This could be resolved by considering the product of two adjacent loops:</p>
+<p><img alt="lec26-fig15" src="_images/lec26-fig15.png" /></p>
+<p>Furthermore, one could verify that these two loops commute, and so their associated constraints are consistent. As such, along a straight segment we do recover</p>
+<p><img alt="lec26-fig16" src="_images/lec26-fig16.png" /></p>
+<p>confirming expectations. Furthermore, we can now verify that the “loop dissolution” story works</p>
+<p><img alt="lec26-fig17" src="_images/lec26-fig17.png" /></p>
+<p>and so, to perform the JW transformation, we can restrict our attention to the sub-space satisfying the loop constraint. These constraints can again be imposed energetically through</p>
+<div class="math notranslate nohighlight">
+\[ \hat{H}_{\mathrm{constraint}}=-\tilde{U}\sum_r{\hat{Y}_r\hat{X}_{r+x}\hat{Y}_{r+x+y}\hat{X}_{r+y}},\quad \tilde{U}\rightarrow +\infty \]</div>
+<p>this is known as the “Wen’s plaquette model”. One can also perform a basis rotation on half of the sites in the following way</p>
+<p><img alt="lec26-fig18" src="_images/lec26-fig18.png" /></p>
+<p>After this basis rotation, we get two different looking terms for the constraints</p>
+<p><img alt="lec26-fig19" src="_images/lec26-fig19.png" /></p>
+<p>It is customary to redraw our model in a rotated manner, using an enlarged unit cell</p>
+<p><img alt="lec26-fig20" src="_images/lec26-fig20.png" /></p>
+<p>and one typically call the ZZZZ term the “plaquette operator”, and the XXXX term the “star operator” (as reflected by the shape above). This is known as the (Kitaev’s) toric code. (The terminology here descends from the picture of a lattice Z2 gauge theory.)</p>
+</div>
+<div class="section" id="topological-order-spin-liquids-and-what-not">
+<h2>Topological order, spin liquids, and what not<a class="headerlink" href="#topological-order-spin-liquids-and-what-not" title="Permalink to this headline">¶</a></h2>
+<p>So, at long last, we have achieved our lofty goal of generalizing JW transformation to 2D… or have we?</p>
+<p>As argued, local fermionic operators should now act locally in the constrained Hilbert space, which we impose energetically by the constraint Hamiltonian. But, in “rounding the corner” we use <span class="math notranslate nohighlight">\(\hat{X}\)</span> and <span class="math notranslate nohighlight">\(\hat{Y}\)</span> as part of the string and so lost the original identification of the fermionic operators! Furthermore, one can inspect the dimension of the constrained Hilbert space, and it turns out to be basically picking up a unique state in the full quantum magnet Hilbert space.</p>
+<p>(More accurately, the number of states is intensive, and depends on the topology of the space we define the model on. E.g., with periodic boundary conditions in both directions in the toric code setup, the constrained Hilbert space is 4 dimensional. This is the famous topological ground state degeneracy, into which one can encode quantum information which is immune to local perturbations. That’s why the toric code is called a “code”.)</p>
+<p>If we were performing an honest JW transformation, the constrained subspace should resemble the fermionic Fock space, i.e., of dimension <span class="math notranslate nohighlight">\(2^V\)</span> when we have <span class="math notranslate nohighlight">\(V\)</span> sites and one fermionic mode per site. In contrast, in our construction above one could say we only capture the fermionic vacuum in our constrained subspace! Nevertheless, once we allow for constraint violation with a finite value <span class="math notranslate nohighlight">\(\tilde{U}\)</span>, we would find that fermionic excitations do exist at energy cost of <span class="math notranslate nohighlight">\(O(\tilde{U})\)</span> (alongside with other anyons).</p>
+<p>In this sense, we do manage to obtain emergent fermionic excitations out of a bosonic problem (i.e., a quantum magnet). We call this “fractionalization”, it that the emergent excitations carry quantum numbers which are only fractions of the microscopic building block. Such phases of matter are frequently called “spin liquids”, and the examples above are known as “Z2 spin liquids”.</p>
+<p>Along this line, we’d also mention that the fractional quantum Hall effect is another prototypical setup in which electrons get fractionalized. When electrons are subjected to a strong magnetic field, their kinetic energy becomes quenched and get organized into dispersion-less Landau levels. This effectively put the system into the <span class="math notranslate nohighlight">\(\frac{t}{U} \to 0\)</span> limit, but with the important differences rooting in the nontrivial topology of the Landau levels. As such, the “highly degenerate Hilbert space” does not have a description of localized electronic modes! This serves as a fruitful breeding ground for many interesting phenomena.</p>
+<p>in any case, it is impressive that, beyond the JW blurring of boson vs fermion in 1D, we can still obtain fermionic excitations out of a bosonic model. Still, can we do better? In particular, can we really generalize the JW transformation and capture a fermionic model (i.e., not just the vacuum) in a bosonic quantum magnet? The short answer is yes, and indeed Kitaev’s honeycomb model can be viewed as an early example along this line. Now we do understand this problem much better, but that’s going to be a topic for another day.</p>
+</div>
+<div class="section" id="that-s-it">
+<h2>That’s it<a class="headerlink" href="#that-s-it" title="Permalink to this headline">¶</a></h2>
+<p>This concludes our lightning introduction to some strongly correlated phenomena in quantum many-body physics. Let us summarize it again with the schematic many-body energy spectrum:</p>
+<p><img alt="lec26-fig21" src="_images/lec26-fig21.png" /></p>
+<p>The distinction between fermions and bosons is one of the most fundamental aspects of quantum mechanics, and in quantum many-body theory (hopefully experiments too!) we can even tamper with such fundamental distinctions. More is different.</p>
+<p><img alt="lec26-fig22" src="_images/lec26-fig22.png" /></p>
+</div>
+<div class="section" id="one-last-time">
+<h2>One last time<a class="headerlink" href="#one-last-time" title="Permalink to this headline">¶</a></h2>
+<p><img alt="lec26-fig23" src="_images/lec26-fig23.png" /></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lec25.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">lec25</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="contribute.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">how to contribute</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Prof. PO HC Adrian<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
