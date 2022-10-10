@@ -48,7 +48,7 @@ goals
 
 ## QHO
 
-As a warm-up, consider the QHO in one-dimension.
+As a warm-up, consider the QHO in one dimension.
 
 $$
 \begin{gather*}
@@ -57,7 +57,7 @@ $$
 \end{gather*}
 $$
 
-in position basis, $\hat{p}=-i\hbar \partial _x$. check
+in position basis, $\hat{p}=-i\hbar \partial _x$. Check
 
 $$
 \begin{align*}
